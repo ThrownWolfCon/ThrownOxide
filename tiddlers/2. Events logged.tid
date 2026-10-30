@@ -1,0 +1,15 @@
+created: 20260616170452385
+modified: 20260616170519790
+tags: [[OG: Audit Log]]
+title: 2. Events logged
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Events logged]]
+
+---
+
+The aim is for the audit log to capture any API request that can mutate data. In practice, this means logging all non-GET requests. There are two exceptions:
+
+    Read-only OxQL endpoints that use POST bodies for queries
+
+    disk_bulk_write_import: the endpoint used to upload chunks during a disk import. We exclude it from the log because there can be thousands of calls to it during a single image upload. Related API operations before and after the bulk write calls (e.g., disk_bulk_write_import_start) are still logged.

@@ -1,0 +1,27 @@
+created: 20221215003240877
+modified: 20221215165130573
+tags: SSCOSSL
+title: 4. Create a external file
+type: text/vnd.tiddlywiki
+
+[[4. Create a external file]]
+
+<$button message="tm-modal" param="4. Create a external file">Modal of This</$button>
+
+---
+
+Execute the following to create `cert.conf` for the SSL certificate. Replace `demo.mlopshub.com` with your domain name or IP address.
+
+```
+cat > cert.conf <<EOF
+
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = demo.mlopshub.com
+
+EOF
+```

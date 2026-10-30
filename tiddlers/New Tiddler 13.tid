@@ -1,0 +1,16 @@
+created: 20260711205132781
+modified: 20260712061149485
+tags: 
+title: New Tiddler 13
+type: text/vnd.tiddlywiki
+
+```bash
+hart@hart-Precision-7740:~$ $PS1
+
+\[\e]0;\u@\h:: command not found
+
+PS1="\033[3;4;32mThr\033[3;4;94m0\033[3;4;32mwnW\033[3;4;94m0\033[3;4;32mlf: \033[0m"
+
+~ $ $PS1
+\[\e[0;32m\]\w\[\e[0m\]: command not found
+```

@@ -1,0 +1,19 @@
+created: 20260602235448904
+modified: 20260624165953381
+tags: [[2. Creating an instance]]
+title: 2.3 Authentication
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 Authentication]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_authentication
+
+Further down the page, you’ll see the Authentication section, which lists all the SSH keys in your profile.
+
+It’s likely that you don’t have any SSH keys yet. You can add one right here by clicking Add SSH key.
+
+If you don’t have a SSH key pair for use on Oxide yet, you can follow the instructions here to generate a new one.
+
+Once the key has been added, you will be able to select it as an authorized key on the instance for SSH access. You will also have the key in your profile for future use.

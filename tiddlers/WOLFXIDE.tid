@@ -1,0 +1,17 @@
+created: 20260603000509749
+modified: 20260603001606629
+tags: 
+title: WOLFXIDE
+type: text/vnd.tiddlywiki
+
+[[Open This|WOLFXIDE]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "WOLFXIDE">>
+</div>
+</div>
+</$linkcatcher>

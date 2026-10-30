@@ -1,0 +1,13 @@
+created: 20260702040837277
+modified: 20260702041044109
+tags: Omicron
+title: Git Omicron
+type: text/vnd.tiddlywiki
+
+[[Open This|Git Omicron]]
+
+---
+
+```bash
+git clone https://github.com/oxidecomputer/omicron.git
+```

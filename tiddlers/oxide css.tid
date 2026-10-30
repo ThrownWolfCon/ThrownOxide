@@ -1,0 +1,66 @@
+created: 20260427220607549
+modified: 20260609171731191
+tags: $:/tags/Stylesheet
+title: oxide css
+type: text/vnd.tiddlywiki
+
+/* Beleren Font Definition */
+@font-face {
+  font-family: "Beleren";
+  src: url("./files/Beleren2016-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply Beleren to Tiddler Titles */
+.tc-site-title,
+.tc-tiddler-title,
+.tc-tiddler-title .tc-title,
+.tc-tiddler-title .tc-title-text {
+  font-family: "Beleren", sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px;
+}
+
+.tc-sidebar-lists a.tc-tiddlylink {color: #ffb412;}
+a.tc-tiddlylink-missing {
+color: red;
+text-decoration: line-through red;
+}
+
+/* Level 1 */
+.tc-toc li a {
+  color: #00a86b  !important;
+}
+
+/* Level 2 - override for deeper items */
+.tc-toc li li a {
+  color: #ffb412 !important;
+}
+
+/* Level 3 and beyond - you can keep adding levels */
+.tc-toc li li li a {
+  color: #3584e4 !important; /* or whatever color you want */
+}
+
+/* Level 4 and beyond - you can keep adding levels */
+.tc-toc li li li li a {
+  color: #db89c8 !important; /* or whatever color you want */
+}
+
+
+/* Level 4 and beyond - you can keep adding levels */
+.tc-toc li li li li li a {
+  color: #ff5555 !important; /* or whatever color you want */
+}
+
+/* Level 4 and beyond - you can keep adding levels */
+.tc-toc li li li li li li a {
+  color: #61cf5a !important; /* or whatever color you want */
+}
+
+
+
+
+

@@ -1,0 +1,56 @@
+created: 20260526174929440
+modified: 20260625023956792
+tags: [[Rack maintenance]] [[Please contact Oxide Support]]
+title: How do I prepare a sled for removal / replacement?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I prepare a sled for removal / replacement?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_prepare_a_sled_for_removal_replacement
+
+If Oxide Support have confirmed that a sled requires replacement, you can prepare the sled by reallocating workloads elsewhere using the Oxide CLI. You will need the serial number of the sled to be replaced <span style="font-family: 'Beleren', sans-serif; color: #00d892;">(Oxide Support can assist to confirm the serial number)</span>.
+
+1. Using the Oxide CLI, obtain the UUID of the sled to replace:
+
+```bash
+oxide system hardware sled list | jq --arg sn "$SERIAL_NUMBER" '.[] | select(.baseboard.serial == $sn) | .id'
+```
+
+2. Set the sled as non-provisionable.
+
+```bash
+oxide system hardware sled set-provision-policy \
+  --sled-id $SLED_UUID --state non_provisionable
+```
+
+3. Check for any instances present on the sled, and save the list into a file for reference:
+
+```bash
+oxide system hardware sled instance-list --sled-id $SLED_UUID |
+  jq -r '.[].id' |
+  tee /tmp/sled_xx_instances
+```
+
+4. Stop those instances, and wait for those instances to fully stop:
+
+```bash
+for instance_id in $(cat /tmp/sled_xx_instances); do
+  oxide instance stop --instance $instance_id
+done
+```
+
+5. Start the instances again (they will start on a different sled):
+
+```bash
+for instance_id in $(cat /tmp/sled_xx_instances); do
+  oxide instance start --instance $instance_id
+done
+```
+
+6. Confirm there are no longer any instances running on the sled to be replaced:
+
+```bash
+oxide system hardware sled instance-list --sled-id $SLED_UUID
+```

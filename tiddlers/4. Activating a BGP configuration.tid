@@ -1,0 +1,107 @@
+created: 20260617022131945
+modified: 20260617022721124
+tags: [[OG: BGP]]
+title: 4. Activating a BGP configuration
+type: text/vnd.tiddlywiki
+
+[[Open This|4. Activating a BGP configuration]]
+
+---
+
+After the BGP configuration is created, the switch ports will need to be configured to use it.
+
+The Oxide network model is organized around switch ports and port settings. Port settings are reusable configurations that are referenced by switch ports. To illustrate how to update an existing port settings object with the Oxide networking CLI, we’ll walk through the steps using port qsfp0 on switch0 in an Oxide rack as an example. When you invoke the CLI for other switch ports, you’ll modify your commands accordingly to match the switch and port target.
+
+Before making any changes, let’s query the current switch port settings with
+
+```console
+oxide system networking switch-port-settings show
+switch0/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address             Lot                VLAN
+192.168.20.3/29     initial-infra      None
+
+BGP Peer         Config   Export          Import          Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED   Remote ASN  VLAN
+
+Destination  Nexthop          Vlan  Preference
+0.0.0.0/0    192.168.20.1/32  0     0
+```
+
+The command above shows us that the port qsfp0 on switch0 is already set up to use an address lot named initial-infra, configured during initial setup for static routing.
+
+To update the switch port settings to use BGP side-by-side with static routing, first identify your rack id
+
+```bash
+export rack=`oxide system hardware rack list | jq -r .[0].id`
+echo $rack
+```
+
+Then, add the source address the switch will use for peering to the port
+
+```bash
+oxide system networking addr add \
+	--rack $rack \
+	--switch switch0 \
+	--port qsfp0 \
+	--addr 192.168.22.3/29 \
+	--lot peering
+```
+
+Next, define the BGP peer that is expected to be reachable over the port. The peer configuration references the overarching BGP configuration defined above via the name as47.
+
+The `addr` field is the address of the router to peer with.
+
+```bash
+oxide system networking bgp peer set \
+	--rack $rack \
+	--switch switch0 \
+	--port qsfp0 \
+	--addr 192.168.22.1 \
+	--bgp-config as47 \
+	--hold-time 6 \
+	--idle-hold-time 6 \
+	--delay-open 0 \
+	--connect-retry 3 \
+	--keepalive 2
+```
+
+The example above covers a subset of the commonly used parameters such as timers from the BGP specification. Here is a complete list of the configurable options:
+
+|Hold Time|How long to hold peer connections between keepalives (seconds) [default: 6]|
+|Idle Hold Time|How long to hold a peer in idle before attempting a new session (seconds) [default: 0]|
+|Delay Open|How long to delay sending an open request after establishing a TCP session (seconds) [default: 0]|
+|Connect Retry|How long to wait between TCP connection retries (seconds) [default: 0]|
+|Keepalive|How often to send keepalive requests (seconds) [default: 2]|
+|Allowed Imports|Prefixes that may be imported from the peer. Empty list means all prefixes allowed|
+|Allowed Exports|Prefixes that may be exported to the peer. Empty list means all prefixes allowed|
+|Communities|Include the provided communities in updates sent to the peer|
+|Enforce First AS|Enforce that the first AS in paths received from this peer is the peer’s AS|
+|Local Preference|Apply this local preference to routes received from the peer|
+|Auth String|Use the given authorization string for TCP-MD5 authentication with the peer|
+|Minimum TTL|Require messages from a peer have a minimum IP time to live field|
+|Multi-exit Discriminator|Apply the provided multi-exit discriminator (MED) updates sent to the peer|
+|Remote ASN|Require that a peer has a specified ASN|
+|VLAN ID|Associate a VLAN ID with a peer|
+
+After adding the address and BGP peer, you should see them in the updated switch port settings
+
+```bash
+oxide system networking switch-port-settings show
+switch0/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address             Lot                VLAN
+192.168.20.3/29     initial-infra      None
+192.168.22.3/29     peering            None
+
+BGP Peer         Config   Export          Import          Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED   Remote ASN  VLAN
+192.168.22.1       as47   [no filtering]  [no filtering]  []           3              0           false             6          6               2          None        None      None     None  None        None
+
+Destination  Nexthop          Vlan  Preference
+0.0.0.0/0    192.168.20.1/32  0     0
+```

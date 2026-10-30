@@ -1,0 +1,15 @@
+created: 20260603214947565
+modified: 20260603215143568
+tags: 
+title: Omicron: Insufficient capacity
+type: text/vnd.tiddlywiki
+
+[[Open This|Omicron: Insufficient capacity]]
+
+---
+
+<div class="custom-warning">
+  <span class="alert-icon">!</span>
+  <strong>Error</strong><br><br>
+  Insufficient capacity: Storage Limit Exceeded: Not enough storage to complete request. Either remove unneeded disks and snapshots to free up resources or contact the rack operator to request a capacity increase.
+</div>

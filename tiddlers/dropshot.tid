@@ -1,0 +1,17 @@
+created: 20260702175029449
+modified: 20260703212717868
+tags: horkew
+title: dropshot
+type: text/vnd.tiddlywiki
+
+[[Open This|dropshot]]
+
+---
+
+```json
+{"msg":"accepted connection","v":0,"name":"SledAgent","level":30,"time":"2026-07-02T15:19:53.030723194Z","hostname":"horkew","pid":10317,"local_addr":"[fd00:1122:3344:101::1]:12345","component":"dropshot (SledAgent)","file":"/home/michael/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dropshot-0.17.1/src/server.rs:1057","remote_addr":"[fd00:1122:3344:101::8]:64831"}
+{"msg":"request completed","v":0,"name":"SledAgent","level":30,"time":"2026-07-02T15:19:53.031083572Z","hostname":"horkew","pid":10317,"uri":"/v2p","method":"GET","req_id":"97b0f853-7b99-4da7-81a4-40dfcbc80eca","remote_addr":"[fd00:1122:3344:101::8]:64831","local_addr":"[fd00:1122:3344:101::1]:12345","component":"dropshot (SledAgent)","file":"/home/michael/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dropshot-0.17.1/src/server.rs:874","latency_us":250,"response_code":200}
+{"msg":"accepted connection","v":0,"name":"SledAgent","level":30,"time":"2026-07-02T15:19:53.036908999Z","hostname":"horkew","pid":10317,"local_addr":"[fd00:1122:3344:101::1]:12345","component":"dropshot (SledAgent)","file":"/home/michael/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dropshot-0.17.1/src/server.rs:1057","remote_addr":"[fd00:1122:3344:101::a]:52966"}
+{"msg":"request completed","v":0,"name":"SledAgent","level":30,"time":"2026-07-02T15:19:53.037234858Z","hostname":"horkew","pid":10317,"uri":"/v2p","method":"GET","req_id":"42217f78-d8ef-4087-8e7c-ec7defeb70b9","remote_addr":"[fd00:1122:3344:101::a]:52966","local_addr":"[fd00:1122:3344:101::1]:12345","component":"dropshot (SledAgent)","file":"/home/michael/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dropshot-0.17.1/src/server.rs:874","latency_us":239,"response_code":200}
+{"msg":"request completed","v":0,"name":"SledAgent","level":30,"time":"2026-07-02T15:19:53.037977296Z","hostname":"horkew","pid":10317,"uri":"/vpc-routes","method":"PUT","req_id":"90856f51-499d-4770-b04a-e4f361ad203f","remote_addr":"[fd00:1122:3344:101::8]:60662","local_addr":"[fd00:1122:3344:101::1]:12345","component":"dropshot (SledAgent)","file":"/home/michael/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/dropshot-0.17.1/src/server.rs:874","latency_us":320,"response_code":204}
+```

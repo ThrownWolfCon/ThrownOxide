@@ -1,0 +1,11 @@
+created: 20180304074204510
+modified: 20180304074558216
+tags: [[Customer Success Triage]]
+title: Cloud Services Triage
+type: text/vnd.tiddlywiki
+
+* CloudServices
+** Verify that the Cloud User Name, and Machine Name have been provided (Initial Setup requests are exempt)
+*** Copy the Cloud User Name into the Serial Number field within the case
+
+[[Update the following the best you can]]

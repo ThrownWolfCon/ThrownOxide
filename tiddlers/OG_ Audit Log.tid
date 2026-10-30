@@ -1,0 +1,21 @@
+created: 20260526165831192
+modified: 20260616172304669
+tags: [[Operator Guides]]
+title: OG: Audit Log
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Audit Log]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log
+
+The audit log tracks user actions across the system. It can answer questions like when a certain authentication event happened and what actions were taken by whom on instances and disks. The log is accessible to users with the fleet viewer role via the audit_log_list API endpoint.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "OG: Audit Log">>
+</div>
+</div>
+</$linkcatcher>

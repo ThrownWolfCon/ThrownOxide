@@ -1,0 +1,19 @@
+created: 20260703194439339
+modified: 20260703212555262
+tags: horkew
+title: wicketd MgsManager
+type: text/vnd.tiddlywiki
+
+[[Open This|wicketd MgsManager]]
+
+---
+
+```bash
+michael@horkew:~/omicron$ 
+
+Jul 03 19:43:48.554 DEBG client request, body: None, uri: http://[::1]:12225/local/all-sp-ids, method: GET, component: wicketd MgsManager
+
+Jul 03 19:43:48.555 DEBG client response, result: Err(reqwest::Error { kind: Request, url: "http://[::1]:12225/local/all-sp-ids", source: hyper_util::client::legacy::Error(Connect, ConnectError("tcp connect error", [::1]:12225, Os { code: 146, kind: ConnectionRefused, message: "Connection refused" })) }), component: wicketd MgsManager
+
+Jul 03 19:43:48.556 WARN Failed to get SP IDs from MGS (will retry after 1s), err: Communication Error: error sending request for url (http://[::1]:12225/local/all-sp-ids), component: wicketd MgsManager, file: wicketd/src/mgs.rs:184
+```

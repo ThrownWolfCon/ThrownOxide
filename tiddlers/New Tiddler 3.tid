@@ -1,0 +1,9 @@
+created: 20260604194046098
+modified: 20260604194130084
+tags: 
+title: New Tiddler 3
+type: text/vnd.tiddlywiki
+
+```
+./aws/gen_userdata.sh | nc 192.168.1.23 1701
+```

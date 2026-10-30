@@ -1,0 +1,19 @@
+created: 20260602231120194
+modified: 20260620012018173
+tags: [[2. Feature highlights]]
+title: 2.5 Virtual machine and network management
+type: text/vnd.tiddlywiki
+
+[[Open This|2.5 Virtual machine and network management]]
+
+---
+
+https://docs.oxide.computer/guides/introduction#_virtual_machine_and_network_management
+
+VM instance and networking features are designed to provide a self-service experience similar to that of public clouds. Virtual machines support Unicast traffic with emulated broadcast/multicast for ARP/NDP. Useful defaults are provided for getting started quickly whereas full customization is available for more advanced workload deployment.
+
+Each project is given their own notion of a Virtual Private Cloud (VPC) for address control, isolation, and traffic control. Each VPC is built on top of Geneve which provides UDP encapsulation with custom headers.
+
+Oxide Rack uses Delay Driven Multipath (DDM) for routing internally but interfaces with common networking gear seamlessly. Boundary services leverage Tofino 2 Programmable ASIC and P4 functionality where packets are encapsulated on the way into the rack and decapsulated on the way out. This allows the rack to adapt to different network environments.
+
+The <span style="font-family: 'Beleren', sans-serif; color: #00d892;">Oxide Packet Transformation Engine ([[OPTE]])</span> sits between Virtual Machines and Physical Interfaces which services core functionality such as firewalling, routing, NATing, encapsulation and decapsulation. Each sled connects to both switches in the rack via multipath routing for high availability.

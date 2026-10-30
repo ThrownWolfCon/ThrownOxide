@@ -1,0 +1,13 @@
+created: 20260501194742991
+modified: 20260501194823567
+tags: [[Aim Docker]]
+title: dashmachine
+type: text/vnd.tiddlywiki
+
+[[Open This|dashmachine]]
+
+---
+
+```yml
+11db8f03059f   rmountjoy/dashmachine:latest                 "gunicorn --bind 0.0…"   14 months ago   Up 5 days               0.0.0.0:5000->5000/tcp, :::5000->5000/tcp                                                                                                 dashmachine
+```

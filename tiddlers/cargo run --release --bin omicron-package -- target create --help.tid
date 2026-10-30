@@ -1,0 +1,74 @@
+created: 20260609001202307
+modified: 20260609001327243
+tags: [[2.4 Build Omicron packages]]
+title: cargo run --release --bin omicron-package -- target create --help
+type: text/vnd.tiddlywiki
+
+[[Open This|cargo run --release --bin omicron-package -- target create --help]]
+
+---
+
+```
+$ cargo run --release --bin omicron-package -- target create --help
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.55s
+     Running `target/release/omicron-package target create --help`
+Error: Creates a new build target, and sets it as "active"
+
+Usage: omicron-package target create [OPTIONS] --preset <PRESET>
+
+Options:
+  -p, --preset <PRESET>
+          The preset to use as part of the build (use `dev` for development).
+
+          Presets are defined in the `target.preset` section of the config. The other configurations are layered on top of
+          the preset.
+
+  -i, --image <IMAGE>
+          The image to use for the target.
+
+          If specified, this configuration is layered on top of the preset.
+
+          Possible values:
+          - standard:   A typical host OS image
+          - trampoline: A recovery host OS image, intended to bootstrap a Standard image
+
+  -m, --machine <MACHINE>
+          The kind of machine to build for
+
+          Possible values:
+          - gimlet:            Use sled agent configuration for a Gimlet
+          - gimlet-standalone: Use sled agent configuration for a Gimlet running in isolation
+          - non-gimlet:        Use sled agent configuration for a device emulating a Gimlet
+
+  -s, --switch <SWITCH>
+          The switch to use for the target
+
+          Possible values:
+          - asic:    Use the "real" Dendrite, that attempts to interact with the Tofino
+          - stub:    Use a "stub" Dendrite that does not require any real hardware
+          - softnpu: Use a "softnpu" Dendrite that uses the SoftNPU asic emulator
+
+  -r, --rack-topology <RACK_TOPOLOGY>
+          Specify whether nexus will run in a single-sled or multi-sled environment.
+
+          Set single-sled for dev purposes when you're running a single sled-agent. Set multi-sled if you're running with
+          multiple sleds. Currently this only affects the crucible disk allocation strategy- VM disks will require 3
+          distinct sleds with `multi-sled`, which will fail in a single-sled environment. `single-sled` relaxes this
+          requirement.
+
+          Possible values:
+          - multi-sled:  Use configurations suitable for a multi-sled deployment, such as dogfood and production racks
+          - single-sled: Use configurations suitable for a single-sled deployment, such as CI and dev machines
+
+  -c, --clickhouse-topology <CLICKHOUSE_TOPOLOGY>
+          Specify whether clickhouse will be deployed as a replicated cluster or single-node configuration.
+
+          Replicated cluster configuration is an experimental feature to be used only for testing.
+
+          Possible values:
+          - replicated-cluster: Use configurations suitable for a replicated ClickHouse cluster deployment
+          - single-node:        Use configurations suitable for a single-node ClickHouse deployment
+
+  -h, --help
+          Print help (see a summary with '-h')
+```

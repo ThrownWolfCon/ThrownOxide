@@ -1,0 +1,11 @@
+created: 20260612230900852
+modified: 20260612235726256
+tags: 
+title: silo-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-info">
+  <strong>Silo</strong><br><br>
+<$button message="tm-modal" param="1.1 Silos">1.1 Silos</$button>
+ <$transclude tiddler="project-box" mode="block"/>
+</div>

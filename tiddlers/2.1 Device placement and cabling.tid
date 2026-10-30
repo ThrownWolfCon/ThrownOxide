@@ -1,0 +1,13 @@
+created: 20260602230906089
+modified: 20260603052110927
+tags: [[2. Feature highlights]]
+title: 2.1 Device placement and cabling
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Device placement and cabling]]
+
+---
+
+The rack form factor is loosely based on the OCP Open Rack version 3 (ORV3). It uses a Cubby design for physical housing of compute servers. Each cubby consists of two side-by-side bays. These cubbies provide a fixed-pitch mechanical framework for servers, allowing the units to be hot pluggable/unpluggable during maintenance.
+
+To support full serviceability from the front (cold aisle), the rack cable management design allows a trench running under each cubby to route any rear-facing cabling from back to front.

@@ -1,0 +1,25 @@
+created: 20260526163237082
+modified: 20260528214221087
+tags: [[Operator Guides]]
+title: OG: IP Pools and Subnet Pools
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: IP Pools and Subnet Pools]]
+
+---
+
+https://docs.oxide.computer/guides/operator/ip-pool-management
+
+External IP pools and subnet pools are two distinct classes of IP resources for different network connectivity requirements of user workloads.
+
+IP pools are named collections of external IP ranges defined by operators and assigned to silos for instance ephemeral or floating IP assignment. These external addresses do not appear within their attached instances. The primary internal NAT’d address within the instance is used for egress traffic. VPC routing rules combined with internet gateways are used to determine which external address is used as the source address for packets egressing the rack when an instance has multiple external addresses assigned.
+
+Similar to IP pools, subnet pools carry named collections of external addresses but are subnets instead of IP ranges. They can be specified in terms of prefix length and attached to instances by project users. Address allocation from the attached subnet to instance-managed resources (e.g., containers) is controlled by the application running on the instance. The subnet IPs are used as the source addresses for egress without translation.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "OG: IP Pools and Subnet Pools">>
+</div>
+</div>
+</$linkcatcher>

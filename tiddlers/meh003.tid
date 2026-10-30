@@ -1,0 +1,17 @@
+created: 20260610224428970
+modified: 20260610224457459
+tags: 
+title: meh003
+type: text/vnd.tiddlywiki
+
+```
+$ pfexec dladm create-etherstub -t fake_external_stub0
+$ pfexec dladm create-vnic -t -l fake_external_stub0 fake_external0
+$ pfexec ipadm create-if -t fake_external0
+$ pfexec ipadm create-addr -t -T static --address 192.168.1.199 fake_external0/external
+$ echo "map bge0 192.168.1.0/24 -> 0/32 portmap tcp/udp auto" > /tmp/ipnat.conf
+$ echo "map bge0 192.168.1.0/24 -> 0/32" >> /tmp/ipnat.conf
+$ pfexec cp /tmp/ipnat.conf /etc/ipf/ipnat.conf
+$ pfexec routeadm -e ipv4-forwarding -u
+$ svcadm enable ipfilter
+```

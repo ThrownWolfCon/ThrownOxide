@@ -1,0 +1,20 @@
+created: 20260531052015139
+modified: 20260531052307769
+tags: 
+title: How do I find the DHCP range?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I find the DHCP range?]]
+
+---
+
+Usually:
+
+# Find the gateway address.
+# Open a browser to `http://<gateway-ip>` (for example http://192.168.1.1)
+# Log into the router.
+# Look for:
+#* DHCP Server
+#* LAN Settings
+#* Network Settings
+#Find the DHCP Start and DHCP End addresses.

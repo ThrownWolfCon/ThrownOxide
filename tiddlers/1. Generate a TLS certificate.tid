@@ -1,0 +1,39 @@
+created: 20260526160544113
+modified: 20260701035254666
+tags: [[Preparations for silo setup]]
+title: 1. Generate a TLS certificate
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Generate a TLS certificate]]
+
+---
+
+Generate a TLS certificate
+
+A TLS certificate is required during silo setup and will be used for TLS termination on the silo-specific UI/API DNS name. The certificate’s DNS SAN can either be the silo’s fully-qualified domain name (FQDN):
+
+```
+$SILO_NAME.sys.$OXIDE_DOMAIN_NAME
+```
+
+or a wildcard domain name:
+
+```
+*.sys.$OXIDE_DOMAIN_NAME
+```
+
+For production deployments, use a certificate from a trusted Certificate Authority (CA). For testing or development, a self-signed certificate may be sufficient.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "1. Generate a TLS certificate">>
+</div>
+</div>
+</$linkcatcher>
+
+[[Option 1: Using OpenSSL]]
+
+[[Option 2: Using Let’s Encrypt and Certbot]]
+
+[[Preparing client-provided signing certificates]]

@@ -1,0 +1,25 @@
+created: 20260526165635140
+modified: 20260624195214795
+tags: [[Operator Guides]]
+title: OG: Expanding Connectivity
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Expanding Connectivity]]
+
+---
+
+This guide describes how to connect an Oxide rack to additional upstream networks through the API. It assumes that the rack is already accessible through a primary network, and the goal is to connect the rack to additional networks while maintaining primary network connectivity.
+
+The example in this guide will walk through taking a rack that is connected to a transit provider in a data center, and expand connectivity to a direct connection with a cloud provider. In this example both forms of connectivity are using BGP. However, the concepts in this guide apply to static networking as well.
+
+[[1. Initial configuration]]
+
+[[2. Expanding connectivity]]
+
+[[2.1 Address lot creation]]
+
+[[2.2 Address assignment]]
+
+[[2.3 BGP configuration]]
+
+[[2.4 Controlling BGP announcements]]

@@ -1,0 +1,16 @@
+created: 20250409221002953
+modified: 20250409221340288
+tags: nmap
+title: nmap: SYN Scans
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap: SYN Scans]]
+
+---
+
+SYN "Half-open" Scans (-sS)
+
+`-sS` Syn Scan
+
+SYN scans are sometimes referred to as "Half-open" scans, or "Stealth" scans.
+

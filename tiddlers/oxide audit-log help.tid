@@ -1,0 +1,24 @@
+created: 20260627201254053
+modified: 20260629213435605
+tags: [[oxide audit-log]]
+title: oxide audit-log help
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide audit-log help]]
+
+---
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide audit-log help
+Usage: oxide audit-log [OPTIONS] <COMMAND>
+
+Commands:
+  list  View audit log
+  help  Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
+
+Global Options:
+      --profile <PROFILE>  Configuration profile to use for commands
+```

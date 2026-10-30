@@ -1,0 +1,15 @@
+created: 20260504022629489
+modified: 20260504024104496
+tags: ifritback
+title: halt_catch_fire
+type: text/vnd.tiddlywiki
+
+https://en.wikipedia.org/wiki/Halt_and_Catch_Fire_(computing)
+
+In computer engineering, Halt and Catch Fire, known by the assembly language mnemonic HCF, is an idiom referring to a computer machine code instruction that causes the computer's central processing unit (CPU) to cease meaningful operation, typically requiring a restart of the computer. It originally referred to a fictitious instruction in IBM System/360 computers (introduced in 1964), making a joke about its numerous non-obvious instruction mnemonics.
+
+After the introduction of the MC6800 processor in 1974, a design flaw was discovered by programmers. Due to incomplete opcode decoding, two illegal opcodes, 0x9D and 0xDD, will cause the program counter on the processor to increment endlessly, which locks the processor until reset. Those codes have been unofficially named HCF. During the design process of the MC6802, engineers originally planned to remove this instruction, but kept it as-is for testing purposes. As a result, HCF was officially recognized as a real instruction.[1][2] Later, HCF became a humorous catch-all term for instructions that may freeze a processor, including intentional instructions for testing purposes, and unintentional illegal instructions. Some are considered hardware defects, and if the system is shared, a malicious user can execute them to launch a denial-of-service attack.
+
+In the case of real instructions, the implication of this expression is that, whereas in most cases in which a CPU executes an unintended instruction (a bug in the code) the computer may still be able to recover, in the case of an HCF instruction there is, by definition, no way for the system to recover without a restart.
+
+The expression catch fire facetiously suggests that the unusual state the computer hardware is placed in may cause permanent, physical damage

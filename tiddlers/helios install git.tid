@@ -1,0 +1,11 @@
+created: 20260607145214848
+modified: 20260607145320417
+tags: Helios
+title: helios install git
+type: text/vnd.tiddlywiki
+
+[[Open This|helios install git]]
+
+---
+
+`pfexec pkg install git`

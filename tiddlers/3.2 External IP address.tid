@@ -1,0 +1,14 @@
+created: 20260603000122350
+modified: 20260624172537898
+tags: [[3. Using your instance]]
+title: 3.2 External IP address
+type: text/vnd.tiddlywiki
+
+[[Open This|3.2 External IP address]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_external_ip_address
+
+
+In order to SSH into the instance next, you’ll need its external IP address, which is available at the top of the instance page. Copy the External IP value.

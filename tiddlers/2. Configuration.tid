@@ -1,0 +1,165 @@
+created: 20260616174347160
+modified: 20260616174918211
+tags: [[OG: BFD]]
+title: 2. Configuration
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Configuration]]
+
+---
+
+The rest of the guide will go through configuring BFD on the system depicted in the diagram above.
+
+First inspect the routes that are present on the Oxide rack.
+
+```bash
+for i in {0..3}
+do
+    oxide system networking switch-port-settings view --port default-uplink$i \
+        | jq -r '.routes[] | "\(.dst) → \(.gw)" '
+done
+```
+
+This shows the following.
+
+```
+0.0.0.0/0 → 198.51.101.1/32
+0.0.0.0/0 → 198.51.101.9/32
+0.0.0.0/0 → 198.51.101.5/32
+0.0.0.0/0 → 198.51.101.13/32
+```
+
+We’ll be setting up a BFD session for each of these nexthops. To check the current BFD status of the Oxide rack, use the following command.
+
+```
+oxide system networking bfd status
+```
+
+This returns an empty array, indicating no BFD sessions are configured.
+
+```
+[]
+```
+
+To set up a BFD session for the first route in the list above, do the following.
+
+```yml
+oxide system networking bfd enable \
+    --required-rx 1000000 \
+    --detection-threshold 3 \
+    --remote 198.51.101.1 \
+    --mode single_hop \
+    --switch switch0
+```
+
+The required-rx argument indicates the interval at which the rack expects to receive BFD control messages from its peer (in microseconds), and the rate at which it will send control messages to the peer. The detection-threshold argument indicates how many required receive intervals may be missed before a session is considered down. The remote argument specifies the remote host to establish a BFD session with. The mode argument is either single_hop or multi_hop and indicates the BFD mode as described in the background section above. The switch argument identifies which rack switch this BFD session will run on, the value is either switch0 or switch1.
+
+After running this command check the status of the BFD session.
+
+```
+oxide system networking bfd status
+```
+
+```bash
+[
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.1",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch0"
+  }
+]
+```
+
+The up value for state indicates that the rack has successfully established a BFD session with 198.51.101.1.
+
+If we continue for the remaining addresses, we see the following
+
+```bash
+[
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.9",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch0"
+  },
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.1",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch0"
+  },
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.5",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch1"
+  },
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.13",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch1"
+  }
+]
+```
+
+In the event that the first link goes down, the oxide system networking bfd status looks as follows.
+
+```bash
+[
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.9",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch0"
+  },
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.1",
+    "required_rx": 1000000,
+    "state": "down",
+    "switch": "switch0"
+  },
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.5",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch1"
+  },
+  {
+    "detection_threshold": 3,
+    "local": "0.0.0.0",
+    "mode": "single_hop",
+    "peer": "198.51.101.13",
+    "required_rx": 1000000,
+    "state": "up",
+    "switch": "switch1"
+  }
+]
+```
+
+In the event that all BFD sessions go down, routing behavior reverts to function as if no BFD configuration is present, considering each nexthop equally bad and performing ECMP over each. As soon as any subset of the configured BFD sessions is restored, only the routes associated with that subset will be used.

@@ -1,0 +1,11 @@
+created: 20260530181946563
+modified: 20260530182013733
+tags: dumpadm
+title: dumpadm -d /dev/zvol/dsk/rpool/dump
+type: text/vnd.tiddlywiki
+
+[[Open This|dumpadm -d /dev/zvol/dsk/rpool/dump]]
+
+---
+
+What this does:

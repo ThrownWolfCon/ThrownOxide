@@ -1,0 +1,33 @@
+created: 20260616153349929
+modified: 20260616155309092
+tags: 
+title: profiles
+type: text/vnd.tiddlywiki
+
+[[Open This|profiles]]
+
+---
+
+<$select tiddler="$:/temp/selectedProfile">
+  <$list filter="[tag[profiles]]">
+    <option value=<<currentTiddler>>>
+      <$view field="title"/>
+    </option>
+  </$list>
+</$select>
+
+<$let profile={{$:/temp/selectedProfile}}>
+
+omicron-dev: silo name:
+<$view tiddler=<<profile>> field="siloname"/>
+
+omicron-dev: privileged user name:
+<$view tiddler=<<profile>> field="privilegeduser"/>
+
+omicron-dev: privileged password:
+<$view tiddler=<<profile>> field="privilegedpassword"/>
+
+profilecli:
+<$view tiddler=<<profile>> field="profilecli"/>
+
+</$let>

@@ -1,0 +1,79 @@
+created: 20260501150559822
+modified: 20260501150639379
+tags: [[Aim Server]]
+title: Aim Media Pool
+type: text/vnd.tiddlywiki
+
+[[Open This|Aim Media Pool]]
+
+---
+
+```
+aim@aim-PowerEdge-T620:~$ tree -L 1 /media/aim/data
+/media/aim/data
+├── 000
+├── 00Chloe
+├── 1tbssd_copy
+├── 2016_machine
+├── 2025-03-11.odt
+├── 20250722_150313.jpg
+├── 2025-07-24 10-22-59.mp4
+├── 2025_1tbssd_backup
+├── ALL_AMY
+├── android_dev
+├── audiobookshelf
+├── cisco
+├── CleanUpS10
+├── dashmachine
+├── docker_projects
+├── forAMY
+├── homarr
+├── i9offload
+├── i9_toast
+├── ISOs
+├── Japanese Language Learning Pack - Learn Japanese!
+├── jellyfin
+├── kaliallLIVE
+├── komga
+├── lost+found
+├── MAKEITWORK
+├── media
+├── Mercedes
+├── MTG_MY_CARDS
+├── mybook_unload
+├── navidrome
+├── OFFSSD
+├── photoprism
+├── pihole
+├── plex
+├── Rando
+├── Reactive_Resume
+├── readbooks
+├── Screenshot_20250427-095446.png
+├── Screenshot from 2025-06-19 15-20-20.png
+├── SSDUNLOAD
+├── StarCraft II: Wings of Liberty: Soundtrack
+├── stupiddell
+├── SurfaceGo
+├── twitter_posts
+├── uptimekuma
+├── VIDEO_THINGS
+├── virtrock
+│   ├── bt_01.qcow2
+│   ├── bt_02.qcow2
+│   ├── bt_03.qcow2
+│   ├── bt_04.qcow2
+│   ├── bt_05.qcow2
+│   ├── fedora01.qcow2
+│   ├── kaliall.qcow2
+│   ├── linux2022.qcow2
+│   ├── parrot-sec.qcow2
+│   ├── rocky101min_bt01disk.qcow2
+│   └── ubuntuCasaOS.qcow2
+├── WIKIS
+│   ├── CompTIA_Sec
+│   ├── NIST800
+│   ├── PTES
+│   └── wikis
+└── xmr
+```

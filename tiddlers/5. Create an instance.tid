@@ -1,0 +1,44 @@
+created: 20260602234002991
+modified: 20260607153916113
+tags: [[GS: Quick Start: CLI]]
+title: 5. Create an instance
+type: text/vnd.tiddlywiki
+
+[[Open This|5. Create an instance]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart-cli#_create_an_instance
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>Create Project</strong><br>
+  Your warning text goes here.
+</div>
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Upload Image</strong><br>
+  Your important text goes here.
+</div>
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Upload SSH Key</strong><br>
+  Your note text goes here.
+</div>
+
+THEN:
+
+```bash
+$ oxide instance from-image \
+     --image bookworm \
+     --name pegasus \
+     --project prototypes \
+     --description "Phasing cloaking device" \
+     --hostname pegasus \
+     --memory 16g \
+     --ncpus 8 \
+     --size 200g \
+     --start
+```

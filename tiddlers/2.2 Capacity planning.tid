@@ -1,0 +1,46 @@
+created: 20260626155639314
+modified: 20260626160936156
+tags: [[2. Quota management]]
+title: 2.2 Capacity planning
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Capacity planning]]
+
+---
+
+To maintain optimal performance and avoid over-provisioning:
+
+# Keep the sum of all silo quotas at or below the total usable rack capacity. While individual quota values can be set freely, aggregate over-allocation can lead to provisioning failures when physical resources are exhausted.
+
+# Maintain a 15–30% buffer of compute resources. This buffer is critical for:
+
+#* Placement flexibility: Instance placement in Oxide follows a random sled selection strategy. This helps avoid concentrating workloads on a single sled, which reduces the risk of simultaneous hardware failures. However, this approach can sometimes make it difficult to place large instances if all sleds are nearly full.
+
+#* Dynamic workloads: If you regularly start and stop large instances, having a larger pool of unallocated resources will help avoid capacity shortages.
+
+#* Maintenance windows: Capacity may be temporarily reduced when sleds are taken offline for planned maintenance (like software upgrades) or due to unplanned outages.
+
+#* Instance Migrations: Extra capacity is also useful when the rack is migrating instances between sleds.
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+Anti-affinity rules can further enhance availability by ensuring that specific instances are not placed on the same sled.
+</div>
+
+While storage resources are typically less impacted by these placement dynamics, keep in mind that the usable capacity view in the system takes into account [[Crucible’s triplicated data replication factor]] and a fixed overhead for snapshots and images.
+
+The sum of the silo quotas should ideally be below the total usable rack capacity to avoid over-provisioning. If silo quotas are set above the rack capacity and an instance or disk request cannot be accommodated by any sleds in the rack, the rack-level capacity check will kick in to reject the request. The current maximum usable capacity for instances and disks are:
+
+|Resource type|Memory|Storage|h
+|Per sled|869,498,093,568 bytes (809 GiB)|27,298 GiB (26.6 TiB)|
+|Half-rack|12,944 GiB (12.6 TiB)|436,768 GiB (426.5 TiB)|
+|Full-rack|25,888 GiB (25.2 TiB)|873,536 GiB (853.0 TiB)|
+
+Per-instance limits are tracked separately from per-silo quotas. A given instance can have up to 254 vCPUs and up to 12 attached disks.
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+The maximum usable capacity may be adjusted in future versions as new software features are introduced.
+</div>

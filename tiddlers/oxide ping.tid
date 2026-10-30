@@ -1,0 +1,39 @@
+created: 20260627185903244
+modified: 20260627190204853
+tags: [[oxide cli commands]]
+title: oxide ping
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide ping]]
+
+---
+
+<<copy-to-clipboard "oxide ping">>
+
+```
+oxide ping
+```
+
+---
+
+```bash
+PS C:\Users\Michael> oxide ping --help
+Always responds with Ok if it responds at all.
+
+Usage: oxide.exe ping [OPTIONS]
+
+Options:
+  -h, --help
+          Print help (see a summary with '-h')
+
+Global Options:
+      --profile <PROFILE>
+          Configuration profile to use for commands
+```
+
+```bash
+PS C:\Users\Michael> oxide ping
+{
+  "status": "ok"
+}
+```

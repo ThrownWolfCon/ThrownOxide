@@ -1,0 +1,26 @@
+created: 20260616183145533
+modified: 20260616183305423
+tags: [[OG: Jumbo Frames]]
+title: 5. Disabling the fleet-wide opt-in
+type: text/vnd.tiddlywiki
+
+[[Open This|5. Disabling the fleet-wide opt-in]]
+
+---
+
+https://docs.oxide.computer/guides/operator/jumbo-frames#_disabling_the_fleet_wide_opt_in
+
+```bash
+oxide system networking settings update \
+    --external-jumbo-frames-opt-in-enabled false
+```
+
+The fleet-wide opt-in may be disabled at any time, including while instances have per-instance jumbo frames enabled. The effect is:
+
+    * Running instances are not reconfigured. Their primary interface keeps the 8500 byte MTU it was started with.
+
+    * On the next restart of an instance, the effective MTU is recomputed. Because the fleet-wide opt-in is now off, the primary interface comes back with the default 1500 byte MTU even if enable_jumbo_frames is still true on the instance.
+
+    * New attempts to set enable_jumbo_frames=true (on instance create or update) are rejected with HTTP 400 while the fleet-wide opt-in is disabled. Setting it to false is always allowed.
+
+    * Per-instance values are preserved. Re-enabling the fleet-wide opt-in restores jumbo frames on those instances at their next restart, without any per-instance change.

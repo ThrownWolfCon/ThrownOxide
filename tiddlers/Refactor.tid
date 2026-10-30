@@ -1,0 +1,39 @@
+created: 20260501030340737
+modified: 20260506231805129
+tags: [[Application Migration Strategies]] [[Seven Common Migration Strategies]]
+title: Refactor
+type: text/vnd.tiddlywiki
+
+[[Open This|Refactor]]
+
+---
+
+Refactoring (Re-architecting)
+
+Refactoring is a cloud migration strategy that involves significantly redesigning and rebuilding applications to fully leverage cloud-native features and architectures.
+
+This approach allows organizations to transform legacy systems into scalable, resilient, and highly optimized cloud applications, often using microservices, serverless computing, or containerization.
+
+When to use refactoring: Refactoring is ideal for organizations seeking maximum scalability, performance, and long-term cost efficiency. It is best suited for critical applications where modernization provides clear business value.
+
+Advantages of refactoring:
+
+Scalability: Fully utilizes cloud-native scalability and elasticity.
+Performance: Optimized architecture improves speed and reliability.
+Innovation: Enables adoption of modern technologies like microservices and serverless.
+
+Limitations of refactoring:
+
+Time-intensive: Requires significant development effort.
+High cost: Increased upfront investment in redesign and testing.
+Complexity: Demands skilled teams and careful planning.
+
+Step-by-step guide for refactoring:
+
+* [[Refactor Assessment]]: Identify applications that would benefit most from modernization.
+* [[Refactor Planning]]: Define the new architecture (e.g., microservices, serverless).
+* [[Refactor Design]]: Redesign application components and workflows.
+* [[Refactor Development]]: Rebuild or rewrite application components.
+* [[Refactor Migration]]: Deploy the new application in the cloud.
+* [[Refactor Testing]]: Validate performance, scalability, and reliability.
+* [[Refactor Optimization]]: Continuously improve based on usage and metrics.

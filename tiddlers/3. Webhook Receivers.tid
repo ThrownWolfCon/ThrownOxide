@@ -1,0 +1,17 @@
+created: 20260629171213612
+modified: 20260629171242989
+tags: [[RFD 538]]
+title: 3. Webhook Receivers
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Webhook Receivers]]
+
+---
+
+In order to receive webhook notifications, a receiver endpoint must be registered with the Oxide control plane. Multiple receivers, with different URLs, may be registered, and each receiver may be subscribed to different sets of events.
+
+See here for the API endpoints used to create, update, view, and delete webhook receiver configurations.
+
+For guidance on steps receiver endpoint implementations should take to ensure webhook notifications are delivered reliably, see appendix A.
+
+Creating a webhook receiver requires a name, the URL of the receiver endpoint, and a list of one or more secrets used to sign the payloads sent to the receiver. In order to receive notifications when events occur, a receiver must also subscribe to one or more event classes, as discussed in the previous section. Event class subscriptions are specified using the globbing syntax described above. Event subscriptions may be specified when the receiver is created, or can be added to an existing receiver using the webhook configuration update endpoint.

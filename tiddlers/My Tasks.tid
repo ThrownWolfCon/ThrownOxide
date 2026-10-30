@@ -1,0 +1,25 @@
+created: 20260509172034454
+modified: 20261029203751240
+tags: $:/tags/SideBar
+title: My Tasks
+type: text/vnd.tiddlywiki
+
+[[Open This|My Tasks]]
+
+---
+
+<span style="color: #e2ae84;"><<now>></span>
+
+<$list filter="[!has[draft.of]tag[task]!tag[done]sort[due]]">
+<$checkbox tag="done"> <$link/></$checkbox><br> 
+* Due Date: <span style="color: #db89c8;"><$view field="due"/></span><br>
+** Due Time: <span style="color: #db89c8;"><$view field="time"/></span><br>
+*** Next Action: <span style="color: #c90076;"><$view field="next action"/></span>
+<br><br>
+</$list>
+
+---
+
+<$list filter="[!has[draft.of]tag[task]tag[done]sort[created]]">
+<$checkbox tag="done"> ~~<$link/>~~</$checkbox><br>
+</$list>

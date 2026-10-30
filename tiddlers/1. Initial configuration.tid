@@ -1,0 +1,53 @@
+created: 20260624195220449
+modified: 20260624195609961
+tags: [[OG: Expanding Connectivity]]
+title: 1. Initial configuration
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Initial configuration]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-connectivity#_initial_configuration
+
+This guide will use the oxide CLI. To get started we’re going to look at the current network configuration of the rack.
+
+```bash
+$ oxide system networking switch-port-settings show
+switch1/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address          Lot            VLAN
+169.254.20.2/30  initial-infra  None
+
+BGP Peer      Config   Export          Import          Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED   Remote ASN  VLAN
+169.254.20.1  as65547  [no filtering]  [no filtering]  []           3              3           false             6          0               2          None        None      None     None  None        None
+
+switch0/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address          Lot            VLAN
+169.254.10.2/30  initial-infra  None
+
+BGP Peer      Config   Export          Import          Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED   Remote ASN  VLAN
+169.254.10.1  as65547  [no filtering]  [no filtering]  []           3              3           false             6          0               2          None        None      None     None  None        None
+```
+
+This shows that each switch has a port configured with a BGP session. This configuration lines up with the diagram on the left side of the figure above. We can get the status of each BGP session as follows.
+
+```bash
+$ oxide system networking bgp show-status
+switch0
+=======
+Peer Address  Local ASN  Remote ASN  Session State  State Duration
+169.254.10.1  65547      64500       Established    15h 12m 56s 859ms
+
+switch1
+=======
+Peer Address  Local ASN  Remote ASN  Session State  State Duration
+169.254.20.1  65547      64500       Established    15h 12m 58s 669ms
+```

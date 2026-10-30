@@ -1,0 +1,21 @@
+created: 20260628174102393
+modified: 20260628174201853
+tags: 
+title: Setting Terminal Variables
+type: text/vnd.tiddlywiki
+
+[[Open This|Setting Terminal Variables]]
+
+---
+
+<<<Windows PowerShell
+```bash
+PS C:\Users\Michael> $SILO_NAME = "test-suite-silo"
+PS C:\Users\Michael> oxide silo quotas view --silo $SILO_NAME
+{
+  "cpus": 0,
+  "memory": 0,
+  "silo_id": "ed9c40ee-6700-4cb4-b3c4-34459426fa78",
+  "storage": 0
+}
+```

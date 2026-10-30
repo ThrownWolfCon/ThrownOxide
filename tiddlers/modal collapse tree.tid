@@ -1,0 +1,19 @@
+created: 20260510161235853
+modified: 20260711231157713
+tags: wikidev
+title: modal collapse tree
+type: text/vnd.tiddlywiki
+
+[[Open This|modal collapse tree]]
+
+---
+
+```html
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "xxxxxxxxxxxx">>
+</div>
+</div>
+</$linkcatcher>
+```

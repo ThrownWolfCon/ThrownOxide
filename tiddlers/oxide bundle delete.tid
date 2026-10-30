@@ -1,0 +1,64 @@
+created: 20260627171730401
+modified: 20260711171005391
+tags: [[oxide bundle]]
+title: oxide bundle delete
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle delete]]
+
+---
+
+<<copy-to-clipboard "oxide bundle delete --bundle-id">>
+
+```bash
+oxide bundle delete --bundle-id
+```
+
+```bash
+hart@hart-Precision-7740:~$ oxide bundle delete --bundle-id 5e8e8470-cba6-4afb-9ef0-052961f10c03
+
+hart@hart-Precision-7740:~$ oxide bundle list
+
+[
+  {
+    "id": "5e8e8470-cba6-4afb-9ef0-052961f10c03",
+    "reason_for_creation": "Created by external API",
+    "state": "destroying",
+    "time_created": "2026-07-11T16:55:54.793290Z"
+  }
+]
+
+```
+
+```json
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle list | jq -C .
+[
+  {
+    "id": "c0fc1c8f-ff9b-4c16-9355-9f905bdebc64",
+    "reason_for_creation": "Created by external API",
+    "state": "active",
+    "time_created": "2026-06-30T14:11:08.809748Z"
+  },
+  {
+    "id": "830af9a5-536b-4187-9b8a-3894007ad495",
+    "reason_for_creation": "Created by external API",
+    "state": "active",
+    "time_created": "2026-06-30T17:50:36.538437Z"
+  }
+]
+
+###
+
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle delete --bundle-id c0fc1c8f-ff9b-4c16-9355-9f905
+bdebc64
+
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle list | jq -C .
+[
+  {
+    "id": "830af9a5-536b-4187-9b8a-3894007ad495",
+    "reason_for_creation": "Created by external API",
+    "state": "active",
+    "time_created": "2026-06-30T17:50:36.538437Z"
+  }
+]
+```

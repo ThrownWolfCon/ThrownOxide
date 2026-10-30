@@ -1,0 +1,15 @@
+created: 20260602235357973
+modified: 20260623175316719
+tags: [[2. Creating an instance]]
+title: 2.1 Hardware
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Hardware]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_hardware
+
+Under Hardware you have the option to set up a pre-configured choice — a high CPU instance, a high memory instance, or a general purpose instance — or to set your own CPU and memory values. Leave it on the default of 2 vCPUs and 8 GiB RAM.
+
+[img width="100%" [https://docs.oxide.computer/img/qs-create-instance-2.png]]

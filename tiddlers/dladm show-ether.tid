@@ -1,0 +1,18 @@
+created: 20260530162902931
+modified: 20260711231307435
+tags: dladm
+title: dladm show-ether
+type: text/vnd.tiddlywiki
+
+[[Open This|dladm show-ether]]
+
+---
+
+wolfoxide
+
+```bash
+# dladm show-ether
+LINK            PTYPE    STATE    AUTO  SPEED-DUPLEX                    PAUSE
+bge0            current  up       yes   1G-f                            bi
+bge1            current  unknown  no    0G                              none
+```

@@ -1,0 +1,11 @@
+created: 20260530181759225
+modified: 20260530181818530
+tags: [[zfs commands]]
+title: zfs create -V 8G rpool/dump
+type: text/vnd.tiddlywiki
+
+[[Open This|zfs create -V 8G rpool/dump]]
+
+---
+
+What this does:

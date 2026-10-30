@@ -1,0 +1,13 @@
+created: 20260501192238466
+modified: 20260501192822203
+tags: [[Aim Docker]]
+title: Portainer
+type: text/vnd.tiddlywiki
+
+[[Open This|Portainer]]
+
+---
+
+```yml
+0c3feae4903f   portainer/portainer-ce:2.27.1                "/portainer"             14 months ago   Up 5 days               0.0.0.0:8000->8000/tcp, :::8000->8000/tcp, 0.0.0.0:9443->9443/tcp, :::9443->9443/tcp, 9000/tcp                                            portainer
+```

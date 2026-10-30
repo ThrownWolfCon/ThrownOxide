@@ -1,0 +1,34 @@
+created: 20260530154028351
+modified: 20260711222206226
+tags: [[Helios Commands]] WolfOxide
+title: svcadm
+type: text/vnd.tiddlywiki
+
+[[Open This|svcadm]]
+
+---
+
+
+```bash
+michael@wolfoxide:~$ svcadm
+Usage: svcadm [-S <state>] [-v] [-Z | -z zone] [cmd [args ... ]]
+
+        svcadm enable [-rst] [<service> ...]    - enable and online service(s)
+        svcadm disable [-c comment] [-st] [<service> ...] - disable service(s)
+        svcadm restart [-d] [<service> ...]     - restart specified service(s)
+        svcadm refresh [<service> ...]          - re-read service configuration
+        svcadm mark [-It] <state> [<service> ...] - set maintenance state
+        svcadm clear [<service> ...]            - clear maintenance state
+        svcadm milestone [-d] <milestone>       - advance to a service milestone
+
+        Services can be specified using an FMRI, abbreviation, or fnmatch(7)
+        pattern, as shown in these examples for svc:/network/smtp:sendmail
+
+        svcadm <cmd> svc:/network/smtp:sendmail
+        svcadm <cmd> network/smtp:sendmail
+        svcadm <cmd> network/*mail
+        svcadm <cmd> network/smtp
+        svcadm <cmd> smtp:sendmail
+        svcadm <cmd> smtp
+        svcadm <cmd> sendmail
+```

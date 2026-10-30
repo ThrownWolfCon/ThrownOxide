@@ -1,0 +1,23 @@
+created: 20260530155345175
+modified: 20260611205321124
+tags: Helios
+title: Installing on a physical machine using the ISO
+type: text/vnd.tiddlywiki
+
+[[Open This|Installing on a physical machine using the ISO]]
+
+---
+
+If you want to install the OS on a physical machine, there is a crude installation image available that can be booted as either an ISO or a USB disk.
+
+First, grab the images from the download area at: https://pkg.oxide.computer/install/latest/
+
+This directory contains three ISO images, each of which is configured to use a different device for the operating system console; ttya (aka COM1), ttyb (aka COM2), or vga (the framebuffer and keyboard). If you have a system with an IPMI Serial-over-LAN (SOL) facility, you probably want ttyb. <span style="font-family: 'Beleren', sans-serif; color: #00d892;">If you have a desktop with a keyboard and monitor, you probably want vga.</span> Prefer serial if you can!
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Installing on a physical machine using the ISO">>
+</div>
+</div>
+</$linkcatcher>

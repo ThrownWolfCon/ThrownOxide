@@ -1,0 +1,13 @@
+created: 20260501194929653
+modified: 20260501195042682
+tags: [[Aim Docker]]
+title: Navidrome
+type: text/vnd.tiddlywiki
+
+[[Open This|Navidrome]]
+
+---
+
+```yml
+b6a66ec7a793   deluan/navidrome:latest                      "/app/navidrome"         15 months ago   Up 5 days (healthy)     0.0.0.0:4533->4533/tcp, :::4533->4533/tcp                                                                                                 navidrome
+```

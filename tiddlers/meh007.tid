@@ -1,0 +1,15 @@
+created: 20260701161408967
+modified: 20260701161430114
+tags: 
+title: meh007
+type: text/vnd.tiddlywiki
+
+Initial TLS certificates to be used for the new Silo’s console and API endpoints; should be valid for the Silo’s DNS name which follows the convention $SILO_NAME.sys.$OXIDE_DOMAIN_NAME or *.sys.$OXIDE_DOMAIN_NAME for a wildcard certificate:
+
+    * name: A short name of the certificate
+
+    * description: Certificate description (e.g., issuer, expiration date)
+
+    * cert: PEM-formatted string containing public certificate chain
+
+    * key: PEM-formatted string containing private key

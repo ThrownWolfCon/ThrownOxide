@@ -1,0 +1,23 @@
+created: 20260602231456403
+modified: 20260614143204450
+tags: [[1. User resource management]] [[Mention to Oxide]]
+title: 1.3 Identity & access management
+type: text/vnd.tiddlywiki
+
+[[Open This|1.3 Identity & access management]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#iam-policy
+
+There are two parts to the Oxide IAM model:
+
+* Identity Management: configured at the silo level for managing users and groups
+
+* Access Management: configured at different levels of the system (fleet, silo project) to govern what each user and group can see and act on
+
+<<<Found misspell, lol
+[img[./files/images/Screenshot 2026-06-14 082558.png]]
+
+[img[./files/images/Screenshot 2026-06-14 082620.png]]
+<<<

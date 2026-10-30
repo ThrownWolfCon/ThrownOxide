@@ -1,0 +1,11 @@
+created: 20260612224517910
+modified: 20260612224605565
+tags: 
+title: reg-blue-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>Info</strong><br>
+  Your info text goes here.
+</div>

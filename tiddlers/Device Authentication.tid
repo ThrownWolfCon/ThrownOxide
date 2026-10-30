@@ -1,0 +1,13 @@
+created: 20260528144649449
+modified: 20260711231454101
+tags: [[Home Lab Oxide]]
+title: Device Authentication
+type: text/vnd.tiddlywiki
+
+[[Open This|Device Authentication]]
+
+---
+
+```bash
+oxide --insecure auth login --host http://127.0.0.1:12220
+```

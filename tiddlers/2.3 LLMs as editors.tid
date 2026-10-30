@@ -1,0 +1,11 @@
+created: 20260605211942585
+modified: 20260605221133579
+tags: [[RFD 576 2 Uses of LLMs]]
+title: 2.3 LLMs as editors
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 LLMs as editors]]
+
+---
+
+LLMs can be excellent editors. Engaging an LLM late in the creative process (that is, with a document already written and broadly polished), allows for LLMs to provide helpful feedback on structure, phrasing, etc. — all without danger of losing one’s own voice. A cautionary note here: LLMs are infamous pleasers — and you may find that the breathless praise from an LLM is in fact more sycophancy than analysis. This becomes more perilous the earlier one uses an LLM in the writing process: the less polish a document already has, the more likely it is that an LLM will steer to something wholly different — at once praising your groundbreaking genius while offering to rewrite it for you.

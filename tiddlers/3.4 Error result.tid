@@ -1,0 +1,27 @@
+created: 20260616171401146
+modified: 20260616171442169
+tags: [[3. Viewing the log]]
+title: 3.4 Error result
+type: text/vnd.tiddlywiki
+
+[[Open This|3.4 Error result]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log#_error_result
+
+Error result
+
+When the operation fails, the audit log entry looks the same except for the result value.
+
+```yaml
+{
+  // ...
+  "result": {
+    "kind": "error",
+    "http_status_code": 400,
+    "error_code": "InvalidRequest",
+    "error_message": "project to be deleted contains a vpc: default"
+  }
+}
+```

@@ -1,0 +1,20 @@
+created: 20260504210103304
+modified: 20260507035108706
+tags: [[Operations Perspective]]
+title: Incident and Problem Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Incident and Problem Management]]
+
+---
+
+Incident and Problem Management
+
+Quickly restore service operations and minimize adverse business impact.
+
+With cloud adoption, processes for response to service issues and application health issues can be highly automated, resulting in greater service uptime. As you move to a more distributed operating model, streamlining interactions between relevant teams,
+tools, and processes will help you accelerate the resolution of critical or complex incidents. Define escalation paths in your runbooks, including what triggers escalation, and procedures for escalation.
+
+!!<span style="color: #db89c8;">Practice incident response game days</span> 
+
+and incorporate lessons learned in your runbooks. Identify incident patterns to determine problems and corrective measures. Leverage chatbots and collaboration tools to connect your operations teams, tools, and workflows. Leverage blameless post-incident analyses to identify contributing factors of incidents and develop corresponding action plans.

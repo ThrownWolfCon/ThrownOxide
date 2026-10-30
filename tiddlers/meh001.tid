@@ -1,0 +1,24 @@
+created: 20260609212724671
+modified: 20260609221752642
+tags: 
+title: meh001
+type: text/vnd.tiddlywiki
+
+```bash
+### 1. Turn off ipfilter temporarily so we can work
+
+pfexec svcadm disable network/ipfilter
+
+### (if that says unknown FMRI, try: pfexec svcadm disable ipfilter)
+
+### 2. Tear down the conflicting fake network completely
+
+pfexec ipadm delete-addr fake_external0/external
+
+pfexec ipadm delete-if fake_external0
+
+pfexec dladm delete-vnic fake_external0
+
+pfexec dladm delete-etherstub fake_external_stub0
+
+```

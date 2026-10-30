@@ -1,0 +1,50 @@
+created: 20260609151335056
+modified: 20260609151517091
+tags: 
+title: custom note response show
+type: text/vnd.tiddlywiki
+
+<div class="demo-container">
+    <h2>Note Response (Lighter Green)</h2>
+    <div class="custom-note-response">
+      <span class="alert-icon">📝</span>
+      <strong>Note:</strong> This is the new lighter green response box.<br>
+      Perfect for follow-up notes, replies, or sub-sections inside a main note.
+    </div>
+  </div>
+
+  <div class="demo-container">
+    <h2>Info Response (Lighter Blue)</h2>
+    <div class="custom-info-response">
+      <span class="alert-icon">ℹ️</span>
+      <strong>Info:</strong> Additional information or clarification goes here.<br>
+      This is the lighter blue response variant you requested.
+    </div>
+  </div>
+
+  <div class="demo-container">
+    <h2>Tip Response (Lighter Purple)</h2>
+    <div class="custom-tip-response">
+      <span class="alert-icon">💡</span>
+      <strong>Tip:</strong> Here’s a helpful suggestion or pro tip.<br>
+      Now in the lighter purple response style.
+    </div>
+  </div>
+
+  <div class="demo-container">
+    <h2>Important Response (Lighter Amber)</h2>
+    <div class="custom-important-response">
+      <span class="alert-icon">⭐</span>
+      <strong>Important:</strong> Key information that needs attention.<br>
+      Lighter amber response version.
+    </div>
+  </div>
+
+  <div class="demo-container">
+    <h2>Warning Response (Lighter Red)</h2>
+    <div class="custom-warning-response">
+      <span class="alert-icon">⚠️</span>
+      <strong>Warning:</strong> Something you should be aware of.<br>
+      This is the new lighter red response box.
+    </div>
+  </div>

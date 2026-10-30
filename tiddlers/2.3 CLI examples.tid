@@ -1,0 +1,39 @@
+created: 20260626161025112
+modified: 20260628174726167
+tags: [[2. Quota management]]
+title: 2.3 CLI examples
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 CLI examples]]
+
+---
+
+To update silo quotas:
+
+```bash
+oxide silo quotas update --silo $SILO_NAME --cpus $VCPU_COUNT \
+--memory $MEMORY_IN_BYTES --storage $STORAGE_IN_BYTES
+```
+
+To view the current quota and utilization of a certain silo:
+
+```bash
+oxide silo quotas view --silo $SILO_NAME
+```
+
+  <div class="demo-container">
+    <div class="custom-info-response">
+      <span class="alert-icon">ℹ️</span>
+      <strong>Info:</strong><br><br>
+To use `$SILO_NAME` see:<br><br>
+      [[Setting Terminal Variables]]
+    </div>
+  </div>
+
+
+
+To view the current quota and utilization of all silos:
+
+```bash
+oxide silo utilization list
+```

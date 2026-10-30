@@ -1,0 +1,39 @@
+created: 20260501031246152
+modified: 20260506231814796
+tags: [[Application Migration Strategies]] [[Seven Common Migration Strategies]]
+title: Retire
+type: text/vnd.tiddlywiki
+
+[[Open This|Retire]]
+
+---
+
+Retiring
+
+Retiring is the process of decommissioning applications that are no longer needed or provide minimal business value.
+
+This strategy helps reduce unnecessary complexity, cost, and maintenance overhead.
+
+When to use retiring: Retiring is ideal when applications are redundant, unused, or replaced by newer systems.
+
+Advantages of retiring:
+
+Cost savings: Eliminates maintenance and infrastructure expenses.
+Simplification: Reduces system complexity.
+Efficiency: Focuses resources on valuable applications.
+
+Limitations of retiring:
+
+Data loss risk: Important data must be preserved before decommissioning.
+Dependency issues: Other systems may rely on the retired application.
+Change management: Requires coordination across teams.
+
+Step-by-step guide for retiring:
+
+* [[Retire Assessment]]: Identify unused or low-value applications.
+* [[Retire Analysis]]: Check dependencies and data requirements.
+* [[Retire Planning]]: Develop a decommissioning strategy.
+* [[Retire Data Handling]]: Archive or migrate important data.
+* [[Retire Execution]]: Shut down and remove the application.
+* [[Retire Validation]]: Ensure no disruptions to dependent systems.
+* [[Retire Documentation]]: Record changes and update system inventories.

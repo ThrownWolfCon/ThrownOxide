@@ -1,0 +1,15 @@
+created: 20250409221529148
+modified: 20250409221925104
+tags: nmap
+title: nmap: UDP Scans
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap: UDP Scans]]
+
+---
+
+`-sU` UDP Scan
+
+UDP Scans (-sU)
+
+When a packet is sent to an open UDP port, there should be no response. When this happens, Nmap refers to the port as being `open|filtered`. In other words, it suspects that the port is open, but it could be firewalled. If it gets a UDP response (which is very unusual), then the port is marked as open. More commonly there is no response, in which case the request is sent a second time as a double-check. If there is still no response then the port is marked open|filtered and Nmap moves on.

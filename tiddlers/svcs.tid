@@ -1,0 +1,110 @@
+created: 20260703201845220
+modified: 20260703202019892
+tags: [[Helios Commands]]
+title: svcs
+type: text/vnd.tiddlywiki
+
+[[Open This|svcs]]
+
+---
+
+```bash
+michael@horkew:~$ svcs --help
+svcs: illegal option -- help
+Usage: svcs [-aHpv] [-o col[,col ... ]] [-R restarter] [-sS col] [-Z | -z zone ]
+            [<service> ...]
+       svcs -d | -D [-Hpv] [-o col[,col ... ]] [-sS col] [-Z | -z zone ]
+            [<service> ...]
+       svcs [-l | -L] [-Z | -z zone] <service> ...
+       svcs -x [-v] [-Z | -z zone] [<service> ...]
+       svcs -?
+michael@horkew:~$ svcs
+STATE          STIME    FMRI
+legacy_run     20:09:00 lrc:/etc/rc2_d/S20sysetup
+legacy_run     20:09:00 lrc:/etc/rc2_d/S81dodatadm_udaplt
+legacy_run     20:09:00 lrc:/etc/rc2_d/S89PRESERVE
+legacy_run     20:09:01 lrc:/etc/rc2_d/S99webmin
+disabled       20:08:44 svc:/platform/i86pc/acpihpd:default
+online         20:08:35 svc:/system/svc/restarter:default
+online         20:08:37 svc:/system/early-manifest-import:default
+online         20:08:38 svc:/network/netcfg:default
+online         20:08:38 svc:/network/datalink-management:default
+online         20:08:39 svc:/network/ip-interface-management:default
+online         20:08:40 svc:/system/filesystem/root:default
+online         20:08:40 svc:/system/scheduler:default
+online         20:08:40 svc:/system/cryptosvc:default
+online         20:08:40 svc:/system/auditset:default
+online         20:08:40 svc:/network/loopback:default
+online         20:08:40 svc:/network/ipmp:default
+online         20:08:42 svc:/system/boot-archive:default
+online         20:08:42 svc:/system/filesystem/usr:default
+online         20:08:43 svc:/system/pfexec:default
+online         20:08:43 svc:/system/device/local:default
+online         20:08:43 svc:/network/ipsec/ipsecalgs:default
+online         20:08:43 svc:/system/filesystem/minimal:default
+online         20:08:43 svc:/network/ipsec/policy:default
+online         20:08:43 svc:/system/hostid:default
+online         20:08:43 svc:/system/logadm-upgrade:default
+online         20:08:43 svc:/system/zones-monitoring:default
+online         20:08:43 svc:/system/pkgserv:default
+online         20:08:43 svc:/system/rmtmpfiles:default
+online         20:08:44 svc:/system/resource-mgmt:default
+online         20:08:44 svc:/system/rbac:default
+online         20:08:44 svc:/system/name-service-cache:default
+online         20:08:44 svc:/system/power:default
+online         20:08:44 svc:/system/keymap:default
+online         20:08:44 svc:/system/sysevent:default
+online         20:08:44 svc:/network/npiv_config:default
+online         20:08:44 svc:/system/dbus:default
+online         20:08:44 svc:/system/device/fc-fabric:default
+online         20:08:44 svc:/milestone/devices:default
+online         20:08:45 svc:/system/device/audio:default
+online         20:08:45 svc:/system/manifest-import:default
+online         20:08:45 svc:/system/coreadm:default
+online         20:08:47 svc:/network/physical:default
+online         20:08:48 svc:/milestone/network:default
+online         20:08:48 svc:/system/identity:domain
+online         20:08:48 svc:/system/fcoe_initiator:default
+online         20:08:48 svc:/system/identity:node
+online         20:08:48 svc:/network/iptun:default
+online         20:08:48 svc:/system/picl:default
+online         20:08:48 svc:/network/initial:default
+online         20:08:48 svc:/milestone/single-user:default
+online         20:08:48 svc:/network/service:default
+online         20:08:48 svc:/network/dns/client:default
+online         20:08:48 svc:/milestone/sysconfig:default
+online         20:08:48 svc:/network/netmask:default
+online         20:08:49 svc:/milestone/name-services:default
+online         20:08:49 svc:/system/utmp:default
+online         20:08:49 svc:/system/console-login:default
+online         20:08:50 svc:/system/hal:default
+online         20:08:52 svc:/network/routing-setup:default
+online         20:08:53 svc:/system/filesystem/local:default
+online         20:08:53 svc:/network/rpc/bind:default
+online         20:08:53 svc:/system/sac:default
+online         20:08:53 svc:/network/routing/ndp:default
+online         20:08:53 svc:/system/cron:default
+online         20:08:53 svc:/network/inetd:default
+online         20:08:54 svc:/system/filesystem/autofs:default
+online         20:08:54 svc:/network/ipv6-forwarding:default
+online         20:08:54 svc:/network/rpc/gss:default
+online         20:08:54 svc:/network/rpc/smserver:default
+online         20:08:54 svc:/network/security/ktkt_warn:default
+online         20:08:58 svc:/network/ssh:default
+online         20:08:59 svc:/system/dumpadm:default
+online         20:08:59 svc:/system/system-log:default
+online         20:08:59 svc:/network/shares/group:default
+online         20:08:59 svc:/network/shares/group:zfs
+online         20:09:00 svc:/network/dns/multicast:default
+online         20:09:00 svc:/system/boot-archive-update:default
+online         20:09:01 svc:/milestone/multi-user:default
+online         20:09:01 svc:/system/intrd:default
+online         20:09:01 svc:/system/boot-config:default
+online         20:09:01 svc:/milestone/multi-user-server:default
+online         20:09:03 svc:/system/fmd:default
+online         20:09:04 svc:/system/zones:default
+online         20:10:19 svc:/system/update-man-index:default
+online         20:10:53 svc:/system/omicron/baseline:default
+maintenance    20:09:02 svc:/oxide/sled-agent:default
+```
+

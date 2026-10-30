@@ -1,0 +1,25 @@
+created: 20260526151026984
+modified: 20260614154442031
+tags: [[User Guides]]
+title: UG: Access Control
+type: text/vnd.tiddlywiki
+
+[[Open This|UG: Access Control]]
+
+---
+
+https://docs.oxide.computer/guides/configuring-access
+
+Oxide’s access control system uses predefined role-based permissions organized across three scopes: fleet, silo, and project. This guide is an overview of how authorization works in the Oxide system. Authorization is complex: while there are details that aren’t captured here, this guide should suffice to make sense of nearly everything you see in practice.
+
+[[1. Key terms]]
+
+[[2. Policy scopes]]
+
+[[2.1 Fleet]]
+
+[[2.2 Silo]]
+
+[[2.3 Project]]
+
+[[3. How roles cascade]]

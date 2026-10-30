@@ -1,0 +1,54 @@
+created: 20260522144935717
+modified: 20260522145246489
+tags: $:/tags/Stylesheet
+title: tree css
+type: text/vnd.tiddlywiki
+
+/* Level 1 */
+.tc-toc li a {
+  color: #00a86b !important;
+}
+/* Level 2 */
+.tc-toc li li a {
+  color: #ffb412 !important;
+}
+/* Level 3 */
+.tc-toc li li li a {
+  color: #3584e4 !important;
+}
+/* Level 4 */
+.tc-toc li li li li a {
+  color: #db89c8 !important;
+}
+/* Level 5 */
+.tc-toc li li li li li a {
+  color: #ff5555 !important;
+}
+/* Level 6 */
+.tc-toc li li li li li li a {
+  color: #61cf5a !important;
+}
+/* Level 7 */
+.tc-toc li li li li li li li a {
+  color: #00d892 !important;
+}
+/* Level 8 */
+.tc-toc li li li li li li li li a {
+  color: #e2ae84 !important;
+}
+/* Level 9 */
+.tc-toc li li li li li li li li li a {
+  color: #9b6b9e !important;
+}
+/* Level 10 */
+.tc-toc li li li li li li li li li li a {
+  color: #4c9f70 !important;
+}
+/* Level 11 */
+.tc-toc li li li li li li li li li li li a {
+  color: #e67e22 !important;
+}
+/* Level 12 */
+.tc-toc li li li li li li li li li li li li a {
+  color: #3498db !important;
+}

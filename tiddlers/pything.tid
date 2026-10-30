@@ -1,0 +1,73 @@
+created: 20260527234347485
+modified: 20260527234402635
+tags: 
+title: pything
+type: text/vnd.tiddlywiki
+
+```python
+from fastapi import FastAPI
+from pydantic import BaseModel
+import uuid
+
+app = FastAPI()
+
+# in-memory "cloud state"
+DB = {
+    "projects": {},
+    "instances": {},
+    "vpcs": {}
+}
+
+# --------------------
+# SYSTEM
+# --------------------
+@app.get("/v1/system/ping")
+def ping():
+    return {"status": "ok", "service": "fake-oxide"}
+
+# --------------------
+# PROJECTS
+# --------------------
+@app.get("/v1/projects")
+def list_projects():
+    return {"items": list(DB["projects"].values())}
+
+@app.post("/v1/projects")
+def create_project():
+    pid = str(uuid.uuid4())
+    proj = {"id": pid, "name": f"project-{pid[:6]}"}
+    DB["projects"][pid] = proj
+    return proj
+
+# --------------------
+# INSTANCES
+# --------------------
+@app.get("/v1/instances")
+def list_instances():
+    return {"items": list(DB["instances"].values())}
+
+@app.post("/v1/instances")
+def create_instance():
+    iid = str(uuid.uuid4())
+    inst = {
+        "id": iid,
+        "name": f"vm-{iid[:6]}",
+        "state": "running"
+    }
+    DB["instances"][iid] = inst
+    return inst
+
+# --------------------
+# VPCs
+# --------------------
+@app.get("/v1/vpcs")
+def list_vpcs():
+    return {"items": list(DB["vpcs"].values())}
+
+@app.post("/v1/vpcs")
+def create_vpc():
+    vid = str(uuid.uuid4())
+    vpc = {"id": vid, "name": f"vpc-{vid[:6]}"}
+    DB["vpcs"][vid] = vpc
+    return vpc
+```

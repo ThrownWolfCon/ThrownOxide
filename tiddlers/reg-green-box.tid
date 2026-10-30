@@ -1,0 +1,11 @@
+created: 20260612225257245
+modified: 20260612225334363
+tags: 
+title: reg-green-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br>
+  Your note text goes here.
+</div>

@@ -1,0 +1,18 @@
+created: 20260602231614206
+modified: 20260616164839097
+tags: [[GS: Key Concepts]]
+title: 2. Virtual resources
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Virtual resources]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "2. Virtual resources">>
+</div>
+</div>
+</$linkcatcher>
+

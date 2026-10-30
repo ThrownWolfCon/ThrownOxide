@@ -1,0 +1,22 @@
+created: 20260504201614693
+modified: 20260504201959525
+tags: [[Security Perspective]]
+title: Identity and Access Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Identity and Access Management]]
+
+---
+
+Identity and Access Management
+
+Manage identities and permissions at scale.
+
+You can create identities in AWS or connect your identity source, and then grant users the necessary permissions, so they can sign
+in, access, provision, or orchestrate AWS resources and integrated applications. Effective identity and access management helps
+validate that the right people and machines have access to the right resources under the right conditions. The AWS WellArchitected Framework describes relevant concepts, design principles, and architectural best practices to manage identities.
+These include: relying on a centralized identity provider; leveraging user groups and attributes for fine-grained access at scale and temporary credentials; and using strong signin mechanisms, such as multi-factor authentication (MFA).
+
+To control access by human and machine identities to AWS and your workloads, set permissions to specific service
+actions on specific resources under specific conditions. You should use the principle of least privilege, set permissions
+boundaries, and use service control policies so the right entities can access the right resources as your environment and user base grow. In addition, grant permissions based on attributes (ABAC) so your policies can scale, and continuously validate that your policies provide the protection that you need.

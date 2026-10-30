@@ -1,0 +1,17 @@
+created: 20260616172202514
+modified: 20260616172247696
+tags: [[OG: Audit Log]]
+title: 5. Planned features
+type: text/vnd.tiddlywiki
+
+[[Open This|5. Planned features]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log#_planned_features
+
+* Silo-scoped log list endpoint for silo administrators
+
+* Log ID of resource created
+
+* Log more details about changes made in create and update requests

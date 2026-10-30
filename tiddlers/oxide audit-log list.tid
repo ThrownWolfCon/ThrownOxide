@@ -1,0 +1,81 @@
+created: 20260627201323617
+modified: 20261029222856346
+tags: [[oxide audit-log]] [[Show Off]]
+title: oxide audit-log list
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide audit-log list]]
+
+---
+
+https://docs.oxide.computer/cli/audit-log/list
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide audit-log list
+
+error: the following required arguments were not provided:
+  --start-time <start-time>
+
+Usage: oxide audit-log list --start-time <start-time>
+
+For more information, try '--help'.
+```
+
+<<<10 hours back
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">With jq:</span> <<copy-to-clipboard """
+oxide audit-log list --start-time "$(date -u -d '10 hours ago' +"%Y-%m-%dT%H:%M:%SZ")" | jq -C .
+""">>
+
+```bash
+oxide audit-log list --start-time "$(date -u -d '10 hours ago' +"%Y-%m-%dT%H:%M:%SZ")" | jq -C .
+```
+
+<span style="font-family: 'Beleren', sans-serif; color: #c90076;">Without jq:</span> <<copy-to-clipboard """
+oxide audit-log list --start-time "$(date -u -d '10 hours ago' +"%Y-%m-%dT%H:%M:%SZ")
+""">>
+
+```bash
+oxide audit-log list --start-time "$(date -u -d '10 hours ago' +"%Y-%m-%dT%H:%M:%SZ")
+```
+
+<<<
+
+---
+
+```bash
+oxide audit-log list --start-time "$(date -u -d '1 hour ago' +"%Y-%m-%dT%H:%M:%SZ")" | jq -C .
+```
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide audit-log list --start-time 2026-06-25T00:00:00Z --limit 80 | grep -i error
+      "kind": "error",
+      "error_code": "InvalidValue",
+      "error_message": "unsupported value for \"alert_class\": webhook receivers cannot subscribe to probes",
+      "kind": "error",
+      "error_code": "Internal",
+      "error_message": "Internal Server Error",
+```
+
+---
+
+''Options''
+
+`--end-time`
+
+Exclusive
+
+`--limit`
+
+Maximum number of items returned by a single call
+
+`--profile`
+
+Configuration profile to use for commands
+
+`--sort-by`
+
+time_and_id_ascendingtime_and_id_descending
+
+`--start-time`
+
+Required, inclusive

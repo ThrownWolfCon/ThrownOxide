@@ -1,0 +1,40 @@
+created: 20260604134226485
+modified: 20260604134513024
+tags: RFD
+title: RFD 83
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 83]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0083
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br>
+ Note
+This RFD was the mentioned in an Oxide and Friends episode, Cultural Idiosyncrasies.
+</div>
+
+
+Building something complicated together is a challenge in many ways, not least that it requires us to both collaborate and to work on our own. Regardless of job function, working on one’s own requires focus — and many kinds of tasks require the kind of deep focus that takes time to build: like a hard rock miner to a deep stope, focused work requires that we ride a cage far below the surface distractions before we can begin in earnest. In this regard, a meeting — even a valuable and necessary one — can have a disruptive blast radius that spreads beyond its putative time bounds. To preserve opportunities for prolonged focus during the working day, we propose a day dedicated to focused work: Focus Day.
+Focus Day
+
+This proposal (regrettably) does not create an eighth day of the week known only to Oxide — so to create a day for exclusively focused work, we must take it from one of the traditional working days. We propose Wednesday, for a number of reasons:
+
+    It bounds the number of consecutive days that are exclusively meetings to two, reducing the total fatigue that can come from four (or five!) days deprived of focused work
+
+    It allows collaborative work on Monday and Tuesday to inform individual focused work on Wednesday
+
+    It allows focused work on Wednesday to inform collaborative work on Thursday and Friday
+
+Scheduling meetings
+
+Preserving Focus Day requires shared discipline: we must not schedule meetings on Focus Day — and we must resist the temptation to make exceptions when third parties feel non-negotiable. This will put more pressure on other days of the week (though Friday is often an underscheduled day). Further pressure will be applied by giving enough buffer around meetings to allow for preparation time, as well as for post-meeting huddles (which have proved to be invaluable when having meetings with third parties). Finally, we need to be mindful of Zoom Fatigue whereby video calls extract a particularly high mental toll. This may create an overconstrained problem, but the backpressure we must apply should be to meetings rather than allowing meetings to drown out any hope of focused work.
+Making exceptions
+
+With respect to keeping Focus Day free of meetings, exceptions do happen, but they should be exceptional: they should be one-time meetings that all participants agree are urgent enough to merit breaking up a Focus Day. In general, meetings should always seek to find a different day.
+Communication on Focus Day
+
+In terms of communicating with one another, we must treat Focus Day with respect for others' need to focus: we needn’t treat the day as one of imposed silence, but we also should have no expectations about communication from our co-workers; maybe they are available and maybe they aren’t. We will retain the huddle on Focus Day, including its video simulcast — but (as with any other day of the week), the video simulcast will be entirely optional.

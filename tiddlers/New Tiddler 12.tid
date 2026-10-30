@@ -1,0 +1,41 @@
+created: 20260701034244859
+modified: 20260701170256654
+tags: $:/tags/Stylesheet
+title: New Tiddler 12
+type: text/vnd.tiddlywiki
+
+/* Oxide-inspired Dark Theme - Main syntax color set to #00d892 */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #161b22;
+  color: #00d892;               /* Main regular syntax color */
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Syntax element colors */
+.hljs-keyword { color: #e2ae84; }
+.hljs-built_in { color: #d2a8ff; }
+.hljs-string { color: #a5d6ff; }
+.hljs-comment { color: #8b949e; font-style: italic; }
+.hljs-number { color: #79c0ff; }
+.hljs-variable { color: #ffa657; }
+.hljs-function { color: #d2a8ff; }
+.hljs-meta { color: #79c0ff; }
+.hljs-attr { color: #79c0ff; }
+.hljs-section { color: #c90076; }
+
+
+}
+
+/* Light mode fallback */
+@media (prefers-color-scheme: light) {
+  .hljs {
+    background: #f8f9fa;
+    color: #00d892;
+    border-color: #e1e4e8;
+  }
+}

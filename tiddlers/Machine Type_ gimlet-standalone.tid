@@ -1,0 +1,11 @@
+created: 20260607023424485
+modified: 20260607023524505
+tags: [[1.3 Picking a "machine" type]]
+title: Machine Type: gimlet-standalone
+type: text/vnd.tiddlywiki
+
+[[Open This|Machine Type: gimlet-standalone]]
+
+---
+
+gimlet-standalone (real Oxide server hardware deployed in a real Oxide rack, but running as a separate single-node system)

@@ -1,0 +1,13 @@
+created: 20260531015321689
+modified: 20260531024348194
+tags: [[1. Prerequisites]] [[Not Supported]]
+title: 1.1 Bare-metal operating system
+type: text/vnd.tiddlywiki
+
+[[Open This|1.1 Bare-metal operating system]]
+
+---
+
+This guide assumes that you have a system running [[Helios]] on a bare-metal system.
+
+1. You can in principle use a VM, but you wouldn’t be able to provision Instances because <span style="color: #c90076;">nested virtualization is not supported.</span>

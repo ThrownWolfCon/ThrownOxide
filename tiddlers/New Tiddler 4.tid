@@ -1,0 +1,95 @@
+created: 20260607184731413
+modified: 20260607185441015
+tags: 
+title: New Tiddler 4
+type: text/vnd.tiddlywiki
+
+```
+ssh -L 12220:[fd00:1122:3344:101::c]:12228 michael@192.168.1.21
+```
+
+🧾 Oxide / Omicron Debug & SSH Tunnel Command Summary
+🔎 1. Check what’s running on the Omicron/Nexus host (illumos)
+svcs | grep -i omicron
+
+Shows Omicron-related SMF services (baseline, nexus, etc.)
+
+ps -ef | grep -i nexus
+ps -ef | grep -i omicron
+
+Confirms Nexus and related control-plane processes are running.
+
+zoneadm list -cv
+
+Lists all zones (Nexus, CockroachDB, Crucible, DNS, etc.) and helps identify where services live.
+
+netstat -an -f inet | grep LISTEN
+
+Shows listening ports (used to discover internal service endpoints like 12220/12228/80).
+
+🌐 2. Inspect service endpoints
+ipadm show-addr
+
+Displays IPs (important: internal IPv6 + 172.30.x control network used by Omicron services).
+
+netstat -an | grep LISTEN
+
+Used inside zones to identify which services bind to which ports.
+
+🔌 3. SSH tunnel setup (core step)
+❌ Wrong target (internal service layer)
+ssh -L 12220:[fd00:1122:3344:101::c]:12228 user@host
+
+Tunneled to backend Nexus/auth service → partial API only.
+
+✔ Correct target (API gateway layer)
+ssh -L 12220:172.30.2.7:80 michael@192.168.1.21
+
+Forwards Windows localhost → Omicron API gateway (required for CLI login).
+
+🧪 4. Test tunnel from Windows
+Test-NetConnection 127.0.0.1 -Port 12220
+
+Checks if SSH tunnel is actually reachable.
+
+curl.exe -v http://127.0.0.1:12220/
+
+Basic HTTP test (must NOT reset connection).
+
+curl.exe -v http://127.0.0.1:12220/device/verify
+
+Checks whether full OAuth device flow endpoint exists (only works on gateway layer).
+
+🔐 5. CLI login flow (correct method)
+oxide --insecure auth login --host http://127.0.0.1:12220
+
+Starts device-code authentication flow.
+
+Output:
+
+opens /device/verify
+provides login code
+completes token exchange automatically
+🧪 6. Manual API exploration (what we tried, but not recommended)
+curl -v http://127.0.0.1:12220/device/auth
+
+Raw auth endpoint (requires API version + form encoding).
+
+curl -v -H "api-version: 1.0.0" ...
+
+Discovered strict API versioning requirements.
+
+curl -v -X POST -H "Content-Type: application/x-www-form-urlencoded" ...
+
+Required for backend auth endpoint, but still not full CLI flow.
+
+⚠️ Key failures we hit (important learning signals)
+Connection reset by peer → wrong service layer
+os error 10054 → backend rejecting CLI auth flow
+missing api-version → internal API requirement
+missing client_id → raw auth endpoint requirement
+/device/verify reset → endpoint not exposed on backend layer
+🧠 Final mental model
+12228 → internal auth backend ❌ (not CLI-facing)
+172.30.2.7:80 → API gateway ✔ (correct for oxide login)
+oxide CLI → ONLY works against gateway layer

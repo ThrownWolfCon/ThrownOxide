@@ -1,0 +1,39 @@
+created: 20260703150221774
+modified: 20260703152238886
+tags: Issue
+title: Still waiting for rack initialization
+type: text/vnd.tiddlywiki
+
+[[Open This|Still waiting for rack initialization]]
+
+---
+
+Inside oxz_nexus_*:
+
+```json
+{
+  "msg": "Still waiting for rack initialization",
+  "v": 0,
+  "name": "nexus",
+  "level": 30,
+  "time": "2026-07-03T15:21:14.425159425Z",
+  "hostname": "oxz_nexus_7ac24e9e-32e8-49a9-a192-0cbfeb3d0ec8",
+  "pid": 8857,
+  "component": "nexus",
+  "server_context": "ServerContext",
+  "rack": {
+    "identity": {
+      "id": "794ab0c8-dca6-497b-b469-093322a75da4",
+      "time_created": "2026-07-02T14:35:30.651049Z",
+      "time_modified": "2026-07-02T14:35:30.651049Z"
+    },
+    "initialized": false,
+    "rack_subnet": "fd00:1122:3344:100::/56"
+  },
+  "file": "nexus/src/app/rack.rs:705"
+}
+```
+
+AND:
+
+Rack ... initialized: false

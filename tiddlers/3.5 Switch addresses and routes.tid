@@ -1,0 +1,17 @@
+created: 20260602232858996
+modified: 20260613005540811
+tags: [[3. Rack network management]]
+title: 3.5 Switch addresses and routes
+type: text/vnd.tiddlywiki
+
+[[Open This|3.5 Switch addresses and routes]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_switch_addresses_and_routes
+
+An arbitrary number of IPv4 or IPv6 addresses may be added to any type of interface. Adding an address to a non-loopback interface automatically creates a route whose destination is the subnet prefix of the address. This route is called an on-link route, meaning that it does not have a nexthop gateway. Layer-2 frame information for packets egressing along this type of route is acquired from ARP or NDP neighbor tables for IPv4 and IPv6 respectively. On-link routes may not be manually created or destroyed, they belong to an address and share a lifetime with that address.
+
+''Interface routes'' map a destination prefix to an interface. They depend on IPv6 router advertisements to work. The target interface must have an IPv6 link-local address, and the switch must have received a router advertisement on that address. The switch uses the mac address of the router it received an advertisement from, to form the L2 frame of packets egressing along an interface route. Note that interface routes can have either an IPv4 or IPv6 destination prefix.
+
+''Nexthop routes'' associate a destination prefix with a nexthop address. The nexthop address must be reachable through an existing chain of routes.

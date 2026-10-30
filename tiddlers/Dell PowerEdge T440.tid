@@ -1,0 +1,23 @@
+created: 20260529174257387
+modified: 20260605032238974
+tags: [[Home Lab Oxide]] thrive_10
+title: Dell PowerEdge T440
+type: text/vnd.tiddlywiki
+
+[[Open This|Dell PowerEdge T440]]
+
+---
+
+Switch to HBA Mode
+
+---
+
+Resetting the iDRAC on a Dell PowerEdge T440 can be done without rebooting the server. The easiest method is to press and hold the System Identification (i) button on the front or rear panel for at least 16 seconds until the fans spin at full speed
+
+(root / calvin) https://192.168.1.37/restgui/start.html
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>SCREW YOU!! no virtual console...GET A JOB HIPPIE!</strong><br><br>
+  LIC501: A required license is missing or expired. Obtain an appropriate license then try again. If the problem persists, contact technical support. Refer to your product documentation to choose the contact method that is convenient for you.
+</div>

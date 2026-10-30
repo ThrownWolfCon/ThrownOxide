@@ -1,0 +1,40 @@
+created: 20260612223748697
+modified: 20260612224802563
+tags: 
+title: Cool thing
+type: text/vnd.tiddlywiki
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Rack</strong><br>
+  
+ <div class="demo-container">
+   
+    <div class="custom-note-response">
+      <span class="alert-icon">📝</span>
+      <strong>Silo:</strong> This is the new lighter green response box.<br>
+      
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>Projects</strong><br>
+  
+  <div class="demo-container">
+    <h2>Info Response (Lighter Blue)</h2>
+    <div class="custom-info-response">
+      <span class="alert-icon">ℹ️</span>
+      <strong>Instance:</strong> <br><br>
+<$transclude tiddler="reg-blue-box" mode="block"/>
+    </div>
+  </div>
+</div>
+    </div>
+
+  <div class="demo-container">
+    <div class="custom-info-response">
+      <span class="alert-icon">ℹ️</span>
+      <strong>Info:</strong><br><br>
+      This is the lighter blue response variant you requested.
+    </div>
+  </div>
+  </div>
+</div>

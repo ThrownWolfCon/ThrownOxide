@@ -1,0 +1,14 @@
+created: 20260508212430897
+modified: 20260508213007220
+tags: 
+title: longblock02
+type: text/vnd.tiddlywiki
+
+* Before applying for the role, you should:
+* Learn enough about our product to understand what we’re building
+* Listen to "[[Hiring Processes with Gergely Orosz]]" to familiarize yourself with the [[Oxide Hiring Process]].
+* Listen to some of our episodes of [[Oxide and Friends]] to get a sense for how we operate. A few recommendations:
+** [[RFDs: The Backbone of Oxide]] on how we got to our writing-intensive culture
+** [[Hell is Other Networks]] to get a flavor for our technical approach in supporting customers
+** [[Cultural Idiosyncrasies]] on the (many?) unusual aspects of Oxide’s culture
+** [[RTO or GTFO]] on why Oxide is a remote-first company

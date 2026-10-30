@@ -1,0 +1,15 @@
+created: 20260610165328775
+modified: 20260610165455975
+tags: 
+title: tail -f /home/michael/omicron/out/LOG
+type: text/vnd.tiddlywiki
+
+[[Open This|tail -f /home/michael/omicron/out/LOG]]
+
+---
+
+<<copy-to-clipboard "tail -f /home/michael/omicron/out/LOG">>
+
+```bash
+tail -f /home/michael/omicron/out/LOG
+```

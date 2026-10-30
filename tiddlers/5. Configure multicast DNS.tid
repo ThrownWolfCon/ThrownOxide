@@ -1,0 +1,19 @@
+created: 20260611200436433
+modified: 20260611200714734
+tags: [[Installing on a physical machine using the ISO]]
+title: 5. Configure multicast DNS
+type: text/vnd.tiddlywiki
+
+[[Open This|5. Configure multicast DNS]]
+
+---
+
+Configure multicast DNS
+
+If you're using DHCP, your IP address may change from time to time. On your Helios machine you can enable Multicast DNS:
+
+```
+# svcadm enable network/dns/multicast
+```
+
+You should then be able to find the machine from your workstation as myhostname.local, rather than needing to use the IP address.

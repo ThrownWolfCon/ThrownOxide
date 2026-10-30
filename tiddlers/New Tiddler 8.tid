@@ -1,0 +1,19 @@
+created: 20260612215755326
+modified: 20260612215935384
+tags: 
+title: New Tiddler 8
+type: text/vnd.tiddlywiki
+
+```
+Field / SectionWhat to putNoteslog_format"pretty"Easy
+
+public_url"http://localhost:8080"Easy
+
+server_port8080Already has a default
+
+database_url"postgres://aim:berlin@localhost/rfd"You had this working before
+
+[[keys]] (Local signer)Paste the full content of jwt-private.pem into the private = """...""" blockWe generated this earlier[[keys]] (Local verifier)Paste the full content of jwt-public.pem into the public = """...""" blockWe generated this earlier[services.github]owner, repo, path, default_branchUse your real repo details (or placeholders for now)[services.github.auth] (App style)app_id = 4038901
+installation_id = 139895243
+private_key = """..."""Paste the full content of github-app-private-key.pem here
+```

@@ -1,0 +1,13 @@
+created: 20260624195626910
+modified: 20260624195654097
+tags: [[OG: Expanding Connectivity]]
+title: 2. Expanding connectivity
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Expanding connectivity]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-connectivity#_expanding_connectivity
+
+Expanding connectivity in this example involves peering with BGP routers over a VLAN segmented network. To do that, an address lot needs to be created for holding the interface addresses that will be used for peering. Addresses from that lot will be assigned to switch ports. BGP sessions and announcements will be configured. And finally, an IP pool will be created for instances to utilize the address space being announced on the expanded portion of the network.

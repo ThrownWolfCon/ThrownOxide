@@ -1,0 +1,27 @@
+created: 20260511152434157
+modified: 20260704022825315
+tags: [[Support Engineer]]
+title: Before Applying Support
+type: text/vnd.tiddlywiki
+
+[[Open This|Before Applying Support]]
+
+---
+
+Before applying for this role, you should:
+
+    Learn enough about our technologies and our product to understand our approach.
+
+    Browse our public Requests for Discussion to get an idea of how we work.
+
+    Listen to Hell is Other Networks to get a flavor for our technical approach in supporting customers.
+
+    Listen to Hiring Processes with Gergely Orosz to familiarize yourself with the Oxide hiring process.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Before Applying Support">>
+</div>
+</div>
+</$linkcatcher>

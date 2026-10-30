@@ -1,0 +1,18 @@
+created: 20260603190531659
+modified: 20260603190714170
+tags: [[Physical Installation]]
+title: 3. Moving the rack into position
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Moving the rack into position]]
+
+---
+
+https://docs.oxide.computer/guides/facilities/physical-installation#moving-rack
+
+The uncrated rack rides on casters and can be rolled directly into its final position in most cases.
+
+| Scenario | Approach |
+| Floor can support full weight | Roll the populated rack on casters directly to the target location. |
+| Weight restrictions on floor path | De-populate sleds into a cart, roll the lighter rack, then re-seat sleds at final location. |
+| Tight spaces (narrow doors/hallways) | Remove side panels (rack is 23.7" wide without panels) and/or doors (rack is 41.8" deep without doors). |

@@ -1,0 +1,23 @@
+created: 20260605165915786
+modified: 20260605165958025
+tags: [[Control Plane Components]]
+title: internal-dns
+type: text/vnd.tiddlywiki
+
+[[Open This|internal-dns]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>internal-dns</strong><br><br>
+The internal DNS supports service discovery and dynamic service endpoint lookup among the control plane components.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "internal-dns">>
+</div>
+</div>
+</$linkcatcher>

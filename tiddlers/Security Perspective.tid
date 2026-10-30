@@ -1,0 +1,32 @@
+AWS CAF Perspectives: 5
+created: 20260504200402034
+modified: 20260507150231033
+tags: [[AWS CAF Perspectives]]
+title: Security Perspective
+type: text/vnd.tiddlywiki
+
+[[Open This|Security Perspective]]
+
+---
+
+The security perspective helps you achieve the confidentiality, integrity, and availability of your data and cloud workloads. It comprises nine capabilities shown in the following figure. 
+
+<h2 style="color: #d67568;">Common Stakeholders</h2>
+
+* Chief Information Security Officer [[CISO]]
+* Chief Compliance Officer [[CCO]]
+* internal audit leaders
+* security architects and engineers
+
+---
+
+* Security Perspective
+** [[Security Governance]]
+** [[Security Assurance]]
+** [[Identity and Access Management]]
+** [[Threat Detection]]
+** [[Vulnerability Management]]
+** [[Infrastructure Protection]]
+** [[Data Protection]]
+** [[Application Security]]
+** [[Incident Response]]

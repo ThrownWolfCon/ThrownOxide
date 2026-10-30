@@ -1,0 +1,43 @@
+Governance Perspective: 4
+created: 20260504191655549
+modified: 20260506194629695
+tags: [[Governance Perspective]]
+title: Cloud Financial Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Cloud Financial Management]]
+
+---
+
+Cloud Financial Management
+
+Plan, measure, and optimize your cloud spend.
+
+Combine the ease of resource provisioning and <span style="color: purple;">agility benefits</span> provided by the cloud with <span style="color: purple;">financial accountability</span> for your teams’ cloud spend. This helps ensure your teams continuously optimize their cloud workloads and use the best ''pricing models''.
+
+Clarify ''financial roles and responsibilities'' as they pertain to the cloud, and ensure that key stakeholders across your finance, business, and ''technology organizations'' have a shared understanding of cloud costs. Evolve to a more ''dynamic forecasting'' and ''budgeting'' process, and identify ''cost variances'' and ''anomalies'' faster.
+
+---
+
+Align your ''account structure'' and ''tagging strategy'' with how your organization and products map to the cloud. 
+
+Structure your accounts and [[cost allocation tags]] to map your cloud resources to specific teams, projects, and business initiatives, and gain a granular view of your consumption patterns. 
+
+Define [[cost categories]] to organize your cost and usage information using custom rules to simplify showback or chargeback.
+
+Use [[consolidated billing]] to help simplify cloud billing and realize volume discounts.
+
+Build guardrails to govern your cloud usage in a scalable manner and with minimal impact to agility.
+
+---
+
+To avoid incurring technical debt, ensure your workloads are Well-Architected, and operated in the most cost-effective manner. 
+
+Leverage [[demand-based]] and time-based dynamic provisioning to pay only for the resources you need. Reduce cloud costs by identifying and eliminating spend associated with idle or underutilized cloud resources.
+
+---
+
+Centralize the management of on-premises and cloud software licenses to reduce license-related cost overages, reduce non-compliance, and avoid misreporting.
+
+Differentiate between licenses that are included with cloud resources and licenses that you own. Leverage [[rule-based controls]] on the consumption of licenses to set hard or soft limits on new and existing cloud deployments. Use dashboards to create visibility into license usage and accelerate vendor audits. 
+Implement real-time alerts for non-compliance.

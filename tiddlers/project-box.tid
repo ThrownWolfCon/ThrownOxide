@@ -1,0 +1,11 @@
+created: 20260612231020978
+modified: 20260612235814423
+tags: 
+title: project-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-tip">
+  <strong>Project</strong><br><br>
+<$button message="tm-modal" param="1.2 Projects">1.2 Projects</$button>
+  <$transclude tiddler="instance-box" mode="block"/>
+</div>

@@ -1,0 +1,23 @@
+created: 20250409220609383
+modified: 20250409220707774
+tags: nmap
+title: nmap: Timing Templates
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap: Timing Templates]]
+
+---
+
+Timing templates:
+
+-T0 (paranoid): Extremely slow and stealthy. Minimal packets, long delays (up to 5 minutes between probes). For IDS evasion on highly sensitive networks.
+
+-T1 (sneaky): Still slow and stealthy, but slightly faster than T0. Good for avoiding detection.
+
+-T2 (polite): Slower, reduces load on the target. Less aggressive than default, still cautious.
+
+-T3 (normal): Default setting. Balanced speed and reliability, suitable for most scans.
+
+-T4 (aggressive): Faster, assumes a good network. Common for pentesting when time matters.
+
+-T5 (insane): Very fast, sacrifices accuracy for speed. Best for large networks or when you’re in a hurry.

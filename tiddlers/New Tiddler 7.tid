@@ -1,0 +1,170 @@
+created: 20260612215454395
+modified: 20260612215510375
+tags: 
+title: New Tiddler 7
+type: text/vnd.tiddlywiki
+
+```toml
+# Allowed values: json, pretty
+log_format = ""
+
+# Optional directory to write log files to. If not specified, logs are written to stdout
+log_directory = ""
+
+# Config file to load initial mappers and groups from. See mappers.example.toml for how to
+# construct this file
+initial_mappers = ""
+
+# Public url of the service. This should include the protocol, host, and port that a user would use
+# to connect to the server on
+public_url = ""
+
+# Port for the server to run on. This does not have to match the public_url (i.e. in the case that
+# the server is running behind a proxy)
+server_port = 8080
+
+# Full url of the Postgres database to connect to
+database_url = "postgres://<user>:<pass>@<host>/<database>"
+
+# Settings for JWT management
+[jwt]
+
+# Duration that a JWT is valid for
+default_expiration = 3600
+
+# Keys for signing JWTs and generating secrets. GCP Cloud KMS keys and local static keys
+# are supported. At least one signer and one verifier key must be configured.
+
+# Cloud KMS - Signer
+[[keys]]
+kind = "ckms_signer" # Static identifier indicating Cloud KMS
+kid = "" # Unique key identifer, that will be used in JWKS
+version = 1 # KMS key version
+key = "" # KMS key name
+keyring = "" # KMS keying name
+location = "" # KMS region
+project = "" # GCP project containing Cloud KMS
+
+# Cloud KMS - Verifier
+[[keys]]
+kind = "ckms_verifier" # Static identifier indicating Cloud KMS
+kid = "" # Unique key identifer, that will be used in JWKS
+version = 1 # KMS key version
+key = "" # KMS key name
+keyring = "" # KMS keying name
+location = "" # KMS region
+project = "" # GCP project containing Cloud KMS
+
+# Local key - Signer
+[[keys]]
+kind = "local_signer" # Static identifier indicating a local signing key
+kid = "" # Unique key identifier, that will be used in JWKS
+private = """""" # PEM encoded private key
+
+# Local key - Verifier
+[[keys]]
+kind = "local_verifier" # Static identifier indicating a local verification key
+kid = "" # Unique key identifier, that will be used in JWKS (must match signer kid)
+public = """""" # PEM encoded public key
+
+# OAuth Providers
+# Google and GitHub are supported. An OAuth provider needs to have both a web and device config.
+# At least one OAuth provider must be configured
+
+[authn.oauth.google.device]
+client_id = ""
+client_secret = ""
+
+[authn.oauth.google.web]
+client_id = ""
+client_secret = ""
+redirect_uri = "https://<rfd-api-hostname>/login/oauth/google/code/callback"
+
+[authn.oauth.github.device]
+client_id = ""
+client_secret = ""
+
+[authn.oauth.github.web]
+client_id = ""
+client_secret = ""
+redirect_uri = "https://<rfd-api-hostname>/login/oauth/github/code/callback"
+
+# Magic link (passwordless email login) configuration
+# Leave templates empty to disable magic link authentication
+[magic_link]
+templates = []
+
+# Example of enabled magic link:
+# [[magic_link.templates]]
+# medium = "email"
+# channel = "login"
+# from = "noreply@yourdomain.com"
+# subject = "Login to RFD"
+# text = "Click here to login: {{ url }}"
+# html = "<a href=\"{{ url }}\">Click here to login</a>"
+#
+# [magic_link.email_service.resend]
+# key = "re_xxxxxxxx"
+
+# Search configuration
+[search]
+# Remote url of the search service
+host = ""
+# Read-only search key
+key = ""
+# Index to perform searches against
+index = ""
+
+# Fields for use in generating the OpenAPI spec file
+[spec]
+title = ""
+description = ""
+contact_url = ""
+contact_email = ""
+output_path = ""
+
+# Templated for creating new RFDs. The 'placeholder' and 'new' templates are the only two templates
+# available and are both required
+
+# Template used when creating a new RFD without specifying a body
+[content.templates.placeholder]
+template = """"""
+required_fields = []
+
+# Template used when creating a new RFD while specifying a body
+[content.templates.new]
+template = """"""
+required_fields = []
+
+# The GitHub repository to use to write RFDs
+[services.github]
+# GitHub user or organization
+owner = ""
+# GitHub repository name
+repo = ""
+# Path within the repository where RFDs are stored
+path = ""
+# Branch to use as the default branch of the repository
+default_branch = ""
+
+# The method for authenticating to GitHub. This requires one of two authentication styles:
+#   1. A GitHub App installation that is defined by an app_id, installation_id, and private_key
+#   2. A GitHub access token
+# Exactly one authentication must be specified
+
+# App Installation
+[services.github.auth]
+# Numeric GitHub App id
+app_id = 1111111
+# Numeric GitHub App installation id corresponding to the organization that the configured repo
+# belongs to
+installation_id = 2222222
+# PEM encoded private key for the GitHub App
+private_key = """"""
+
+# Access Token
+[services.github.auth]
+# This may be any GitHub access token that has permission to the configured repo
+token = ""
+
+```

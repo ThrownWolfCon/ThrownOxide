@@ -1,0 +1,13 @@
+created: 20260616171926460
+modified: 20260616172000576
+tags: [[OG: Audit Log]]
+title: 4. Retention
+type: text/vnd.tiddlywiki
+
+[[Open This|4. Retention]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log#_retention
+
+Audit log entries are retained for 90 days. A background task permanently removes entries older than 90 days. If you need to retain the log for longer, fetch it on a regular interval using the audit_log_list endpoint and store it externally.

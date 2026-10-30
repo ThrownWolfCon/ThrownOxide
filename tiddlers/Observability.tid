@@ -1,0 +1,18 @@
+created: 20260504205444404
+modified: 20260504205607053
+tags: [[Operations Perspective]]
+title: Observability
+type: text/vnd.tiddlywiki
+
+[[Open This|Observability]]
+
+---
+
+Observability
+
+Gain actionable insights from your infrastructure and application data.
+
+When you are operating at cloud speed and scale, you need to be able to spot problems as they arise, ideally before they disrupt the
+customer experience. Develop the telemetry (logs, metrics, and traces) necessary to understand the internal state and health of your workloads. Monitor application endpoints, assess the impact to the end users, and generate alerts when measurements exceed thresholds.
+
+Use synthetic monitoring to create canaries (configurable scripts that run on a schedule) to monitor your endpoints and APIs. Implement traces to track requests as they travel through the entire application and identify bottlenecks or performance issues. Gain insights into resources, servers, databases, and networks using metrics and logs. Set up real-time analysis of time series data to understand causes of performance impacts. Centralize data in a single dashboard, giving you a unified view of critical information about your workloads and their performance.

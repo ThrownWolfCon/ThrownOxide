@@ -1,0 +1,13 @@
+created: 20260629182928222
+modified: 20260629183009049
+tags: [[3. Webhook Receivers]]
+title: 3.2 Identity and Access Management
+type: text/vnd.tiddlywiki
+
+[[Open This|3.2 Identity and Access Management]]
+
+---
+
+For a webhook receiver to receive an event, the user registering the receiver must have the viewer role for the resource the event relates to. Fault management alerts and other hardware events require the fleet.viewer role.
+
+Currently, webhook receivers may only be created or modified by users with the fleet.admin role, and all webhook receivers operate with the fleet.viewer role. Webhook receivers with more restrictive access control roles may be implemented in future Oxide system software, as described here.

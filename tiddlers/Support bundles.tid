@@ -1,0 +1,63 @@
+created: 20260526215643330
+modified: 20260630202811879
+tags: [[UG: Troubleshooting]]
+title: Support bundles
+type: text/vnd.tiddlywiki
+
+[[Open This|Support bundles]]
+
+---
+
+https://docs.oxide.computer/guides/troubleshooting#_support_bundles
+
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">To the cli:</span> [[oxide bundle]]
+
+When you are encountering a problem with the rack, Oxide Support may ask you to collect a support bundle. This will capture system and diagnostic information from the rack control plane, and save them to a zip archive on internal rack storage.
+
+If you have fleet Administrator access, you can trigger the creation of a new bundle with:
+
+```bash
+oxide bundle create
+```
+
+This will typically take several minutes to complete. You view all support bundles present on the rack with:
+
+```bash
+oxide bundle list
+```
+
+A bundle in collecting state is still being created. When it is complete, it will transition to active state and you will be able to access it.
+
+To download the bundle zip to your computer, use:
+
+```bash
+oxide bundle download --id $BUNDLE_ID --output $BUNDLE_FILE
+```
+
+Bundles will typically be several GiB, and you may have only one or two files you need to view. The Oxide CLI has a simple interface to view the contents of a bundle. This can be executed remotely against the rack with:
+
+```bash
+oxide bundle inspect --id $BUNDLE_ID
+```
+
+Or if you have already downloaded the bundle zip file, you can view that with:
+
+```bash
+oxide bundle inspect --path $BUNDLE_FILE
+```
+
+This will show a list of files in the bundle, and by pressing Enter you can view the contents of a given file. Note that the contents of the bundle archive are not stable and may be changed in future releases.
+
+When you are confident that the support bundle is no longer needed, you can remove it from the rack with:
+
+```bash
+oxide bundle delete --bundle-id $BUNDLE_ID
+```
+
+When sending a bundle to Oxide Support, you will be asked to provide an SSH public key, and will be given the login information for an ephemeral host to upload the bundle to.
+
+To upload the bundle via rsync(1) with username abc123 and host IP 10.0.0.10, you would run:
+
+```bash
+rsync -avh --progress my_support_bundle.zip abc123@10.0.0.10:
+```

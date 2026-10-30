@@ -1,0 +1,13 @@
+created: 20260605225615030
+modified: 20260605230048265
+tags: sled-agent svcadm
+title: pfexec svcadm restart sled-agent
+type: text/vnd.tiddlywiki
+
+[[Open This|pfexec svcadm restart sled-agent]]
+
+---
+
+```
+pfexec svcadm restart sled-agent
+```

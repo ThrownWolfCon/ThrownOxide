@@ -1,0 +1,47 @@
+created: 20260609174438015
+modified: 20260610051040217
+tags: [[Home Lab Oxide]]
+title: Home Lab nmap
+type: text/vnd.tiddlywiki
+
+[[Open This|Home Lab nmap]]
+
+---
+
+```bash
+aim@aim-PowerEdge-T620:~$ nmap -sn 192.168.1.0/24
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-06-09 11:26 MDT
+Nmap scan report for 192.168.1.1
+Host is up (0.0046s latency).
+Nmap scan report for 192.168.1.5
+Host is up (0.093s latency).
+Nmap scan report for 192.168.1.6
+Host is up (0.19s latency).
+Nmap scan report for 192.168.1.7
+Host is up (0.095s latency).
+Nmap scan report for 192.168.1.8
+Host is up (0.20s latency).
+Nmap scan report for 192.168.1.9
+Host is up (0.20s latency).
+Nmap scan report for 192.168.1.12
+Host is up (0.20s latency).
+Nmap scan report for 192.168.1.13
+Host is up (0.089s latency).
+Nmap scan report for 192.168.1.14
+Host is up (0.091s latency).
+Nmap scan report for 192.168.1.15
+Host is up (0.11s latency).
+Nmap scan report for 192.168.1.16
+Host is up (0.056s latency).
+Nmap scan report for 192.168.1.19
+Host is up (0.0033s latency).
+Nmap scan report for 192.168.1.22
+Host is up (0.070s latency).
+Nmap scan report for 192.168.1.24
+Host is up (0.00031s latency).
+Nmap scan report for 192.168.1.27
+Host is up (0.015s latency).
+Nmap scan report for 192.168.1.32
+Host is up (0.0032s latency).
+Nmap done: 256 IP addresses (16 hosts up) scanned in 10.04 seconds
+```

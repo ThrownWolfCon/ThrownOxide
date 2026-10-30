@@ -1,0 +1,42 @@
+created: 20221215002740323
+modified: 20221215170202794
+tags: SSCOSSL
+title: 2. Create Certificate Signing Request Configuration
+type: text/vnd.tiddlywiki
+
+[[2. Create Certificate Signing Request Configuration]]
+
+<$button message="tm-modal" param="2. Create Certificate Signing Request Configuration">Modal of This</$button>
+
+---
+
+We will create a `csr.conf` file to have all the information to generate the CSR. Replace `demo.mlopshub.com` with your domain name or IP address.
+
+```
+cat > csr.conf <<EOF
+[ req ]
+default_bits = 2048
+prompt = no
+default_md = sha256
+req_extensions = req_ext
+distinguished_name = dn
+
+[ dn ]
+C = US
+ST = California
+L = San Fransisco
+O = MLopsHub
+OU = MlopsHub Dev
+CN = demo.mlopshub.com
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = demo.mlopshub.com
+DNS.2 = www.demo.mlopshub.com
+IP.1 = 192.168.1.5
+IP.2 = 192.168.1.6
+
+EOF
+```

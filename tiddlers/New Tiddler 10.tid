@@ -1,0 +1,29 @@
+created: 20260616143336509
+modified: 20260616155554583
+tags: $:/tags/Global
+title: New Tiddler 10
+type: text/vnd.tiddlywiki
+
+oxide --profile recovery silo quotas view --silo recovery
+
+omicron-dev: silo name:              test-suite-silo
+omicron-dev: privileged user name:   test-privileged
+
+<$select tiddler="$:/temp/selectedProfile">
+  <$list filter="[tag[profiles]]">
+    <option value=<<currentTiddler>>>
+      <$view field="title"/>
+    </option>
+  </$list>
+</$select>
+
+<$let profile={{$:/temp/selectedProfile}}>
+
+profilecli:
+<$view tiddler=<<profile>> field="profilecli"/>
+
+
+
+`oxide --profile` <$view tiddler=<<profile>> field="profilecli"/> `silo utilization list`
+
+</$let>

@@ -1,0 +1,13 @@
+created: 20260501173542064
+modified: 20260501173626260
+tags: [[Aim Docker]]
+title: Pihole
+type: text/vnd.tiddlywiki
+
+[[Open This|Pihole]]
+
+---
+
+```yml
+85d664969726   pihole/pihole:latest                         "/s6-init"               13 months ago   Up 5 days (unhealthy)                                                                                                                                             pihole
+```

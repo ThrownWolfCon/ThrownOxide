@@ -1,0 +1,19 @@
+created: 20260605161327155
+modified: 20260605162253068
+tags: [[Control Plane]]
+title: Control Plane Components
+type: text/vnd.tiddlywiki
+
+[[Open This|Control Plane Components]]
+
+---
+
+https://docs.oxide.computer/guides/architecture/control-plane#_components
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Control Plane Components">>
+</div>
+</div>
+</$linkcatcher>

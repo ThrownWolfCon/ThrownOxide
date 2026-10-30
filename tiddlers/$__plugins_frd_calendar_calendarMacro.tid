@@ -1,0 +1,19 @@
+created: 20151016065101913
+modified: 20200227164948421
+tags: $:/tags/Macro
+title: $:/plugins/frd/calendar/calendarMacro
+type: text/vnd.tiddlywiki
+
+\define calendar(state config startingDay year month buttons cellContent)
+<$set name="calendarState" value="$state$">
+<$set name="calendarConfig" value="$config$">
+<$macrocall $name="calendarAux" startingDay ="$startingDay$" year="$year$" month="$month$" buttons="$buttons$" cellContent="$cellContent$"/>
+</$set></$set>
+\end
+
+\define calendarAux(startingDay year month buttons cellContent)
+<$set name="calendarYear" value={{$(calendarState)$!!year}}>
+<$set name="calendarMonth" value={{$(calendarState)$!!month}}>
+<$macrocall $name="calendarjs" fieldyear=<<calendarYear>> fieldmonth=<<calendarMonth>> startingDay="$startingDay$" year="$year$" month="$month$" buttons="$buttons$" cellContent="$cellContent$"/>
+</$set></$set>
+\end

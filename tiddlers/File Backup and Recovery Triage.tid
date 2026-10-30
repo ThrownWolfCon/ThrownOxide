@@ -1,0 +1,11 @@
+created: 20180304075302597
+modified: 20180304075411982
+tags: [[Customer Success Triage]]
+title: File Backup and Recovery Triage
+type: text/vnd.tiddlywiki
+
+* FileBackup and Recovery
+** Verify that DTX has been Provided
+*** Open them and verify that StorageCraft File Backup and Recovery is shown as an installed application from the dtx.log located in C:\ProgramData\dtx\logs in the .7z file
+
+[[Update the following the best you can]]

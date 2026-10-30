@@ -1,0 +1,17 @@
+created: 20260504194107478
+modified: 20260504194232184
+tags: [[Platform Perspective]]
+title: Platform Architecture
+type: text/vnd.tiddlywiki
+
+[[Open This|Platform Architecture]]
+
+---
+
+Platform Architecture
+
+Establish and maintain guidelines, principles, patterns, and guardrails for your cloud environment.
+
+---
+
+A well-architected cloud environment will help you accelerate implementation, reduce risk, and drive cloud adoption. Create consensus within your organization for enterprise standards that will drive cloud adoption. Define best practice blueprints and guardrails to facilitate authentication, security, networking, and logging and monitoring. Consider what workloads you may need to retain on premises due to latency, data processing, or data residency requirements. Evaluate such hybrid cloud use cases as cloud bursting, backup and disaster recovery to the cloud, distributed data processing, and edge computing.

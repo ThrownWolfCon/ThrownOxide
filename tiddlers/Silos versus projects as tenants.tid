@@ -1,0 +1,13 @@
+created: 20260528211808165
+modified: 20260528211846526
+tags: 
+title: Silos versus projects as tenants
+type: text/vnd.tiddlywiki
+
+[[Open This|Silos versus projects as tenants]]
+
+---
+
+https://docs.oxide.computer/guides/operator/silo-management
+
+Both silos and projects can be used as the abstraction for tenants. While projects provide some separation between different application workloads, when the tenant is in an entirely different security domain (e.g., a subsidiary or a third-party company), it may be more appropriate to give them their own silo so they are fully isolated.

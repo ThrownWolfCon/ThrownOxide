@@ -1,0 +1,11 @@
+created: 20260629210640088
+modified: 20260629210700717
+tags: 
+title: meh005
+type: text/vnd.tiddlywiki
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide system hardware rack membership abort --rack-id c19a698f-c6f9-4a17-ae30-20d711b8f7dc
+error
+Error Response: status: 500 Internal Server Error; headers: {"content-type": "application/json", "x-request-id": "e0c09373-491d-4ccf-a589-7fb71168ff18", "content-length": "124", "date": "Mon, 29 Jun 2026 21:06:07 GMT"}; value: Error { error_code: Some("Internal"), message: "Internal Server Error", request_id: "e0c09373-491d-4ccf-a589-7fb71168ff18" }
+```

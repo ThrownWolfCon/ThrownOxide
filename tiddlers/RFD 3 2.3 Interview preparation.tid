@@ -1,0 +1,11 @@
+created: 20260509215354754
+modified: 20260514031539090
+tags: [[RFD 3 2 Mechanics of evaluation]]
+title: RFD 3 2.3 Interview preparation
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 2.3 Interview preparation]]
+
+---
+
+Candidates that are selected by the process outlined in [rfd147] should be advanced to conversations with the team. Before interviews, candidates should be given access to RFDs, as discussed in [rfd35]. <span style="color: #61cf5a;">Getting complete access to the RFDs gives candidates the opportunity to understand Oxide much more concretely, with the understanding that after seeing the gritty details of our endeavor, a candidate may reasonably choose to withdraw their candidacy.</span> There is no shame in this: we want new additions to Oxide to be well-informed about the true state of the company — and it is helpful to all if a candidate has decided themselves that they are not a fit.

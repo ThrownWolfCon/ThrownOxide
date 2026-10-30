@@ -1,0 +1,26 @@
+created: 20260609183109790
+modified: 20260705025837880
+tags: ipadm warhound
+title: Could not open DLPI link
+type: text/vnd.tiddlywiki
+
+[[Open This|Could not open DLPI link]]
+
+---
+
+```
+michael@warhound:~$ ipadm create-if bge1
+ipadm: Could not create bge1 : Could not open DLPI link
+```
+
+```bash
+michael@warhound:~$ pfexec ipadm create-if bge1
+michael@warhound:~$ pfexec ipadm create-addr -T dhcp -h $(hostname) bge1/dhcp
+michael@warhound:~$ svcadm restart network/service
+michael@warhound:~$ ipadm show-addr
+ADDROBJ           TYPE     STATE        ADDR
+lo0/v4            static   ok           127.0.0.1/8
+bge0/dhcp         dhcp     ok           192.168.1.28/24
+bge1/dhcp         dhcp     ok           192.168.1.29/24
+lo0/v6            static   ok           ::1/128
+```

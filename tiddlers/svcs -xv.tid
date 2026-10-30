@@ -1,0 +1,23 @@
+created: 20260703201600133
+modified: 20260703212707994
+tags: svcs horkew
+title: svcs -xv
+type: text/vnd.tiddlywiki
+
+[[Open This|svcs -xv]]
+
+---
+
+```bash
+svcs -xv
+```
+
+```bash
+michael@horkew:~$ svcs -xv
+svc:/oxide/sled-agent:default (Oxide Sled Agent)
+ State: maintenance since Fri Jul  3 20:09:02 2026
+Reason: Restarting too quickly.
+   See: http://illumos.org/msg/SMF-8000-L5
+   See: /var/svc/log/oxide-sled-agent:default.log
+Impact: This service is not running.
+```

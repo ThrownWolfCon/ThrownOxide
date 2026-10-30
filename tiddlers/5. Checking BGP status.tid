@@ -1,0 +1,184 @@
+created: 20260617022751673
+modified: 20260617022917580
+tags: [[OG: BGP]]
+title: 5. Checking BGP status
+type: text/vnd.tiddlywiki
+
+[[Open This|5. Checking BGP status]]
+
+---
+
+Once BGP has been configured on a port, its status is visible. It may take a few seconds for the peer to become established, so initial states might look like this:
+
+```bash
+oxide system networking bgp status
+[
+  {
+    "addr": "192.168.22.1",
+    "local_asn": 47,
+    "remote_asn": 64601,
+    "state": "open_sent",
+    "state_duration_millis": 4573,
+    "switch": "switch0"
+  }
+]
+```
+
+This output indicates the first peer session is in the OpenSent state and has been there for 4573 milliseconds.
+
+After a few seconds the connection makes it to established.
+
+```bash
+oxide system networking bgp status
+[
+  {
+    "addr": "192.168.22.1",
+    "local_asn": 47,
+    "remote_asn": 64601,
+    "state": "established",
+    "state_duration_millis": 24,
+    "switch": "switch0"
+  }
+]
+```
+
+Here is another way to query the BGP status
+
+```bash
+oxide system networking bgp show-status
+switch0
+=======
+Peer Address  Local ASN  Remote ASN  Session State  State Duration
+192.168.22.1  47         64601       Established    0day 0h 0m 0s 24ms
+```
+
+The Oxide rack provides an API endpoint for retrieving the last 1024 BGP messages sent and received by each rack switch. Here is an example for a different bgp peer:
+
+```bash
+oxide system networking bgp history --asn 65002
+{
+  "switch_histories": [
+    {
+      "history": {
+        "172.20.15.51": {
+          "received": [
+            {
+              "message": {
+                "type": "update",
+                "value": {
+                  "nlri": [
+                    {
+                      "length": 0,
+                      "value": []
+                    }
+                  ],
+                  "path_attributes": [
+                    {
+                      "typ": {
+                        "flags": 64,
+                        "type_code": "origin"
+                      },
+                      "value": {
+                        "origin": "igp"
+                      }
+                    },
+                    {
+                      "typ": {
+                        "flags": 64,
+                        "type_code": "as_path"
+                      },
+                      "value": {
+                        "as4_path": [
+                          {
+                            "typ": "as_sequence",
+                            "value": [
+                              64601
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "typ": {
+                        "flags": 64,
+                        "type_code": "next_hop"
+                      },
+                      "value": {
+                        "next_hop": "172.20.15.51"
+                      }
+                    }
+                  ],
+                  "withdrawn": []
+                }
+              },
+              "timestamp": "2024-05-09T04:24:02.699067710Z"
+            },
+            ...
+          ],
+          "sent": [
+            {
+              "message": {
+                "type": "update",
+                "value": {
+                  "nlri": [
+                    {
+                      "length": 24,
+                      "value": [
+                        172,
+                        20,
+                        26,
+                        0
+                      ]
+                    }
+                  ],
+                  "path_attributes": [
+                    {
+                      "typ": {
+                        "flags": 64,
+                        "type_code": "origin"
+                      },
+                      "value": {
+                        "origin": "igp"
+                      }
+                    },
+                    {
+                      "typ": {
+                        "flags": 64,
+                        "type_code": "as_path"
+                      },
+                      "value": {
+                        "as4_path": [
+                          {
+                            "typ": "as_sequence",
+                            "value": [
+                              47
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "typ": {
+                        "flags": 64,
+                        "type_code": "next_hop"
+                      },
+                      "value": {
+                        "next_hop": "172.20.15.53"
+                      }
+                    }
+                  ],
+                  "withdrawn": []
+                }
+              },
+              "timestamp": "2024-05-09T04:24:02.698739718Z"
+            },
+            ...
+          ]
+        }
+      },
+      "switch": "switch1"
+    },
+    ...
+  ]
+}
+```

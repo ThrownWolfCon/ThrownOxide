@@ -1,0 +1,23 @@
+created: 20260605164727160
+modified: 20260605164827948
+tags: [[Control Plane Components]]
+title: oximeter
+type: text/vnd.tiddlywiki
+
+[[Open This|oximeter]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>oximeter</strong><br><br>
+The telemetry service collects metric data from the other components and stores it into ClickHouse. More details can be found in the telemetry section below.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oximeter">>
+</div>
+</div>
+</$linkcatcher>

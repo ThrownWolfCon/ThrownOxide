@@ -1,0 +1,18 @@
+created: 20260530181911026
+modified: 20260711222426822
+tags: [[Helios Commands]] WolfOxide
+title: dumpadm
+type: text/vnd.tiddlywiki
+
+[[Open This|dumpadm]]
+
+---
+
+```bash
+# dumpadm
+      Dump content: kernel pages
+       Dump device: /dev/zvol/dsk/rpool/dump (dedicated)
+Savecore directory: /var/crash/wolfoxide
+  Savecore enabled: yes
+   Save compressed: on
+```

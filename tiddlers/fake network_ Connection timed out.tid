@@ -1,0 +1,29 @@
+created: 20260609203441807
+modified: 20260609213101095
+tags: [[1.2.2 Mode 2: Create a fake isolated network]]
+title: fake network: Connection timed out
+type: text/vnd.tiddlywiki
+
+[[Open This|fake network: Connection timed out]]
+
+---
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>RIGHT after: svcadm enable ipfilter</strong><br><br>
+
+ ALL SSH is toast
+
+<$transclude tiddler="meh000" mode="block"/>
+
+</div>
+
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>Make it more gooder!!!</strong><br>
+  <$transclude tiddler="meh001" mode="block"/>
+
+Now test from your laptop — SSH should start working again (or at least get further).
+</div>
+
+

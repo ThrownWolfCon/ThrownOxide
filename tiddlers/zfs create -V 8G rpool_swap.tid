@@ -1,0 +1,11 @@
+created: 20260530181702169
+modified: 20260530181729462
+tags: [[zfs commands]]
+title: zfs create -V 8G rpool/swap
+type: text/vnd.tiddlywiki
+
+[[Open This|zfs create -V 8G rpool/swap]]
+
+---
+
+What this does:

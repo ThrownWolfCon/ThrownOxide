@@ -1,0 +1,54 @@
+.tc-sidebar-lists table button
+{
+	color:inherit;
+	fill:inherit;
+}
+
+table td.calendar-basic
+{
+	background-color: #000000;
+	padding:0 2px 0 2px;
+	text-align:center;
+}
+
+table td.calendar-holidays1
+{
+	background-color: #FFFFCC;
+}
+
+table td.calendar-restdays
+{
+	background-color: #006600;
+}
+
+
+table td.calendar-holidays2
+{
+	background-color: #CCFFCC;
+}
+
+table td.calendar-today
+{
+	background-color: #000066;
+	background-clip:padding-box;
+}
+
+table td.calendar-datepicker-cell .tc-tiddlylink
+{
+	color:red;
+}
+
+
+.calendar-datepicker table th, .calendar-datepicker table td
+{
+	padding:0 4px 0 4px;
+	font-size:90%;
+}
+
+.calendar-pop {
+	background:white;
+	padding:0 15px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	margin:5px 0 0 3px;
+}

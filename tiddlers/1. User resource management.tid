@@ -1,0 +1,17 @@
+created: 20260602231335836
+modified: 20260616164417654
+tags: [[GS: Key Concepts]]
+title: 1. User resource management
+type: text/vnd.tiddlywiki
+
+[[Open This|1. User resource management]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "1. User resource management">>
+</div>
+</div>
+</$linkcatcher>

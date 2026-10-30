@@ -1,0 +1,40 @@
+created: 20260627171806779
+modified: 20260711211417969
+tags: [[oxide bundle]]
+title: oxide bundle download
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle download]]
+
+---
+
+<<copy-to-clipboard """
+oxide bundle download --id xxx --output glitterbomb.tar
+""">>
+
+```bash
+oxide bundle download --id xxx --output glitterbomb.tar
+```
+
+```bash
+Thr0wnW0lf.com:oxide bundle download --help
+Downloads a support bundle
+
+Usage: oxide bundle download [OPTIONS] --id <ID> --output <OUTPUT>
+
+Options:
+      --id <ID>
+          ID of the bundle
+  -o, --output <OUTPUT>
+          Path where the bundle should be downloaded
+  -c, --chunk-size <CHUNK_SIZE>
+          The size, in bytes, of each range request
+          to use when downloading bundles [default:
+          104857600]
+  -h, --help
+          Print help
+
+Global Options:
+      --profile <PROFILE>
+          Configuration profile to use for commands
+```

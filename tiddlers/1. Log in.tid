@@ -1,0 +1,46 @@
+created: 20260602233751488
+modified: 20260626185748785
+tags: [[GS: Quick Start: CLI]]
+title: 1. Log in
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Log in]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart-cli#_log_in
+
+The first thing we’ll need to do, is login to an Oxide control plane.
+
+```yml
+$ oxide auth login --host https://engineering.cloud.example.com
+
+Opened this URL in your browser:
+  https://engineering.cloud.example.com/device/verify
+
+Enter the code: CXKX-KPBK
+```
+
+<div class="custom-note-green">
+  <span class="note-icon">ℹ</span>
+  <strong>Note</strong><br>
+  Here we use the fictitious control plane URL https://engineering.cloud.example.com you'll need to replace this with the URL of your Oxide control plane.
+</div>
+
+<div class="custom-note-blue">
+  <span class="note-icon">ℹ</span>
+  <strong>Note</strong><br>
+
+  aim@aim-PowerEdge-T620:~$ oxide auth login --host http://127.0.0.1:12220<br>
+Opened this URL in your browser:<br>
+  http://127.0.0.1:12220/device/verify<br><br>
+
+Enter the code: TMMS-SRWL<br><br>
+
+Login successful<br>
+  silo: test-suite-silo (7f828b62-ccaa-4799-97bf-d568534974b4)<br>
+  user: test-privileged (b37b0ed2-e018-429d-8d3e-77094fd299f2)<br>
+Use --profile 'test-suite-silo5'
+
+<$transclude tiddler="meh004" mode="block"/>
+</div>

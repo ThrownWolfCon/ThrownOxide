@@ -1,0 +1,33 @@
+created: 20260626154403694
+modified: 20260626154747777
+tags: [[OG: Resource Management]]
+title: 2. Quota management
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Quota management]]
+
+---
+
+Each silo in an Oxide rack is allocated a fixed portion of the rack’s physical resources. These allocations are enforced through resource quotas, which define the maximum amount of vCPU, memory, and storage that can be used by workloads in the silo. This system ensures fair usage across tenants and prevents resource contention.
+
+Resource quotas can be updated at any time using the Oxide Console, API, or CLI. These quotas are defined as:
+
+| Resource | Description |h
+|vcpu|The number of virtual CPU cores available to powered-on instances in the silo.|
+|memory|The total RAM available to powered-on instances, in bytes.|
+|storage|The total space available for disks and snapshots, in bytes.|
+|ip_pool|See IP Pool Management guide for a discussion of finite IP address allocation and NAT address consumption.|
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+Images do not currently account against the storage quota, but this may change in the future.
+</div>
+
+
+When adjusting quotas, keep in mind that:
+
+* You can increase or decrease the values at any time.
+*  The system will reject provisioning requests that exceed available physical capacity.
+
+Reducing quotas below current utilization does not disrupt running workloads, though it does limit the ability to provision additional resources. For example, if the storage quota is lowered below the amount already used by existing disks and snapshots, users will not be able to create new disks until usage drops below the new threshold. This helps operators enforce allocation boundaries without disrupting service availability while still enabling flexibility for future growth or rebalancing.

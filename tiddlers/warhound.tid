@@ -1,0 +1,21 @@
+created: 20260608191840260
+modified: 20260704175518997
+tags: [[Lost Dogs]]
+title: warhound
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="Createdbox" mode="block"/>
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>[[warhound]]</strong><br><br>
+  A warhound (or war hound) can refer to a dog specifically trained and deployed for combat, a metaphor for an aggressive warrior, or a fictional mechanical/fantasy beast.
+
+  <div class="demo-container">
+    <div class="custom-important-response">
+      <span class="alert-icon">i</span>
+      <strong>My Lab:</strong><br><br>
+<$transclude tiddler="Could not open DLPI link" mode="block"/>
+    </div>
+  </div>
+</div>

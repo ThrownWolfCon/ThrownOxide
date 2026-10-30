@@ -1,0 +1,13 @@
+created: 20260701160912618
+modified: 20260701160937792
+tags: 
+title: meh006
+type: text/vnd.tiddlywiki
+
+Compute and storage resource limits:
+
+* cpu: Total number of virtual CPUs of all running instances.
+
+* memory: Total number of bytes of all running instances' memory.
+
+* storage: Total number of bytes of all disks provisioned, including snapshots.

@@ -1,0 +1,41 @@
+created: 20260604231752463
+modified: 20260703212656525
+tags: zoneadm horkew
+title: watch -n 2 'zoneadm list -cnv'
+type: text/vnd.tiddlywiki
+
+[[Open This|watch -n 2 'zoneadm list -cnv']]
+
+---
+
+```
+watch -n 2 'zoneadm list -cnv'
+```
+
+```bash
+Every 2.0s: zoneadm list -cnv                                                                                                                                                                    horkew: 14:35:12
+                                                                                                                                                                                                    in 0.042s (0)
+  ID NAME             STATUS     PATH                           BRAND    IP
+   1 sidecar_softnpu  running    /sidecar/sidecar_softnpu       omicron1 excl
+   2 oxz_switch       running    /zone/oxz_switch               omicron1 excl
+   3 oxz_internal_dns_875a2d35-ee2a-41ee-a372-1447f2d5d224 running    /pool/ext/31b9275d-c712-470c-a99b-227c863afaef/crypt/zone/oxz_internal_dns_875a2d35-ee2a-41ee-a372-1447f2d5d224 omicron1 excl
+   4 oxz_internal_dns_3f07429d-4c25-41ad-aff0-b00e02e6956a running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_internal_dns_3f07429d-4c25-41ad-aff0-b00e02e6956a omicron1 excl
+   5 oxz_internal_dns_a72e94c4-6773-42cd-bad9-ac4640d1f01f running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_internal_dns_a72e94c4-6773-42cd-bad9-ac4640d1f01f omicron1 excl
+   6 oxz_ntp_7b961e80-8fe8-4f37-82c5-5486fc1d77a8 running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_ntp_7b961e80-8fe8-4f37-82c5-5486fc1d77a8 omicron1 excl
+   7 oxz_cockroachdb_13c852f5-2ca1-4cd2-843e-3e1181746828 running    /pool/ext/31b9275d-c712-470c-a99b-227c863afaef/crypt/zone/oxz_cockroachdb_13c852f5-2ca1-4cd2-843e-3e1181746828 omicron1 excl
+   8 oxz_cockroachdb_e4ae69af-7b1b-4015-a436-a4908b79bc9f running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_cockroachdb_e4ae69af-7b1b-4015-a436-a4908b79bc9f omicron1 excl
+   9 oxz_cockroachdb_269b17b9-89fb-42a6-8e90-2b417d9753f5 running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_cockroachdb_269b17b9-89fb-42a6-8e90-2b417d9753f5 omicron1 excl
+  10 oxz_crucible_b5bc6622-c4d8-4b6a-bfc5-b17fa0fb71b2 running    /pool/ext/31b9275d-c712-470c-a99b-227c863afaef/crypt/zone/oxz_crucible_b5bc6622-c4d8-4b6a-bfc5-b17fa0fb71b2 omicron1 excl
+  11 oxz_external_dns_872482aa-aa52-474a-9689-9401862dc07e running    /pool/ext/31b9275d-c712-470c-a99b-227c863afaef/crypt/zone/oxz_external_dns_872482aa-aa52-474a-9689-9401862dc07e omicron1 excl
+  12 oxz_nexus_7ac24e9e-32e8-49a9-a192-0cbfeb3d0ec8 running    /pool/ext/31b9275d-c712-470c-a99b-227c863afaef/crypt/zone/oxz_nexus_7ac24e9e-32e8-49a9-a192-0cbfeb3d0ec8 omicron1 excl
+  13 oxz_external_dns_805c7d5a-3615-40ea-b352-0812589278e1 running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_external_dns_805c7d5a-3615-40ea-b352-0812589278e1 omicron1 excl
+  14 oxz_crucible_f123efc3-c241-4f71-9e3f-306d7d031225 running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_crucible_f123efc3-c241-4f71-9e3f-306d7d031225 omicron1 excl
+  15 oxz_crucible_e348be8b-9f53-4286-9894-ab3c776185f0 running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_crucible_e348be8b-9f53-4286-9894-ab3c776185f0 omicron1 excl
+  16 oxz_crucible_pantry_353a7ff1-149e-4cbb-a103-f92d95e17a3e running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_crucible_pantry_353a7ff1-149e-4cbb-a103-f92d95e17a3e omicron1 excl
+  17 oxz_crucible_pantry_0b8f3b98-55a2-4887-8128-175cf723e779 running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_crucible_pantry_0b8f3b98-55a2-4887-8128-175cf723e779 omicron1 excl
+  18 oxz_crucible_pantry_5f2a1120-c06a-4c03-98d7-85abb036ce96 running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_crucible_pantry_5f2a1120-c06a-4c03-98d7-85abb036ce96 omicron1 excl
+  19 oxz_oximeter_00ac4601-d1e8-4728-8ef0-19cdf63b3d05 running    /pool/ext/2334bee9-bd79-4783-984f-a6b283968f40/crypt/zone/oxz_oximeter_00ac4601-d1e8-4728-8ef0-19cdf63b3d05 omicron1 excl
+  20 oxz_nexus_1bbaf86f-d430-42eb-9e7c-a426ff68c607 running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_nexus_1bbaf86f-d430-42eb-9e7c-a426ff68c607 omicron1 excl
+  21 oxz_nexus_d3064a5a-a21e-461a-9c84-648cfcea48b4 running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_nexus_d3064a5a-a21e-461a-9c84-648cfcea48b4 omicron1 excl
+  22 oxz_clickhouse_f432b19c-91ca-46d0-a461-ecd19474a1da running    /pool/ext/cad34760-c87b-441e-baad-5f406fdc5221/crypt/zone/oxz_clickhouse_f432b19c-91ca-46d0-a461-ecd19474a1da omicron1 excl
+```

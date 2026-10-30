@@ -1,0 +1,18 @@
+created: 20260608185104319
+modified: 20260608185229464
+tags: 
+title: nexus/src/app/mod.rs
+type: text/vnd.tiddlywiki
+
+[[Open This|nexus/src/app/mod.rs]]
+
+---
+
+```yml
+/// See oxidecomputer/omicron#7875 for the 250G determination.
+pub const CONTROL_PLANE_STORAGE_BUFFER: ByteCount =
+    ByteCount::from_gibibytes_u32(250);
+
+/// Manages an Oxide fleet -- the heart of the control plane
+pub struct Nexus {
+```

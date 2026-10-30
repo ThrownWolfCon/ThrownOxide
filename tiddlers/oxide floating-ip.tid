@@ -1,0 +1,18 @@
+created: 20260627172743007
+modified: 20260627173420286
+tags: [[oxide cli commands]]
+title: oxide floating-ip
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide floating-ip]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide floating-ip">>
+</div>
+</div>
+</$linkcatcher>
+

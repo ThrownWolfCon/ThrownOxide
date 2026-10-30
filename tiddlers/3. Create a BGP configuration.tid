@@ -1,0 +1,30 @@
+created: 20260617021900733
+modified: 20260617022049953
+tags: [[OG: BGP]]
+title: 3. Create a BGP configuration
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Create a BGP configuration]]
+
+---
+
+Next, a BGP configuration must be created. BGP configurations are named objects that carry a BGP autonomous system number (ASN). BGP routers in the same ASN peer use the internal variant of the BGP protocol (iBGP). BGP routers in different ASNs peer use the external variant of the BGP protocol (eBGP). A common deployment configuration is one BGP configuration with a distinct ASN per switch. This ensures that the Oxide rack peers over eBGP with upstream routers.
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>Tip</strong><br><br>
+At the present time, the Oxide rack BGP implementation acts only as an edge router. 
+<br><br>
+This means it will announce prefixes, and update the racks routing tables based on announcements received - but it will not redistribute prefixes between peers it’s connected to.
+</div>
+
+
+```bash
+oxide system networking bgp config create \
+    --name as47                           \
+    --description 'autonomous system 47'  \
+    --asn 47                              \
+    --bgp-announce-set-id instances
+```
+
+BGP configurations are tied to an announce set. In the example above, the instances announce set was created in the previous section.

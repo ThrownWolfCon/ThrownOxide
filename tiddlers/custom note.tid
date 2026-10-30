@@ -1,0 +1,61 @@
+created: 20260603002723980
+modified: 20260603134511549
+tags: $:/tags/Stylesheet
+title: custom note
+type: text/vnd.tiddlywiki
+
+/* ===== GREEN VERSION (existing) ===== */
+.custom-note-green {
+  background-color: #0a3d2a;
+  color: #b3f0d0;
+  border: 1px solid #1a7c5d;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-note-green strong {
+  color: #00ff9d;
+  text-shadow: 0 0 6px #00ff9d;
+  font-weight: 600;
+}
+
+/* ===== BLUE VERSION (new) ===== */
+.custom-note-blue {
+  background-color: #0a2a3d;
+  color: #b3e0f0;
+  border: 1px solid #1a5c7c;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-note-blue strong {
+  color: #00d4ff;           /* Cool neon blue */
+  text-shadow: 0 0 6px #00d4ff;
+  font-weight: 600;
+}
+
+/* Shared icon styling */
+.custom-note-green .note-icon,
+.custom-note-blue .note-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid currentColor;
+}

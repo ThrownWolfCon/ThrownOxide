@@ -1,0 +1,22 @@
+created: 20260526180637070
+modified: 20260601050225911
+next action: Keep this as a task to remember to link things to it!
+tags: task [[Support Engineer]]
+title: Please contact Oxide Support
+type: text/vnd.tiddlywiki
+
+[[Open This|Please contact Oxide Support]]
+
+---
+
+These are spot where our own documentation say to contact support...
+
+SO should get how to do these things dialed in!
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Please contact Oxide Support">>
+</div>
+</div>
+</$linkcatcher>

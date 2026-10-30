@@ -1,0 +1,23 @@
+created: 20260620214050550
+modified: 20260620214134862
+tags: [[non-gimlet: config-rss.toml - cat out]]
+title: 1. RSS (Rack Setup Service) "stand-in" configuration.
+type: text/vnd.tiddlywiki
+
+[[Open This|1. RSS (Rack Setup Service) "stand-in" configuration.]]
+
+---
+
+```
+# RSS (Rack Setup Service) "stand-in" configuration.
+#
+# This file conforms to the schema for "RackInitializeRequest" in the Bootstrap
+# Agent API.  See the `RackInitializeRequest` type in bootstrap-agent or its
+# OpenAPI spec (in openapi/bootstrap-agent.json in the root of this workspace).
+
+# Only include "our own sled" in the bootstrap network
+bootstrap_discovery.type = "only_ours"
+
+ntp_servers = [ "0.pool.ntp.org" ]
+dns_servers = [ "1.1.1.1", "9.9.9.9" ]
+```

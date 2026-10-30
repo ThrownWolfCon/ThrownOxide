@@ -1,0 +1,29 @@
+created: 20260602232539942
+modified: 20260612235202075
+tags: [[3. Rack network management]]
+title: 3.2 Switch ports
+type: text/vnd.tiddlywiki
+
+[[Open This|3.2 Switch ports]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_switch_ports
+
+Port objects are associated with physical switch ports. There are different types of ports, e.g., faceplate data ports, backplane ports. Ports provide a configuration interface for physical-layer properties such as phy lane geometry and power levels supplied to transceivers.
+
+Naming:
+
+|! Port Pattern |! Description |
+| `qsfp0-31` | Data ports on the faceplate of the rack switch |
+| `tech0-1` | RJ-45 technician ports |
+| `rear0-31` | Backplane ports |
+| `int0` | Internal CPU port |
+| `mgmt0-34` | VSC7448 management ports |
+
+Management Port Allocation (`mgmt0-34`)
+
+|! Port Range |! Purpose |
+| `mgmt0-31` | Service processors |
+| `mgmt32-33` | Power controllers 0 and 1 |
+| `mgmt34` | Adjacent sidecar |

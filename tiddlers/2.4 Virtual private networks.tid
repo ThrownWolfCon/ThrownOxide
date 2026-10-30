@@ -1,0 +1,13 @@
+created: 20260602232208903
+modified: 20260620012308827
+tags: [[2. Virtual resources]]
+title: 2.4 Virtual private networks
+type: text/vnd.tiddlywiki
+
+[[Open This|2.4 Virtual private networks]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_virtual_private_networks
+
+[[VPC]]s are private [[RFC1918]] networks that isolate sets of instances from each other. Instances within a VPC subnet can talk to each other using private IP addresses (if firewall rules allow it) but traffic between VPCs must go through external IPs.

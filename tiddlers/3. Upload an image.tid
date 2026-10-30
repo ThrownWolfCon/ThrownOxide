@@ -1,0 +1,34 @@
+created: 20260602233839964
+modified: 20260623151303616
+tags: [[GS: Quick Start: CLI]]
+title: 3. Upload an image
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Upload an image]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart-cli#_upload_an_image
+
+To launch an instance, we need to add an image to our new project. The Oxide platform runs cloud-init-based images in raw image format. Let’s download one to get started. You can skip this step if you already have your own image.
+
+```bash
+$ curl -OL https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.raw
+```
+
+Now let’s upload this image to the Oxide control plane.
+
+```bash
+$ oxide disk import \
+    --path debian-12-genericcloud-amd64.raw \
+    --disk bookworm-boot \
+    --project prototypes \
+    --description "Debian bookworm disk" \
+    --snapshot bookworm-snapshot \
+    --image bookworm \
+    --image-description "Debian bookworm image" \
+    --image-os Debian \
+    --image-version 12
+```
+
+That’s it! On to the final step of creating an instance.

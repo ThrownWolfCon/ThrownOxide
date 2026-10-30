@@ -1,0 +1,19 @@
+created: 20260610013057175
+modified: 20260703220406490
+tags: [[1.2.2 Mode 2: Create a fake isolated network]] warhound
+title: ensuring scrimlet uplinks
+type: text/vnd.tiddlywiki
+
+[[Open This|ensuring scrimlet uplinks]]
+
+---
+
+```bash
+michael@warhound:~$ tail -f /var/svc/log/oxide-sled-agent:default.log | grep -E 'uplink|boundary|SoftNPU|external.*ready|started'
+{"msg":"ensuring scrimlet uplinks","v":0,"name":"SledAgent","level":30,"time":"2026-06-10T01:29:32.760649987Z","hostname":"warhound","pid":10275,"component":"ServiceManager","file":"sled-agent/src/services.rs:3491"}
+{"msg":"ensuring scrimlet uplinks","v":0,"name":"SledAgent","level":30,"time":"2026-06-10T01:29:36.79149761Z","hostname":"warhound","pid":10275,"component":"ServiceManager","file":"sled-agent/src/services.rs:3491"}
+{"msg":"ensuring scrimlet uplinks","v":0,"name":"SledAgent","level":30,"time":"2026-06-10T01:29:43.250962425Z","hostname":"warhound","pid":10275,"component":"ServiceManager","file":"sled-agent/src/services.rs:3491"}
+{"msg":"ensuring scrimlet uplinks","v":0,"name":"SledAgent","level":30,"time":"2026-06-10T01:30:02.746989752Z","hostname":"warhound","pid":10275,"component":"ServiceManager","file":"sled-agent/src/services.rs:3491"}
+{"msg":"ensuring scrimlet uplinks","v":0,"name":"SledAgent","level":30,"time":"2026-06-10T01:30:06.79523252Z","hostname":"warhound","pid":10275,"component":"ServiceManager","file":"sled-agent/src/services.rs:3491"}
+{"msg":"ensuring scrimlet uplinks","v":0,"name":"SledAgent","level":30,"time":"2026-06-10T01:30:13.257696487Z","hostname":"warhound","pid":10275,"component":"ServiceManager","file":"sled-agent/src/services.rs:3491"}
+```

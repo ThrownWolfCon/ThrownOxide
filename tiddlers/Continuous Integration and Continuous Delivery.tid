@@ -1,0 +1,18 @@
+created: 20260504200023030
+modified: 20260504200215373
+tags: [[Platform Perspective]]
+title: Continuous Integration and Continuous Delivery
+type: text/vnd.tiddlywiki
+
+[[Open This|Continuous Integration and Continuous Delivery]]
+
+---
+
+Continuous Integration and Continuous Delivery
+
+Evolve and improve applications and services at a faster pace than organizations using traditional software development and infrastructure management processes.
+
+Adopting DevOps practices with continuous integration, testing, and deployment will help you to become more agile so that you can innovate faster, adapt to changing markets better, and grow more efficient at driving business results. Implement continuous integration and continuous delivery (CI/CD) pipelines.
+
+Start with a minimum viable pipeline for continuous integration and then transition to a continuous delivery pipeline with more components and stages. Encourage developers to create unit tests as early as possible and to run them before pushing
+the code to the central repository. Include staging and production steps in your continuous delivery pipeline and consider manual approvals for production deployments. Consider multiple deployment strategies, including in-place, rolling, immutable, and blue/green deployments.

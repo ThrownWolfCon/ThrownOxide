@@ -1,0 +1,15 @@
+created: 20260504210535035
+modified: 20260504210639569
+tags: [[Operations Perspective]]
+title: Performance and Capacity Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Performance and Capacity Management]]
+
+---
+
+Performance and Capacity Management
+
+Monitor workload performance and ensure that capacity meets current and future demands.
+
+Although the capacity of the cloud is virtually unlimited, service quotas, capacity reservations, and resource constraints restrict the actual capacity of your workloads. Such capacity constraints need to be understood and effectively managed. Identify key stakeholders and agree on the objectives, scope, goals, and metrics. Collect and process performance data and regularly review and report performance against targets. Periodically evaluate new technologies to improve performance and recommend changes to the goals and metrics as appropriate. Monitor the utilization of your workloads, create baselines for future comparison, and identify thresholds to expand capacity as required. Analyze demand over time to ensure capacity matches seasonal trends and fluctuating operating conditions. 

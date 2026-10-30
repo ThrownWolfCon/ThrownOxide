@@ -1,0 +1,23 @@
+created: 20260605170110506
+modified: 20260605170255764
+tags: [[Control Plane Components]]
+title: external-dns
+type: text/vnd.tiddlywiki
+
+[[Open This|external-dns]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>external-dns</strong><br><br>
+The external DNS integrates with the on-premises customer DNS and provides name service to the rack’s Console and API endpoints. The name service will be extended to user’s virtual machine instances in future product releases.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "external-dns">>
+</div>
+</div>
+</$linkcatcher>

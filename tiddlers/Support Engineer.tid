@@ -1,0 +1,23 @@
+created: 20260511143843753
+modified: 20260526210013145
+tags: [[Oxide Roles]] task done
+title: Support Engineer
+type: text/vnd.tiddlywiki
+
+[[Open This|Support Engineer]]
+
+---
+
+https://oxide.computer/careers/support-engineering
+
+Do you love to directly support the success of customers? We are seeking a Support Engineer that shares our beliefs around the primacy of support. Far too often the support function inside of a company is relegated to an issue triage center, focused more on the exoneration of a company’s product or service than on resolving the customer’s overall issue. At Oxide we are different; we view the customer’s issue as our own, regardless of the cause, and consider supporting our customers the responsibility of everyone in the company.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Support Engineer">>
+</div>
+</div>
+</$linkcatcher>
+
+<<tabs "[tag[Support Engineer]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

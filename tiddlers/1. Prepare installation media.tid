@@ -1,0 +1,17 @@
+created: 20260530160356013
+modified: 20260611195910929
+tags: [[Installing on a physical machine using the ISO]]
+title: 1. Prepare installation media
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Prepare installation media]]
+
+---
+
+If you have a physical USB mass storage device (e.g., a flash drive) you can use dd to write the image to the disk. It should replace the partition table, so use the whole-disk device for your OS (e.g., something like /dev/sda on Linux, or /dev/dsk/c0t0d0p0 on illumos).
+
+If you want to try booting the ISO via IPMI remote media redirection that may also work.
+
+<<<wolfxide
+On Windows I just balenaEtcher the ISO...
+<<<

@@ -1,0 +1,14 @@
+created: 20260502022704409
+modified: 20260502022843542
+title: UART
+type: text/vnd.tiddlywiki
+
+[[Open This|UART]]
+
+---
+
+A serial port or connection
+
+A UART (Universal Asynchronous Receiver/Transmitter) is a hardware device or circuit that translates data between parallel and serial forms for asynchronous communication.
+
+https://docs.arduino.cc/learn/communication/uart/

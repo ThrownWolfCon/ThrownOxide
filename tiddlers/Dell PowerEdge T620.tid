@@ -1,0 +1,33 @@
+created: 20260601152352493
+modified: 20260601152910677
+tags: thrive_10
+title: Dell PowerEdge T620
+type: text/vnd.tiddlywiki
+
+[[Open This|Dell PowerEdge T620]]
+
+---
+
+```yml
+aim@aim-PowerEdge-T620:~$ neofetch
+            .-/+oossssoo+/-.               aim@aim-PowerEdge-T620
+        `:+ssssssssssssssssss+:`           ----------------------
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.4 LTS x86_64
+    .ossssssssssssssssssdMMMNysssso.       Host: PowerEdge T620
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.8.0-117-generic
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 11 days, 21 hours, 47 mins
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2359 (dpkg), 1 (brew), 29 (snap)
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1024x768
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Terminal: /dev/pts/3
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel Xeon E5-2640 v2 (32) @ 2.500GHz
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   GPU: 0a:00.0 Matrox Electronics Systems Ltd. G200eR2
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Memory: 20375MiB / 64320MiB
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   /ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.
+```

@@ -1,0 +1,15 @@
+created: 20260602232005518
+modified: 20260612233215038
+tags: [[2. Virtual resources]]
+title: 2.1 Instances
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Instances]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_instances
+
+Instances are virtual machines that run on the Oxide platform. Each VM can be attached to up to eight virtual disks, one private network interface, and multiple external network interfaces. The guest operating system used by a VM instance is based on the boot disk attached to it.
+
+Instances that have one or more network interfaces get outbound internet access through NAT service on the rack. They can be optionally attached to temporary or permanent external IP addresses to allow them to communicate with external hosts.

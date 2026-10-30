@@ -1,0 +1,39 @@
+created: 20260501031006191
+modified: 20260506231748344
+tags: [[Application Migration Strategies]] [[Seven Common Migration Strategies]]
+title: Repurchase
+type: text/vnd.tiddlywiki
+
+[[Open This|Repurchase]]
+
+---
+
+Repurchasing
+
+Repurchasing is a strategy that involves replacing an existing application with a new cloud-based solution, typically a SaaS product.
+
+Instead of migrating the current system, organizations switch to a different product that fulfills the same business need.
+
+When to use repurchasing: Repurchasing is ideal when existing applications are outdated, costly to maintain, or no longer meet business requirements.
+
+Advantages of repurchasing:
+
+Simplicity: Eliminates the need for migration or redevelopment.
+Reduced maintenance: Vendor handles updates and infrastructure.
+Quick deployment: SaaS solutions can be implemented rapidly.
+
+Limitations of repurchasing:
+
+Loss of customization: Limited control over features and configurations.
+Vendor lock-in: Dependence on a third-party provider.
+Migration effort: Data transfer and user retraining may be required.
+
+Step-by-step guide for repurchasing:
+
+* [[Repurchase Assessment]]: Evaluate current applications and identify SaaS alternatives.
+* [[Repurchase Selection]]: Choose a suitable cloud-based solution.
+* [[Repurchase Planning]]: Plan data migration and user transition.
+* [[Repurchase Migration]]: Transfer data and configure the new system.
+* [[Repurchase Testing]]: Ensure functionality and data integrity.
+* [[Repurchase Training]]: Train users on the new platform.
+* [[Repurchase Optimization]]: Adjust configurations to meet business needs.

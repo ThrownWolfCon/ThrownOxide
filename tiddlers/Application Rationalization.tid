@@ -1,0 +1,82 @@
+created: 20260424222752547
+modified: 20260601161051002
+tags: Backlog thrive_06
+title: Application Rationalization
+type: text/vnd.tiddlywiki
+
+[[Open This|Application Rationalization]]
+
+---
+
+https://cloud.google.com/blog/products/application-development/application-rationalization-what-why-and-how
+
+6 steps to application modernization
+
+Step 1: Discover—Gather the data
+
+Data is the foundation of the app rationalization process. Gather app inventory data for all your apps in a consistent way across the board. If you have multiple formats of data across lines of businesses, you may need to normalize the data. Typically some form of albeit outdated app inventory can be found in CMDB databases or IT spreadsheets. If you do not have an application inventory in your organization then you need to build one either in an automated way or manually. For automated app discovery there are tools that you can use such as Stratozone, [[M4A]] Linux and Windows assessment tools, APM tools such as Splunk, dynatrace, newrelic, and appdynamics and others may also be helpful to get you started. App assessment tools specific to workloads like WebSphere Application Migration Toolkit, Redhat Migration Toolkit for Applications, VMWare cloud suitability analyzer and .NET Portability Analyzer can help paint a picture of technical quality across the infrastructure and application layers. As a bonus, similar rationalization can be done at the data, infrastructure and mainframe tiers too. Watch this space.
+
+Site Reliability Engineering (SRE)
+
+Step 2: Create cohorts—Group applications 
+
+Once you have the application inventory, categorize applications based on value and effort. Low effort e.g. stateless applications,microservices or applications with simple dependencies etc. and high business value will give you the first wave candidates to modernize or migrate.
+
+Step 3: Map out the modernization journey
+
+For each application, understand its current state to map it to the right destination on its cloud journey. For each application type, we outline the set of possible modernization paths. Watch out for more content in this section in upcoming blogs.
+
+  1.  Not cloud ready (Retain, Rehost, Reimagine)—These are typically monolithic, legacy applications which run on the VM, take a long time to restart, not horizontally scalable. These applications sometimes depend on the host configuration and also require elevated privileges. 
+
+   2. Container ready (Rehost, Refactor and Replatform)—These applications can restart, have readiness and liveliness probes, logs to stdout. These applications can be easily containerized. 
+
+  3.  Cloud compatible (Replatform)—In addition to container ready, typically these applications have externalized configurations, secret management, good observability baked in. The apps can also scale horizontally. 
+
+   4. Cloud friendly—These apps are stateless, can be disposed of, have no session affinity, and have metrics that are exposed using an exporter.
+
+  5.  Cloud Native—These are API first, easy to integrate cloud authentication and authorization apps. They can scale to zero and run in serverless runtimes. 
+
+The picture below shows where each of this category lands on the modernization journey and a recommended way to start modernization. 
+
+This will drive your cloud migration journey, e.g. lift and shift, move and improve etc.
+
+PIC
+
+Once you have reached this stage, you have established a migration or change path for your applications. It is useful to think of this transition to cloud as a journey, i.e. an application can go through multiple rounds of migration and modernization or vice-versa as different layers of abstractions become available after every migration of modernization activity. 
+
+Step 4: Plan and Execute
+
+At this stage you have gathered enough data about the first wave of applications. You are ready to put together an execution plan, along with the engineering, DevOps and operations/SRE teams. Google Cloud offers solutions for modernizing applications, one such example for Java is here.
+
+At the end of this phase, you will have the following (not an exhaustive list):
+
+    An experienced team who can run and maintain the production workloads in cloud 
+
+    Recipes for app transformation and repeatable CI/CD patterns
+
+    A security blueprint and data (in transit and at rest) guidelines
+
+    Application telemetry (logging, metrics, alerts etc.) and monitoring
+
+    Apps running in the cloud, plus old apps turned off realizing infrastructure and license savings
+
+    Runbook for day 2 operations
+
+    Runbook for incident management
+
+Step 5: Assess ROI
+
+ROI calculations include a combination of: 
+
+    Direct costs: hardware, software, operations, and administration
+
+    Indirect costs: end-user operations and downtime
+
+It is best to capture the current/as is ROI and projected ROI after the modernization effort. Ideally this is in a dashboard and tracked with metrics that are collected continuously as applications flow across environments to prod and savings are realized. The Google CAMP program puts in place a data-driven assessment and benchmarking, and brings together a tailored set of technical, process, measurement, and cultural practices along with solutions and recommendations to measure and realize the desired savings. 
+
+Step 6: Rinse and Repeat
+
+Capture the feedback from going over the app rationalization steps and repeat for the rest of your applications to modernize your application portfolio. With each subsequent iteration it is critical to measure key results and set goals to create a self propelling, self improving fly wheel of app rationalization. 
+Summary
+
+App rationalization is not a complicated process. It is a data driven, agile, continuous process that can be implemented and communicated within the organization with the executive support. 

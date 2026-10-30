@@ -1,0 +1,31 @@
+created: 20260701163716370
+modified: 20260701171252244
+title: TLS - Using the CLI or API
+type: text/vnd.tiddlywiki
+
+[[Open This|TLS - Using the CLI or API]]
+
+---
+
+The silo creation JSON payload must be provided in a file, for example silo.json. This is then passed to the oxide silo create command:
+
+```bash
+oxide silo create --json-body silo.json
+```
+
+You can also refer directly to the documentation for the silo_create endpoint.
+
+Two examples of the silo.json request payload are provided below. Replace the placeholders with your actual values.
+
+The cert and key placeholders are PEM-formatted strings, with the contents of certificate and private-key files including their headers, passed as a single-line JSON string with \n escape sequences in place of newlines. For example:
+
+```bash
+"cert": "-----BEGIN CERTIFICATE-----\nMIID...\n-----END CERTIFICATE-----"
+```
+
+
+Authentication configuration
+
+Local Authentication: Set identity_mode to local_only. User accounts are managed directly within the Oxide system without an external IdP. Follow the Local Only guide to configure your silo for local user authentication and create the first local user.
+
+Identity Provider (IdP) Authentication: Set identity_mode to saml_jit or saml_scim. Users are authenticated using SAML assertions from the IdP. Follow the Identity Providers guide to configure your silo for IdP authentication.

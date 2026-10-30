@@ -1,0 +1,19 @@
+created: 20260602232516791
+modified: 20260612234654634
+tags: [[3. Rack network management]]
+title: 3.1 Address lots
+type: text/vnd.tiddlywiki
+
+[[Open This|3.1 Address lots]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_address_lots
+
+Usable addresses are communicated to the Oxide Rack through address lots. An address lot contains an array of address ranges. Address lots are named elements with a resource id. Address lots allow operators to associate an intended use to a collection of addresses. To this end address lots have types. Currently there are two types, `infra` and `pool`. The infra type indicates that an address lot is to be used for the network infrastructure connecting the rack to upstream networks. The `pool` type indicates that an address lot is to be bound to an IP pool. For example, for a rack on the public Internet with the address prefix `203.0.113.0/24`, an administrator may choose to break this prefix up as follows into lots.
+
+|! Name |! Type |! Block |
+| network infrastructure | `infra` | `203.0.113.2 - 203.0.113.3` |
+| control plane | `pool` | `203.0.113.4 - 203.0.113.10` |
+| instances | `pool` | `203.0.113.11 - 203.0.113.100`<br>`203.0.113.200 - 203.0.113.220` |
+

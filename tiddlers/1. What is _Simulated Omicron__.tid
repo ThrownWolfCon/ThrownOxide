@@ -1,0 +1,17 @@
+created: 20260528002604675
+modified: 20260615221618254
+tags: [[Running Omicron (Simulated)]]
+title: 1. What is "Simulated Omicron"?
+type: text/vnd.tiddlywiki
+
+[[Open This|1. What is "Simulated Omicron"?]]
+
+---
+
+!What is "Simulated Omicron"?
+
+The "Sled-local" component of the control plane - which expects to manage local resources - has tight coupling with the illumos Operating System. However, a good portion of the control plane (interactions with the database, metrics collection, and the console, for example) executes within programs that are decoupled from the underlying Sled.
+
+To enable more flexible testing of this software, a "simulated" sled agent is provided, capable of running across many platforms (Linux, Mac, illumos). This allows developers to test the control plane flows without actually having any resources to manage.
+
+If you are interested in running the "real" control plane (which is necessary for managing instances, storage, and networking) refer to the non-simulated guide at how-to-run.adoc.

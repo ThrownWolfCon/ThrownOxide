@@ -1,0 +1,13 @@
+created: 20260501155946758
+modified: 20260501160030408
+tags: [[Aim Docker]]
+title: Audiobookshelf
+type: text/vnd.tiddlywiki
+
+[[Open This|Audiobookshelf]]
+
+---
+
+```yml
+977aff4c55ea   ghcr.io/advplyr/audiobookshelf               "tini -- node index.…"   3 days ago      Up 3 days               0.0.0.0:13378->80/tcp, [::]:13378->80/tcp                                                                                                 audiobookshelf
+```

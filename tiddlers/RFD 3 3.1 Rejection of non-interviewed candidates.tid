@@ -1,0 +1,22 @@
+created: 20260509233135089
+modified: 20260509233456914
+tags: [[RFD 3 3 Post-evaluation]]
+title: RFD 3 3.1 Rejection of non-interviewed candidates
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 3.1 Rejection of non-interviewed candidates]]
+
+---
+
+If candidates aren’t advanced into interviews by the process outlined in [rfd147], an explicit rejection should be sent. The level of oversubscription for Oxide roles means that this rejection will likely be non-specific — which is naturally frustrating for applicants that have put a lot of energy into their materials. Candidates may well respond to a rejection by asking for more specific feedback; to the degree that feedback can be constructive, it should be provided. That said, in many cases, there is little constructive feedback to give: Oxide’s rate of moving candidates into conversations is historically much less than 5%; at that level of selectivity, many very good applications are being rejected.
+
+High selectivity resulting in seemingly capricious rejection is not unique to Oxide; as Y Combinator explains in [yc-whynot], they have also struggled to give concrete feedback:
+
+<<<
+We interview as many great teams as needed to find that number of companies and then generally stop, no matter how many good ones apply. From that cutoff down to about the halfway point, the applications are pretty good. The reason they didn’t get invited was not that there was anything specifically wrong with them. They were just pushed down by other applicants who were particularly stellar.
+
+— Y Combinator<br>
+Why We Don't Invite Groups to Interviews
+<<<
+
+Oxide is similar: good candidates are not advanced into interviews often are because there was another applicant that was superlative in dimensions in which they were merely very good.

@@ -1,0 +1,80 @@
+created: 20260501144737868
+modified: 20260501152832324
+tags: [[Aim Server]]
+title: Aim OS Drive
+type: text/vnd.tiddlywiki
+
+[[Open This|Aim OS Drive]]
+
+---
+
+```yml
+aim@aim-PowerEdge-T620:/$ tree -L 1
+.
+├── bin -> usr/bin
+├── bin.usr-is-merged
+├── boot
+├── cdrom
+├── dev
+├── etc
+├── home
+├── lib -> usr/lib
+├── lib32 -> usr/lib32
+├── lib64 -> usr/lib64
+├── lib.usr-is-merged
+├── libx32 -> usr/libx32
+├── lost+found
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin -> usr/sbin
+├── sbin.usr-is-merged
+├── snap
+├── srv
+├── swapfile
+├── sys
+├── tmp
+├── usr
+└── var
+```
+
+```yml
+aim@aim-PowerEdge-T620:/$ tree -L 2 /home/
+/home/
+└── aim
+    ├── Android
+    ├── br0-net.xml
+    ├── Desktop
+    ├── Documents
+    ├── Downloads
+    ├── file111111.txt
+    ├── FUN
+    ├── greenbone_backup.tar
+    ├── Monero
+    ├── Music
+    ├── output.out
+    ├── paleta
+    ├── Pictures
+    ├── Public
+    ├── snap
+    ├── Templates
+    └── Videos
+
+15 directories, 4 files
+aim@aim-PowerEdge-T620:/$ cd /home/aim/FUN/
+aim@aim-PowerEdge-T620:~/FUN$ ll
+total 16
+drwxrwxr-x   4 aim aim 4096 Mar 10  2025 ./
+drwxr-x---+ 28 aim aim 4096 Apr 15 00:53 ../
+drwxrwxr-x   2 aim aim 4096 Mar 10  2025 cheese/
+drwxrwxr-x   2 aim aim 4096 Mar 10  2025 wine/
+aim@aim-PowerEdge-T620:~/FUN$ tree
+.
+├── cheese
+│   └── file2.out
+└── wine
+    └── file1.txt
+```

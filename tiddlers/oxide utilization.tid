@@ -1,0 +1,33 @@
+created: 20260628013743840
+modified: 20260707234720483
+tags: [[oxide cli commands]]
+title: oxide utilization
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide utilization]]
+
+---
+
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">With jq:</span> <<copy-to-clipboard "oxide utilization | jq -C .">>
+
+`oxide utilization | jq -C .`
+
+<span style="font-family: 'Beleren', sans-serif; color: #c90076;">Without jq:</span> <<copy-to-clipboard "oxide utilization">>
+
+`oxide utilization`
+
+```bash
+PS C:\Users\Michael> oxide utilization | jq -C .
+{
+  "capacity": {
+    "cpus": 0,
+    "memory": 0,
+    "storage": 0
+  },
+  "provisioned": {
+    "cpus": 0,
+    "memory": 0,
+    "storage": 0
+  }
+}
+```

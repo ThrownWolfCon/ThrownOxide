@@ -1,0 +1,35 @@
+created: 20260614151114797
+modified: 20260614152658653
+tags: [[2. Policy scopes]]
+title: 2.2 Silo
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Silo]]
+
+---
+
+https://docs.oxide.computer/guides/configuring-access#_silo
+
+The silo is where developer (non-operator) activity happens. This includes projects, instances, networking, storage, and images. Silo roles cascade to all projects in that silo, but note that the silo collaborator role grants the admin role on all projects, not collaborator. This means silo collaborators have complete control over projects, including the ability to manage project-level permissions. Silo administrators can assign silo roles.
+
+Typically all users in a silo will have the viewer role on the silo (e.g., via an everyone group in the IdP). This lets users see all projects in the silo and locate individual projects in the project list. Without the silo viewer role, users can still access projects by referencing them directly using the project name or UUID, but this does not work well because they cannot perform necessary silo-level operations like listing available IP pools.
+
+Table 2. Silo roles
+
+|Role|Description|h
+|`admin`|Control over the silo, including all projects and resources|
+|`collaborator`|Create and manage projects. Grants the admin role on all projects.|
+|`limited_collaborator`|Grants the limited_collaborator role on all projects in the silo|
+|`viewer`|Grants the viewer role on all projects; allows users to discover and view projects|
+
+Within your own silo, use these endpoints:
+
+* [[policy_view]] — View silo-level role assignments (requires silo viewer)
+
+* [[policy_update]] — Modify silo-level role assignments (requires silo admin)
+
+Fleet administrators can view and modify policies for any silo (including silos they don’t belong to) using:
+
+* [[silo_policy_view]] — View any silo’s role assignments (requires fleet admin)
+
+* [[silo_policy_update]] — Modify any silo’s role assignments (requires fleet admin)

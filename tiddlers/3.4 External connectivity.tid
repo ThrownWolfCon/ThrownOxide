@@ -1,0 +1,24 @@
+created: 20260603000238809
+modified: 20260624173344442
+tags: [[3. Using your instance]]
+title: 3.4 External connectivity
+type: text/vnd.tiddlywiki
+
+[[Open This|3.4 External connectivity]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_external_connectivity
+
+All instances are set up with outbound external connectivity by default. You can start using your new VM to install or update the OS packages after logging in.
+
+Feel free to do whatever you like with your new VM. If you are new to Debian, you can follow Install a test Debian package to try running a simple utility program.
+
+If you are running an application that takes inbound traffic, you’ll want to modify the default firewall settings such that the application is accessible from external hosts. The firewall change involves just a few additional steps, as illustrated in the web server example in the appendix.
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+The default firewall settings allow SSH and ICMP access to your VMs from any external host (e.g., your workstation). VMs running in the same private network (VPC) are also permitted to access each other on any port and network protocol by default.
+</div>
+

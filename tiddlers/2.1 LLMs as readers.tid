@@ -1,0 +1,15 @@
+created: 20260605211817642
+modified: 20260605221106747
+tags: [[RFD 576 2 Uses of LLMs]]
+title: 2.1 LLMs as readers
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 LLMs as readers]]
+
+---
+
+LLMs are superlative at reading comprehension, able to process and meaningfully comprehend documents effectively instantly. This can be extraordinarily powerful for summarizing documents — or of answering more specific questions of a large document like a datasheet or specification. (Ironically, LLMs are especially good at evaluating documents to assess the degree that an LLM assisted their creation!)
+
+While use of LLMs to assist comprehension has little downside, it does come with an important caveat: when uploading a document to a hosted LLM (ChatGPT, Claude, Gemini, etc.), there must be assurance of data privacy — and specifically, assurance that the model will not use the document to train future iterations of itself. Note that this may be opt-out (that is, by default, a model may reserve the right to train on uploaded documents), but can generally be controlled via preferences — albeit occasionally via euphemism. (OpenAI shamelessly calls this checked-by-default setting "Improve the model for everyone", making anyone who doesn’t wish the model to train on their data feel as if they suffer from a kind of reactionary avarice.)
+
+A final cautionary note: using LLMs to assist comprehension should not substitute for actually reading a document where such reading is socially expected. More concretely: while LLMs can be a useful tool to assist in the evaluating of candidate materials per [rfd3], their use should be restricted to be as a tool, not as a substitute for human eyes (and brain!).

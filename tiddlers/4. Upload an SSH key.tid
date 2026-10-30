@@ -1,0 +1,27 @@
+created: 20260602233857997
+modified: 20260623151607296
+tags: [[GS: Quick Start: CLI]]
+title: 4. Upload an SSH key
+type: text/vnd.tiddlywiki
+
+[[Open This|4. Upload an SSH key]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart-cli#_upload_an_ssh_key
+
+To access our instances via SSH we’ll need to upload a key prior to launching them. If you don’t have a SSH key pair for use on Oxide yet, you can follow the instructions here to generate a new one.
+
+```bash
+$ oxide current-user ssh-key create \
+    --name personal \
+    --description "My personal ssh key" \
+    --public-key "$(cat $HOME/.ssh/cloud_rsa.pub)"
+```
+
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+Replace `$HOME/.ssh/cloud_rsa.pub` with your own public key file.
+</div>
+

@@ -1,0 +1,18 @@
+created: 20180304073343648
+modified: 20180304073620390
+tags: [[Customer Success Triage]]
+title: Shadowstream Triage
+type: text/vnd.tiddlywiki
+
+* ShadowStream
+** Verify that DTX has been Provided
+** Open them and verify that ImageManager is shown as an installed application from the dtx.log located in C:\ProgramData\dtx\logs in the .7z file
+** Verify if this is an OEM License (OEM Support Contacts)
+*** If OEM License verify that Email Domain matches the OEM
+*** If Email Domain does not match OEM direct Partner to OEM for support
+*** Incident Packs holders are entitled to STC support.
+** Verify that the Serial Number has active maintenance in CPP and is a ShadowStream License
+*** If expired, is there an Incident Pack referenced in the Web Form Incident field (e.g. XXXX-XXXX)
+*** Verify that the Incident Pack is valid in CPP
+
+[[Update the following the best you can]]

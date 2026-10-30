@@ -1,0 +1,23 @@
+created: 20260605161407282
+modified: 20260605161820606
+tags: [[Control Plane Components]]
+title: Nexus
+type: text/vnd.tiddlywiki
+
+[[Open This|Nexus]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Nexus</strong><br><br>
+  This core component of the control plane is a monolithic program that hosts all user-facing APIs (both operator and customer) and also provides APIs internal to the rack for other components to report faults, generate alerts, and so on. Nexus is also responsible for background control plane activity, including utilization management, server failure detection and recovery, and the like.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Nexus">>
+</div>
+</div>
+</$linkcatcher>

@@ -1,0 +1,17 @@
+created: 20260531015259366
+modified: 20260611162326995
+tags: [[Omicron on Helios]]
+title: 1. Prerequisites
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Prerequisites]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "1. Prerequisites">>
+</div>
+</div>
+</$linkcatcher>

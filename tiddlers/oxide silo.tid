@@ -1,0 +1,17 @@
+created: 20260626194803153
+modified: 20260626201106920
+tags: [[oxide cli commands]]
+title: oxide silo
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide silo]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide silo">>
+</div>
+</div>
+</$linkcatcher>

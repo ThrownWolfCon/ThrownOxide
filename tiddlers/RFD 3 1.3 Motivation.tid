@@ -1,0 +1,17 @@
+created: 20260509213723293
+modified: 20260703050832629
+tags: [[RFD 3 1 Traits to evaluate]]
+title: RFD 3 1.3 Motivation
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 1.3 Motivation]]
+
+---
+
+Motivation
+
+Motivation is often not assessed in the interview process, which is unfortunate because it dictates so much of what we do and why. For Oxide in particular, it is critically important to find those who feel a deep and intrinsic motivation to solve the problems of a complicated computing system. This is essential exactly because these technical problems are so challenging: they push back on us all, and it takes great internal drive to rise to one’s feet again and again.
+
+But how to truly determine motivation? For many companies, this might be tricky to assess, but at Oxide we have the luxury of a clear mission — and the good fortune that those proficient in our domain tend to be very drawn both to that mission and to others similarly motivated. <span style="color: #ffb412;">So simply asking candidates the simple question of why they want to work for Oxide can be revealing: we would expect the answer to be phrased in terms of the mission that we have set for ourselves, the problems we have in tackling it, and/or the team that we have already attracted.</span>
+
+One cautionary note: because our mission is so clear, it can attract some who <span style="color:#c90076;">find it superficially appealing — but in fact will struggle when the problems become spiritually crushing.</span>Motivation should be assessed as much by looking at a candidate’s career (educational, professional or otherwise): their career arc should be clearly driving them to solve the problems that we solve.

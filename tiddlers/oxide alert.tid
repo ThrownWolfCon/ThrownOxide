@@ -1,0 +1,18 @@
+created: 20260628015152437
+modified: 20260628020142376
+tags: [[oxide cli commands]]
+title: oxide alert
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide alert]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide alert">>
+</div>
+</div>
+</$linkcatcher>
+

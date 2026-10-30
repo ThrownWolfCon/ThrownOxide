@@ -1,0 +1,33 @@
+created: 20260502003013206
+modified: 20260502012214106
+title: DevSecOps
+type: text/vnd.tiddlywiki
+
+[[Open This|DevSecOps]]
+
+---
+
+Key Principles of DevSecOps
+
+* ''Shared Responsibility'': Security is no longer solely the security team's job; it is shared among developers, operations, and security specialists.
+* ''Shift Left'': Security testing and considerations begin at the start of the [[SDLC]] (planning/coding) rather than at the end.
+* Automation: Automated testing ([[SAST]], [[DAST]], dependency scanning) is embedded into the [[CI/CD]] pipeline to identify flaws early.Culture of Collaboration: Encourages communication between teams to foster faster, more resilient development.
+
+https://www.redhat.com/en/topics/devops/what-is-devsecops#:~:text=DevSecOps%20stands%20for%20development%2C%20security,infrastructure%20security%20from%20the%20start.
+
+Key Stages of the DevSecOps Lifecycle
+
+# Plan: Define security requirements and risk assessment.
+# Code: Use secure coding standards and static security testing (SAST).
+# Build: Automated scanning for vulnerabilities in dependencies and code.
+# Test: Dynamic security testing (DAST) on the running application.
+# Deploy: Automated compliance checks before production deployment.
+# Operate & Monitor: Continuous monitoring for threats in production and gathering feedback.
+
+https://www.dynatrace.com/news/blog/what-is-devsecops/#:~:text=Automated%20Security%20Testing:,to%20promptly%20address%20critical%20issues.
+
+Key Roles in DevSecOps
+
+# Developers: Write secure code and run initial tests.
+# Security Engineers: Define security policies and automate them within the pipeline.
+# Operations (Ops): Manage infrastructure, monitoring, and compliance.

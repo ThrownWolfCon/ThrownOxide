@@ -1,0 +1,12 @@
+created: 20260501022451083
+modified: 20260504014535467
+rehosting steps: 3
+tags: Rehost
+title: Rehost Preparation
+type: text/vnd.tiddlywiki
+
+[[Open This|Rehost Preparation]]
+
+---
+
+Prepare the cloud environment for migration, including setting up virtual machines and storage.

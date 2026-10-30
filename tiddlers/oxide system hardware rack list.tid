@@ -1,0 +1,26 @@
+created: 20260629194444941
+modified: 20261029223310729
+tags: [[oxide system hardware rack]] [[Show Off]]
+title: oxide system hardware rack list
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide system hardware rack list]]
+
+---
+
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">With jq:</span> <<copy-to-clipboard "oxide system hardware rack list | jq -C .">>
+
+```bash
+oxide system hardware rack list | jq -C .
+```
+
+```json
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide system hardware rack list
+[
+  {
+    "id": "c19a698f-c6f9-4a17-ae30-20d711b8f7dc",
+    "time_created": "2026-06-29T14:56:59.979755Z",
+    "time_modified": "2026-06-29T14:57:05.215669Z"
+  }
+]
+```

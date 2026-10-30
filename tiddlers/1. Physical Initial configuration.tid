@@ -1,0 +1,32 @@
+created: 20260624201520680
+modified: 20260625014720909
+tags: [[OG: Expanding Physical Connectivity]]
+title: 1. Physical Initial configuration
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Physical Initial configuration]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-physical-connectivity#_initial_configuration
+
+This guide will use the oxide CLI. To get started we’re going to look at the current network configuration of the rack.
+
+```bash
+$ oxide system networking switch-port-settings show
+
+switch0/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address          Lot            VLAN
+198.51.101.2/30  initial-infra  None
+
+BGP Peer  Config  Export  Import  Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED  Remote ASN  VLAN
+
+Destination  Nexthop          Vlan  Preference
+0.0.0.0/0    198.51.101.1/32  0     0
+```
+
+This shows that we only have one port connected on one switch.

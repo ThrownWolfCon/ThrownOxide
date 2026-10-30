@@ -1,0 +1,13 @@
+created: 20260602231100797
+modified: 20260612195841744
+tags: [[2. Feature highlights]]
+title: 2.4 Backplane
+type: text/vnd.tiddlywiki
+
+[[Open This|2.4 Backplane]]
+
+---
+
+https://docs.oxide.computer/guides/introduction#_backplane
+
+The Identity and Presence Backplane (IPB) encompasses a series of small PCBAs and cabling that allows each server to identify its location within the rack, and a central management server to determine the number of cubbies in the rack and the current population status of each.

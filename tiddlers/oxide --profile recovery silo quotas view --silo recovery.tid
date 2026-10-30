@@ -1,0 +1,20 @@
+created: 20260608165804289
+modified: 20260626190841343
+tags: 
+title: oxide --profile recovery silo quotas view --silo recovery
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide --profile recovery silo quotas view --silo recovery]]
+
+---
+
+<<<For the Lab! [[Home Lab Oxide]]
+
+<<copy-to-clipboard """
+oxide silo quotas view --silo test-suite-silo
+""">>
+
+```bash
+oxide silo quotas view --silo test-suite-silo
+```
+<<<

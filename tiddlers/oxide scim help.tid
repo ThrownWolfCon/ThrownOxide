@@ -1,0 +1,24 @@
+created: 20260627201844362
+modified: 20260627201944989
+tags: [[oxide scim]]
+title: oxide scim help
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide scim help]]
+
+---
+
+```bash
+PS C:\Users\Michael> oxide scim help
+Usage: oxide.exe scim [OPTIONS] <COMMAND>
+
+Commands:
+  token
+  help   Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
+
+Global Options:
+      --profile <PROFILE>  Configuration profile to use for commands
+```

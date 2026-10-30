@@ -1,0 +1,11 @@
+created: 20260612225552244
+modified: 20260612225601480
+tags: 
+title: reg-red-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>Warning</strong><br>
+  Your warning text goes here.
+</div>

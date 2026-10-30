@@ -1,0 +1,32 @@
+created: 20260616170635775
+modified: 20260616170750506
+tags: [[3. Viewing the log]]
+title: 3.1 Actor types
+type: text/vnd.tiddlywiki
+
+[[Open This|3.1 Actor types]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log#_actor_types
+
+The actor field identifies who made the request:
+
+|silo_user|A user in a silo, identified by silo_user_id and silo_id|
+
+scim
+	
+
+A silo’s SCIM client, identified by silo_id
+
+user_builtin
+	
+
+An internal system user
+
+unauthenticated
+	
+
+No authenticated identity (e.g., login attempts)
+
+user_builtin is an internal actor type included only for completeness; it should never appear in the log because there is no way for built-in users to make an external API request.

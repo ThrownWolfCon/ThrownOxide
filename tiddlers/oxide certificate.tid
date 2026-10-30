@@ -1,0 +1,18 @@
+created: 20260626193146760
+modified: 20260626193553468
+tags: [[oxide cli commands]]
+title: oxide certificate
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide certificate]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide certificate">>
+</div>
+</div>
+</$linkcatcher>
+

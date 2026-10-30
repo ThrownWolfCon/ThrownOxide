@@ -1,0 +1,17 @@
+created: 20260616175617134
+modified: 20260617022738538
+tags: [[Operator Guides]]
+title: OG: Jumbo Frames
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Jumbo Frames]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "OG: Jumbo Frames">>
+</div>
+</div>
+</$linkcatcher>

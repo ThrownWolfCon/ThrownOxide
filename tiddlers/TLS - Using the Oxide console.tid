@@ -1,0 +1,14 @@
+created: 20260701163128200
+modified: 20260701163142432
+title: TLS - Using the Oxide console
+type: text/vnd.tiddlywiki
+
+[[Open This|TLS - Using the Oxide console]]
+
+---
+
+From the Oxide Console, navigate to the System menu using the dropdown at the top right-hand corner of the interface (next to your user name). On the Silos menu, click New Silo.
+
+[img width="100%" [https://docs.oxide.computer/img/oxide-create-silo.png]]
+
+Create silo in Oxide Console

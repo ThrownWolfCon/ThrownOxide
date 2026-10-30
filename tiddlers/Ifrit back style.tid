@@ -1,0 +1,26 @@
+created: 20250613191909746
+modified: 20260504023334759
+tags: $:/tags/Stylesheet
+title: Ifrit back style
+type: text/vnd.tiddlywiki
+
+.tc-tagged-ifritback {
+  position: relative;
+  background-color: black;
+  color: orange;
+  padding: 35px;
+  z-index: 1;
+}
+
+.tc-tagged-ifritback::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-image: url("./files/images/Screenshot 2026-04-04 161156.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.1; /* Lower = more transparent, 1 = fully opaque */
+  z-index: -1;
+}

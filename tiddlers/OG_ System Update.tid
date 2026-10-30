@@ -1,0 +1,35 @@
+created: 20260526170006333
+modified: 20260616041933417
+tags: [[Operator Guides]]
+title: OG: System Update
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: System Update]]
+
+---
+
+https://docs.oxide.computer/guides/operator/system-update
+
+1. Workflow
+
+2. What to expect during an update
+
+2.1 Instance downtime
+
+2.2 API and console downtime
+
+2.3 Other known limitations
+
+2.4 Future improvements 
+
+[[3. Prerequisites]]
+
+4. Detailed procedures
+
+4.1 Check current status
+
+4.2 Upload TUF repo and set target release
+
+4.3 Monitor update progress
+
+5. Related commands

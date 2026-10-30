@@ -1,0 +1,36 @@
+created: 20260701171252988
+modified: 20260701171323060
+tags: 
+title: Example 1: saml_jit JSON payload
+type: text/vnd.tiddlywiki
+
+[[Open This|Example 1: saml_jit JSON payload]]
+
+---
+
+```json
+{
+  "name": "$siloName",
+  "description": "$siloDescription",
+  "discoverable": true,
+  "identity_mode": "saml_jit",
+  "admin_group_name": "$idpAdminGroup",
+  "mapped_fleet_roles": {
+    "admin": [
+      "admin"
+    ]
+  },
+  "quotas": {
+    "cpus": 18,
+    "memory": 8589934592,
+    "storage": 107374182400
+  },
+  "tls_certificates": [{
+    "name": "initial-install-cert",
+    "description": "Wildcard certificate",
+    "service": "external_api",
+    "cert": "$fullCertChainPemBlob",
+    "key": "$privateKeyPemBlob"
+  }]
+}
+```

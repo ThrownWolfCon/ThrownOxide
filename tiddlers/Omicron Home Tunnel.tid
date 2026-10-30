@@ -1,0 +1,23 @@
+created: 20260528142019102
+modified: 20260628153715920
+tags: [[Home Lab Oxide]]
+title: Omicron Home Tunnel
+type: text/vnd.tiddlywiki
+
+[[Open This|Omicron Home Tunnel]]
+
+---
+
+<<copy-to-clipboard "ssh -L 12220:127.0.0.1:12220 aim@100.102.51.94">>
+
+```
+ssh -L 12220:127.0.0.1:12220 aim@100.102.51.94
+```
+
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">Tunnel Only &#8600;</span>
+
+<<copy-to-clipboard "ssh -N -L 12220:127.0.0.1:12220 aim@100.102.51.94">>
+
+```
+ssh -N -L 12220:127.0.0.1:12220 aim@100.102.51.94
+```

@@ -1,0 +1,20 @@
+created: 20260603154932584
+modified: 20260603191925499
+tags: [[1. System Setup Guide]]
+title: 1.1 Deployment process overview
+type: text/vnd.tiddlywiki
+
+[[Open This|1.1 Deployment process overview]]
+
+---
+
+https://docs.oxide.computer/guides/system/system-setup#_deployment_process_overview
+
+|! Phase |! What Happens |! Typical Duration |! Who’s Involved |
+|0. Facilities Preparation |Site readiness, power planning, delivery path verification |4–6 weeks before install |Facilities, Datacenter operations teams |
+|1. Network and Operations Prep |Jumpbox setup, network planning, credential preparation |2–4 weeks before install |Network, Security |
+|2a. Physical Installation |Uncrate, position, and inspect rack |1–2 hours |Facilities team |
+|2b. Power Connection |Connect power whips and validate power delivery |1 hour |Electrical team |
+|2c. Network Connectivity |Connect uplink fiber and technician ports |1–2 hours |Network team |
+|3. Initial Rack Setup |Software update, wicket configuration, rack initialization |2–4 hours |Oxide Support Engineer, Network Engineer (on standby) |
+|4. Rack Configuration |Silo creation, IdP integration, IP pools, acceptance test |1–2 hours |Operators |

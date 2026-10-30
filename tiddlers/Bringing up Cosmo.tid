@@ -1,0 +1,51 @@
+created: 20260427235246500
+episode: S5 E14
+modified: 20260507210142089
+tags: [[Oxide and Friends]] Backlog
+title: Bringing up Cosmo
+type: text/vnd.tiddlywiki
+
+[[Open This|Bringing up Cosmo]]
+
+---
+
+April 24, 2025
+
+<<<Next Action
+
+I'm 33 minutes in, no bandwidth to absorb listening.... :(
+<<<
+
+---
+
+https://oxide-and-friends.transistor.fm/episodes/bringing-up-cosmo
+
+* [[Cosmo]] - Oxide’s next-generation sled (currently in development) with an AMD Turin CPU
+* [[Gimlet]] - Oxide’s current-generation sled with an AMD Milan CPU
+* [[Turin]] - AMD Epyc 9005 Series
+* [[Milan]] - AMD Epyc 7003 Series
+* [[Genoa]] - AMD Epyc 9004 Series (Oxide chose to skip this generation)
+* [[Sequencing]] - the precise control of when power rails are energized throughout a PCB
+* [[Sled]] - One of the (max 32) computers in an Oxide rack; a custom form-factor optimized for power and cooling efficiency
+* [[IBC]] - Intermediate Bus Converter (Our 54VDC -> 12VDC converter)
+* [[RoT]] - Root of Trust
+* [[SP]] - Service Processor, the small computer (running Hubris) that allows for low-level control
+* [[Ignition]] - An even lower-level control network for power management (including power of the SP)
+* [[Ruby]] - The AMD reference platform (Oxide has used this to prepare Cosmo software in advance of bringup)
+* [[DC-SCM]] - https://www.opencompute.org/documents/ocp-dc-scm-spec-rev-1-0-pdf and OpenCompute standard form factor.
+* [[Grapefruit]] - OCP DC-SCM form-factor board with our SP, RoT, and FPGA on it, used to replace the [[OCP DC-SCM]] baseboard management controller in the Ruby platform.
+* [[Cadence]] - Software Oxide previously used for PCB design
+* [[Altium]] - Software Oxide now uses for PCB design
+* [[Hubris]] - Oxide’s embedded operating system, run on the SP and RoT
+* [[Humility]] - The Hubris debugger
+* [[PLM]] - Product Lifecycle Management – a class of software used for managing hardware BOMs
+* [[BOM]] - Bill of Materials – the components required to build a hardware product
+* [[RFK]] - Our colleague, Robert Keith (to distinguish him from our other colleague, Robert, and our former colleague, Keith)
+* [[FPGA]] - Field Programmable Gate Array – Also referred to as “soft logic” – effectively programmable hardware
+* [[ILA]] - Integrated Logic Analyzer
+* [[JTAG]] - A debugging interface for various processors
+* [[UART]] - A serial port or connection
+
+People being polite to chatgpt was costing Sam Altman millions.
+
+Struggle to listen to this one, I'm don't know the things... :(

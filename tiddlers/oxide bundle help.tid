@@ -1,0 +1,30 @@
+created: 20260627171540249
+modified: 20260630184640848
+tags: [[oxide bundle]]
+title: oxide bundle help
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle help]]
+
+---
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle help
+Usage: oxide bundle [OPTIONS] <COMMAND>
+
+Commands:
+  create    Create support bundle
+  delete    Delete support bundle
+  download  Downloads a support bundle
+  inspect   Inspects a support bundle
+  list      List all support bundles
+  update    Update support bundle
+  view      View support bundle
+  help      Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
+
+Global Options:
+      --profile <PROFILE>  Configuration profile to use for commands
+```

@@ -1,0 +1,16 @@
+created: 20260504205633679
+modified: 20260504210017278
+tags: [[Operations Perspective]]
+title: Event Management (AIOps)
+type: text/vnd.tiddlywiki
+
+[[Open This|Event Management (AIOps)]]
+
+---
+
+Event Management (AIOps)
+
+Detect events, assess their potential impact, and determine the appropriate control action.
+
+Being able to filter the noise, focus on priority events, predict impending resource exhaustion, automatically generate alerts and incidents, and identify likely causes and remediation actions will help you improve incident detection and response times. Establish an event store pattern and leverage machine learning (AIOps) to automate event correlation, anomaly detection,
+and causality determination. Integrate with cloudservices and third-party tools, including with your incident management system and process. Automate responses to events to reduce errors caused by manual processes and ensure prompt and consistent responses.

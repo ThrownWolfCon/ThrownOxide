@@ -1,0 +1,19 @@
+created: 20260509145510422
+modified: 20260509145521897
+tags: $:/tags/Stylesheet
+title: beleren font
+type: text/vnd.tiddlywiki
+
+/* === Beleren Font for "beleren font" tag === */
+.tc-tagged-beleren-font {
+  font-family: "Beleren", Georgia, serif !important;
+}
+
+.tc-tagged-beleren-font .tc-tiddler-title,
+.tc-tagged-beleren-font .tc-tiddler-subtitle,
+.tc-tagged-beleren-font .tc-tiddler-body,
+.tc-tagged-beleren-font p,
+.tc-tagged-beleren-font li {
+  font-family: "Beleren", Georgia, serif !important;
+  line-height: 1.5;
+}

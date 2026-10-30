@@ -1,0 +1,18 @@
+created: 20260504202055465
+modified: 20260504202157307
+tags: [[Security Perspective]]
+title: Threat Detection
+type: text/vnd.tiddlywiki
+
+[[Open This|Threat Detection]]
+
+---
+
+Threat Detection
+
+Understand and identify potential security misconfigurations, threats, or unexpected behaviors.
+
+A better understanding of security threats will enable you to prioritize protective controls. Effective threat detection will allow you to respond to threats faster and learn from security events. Agree on tactical, operational, and strategic intelligence goals and overall methodology. Mine relevant data sources, process and analyze data, and disseminate and operationalize insights.
+
+Deploy monitoring ubiquitously within the environment to collect essential information and at ad hoc locations to track specific types of transactions. Correlate monitoring data from multiple event sources, including network traffic, operating systems,
+applications, databases, and endpoint devices to provide a robust security posture and enhance visibility. Consider leveraging deception technology (for example, honeypots) to gain understanding of unauthorized user behavior patterns.

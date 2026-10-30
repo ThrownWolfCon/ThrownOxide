@@ -1,0 +1,54 @@
+created: 20260508235631947
+episode: S4 E23
+modified: 20260614143014418
+tags: [[Oxide and Friends]] Listened [[Mention to Oxide]]
+title: RFDs: The Backbone of Oxide
+type: text/vnd.tiddlywiki
+
+[[Open This|RFDs: The Backbone of Oxide]]
+
+---
+
+August 30, 2024
+
+https://oxide-and-friends.transistor.fm/episodes/rfds-the-backbone-of-oxide
+
+RFDs--Requests for Discussion--are how we at Oxide discuss... just about everything! Technical design, hardware component selection, changes in process, culture, interview systems, (even) chat--we have RFDs for all of these, over 500 in a bit under 5 years. Bryan and Adam were joined by Oxide colleagues instrumental to RFDs, from their most prolific author to those making them more consumable.
+
+In addition to [[Bryan Cantrill]] and [[Adam Leventhal]], we were joined by Oxide colleagues, [[Robert Mustacchi]], [[David Crespo]], [[Ben Leonard]], and [[Augustus Mayo]].
+
+---
+
+I can take their system!
+
+[[RFD GitHub]]
+
+[[idiosyncratic]]
+
+[[The Queen's Duck]] (I PLAYED BATTLECHESS!)
+
+Table of contents, God forbid that!
+
+Cross pollination.
+
+It is impossible to read all the RFD's if you join Oxide.
+
+Once you read the RFD's you will want to work for Oxide more or less, but not the same.
+
+Reading RFD's on mobile devices.
+
+<<<IF I was getting interviewed
+
+<span style="color: #db89c8;">Then should I not curate a non-public RFD in my wiki to digest it?</span>
+<<<
+
+Every should be so lucky to have this gorgeous styling :)
+
+Modeled on [[RFD 1]]
+
+If you are going to have conflict, let it be in writing.
+
+[[RFD 113]]
+
+Linking RFD's to one another.
+

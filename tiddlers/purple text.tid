@@ -1,0 +1,8 @@
+caption: makes the text purple
+created: 20260504160308284
+modified: 20260504232345538
+tags: $:/tags/TextEditor/Snippet
+title: purple text
+type: text/vnd.tiddlywiki
+
+<span style="color: #db89c8;">xxxxx</span>

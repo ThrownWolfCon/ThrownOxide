@@ -1,0 +1,23 @@
+created: 20260626192948523
+modified: 20260628171101549
+tags: [[oxide auth-settings]]
+title: oxide auth-settings view
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide auth-settings view]]
+
+---
+
+<<copy-to-clipboard "oxide auth-settings view">>
+
+```bash
+oxide auth-settings view
+```
+
+```bash
+PS C:\Users\Michael> oxide auth-settings view
+{
+  "device_token_max_ttl_seconds": 604800,
+  "silo_id": "ed9c40ee-6700-4cb4-b3c4-34459426fa78"
+}
+```

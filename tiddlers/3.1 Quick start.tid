@@ -1,0 +1,36 @@
+created: 20260528003349933
+modified: 20260615221952316
+tags: [[3. Running]]
+title: 3.1 Quick start
+type: text/vnd.tiddlywiki
+
+[[Open This|3.1 Quick start]]
+
+---
+
+Quick start
+
+
+    Run omicron-dev run-all. This will run all of these components with a default configuration that should work in a typical development environment. The database will be stored in a temporary directory. Logs for all services will go to a single, unified log file. The tool will print information about reaching Nexus as well as CockroachDB:
+
+```
+    $ cargo xtask omicron-dev run-all
+    omicron-dev: setting up all services ...
+    log file: /dangerzone/omicron_tmp/omicron-dev-omicron-dev.4647.0.log
+    note: configured to log to "/dangerzone/omicron_tmp/omicron-dev-omicron-dev.4647.0.log"
+    omicron-dev: services are running.
+    omicron-dev: nexus external API:    127.0.0.1:12220
+    omicron-dev: nexus internal API:    [::1]:12221
+    omicron-dev: cockroachdb pid:       7180
+    omicron-dev: cockroachdb:           postgresql://root@[::]:54649/omicron?sslmode=disable
+    omicron-dev: cockroachdb directory: /dangerzone/omicron_tmp/.tmpB8FNBT
+    omicron-dev: internal DNS HTTP:     http://[::1]:33652
+    omicron-dev: internal DNS:          [::1]:37503
+    omicron-dev: external DNS name:     oxide-dev.test
+    omicron-dev: external DNS HTTP:     http://[::1]:38374
+    omicron-dev: external DNS:          [::1]:54342
+```
+
+    If you use CTRL-C to shut this down, it will gracefully terminate CockroachDB and remove the temporary directory:
+
+    ^Comicron-dev: caught signal, shutting down and removing temporary directory

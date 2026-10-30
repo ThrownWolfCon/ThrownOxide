@@ -1,0 +1,25 @@
+created: 20260612181850083
+modified: 20260612192535318
+tags: [[RFD GitHub]]
+title: RFD Deploy Site
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD Deploy Site]]
+
+---
+
+<<<Windows
+http://localhost:3000/rfd/0001
+<<<
+
+<<<tailscale
+http://100.72.15.14:3000
+<<<
+
+<<<Create new RFD
+There is a prototype script in the rfd repository, scripts/new.sh, that will create a new RFD when used like the code below.
+
+The snippet below automatically updates to ensure the new RFD number is correct.
+
+`scripts/new.sh 9031 "My title here"`
+<<<figure this out...?

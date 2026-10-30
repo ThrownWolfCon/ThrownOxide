@@ -1,0 +1,15 @@
+created: 20260526144448257
+modified: 20260614171631175
+tags: [[External connectivity]]
+title: External subnet
+type: text/vnd.tiddlywiki
+
+[[Open This|External subnet]]
+
+---
+
+Instances may also be optionally attached to one or more external subnets defined in the External Subnet IP Pools, if the pools are made available to the silo by the operator.
+
+IP address management of an external subnet is delegated to the owning instance. Unlike addresses managed by the Oxide control plane, external subnet addresses are not NAT’d and are advertised as the source or destination IP end-to-end. A common use of this delegated IPAM feature is infrastructure software such as container management platforms and load balancers. For example, a Kubernetes controller running on an Oxide instance can be assigned a /16 external subnet so it can assign addresses on the external network to the pods it creates without the need for an encapsulating overlay network.
+
+See also the IP Pools and Subnet Pools guide to understand how subnet pools are configured and how to make subnet assignment requests.

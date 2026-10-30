@@ -1,0 +1,116 @@
+created: 20260603134722175
+modified: 20260603134748109
+tags: $:/tags/Stylesheet
+title: custom notes
+type: text/vnd.tiddlywiki
+
+/* ==================== NOTE - GREEN ==================== */
+.custom-note {
+  background-color: #0a3d2a;
+  color: #b3f0d0;
+  border: 1px solid #1a7c5d;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-note strong {
+  color: #00ff9d;
+  text-shadow: 0 0 6px #00ff9d;
+}
+
+/* ==================== INFO - BLUE ==================== */
+.custom-info {
+  background-color: #0a2a3d;
+  color: #b3e0f0;
+  border: 1px solid #1a5c7c;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-info strong {
+  color: #00d4ff;
+  text-shadow: 0 0 6px #00d4ff;
+}
+
+/* ==================== TIP - PURPLE ==================== */
+.custom-tip {
+  background-color: #2a0a3d;
+  color: #e0b3f0;
+  border: 1px solid #6c1a7c;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-tip strong {
+  color: #c724ff;
+  text-shadow: 0 0 6px #c724ff;
+}
+
+/* ==================== IMPORTANT - AMBER ==================== */
+.custom-important {
+  background-color: #3d2a0a;
+  color: #f0d8b3;
+  border: 1px solid #7c5c1a;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-important strong {
+  color: #ffaa00;
+  text-shadow: 0 0 6px #ffaa00;
+}
+
+/* ==================== WARNING - RED ==================== */
+.custom-warning {
+  background-color: #3d0a0a;
+  color: #f0b3b3;
+  border: 1px solid #7c1a1a;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom-warning strong {
+  color: #ff4444;
+  text-shadow: 0 0 6px #ff4444;
+}
+
+/* ==================== SHARED ICON STYLING ==================== */
+.custom-note .alert-icon,
+.custom-info .alert-icon,
+.custom-tip .alert-icon,
+.custom-important .alert-icon,
+.custom-warning .alert-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid currentColor;
+}

@@ -1,0 +1,13 @@
+created: 20260702200624786
+modified: 20260702201631973
+tags: 
+title: Createdbox
+type: text/vnd.tiddlywiki
+
+<div class="demo-container">
+    <div class="custom-note-response">
+      <strong>Created:</strong> 
+<$view field="created" format="date" template="DDD DDth MMM YYYY 0hh12:0mm pm"/>
+      </div>
+    </div>
+  

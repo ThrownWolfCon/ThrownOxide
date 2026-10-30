@@ -1,0 +1,45 @@
+Seven Common Migration Strategies: 1
+created: 20260425174145375
+modified: 20260506231400686
+tags: [[Application Migration Strategies]] [[Seven Common Migration Strategies]]
+title: Rehost
+type: text/vnd.tiddlywiki
+
+[[Open This|Rehost]]
+
+---
+
+Rehosting is the most straightforward strategy in the 6Rs framework, involving the migration of applications and data to the cloud with minimal changes.
+
+Often the first choice for businesses looking to quickly capitalize on the benefits of cloud computing, Rehost enables organizations to move their existing on-premises applications to the cloud without the need to redesign the applications' architecture.
+
+When to use rehosting: 
+
+* Rehosting is ideal for organizations that need to migrate quickly due to time <span style="color: #BF00FF ;">constraints or cost pressures. BAAAAAAAAAA!!!!! </span>
+* It is also a suitable strategy for companies looking to scale their operations rapidly without immediate concern for cloud-native features.
+* ''Tight deadlines'' (e.g., data center contract ending).
+* ''Stable but legacy applications that "just work."''
+* ''Limited budget or expertise'' for code changes.
+* ''Large portfolios'' where you want to migrate quickly and ''optimize selectively later''.
+
+!!Advantages of rehosting:
+
+* Speed: Allows for the fastest migration to the cloud.
+* Cost-effective: Minimizes upfront costs by avoiding major redesigns.
+* Simplicity: Reduces complexity in the migration process.
+
+!!Limitations of rehosting:
+
+*Limited optimization: Does not take full advantage of cloud-native features that could improve performance and cost.
+*Technical debt: May perpetuate legacy issues and inefficiencies into the cloud environment.
+
+Step-by-step guide for rehosting:
+
+| [[Rehost Assessment]] | //Identify workloads for migration and ensure they are compatible with the cloud provider's environment.// | [img  width="100%"[./files/images/rehostassesment.png]] |
+| [[Rehost Planning]] | ''Develop a detailed migration plan, including resource allocation, scheduling, and risk mitigation strategies.'' | |
+| [[Rehost Preparation]] | //Prepare the cloud environment for migration, including setting up virtual machines and storage.// | |
+| [[Rehost Migration]] | ''Move applications and data to the cloud using automated tools or services provided by the cloud vendor.'' | |
+| [[Rehost Testing]] | //Conduct post-migration testing to ensure functionality and performance match expectations.// | |
+| [[Rehost Optimization]] | ''Begin the process of optimizing resources to take advantage of the cloud's scalability and elasticity''. | |
+
+<<tabs "[tag[Rehost]sort[rehosting steps]]" "DefaultTab" "$:/state/tab" "tc-vertical">>

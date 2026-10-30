@@ -1,0 +1,15 @@
+created: 20260531015546819
+modified: 20260531173214668
+tags: [[1. Prerequisites]]
+title: 1.4 Prerequisite software
+type: text/vnd.tiddlywiki
+
+[[Open This|1.4 Prerequisite software]]
+
+---
+
+The steps below will install several executables that will need to be in your PATH. You can set that up first using:
+
+`source env.sh`
+
+(You’ll want to do this in the future in every shell where you work in this workspace.)

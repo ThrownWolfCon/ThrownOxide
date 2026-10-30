@@ -1,0 +1,32 @@
+created: 20260424195752097
+modified: 20260509235721265
+tags: modal-links beleren-font
+title: AWS Cloud Adoption Framework
+type: text/vnd.tiddlywiki
+
+[[Open This|AWS Cloud Adoption Framework]]
+
+---
+
+AWS Cloud Adoption Framework (AWS CAF)
+
+https://aws.amazon.com/cloud-adoption-framework/
+
+[ext[aws-caf-ebook|./files/pdfs/aws-caf-ebook.pdf]]
+
+Russian: [ext[aws-caf-ebook|./files/pdfs/aws-cloud-adoption-framework.pdf]]
+
+<span style="color: #db89c8;">Организационная структура</span>
+
+<$button message="tm-modal" param="CAF Wiki Structure">CAF Wiki Structure</$button>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "AWS Cloud Adoption Framework">>
+</div>
+</div>
+</$linkcatcher>
+
+<<tabs "[tag[AWS Cloud Adoption Framework]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+

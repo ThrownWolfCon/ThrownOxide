@@ -1,0 +1,51 @@
+created: 20260602225938232
+modified: 20260606174406894
+tags: [[GS: Introduction]]
+title: 1. Rack hardware components
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Rack hardware components]]
+
+---
+
+* Up to 32 "Cosmo" or "[[Gimlet]]" Compute Sleds, each featuring:
+** One 225W TDP 64-core AMD Milan CPU
+** Support for up to 1 TiB of DRAM across 16 DIMMs (2 DIMMs per channel)
+** 10 hot-swappable PCIe U.2 storage devices
+** 2 internal M.2 devices
+** 2 ports of 100 GbE networking
+** Root of Trust (RoT) and Service Processor (SP)
+
+
+* Two "Sidecar" Rack Switches, featuring:
+** Intel’s Tofino 2 ASIC supporting 64 200 GbE ports
+** 32 front-facing QSFP-compatible ports for uplink and inter-rack connectivity supporting 40, 100, and 200 GbE Optical Transceivers
+** 32 rear-facing ports that are blind mated to servers via a cabled backplane
+** Integrated management network ASIC
+** Root of Trust (RoT) and Service Processor (SP)
+** Termination of presence and power control auxiliary signals
+** Connects to a server over PCIe for Tofino 2 ASIC management
+
+
+* An Integrated AC→DC Power Shelf:
+** Able to deliver 15 kW of power to the rack at 54.5V
+** Supports 6 rectifiers in N+1 or N+N configuration
+** Contains an Oxide Power Shelf Controller (PSC)
+*** Provides telemetry and management for the power shelf
+*** Root of Trust (RoT) and Service Processor (SP)
+
+* A custom cabled backplane:
+* Allows all servers to blind mate all networking, power control, and auxiliary signaling
+* With planned support for up to 200GBASE-KR4
+
+* A fiber patch panel
+
+* An integrated control plane:
+** Comes with an API, a portal, and various SDKs through which operators and developers can provision compute infrastructure (virtual machines), storage (elastic block storage), and networking (VPC-like networking capabilities)
+** Provides operator the visibility into major rack component information such as software version, status, health, and other useful metrics
+
+<div class="custom-note-blue">
+  <span class="note-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+Racks will eventually be connected together to build a single pool of infrastructure (from a management and user perspective). Support for this is currently not available but is a key priority on the product roadmap.
+</div>

@@ -1,0 +1,19 @@
+created: 20260511154511864
+modified: 20260619210158960
+tags: [[Support Thrive]]
+title: thrive_26
+type: text/vnd.tiddlywiki
+
+[[Open This|thrive_26]]
+
+---
+
+Pride yourself in developing a deep understanding of the product you are supporting, and are excited at the prospect of being able to run it yourself!
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "thrive_26">>
+</div>
+</div>
+</$linkcatcher>

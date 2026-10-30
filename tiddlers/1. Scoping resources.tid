@@ -1,0 +1,21 @@
+created: 20260626154309206
+modified: 20260626154350138
+tags: [[OG: Resource Management]]
+title: 1. Scoping resources
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Scoping resources]]
+
+---
+
+Resources in Oxide are scoped at the silo level. Each silo is isolated and has its own:
+
+    * Resource quotas (vCPU, memory, and storage)
+
+    * IP pool links
+
+    * Identity provider (IdP) integration and users
+
+    * TLS certificate for UI/API
+
+Resources within a silo are further organized into projects, which serve as VPC isolation boundaries for teams or workloads. Projects do not have independent quotas, but are constrained by the silo’s resource limits.

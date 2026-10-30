@@ -1,0 +1,18 @@
+created: 20260603155126035
+modified: 20260603193353477
+tags: [[1. System Setup Guide]]
+title: 1.2 Phase 0: Facilities preparation
+type: text/vnd.tiddlywiki
+
+[[Open This|1.2 Phase 0: Facilities preparation]]
+
+---
+
+Phase 0: Facilities preparation
+Datacenter operations and facilities teams prepare the physical site. This work can proceed in parallel with Phase 1.
+
+[[Facilities Overview]] — Introduction to facilities requirements, installation day timeline, and coordination with network and operations teams.
+
+[[Site Requirements]] — Delivery path verification, datacenter environment specifications, floor space and clearance requirements.
+
+[[Power Connection]] — Redundancy configurations, power drop specifications, connector types, and validation procedures.

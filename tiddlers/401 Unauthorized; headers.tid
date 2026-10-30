@@ -1,0 +1,78 @@
+created: 20260528152337050
+modified: 20260607022331285
+tags: Issue
+title: 401 Unauthorized; headers
+type: text/vnd.tiddlywiki
+
+[[Open This|401 Unauthorized; headers]]
+
+---
+
+```
+aim@aim-PowerEdge-T620:~$ oxide system hardware disk list
+[]
+Error Response: status: 401 Unauthorized; headers: {"content-type": "application/json", "x-request-id": "83731ed9-49cc-47fb-841d-867a00cce9a2", "content-length": "137", "date": "Thu, 28 May 2026 15:17:50 GMT"}; value: Error { error_code: Some("Unauthorized"), message: "credentials missing or invalid", request_id: "83731ed9-49cc-47fb-841d-867a00cce9a2" }
+```
+
+<span style="color: #c90076;">Got to use the profile:</span>
+
+Is ssh'd in and browser needs a tunnel: <$button message="tm-modal" param="Omicron Home Tunnel">Omicron Home Tunnel</$button>
+
+```
+aim@aim-PowerEdge-T620:~$ oxide --insecure auth login --host http://127.0.0.1:12220
+Opened this URL in your browser:
+  http://127.0.0.1:12220/device/verify
+
+Enter the code: BKMQ-LQQD
+
+Login successful
+  silo: test-suite-silo (18d62294-a7fe-41de-931b-3fa414323c67)
+  user: test-privileged (5ac55e82-17d2-4557-aa0a-d2a011a820fd)
+Use --profile 'test-suite-silo3'
+```
+
+```json
+aim@aim-PowerEdge-T620:~$ oxide --profile test-suite-silo3 system hardware disk list
+[
+  {
+    "form_factor": "u2",
+    "id": "17d22d85-9faf-46ab-b817-402d908baab1",
+    "model": "test-model",
+    "policy": {
+      "kind": "in_service"
+    },
+    "serial": "totally-unique-serial: 17d22d85-9faf-46ab-b817-402d908baab1",
+    "sled_id": "b6d65341-167c-41df-9b5c-41cded99c229",
+    "state": "active",
+    "time_created": "2026-05-28T14:39:33.964132Z",
+    "time_modified": "2026-05-28T14:39:33.964132Z",
+    "vendor": "test-vendor"
+  }, {
+    "form_factor": "u2",
+    "id": "9a179169-0651-4990-ba2b-d087f7edba57",
+    "model": "test-model",
+    "policy": {
+      "kind": "in_service"
+    },
+    "serial": "totally-unique-serial: 9a179169-0651-4990-ba2b-d087f7edba57",
+    "sled_id": "b6d65341-167c-41df-9b5c-41cded99c229",
+    "state": "active",
+    "time_created": "2026-05-28T14:39:35.751506Z",
+    "time_modified": "2026-05-28T14:39:35.751506Z",
+    "vendor": "test-vendor"
+  }, {
+    "form_factor": "u2",
+    "id": "a6a1b184-c97c-4822-9385-b634bc073e2f",
+    "model": "test-model",
+    "policy": {
+      "kind": "in_service"
+    },
+    "serial": "totally-unique-serial: a6a1b184-c97c-4822-9385-b634bc073e2f",
+    "sled_id": "b6d65341-167c-41df-9b5c-41cded99c229",
+    "state": "active",
+    "time_created": "2026-05-28T14:39:37.115637Z",
+    "time_modified": "2026-05-28T14:39:37.115637Z",
+    "vendor": "test-vendor"
+  }
+]
+```

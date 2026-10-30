@@ -1,0 +1,38 @@
+created: 20260531020644697
+modified: 20260603215301960
+tags: [[3. Using Omicron]]
+title: 3.3 Configure quotas for your silo
+type: text/vnd.tiddlywiki
+
+[[Open This|3.3 Configure quotas for your silo]]
+
+---
+
+Configure quotas for your silo
+Setting resource quotas is required before you can begin uploading images, provisioning instances, etc. In this example we’ll update the recovery silo so we can provision instances directly from it:
+
+```bash
+$ oxide silo quotas update \
+    --silo recovery \
+    --cpus 9999999999 \
+    --memory 999999999999999999 \
+    --storage 999999999999999999
+
+# example response
+{
+  "cpus": 9999999999,
+  "memory": 999999999999999999,
+  "silo_id": "fa12b74d-30f8-4d5a-bc0e-4d229f13c6e5",
+  "storage": 999999999999999999
+}
+```
+
+Copy This?
+
+```yml
+oxide silo quotas update \
+    --silo recovery \
+    --cpus 9999999999 \
+    --memory 999999999999999999 \
+    --storage 999999999999999999
+```

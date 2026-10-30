@@ -1,0 +1,17 @@
+created: 20260528151401369
+modified: 20260607022347170
+tags: Issue
+title: os error 111
+type: text/vnd.tiddlywiki
+
+[[Open This|os error 111]]
+
+---
+
+```
+aim@aim-PowerEdge-T620:~$ oxide system hardware disk list
+[]
+Communication Error: error sending request for url (http://127.0.0.1:12220/v1/system/hardware/disks): error sending request for url (http://127.0.0.1:12220/v1/system/hardware/disks): client error (Connect): tcp connect error: Connection refused (os error 111)
+```
+
+<span style="color: #c90076;">Means [[Omicron]] is NOT running!</span>

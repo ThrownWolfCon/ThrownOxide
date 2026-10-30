@@ -1,0 +1,24 @@
+created: 20260616180056178
+modified: 20260616180349508
+tags: [[OG: Jumbo Frames]]
+title: 2. Before enabling
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Before enabling]]
+
+---
+
+Confirm the following before enabling the fleet-wide opt-in:
+
+* The upstream switches connected to the rack uplinks have an MTU of at least 9000 bytes on the relevant ports.
+
+* Every device on the paths your users care about — upstream switches, routers, firewalls, peering networks — passes 9000 byte frames without fragmenting or dropping them.
+
+* ICMPv4 fragmentation-needed and ICMPv6 packet-too-big messages are not filtered along those paths. Guests rely on path MTU discovery (PMTUD) when they send to destinations behind a smaller MTU; PMTUD black holes will cause connections to stall after the handshake.
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Important</strong><br><br>
+Enabling the fleet-wide opt-in does not raise the MTU on any existing instance. The primary interface MTU of an instance changes only when its owner sets enable_jumbo_frames to true and restarts the instance. The end-user interface for jumbo frames is described in the Networking guide.
+</div>
+

@@ -1,0 +1,20 @@
+created: 20260626154945278
+modified: 20260626155607646
+tags: [[2. Quota management]]
+title: 2.1 Calculating utilization
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Calculating utilization]]
+
+---
+
+Understanding how resource utilization is calculated can aid in effective capacity planning:
+
+|Resource|Utilization Formula|h
+|vCPU<br>(Number of cores)|utilization = (aggregated ncpus of powered-on instances owned by the silo) /<br>(silo vcpu quota)|
+|Memory<br>(Gibibytes)|utilization = (aggregated memory size of powered-on instances owned by the silo) /<br>(silo memory quota)|
+|Storage<br>(Gibibytes)|utilization = (aggregated size of disks and snapshots owned by the silo) /<br>(silo storage quota)|
+
+The term "powered-on" refers to the current state of a virtual instance. Specifically, an instance is considered powered-on if it is `running`, `starting`, `stopping`, or `rebooting`.
+
+For storage quotas, the powered-on state does not matter. Storage utilization is always based on the total size of all disks and snapshots owned by the silo—regardless of whether the instances using them are running or stopped.

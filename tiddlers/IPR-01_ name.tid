@@ -1,0 +1,19 @@
+created: 20260528213452759
+modified: 20260528213600072
+tags: [[Identity Providers Requirements]]
+title: IPR-01: name
+type: text/vnd.tiddlywiki
+
+[[Open This|IPR-01: name]]
+
+---
+
+<<<attribute	
+`name`
+<<<
+
+<<<value
+A short name of the silo’s IdP SAML configuration (the name will be used in the login URL path, see the example under ACS URL).
+
+For ease of tracking, this can be set to the same value as the application or service provider identifier in the IdP, but it is not required.
+<<<

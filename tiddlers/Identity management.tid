@@ -1,0 +1,19 @@
+created: 20260614143500188
+modified: 20260614143632199
+tags: [[1.3 Identity & access management]] [[Identity and Access Management]]
+title: Identity management
+type: text/vnd.tiddlywiki
+
+[[Open This|Identity management]]
+
+---
+
+Oxide currently provides three options for configuring identity providers:
+
+* SAML + JIT: Users are authenticated via SAML using an external identity provider (IdP). The IdP is the source of truth about users and groups. Information about users and groups gets imported and updated only during user authentication (i.e., on a "just-in-time" basis).
+
+* SAML + SCIM: Users and groups can be imported into Oxide once the IdP is integrated with Oxide. Changes in users and groups on the IdP side are synchronized into Oxide programmatically.
+
+* Local Only: Users are authenticated by username and password. Their identity data is managed through Oxide API and resides in the Oxide system. Access permissions can only be granted on a per-user basis as groups are not supported for this type of silos.
+
+See the Identity Provider guide for more details about IdP setup and examples of how to configure external integration.

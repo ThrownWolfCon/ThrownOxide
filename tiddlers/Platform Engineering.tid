@@ -1,0 +1,20 @@
+created: 20260504194752145
+modified: 20260504194925958
+tags: [[Platform Perspective]]
+title: Platform Engineering
+type: text/vnd.tiddlywiki
+
+[[Open This|Platform Engineering]]
+
+---
+
+Platform Engineering
+
+Build a compliant, multi-account cloud environment with enhanced security features and packaged, reusable cloud products.
+
+An effective cloud environment will allow your teams to easily provision new accounts, while ensuring that those accounts conform to organizational policies. A curated set of cloud products will enable you to codify best practices, helping you with governance while increasing the speed and consistency of your cloud deployments. Deploy your best practice blueprints, and detective and preventive
+guardrails. Integrate your cloud environment with your existing ecosystem to enable desired hybrid cloud use cases.
+
+Automate the account provisioning workflow and leverage multiple accounts to support your security and governance goals. Set up connectivity between your on-premises and cloud environments as well as between different cloud accounts. Implement federation between your existing identity provider and your cloud environment so that users can authenticate using their existing login credentials. Centralize logging, establish cross-account security audits, create inbound and outbound Domain Name System resolvers, and get dashboard visibility into your accounts and guardrails.
+
+Evaluate and certify cloud services for consumption in alignment with corporate standards and configuration management. Package and continuously improve enterprise standards as self-service deployable products and consumable services. Leverage infrastructure as code (IaC) to define configurations in a declarative way

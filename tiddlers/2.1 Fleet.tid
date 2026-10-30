@@ -1,0 +1,28 @@
+created: 20260614145345166
+modified: 20260614145843533
+tags: [[2. Policy scopes]]
+title: 2.1 Fleet
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Fleet]]
+
+---
+
+https://docs.oxide.computer/guides/configuring-access#_fleet
+
+The fleet is the entire system managed by the control plane. We do not yet support multiple racks operating as one system ("multirack"), so racks are not aware of each other; each rack is a separate fleet.
+
+Fleet roles govern access to system-level infrastructure and operations. Fleet-scoped API endpoints typically use the /system/* prefix and include things like silo management, hardware, and system updates. Fleet roles do not cascade to resources inside silos, except that fleet admins can view and modify all silos and silo policies. Only fleet administrators can assign fleet roles.
+
+Table 1. Fleet roles
+
+|Role|Description|h
+|`admin`|Control of all system resources, including silo management|
+|`collaborator`|Can create and manage silos|
+|`viewer`|Read-only access to system resources|
+
+The fleet has no limited_collaborator role. Separating compute from networking only makes sense in the project scope where those resources live, and by extension in the silo scope that governs permissions across all projects.
+
+* [[system_policy_view]] — View fleet-level role assignments (requires fleet viewer)
+
+* [[system_policy_update]] — Modify fleet-level role assignments (requires fleet admin)

@@ -1,0 +1,47 @@
+created: 20260526163408380
+modified: 20260616185919587
+tags: [[Operator Guides]]
+title: OG: BGP
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: BGP]]
+
+---
+
+https://docs.oxide.computer/guides/operator/configuring-bgp
+
+This guide shows how to connect an Oxide rack to an upstream network via the Border Gateway Protocol (BGP). The BGP setup this guide will go over is depicted below.
+
+[img[https://docs.oxide.*computer/img/bgp-example.svg]]
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "OG: BGP">>
+</div>
+</div>
+</$linkcatcher>
+
+The instructions are based on the assumption that the rack is already accessible through static networking and the goal is to have BGP run alongside it. The high-level steps for achieving that are:
+
+    Create an address lot for holding the interface addresses that will be used for peering
+
+    Configure BGP announcements for an address lot used for instance prefixes
+
+    Create a BGP configuration
+
+    Activate the BGP configuration by assigning addresses from the peering address lot to switch ports
+
+The setup steps will make use of the oxide CLI.
+
+[[1. Address lot creation]]
+
+[[2. Configure announcements]]
+
+[[3. Create a BGP configuration]]
+
+[[4. Activating a BGP configuration]]
+
+[[5. Checking BGP status]]
+
+[[6. Related CLI references]]

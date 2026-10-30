@@ -1,0 +1,39 @@
+created: 20260501031509743
+modified: 20260506231825379
+tags: [[Application Migration Strategies]] [[Seven Common Migration Strategies]]
+title: Retain
+type: text/vnd.tiddlywiki
+
+[[Open This|Retain]]
+
+---
+
+Retaining
+
+Retaining is a strategy where certain applications are kept in their existing environment without migrating to the cloud.
+
+Organizations may choose to revisit these applications later when conditions change.
+
+When to use retaining: Retaining is suitable for applications with compliance constraints, high migration risk, or those nearing end-of-life.
+
+Advantages of retaining:
+
+Low risk: Avoids unnecessary changes to stable systems.
+Cost control: Prevents spending on low-priority migrations.
+Flexibility: Allows postponement until better solutions are available.
+
+Limitations of retaining:
+
+Missed benefits: Does not leverage cloud advantages.
+Ongoing maintenance: Continues on-premises costs.
+Technical stagnation: Delays modernization.
+
+Step-by-step guide for retaining:
+
+* [[Retain Assessment]]: Identify applications unsuitable for migration.
+* [[Retain Justification]]: Document reasons for keeping them on-premises.
+* [[Retain Maintenance]]: Ensure systems remain secure and functional.
+* [[Retain Monitoring]]: Track performance and usage over time.
+* [[Retain Review]]: Periodically reassess migration potential.
+* [[Retain Optimization]]: Improve efficiency within the existing environment.
+* [[Retain Documentation]]: Maintain updated records and plans.

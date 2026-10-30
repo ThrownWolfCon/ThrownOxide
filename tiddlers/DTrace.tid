@@ -1,0 +1,13 @@
+created: 20260424230140228
+modified: 20260424230214406
+tags: Backlog
+title: DTrace
+type: text/vnd.tiddlywiki
+
+[[Open This|DTrace]]
+
+---
+
+https://en.wikipedia.org/wiki/DTrace
+
+DTrace is a comprehensive dynamic tracing framework originally created by Sun Microsystems for troubleshooting kernel and application problems on production systems in real time. Originally developed for Solaris, it has since been released under the free Common Development and Distribution License (CDDL) in OpenSolaris and its descendant illumos, and has been ported to several other Unix-like systems. Windows Server systems from Windows Server 2025 will have DTrace as part of the system.

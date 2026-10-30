@@ -1,0 +1,11 @@
+created: 20260530181206494
+modified: 20260605000021932
+tags: [[Helios Commands]] [[1.1 Bare-metal operating system]]
+title: nc commands
+type: text/vnd.tiddlywiki
+
+[[Open This|nc commands]]
+
+---
+
+`nc -l 1701 </dev/null | bash -x`

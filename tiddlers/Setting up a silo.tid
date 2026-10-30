@@ -1,0 +1,20 @@
+created: 20260526160920508
+modified: 20260701155832112
+tags: [[OG: Silos]]
+title: Setting up a silo
+type: text/vnd.tiddlywiki
+
+[[Open This|Setting up a silo]]
+
+---
+
+https://docs.oxide.computer/guides/operator/silo-management#_setting_up_a_silo
+
+The procedures for setting up new silos and identity provider integration are similar to those during rack initialization. Operators who have the fleet-admin role can use the Oxide Console, API, or CLI to create a new silo and configure its resource and integration settings.
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+It is also possible to use IaC tooling such as Terraform to create silos and configure auth. Please refer to the [[Terraform Integration]] guide for additional information.
+</div>
+

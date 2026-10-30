@@ -1,0 +1,46 @@
+created: 20260624195922613
+modified: 20260624200038918
+tags: [[2. Expanding connectivity]]
+title: 2.2 Address assignment
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Address assignment]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-connectivity#_address_assignment
+
+Next, addresses are assigned to the switch ports. In this example we are re-using existing links for the connectivity expansion. The new connections are going to be made over a VLAN segment. It’s common when deploying to colocation environments to have network services such as cloud or ISP access provisioned over VLAN segments.
+
+The commands below add the address 169.254.30.2/30 to switch0/qsfp0 on VLAN 300 and the address 169.254.40.2/30 to switch1/qsfp0 on VLAN 400.
+
+To update addresses, the target rack needs to be identified. For single rack deployments this can be done as follows.
+
+```bash
+export rack=`oxide system hardware rack list | jq -r .[0].id`
+echo $rack
+```
+
+For multi-rack deployments, run the oxide system hardware rack list command and choose the appropriate rack UUID.
+
+The following commands add the addresses we’ll need on the switch ports to peer with upstream cloud routers.
+
+```bash
+oxide system networking addr add \
+    --rack $rack \
+    --switch switch0 \
+    --port qsfp0 \
+    --addr 169.254.30.2/30 \
+    --lot cloud-peering \
+    --vlan 300
+```
+
+```bash
+oxide system networking addr add \
+    --rack $rack \
+    --switch switch1 \
+    --port qsfp0 \
+    --addr 169.254.40.2/30 \
+    --lot cloud-peering \
+    --vlan 400
+```

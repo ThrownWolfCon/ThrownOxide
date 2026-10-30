@@ -1,0 +1,24 @@
+created: 20260529231835537
+modified: 20261029222958017
+tags: Omicron thrive_22 [[Show Off]]
+title: Omicron on Helios
+type: text/vnd.tiddlywiki
+
+[[Open This|Omicron on Helios]]
+
+---
+
+https://github.com/oxidecomputer/omicron/blob/main/docs/how-to-run.adoc
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Omicron on Helios">>
+</div>
+</div>
+</$linkcatcher>
+
+
+
+
+

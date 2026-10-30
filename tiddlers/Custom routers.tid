@@ -1,0 +1,24 @@
+created: 20260614174006113
+modified: 20260614175055994
+tags: [[VPCs and subnets]]
+title: Custom routers
+type: text/vnd.tiddlywiki
+
+[[Open This|Custom routers]]
+
+---
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>Tip</strong><br><br>
+<strong>Custom routers are not executed before the system router.</strong><br><br>
+Tip
+
+Custom routers are not executed before the system router.
+
+Let’s return to our worked example. Suppose we want to drop traffic from hoenn to both of the other subnets. kanto and johto can obviously be aggregated into 10.0.0.0/23.<br><br>
+
+However, if we add a custom route to hoenn specifying (10.0.0.0/23 → drop), then it will not take effect. Both existing entries in the system router are more specific, matching on /24, and are chosen instead.<br><br>
+
+The correct solution is to create one drop rule per subnet — (subnet:kanto → drop) and (subnet:johto → drop). See Example 1: Creating/assigning routers and routes.
+</div>

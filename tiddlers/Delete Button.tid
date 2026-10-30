@@ -1,0 +1,16 @@
+created: 20261029203524668
+modified: 20261029210230506
+tags: wikidev
+title: Delete Button
+type: text/vnd.tiddlywiki
+
+[[Open This|Delete Button]]
+
+---
+
+<$button>
+Delete all tiddlers tagged "YourTag"
+<$list filter="[tag[shadowcontrol]]">
+<$action-deletetiddler $tiddler=<<currentTiddler>>/>
+</$list>
+</$button>

@@ -1,0 +1,13 @@
+created: 20221215002650874
+modified: 20221215170039752
+tags: SSCOSSL
+title: 1. Create the Server Private Key
+type: text/vnd.tiddlywiki
+
+[[1. Create the Server Private Key]]
+
+<$button message="tm-modal" param="1. Create the Server Private Key">Modal of This</$button>
+
+---
+
+`openssl genrsa -out server.key 2048`

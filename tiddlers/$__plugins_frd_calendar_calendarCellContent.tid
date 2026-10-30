@@ -1,0 +1,38 @@
+created: 20151016064849231
+modified: 20151025074555697
+tags: macro $:/tags/Macro
+title: $:/plugins/frd/calendar/calendarCellContent
+type: text/vnd.tiddlywiki
+
+\define calendarCellContentAux(year day mmonth dday)
+   [[$day$|$year$-$mmonth$-$dday$]]
+\end
+
+\define calendarCellContent_link(year month day numDay)
+  <$set name="m" value=<<zeropad $month$ 2>>>
+  <$set name="d" value=<<zeropad $day$ 2>>>
+   <$macrocall $name="calendarCellContentAux" year=$year$ day=$day$ mmonth=<<m>> dday=<<d>>/>
+</$set></$set>
+\end
+
+\define calendarCellContent_basic(year month day numDay)
+$day$
+\end
+
+\define calendarCellContent_linkFormat(year month day numDay,)
+  <$set name="format" value=<<calendarConfigElement "dateFormat">>>
+   <$macrocall $name="calendarCellContent_linkFormatAux" year=$year$ month=$month$ day=$day$/>
+</$set>
+\end
+
+\define calendarCellContent_linkFormatAux(year month day)
+<$set name="linktarget" value=<<formatDate $year$ $month$ $day$ "$(format)$">>>
+<$link to=<<linktarget>>>$day$</$link>
+\end
+
+\define calendarCellContent(year month day numDay)
+  <$set name="m" value=<<zeropad $month$ 2>>>
+  <$set name="d" value=<<zeropad $day$ 2>>>
+   <$macrocall $name="calendarCellContentAux" year=$year$ day=$day$ mmonth=<<m>> dday=<<d>>/>
+</$set></$set>
+\end

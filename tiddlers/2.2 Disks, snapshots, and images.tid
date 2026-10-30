@@ -1,0 +1,15 @@
+created: 20260602232112101
+modified: 20260612233656771
+tags: [[2. Virtual resources]]
+title: 2.2 Disks, snapshots, and images
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Disks, snapshots, and images]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_disks_snapshots_and_images
+
+Disks are persistent volumes that can be managed independently from VM instances. A snapshot is a lightweight point-in-time copy of a disk that can be used to create a reusable image shared within the project or with other projects. New disks can be created from snapshots or images of existing ones, enabling disk cloning and templating.
+
+Oxide racks do not provide guest operating system images out of the box. Images must be imported from an external file. Technically, the local image file is imported into a disk, then the disk is snapshotted, and finally an image resource is created from the snapshot. The web console and CLI conveniently combine these steps into a single command. See the Images and Disks and Snapshots guides for more information.

@@ -1,0 +1,19 @@
+created: 20260509212029400
+modified: 20260514011919876
+tags: [[RFD 3 1.1 Aptitude]] task
+title: RFD 3 1.1.3 Analysis sample
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 1.1.3 Analysis sample]]
+
+---
+
+Analysis sample
+
+A significant challenge at Oxide is dealing not with a system of our own creation, but rather one that has been presented to us. How do we reason about what we see in front of us? When we are trying to understand a system rather than create it, we must flip our disposition: instead of a creator of our own heaven and earth, we must become a scientist, attempting to reason about a foreign world. In having candidates only focus on their ability to build, analytical skills are often left unexplored. And while this can be explored conversationally (e.g., asking for "debugging war stories" is a classic — and often effective — interview question for engineers), an oral description of recalled analysis doesn’t necessarily allow the true depths of a candidate’s analytical ability to be plumbed.
+
+To assess analytical ability, candidates should be asked to provide an analysis sample: a written analysis from the candidate. As with the work and writing sample, the specifics of the prompt will vary by domain: for engineers, this should be the analysis that the candidate performed of a system behaving pathologically; for sales, this might be the research the candidate performed of a prospect and their fit with the product before reaching out to them; 
+
+<span style="color: #61cf5a;">for operations, this might be the examination of an existing process with an eye towards improvement; for product management, this might be the exploration of a new system or of a new aspect of the system.</span> 
+
+Regardless of domain, the sample should contain enough concrete detail to assess analytical ability, with the candidate asked to recall details to the best of their ability.

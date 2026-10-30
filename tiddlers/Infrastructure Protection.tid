@@ -1,0 +1,15 @@
+created: 20260504203215290
+modified: 20260504203408817
+tags: [[Security Perspective]]
+title: Infrastructure Protection
+type: text/vnd.tiddlywiki
+
+[[Open This|Infrastructure Protection]]
+
+---
+
+Infrastructure Protection
+
+Validate that systems and services within your workload are protected against unintended and unauthorized access and potential vulnerabilities. Protecting your infrastructure from unintended and unauthorized access and potential vulnerabilities will help you elevate your security posture in the cloud. Leverage defense in depth to layer a series of defensive mechanisms aimed at protecting your data and systems.
+
+Create network layers and place workloads with no requirements for internet access in private subnets. Use security groups, network access control lists, and network firewalls to control traffic. Apply Zero Trust to your systems and data in accordance with their value. Leverage virtual private cloud (VPC) endpoints for private connection to cloud resources. Inspect and filter your traffic at each layer; for example, via a web application firewall or a network firewall. Use hardened operating system images and physically secure any hybrid cloud infrastructure on premises and at the edge.

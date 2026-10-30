@@ -1,0 +1,18 @@
+created: 20260629170815087
+modified: 20260629170909192
+tags: [[2. Events]]
+title: 2.2 Event UUIDs
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Event UUIDs]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0538#_event_uuids
+
+Each event that occurs within the system is uniquely identified by a UUID ([RFC9562]). These UUIDs are included in the event payload sent to webhook receivers. If an event results in notifications being delivered to multiple webhook receivers, the event UUID sent to each receiver will be the same. This may be used to correlate events across multiple receivers, and to de-duplicate repeated deliveries of the same event.
+
+
+Important
+
+Two webhook notifications with the same event UUID refer to the same event, rather than two distinct events with equivalent data. On the other hand, two webhook notifications with different event UUIDs refer to two distinct events, even if other data in the event payload is the same.

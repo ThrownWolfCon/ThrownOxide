@@ -1,0 +1,17 @@
+created: 20260427234517362
+modified: 20260427235023221
+tags: Competitors
+title: AWS Outposts
+type: text/vnd.tiddlywiki
+
+[[Open This|AWS Outposts]]
+
+---
+
+https://aws.amazon.com/outposts/
+
+https://aws.amazon.com/outposts/rack/?nc=sn&loc=2
+
+<<<
+AWS Outposts rack offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience. AWS Outposts rack is ideal for workloads that require low-latency access to on-premises systems, local data processing, data residency, and the migration of applications with local system interdependencies.
+<<<

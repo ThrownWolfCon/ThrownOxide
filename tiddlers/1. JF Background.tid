@@ -1,0 +1,23 @@
+created: 20260616180009181
+modified: 20260616180044575
+tags: [[OG: Jumbo Frames]]
+title: 1. JF Background
+type: text/vnd.tiddlywiki
+
+[[Open This|1. JF Background]]
+
+---
+
+Traffic between instances within an Oxide rack already benefits from a 9000 byte underlay MTU via virtio TCP segmentation offload and tunneled TSO at the sled NIC. The MTU advertised to a guest’s primary network interface — the interface used for traffic leaving the rack — defaults to 1500 bytes because the upstream MTU is a property of the network the rack is attached to, not of the rack itself.
+
+When the upstream network supports jumbo frames end-to-end, raising the primary interface MTU to 8500 bytes can substantially improve throughput for flows that send large messages. Jumbo frames have little or no benefit for workloads whose typical message size already fits within 1500 bytes.
+
+The opt-in is split into two settings:
+
+    A fleet-wide setting that an operator enables only when the upstream network actually supports jumbo frames.
+
+    A per-instance setting that end users set on their own instances.
+
+While the fleet-wide setting is disabled, any attempt to set the per-instance setting to true (on instance create or update) is rejected with HTTP 400.
+
+The 8500 byte effective MTU leaves 500 bytes of headroom under the 9000 byte underlay MTU for VPC encapsulation and future header extensions.

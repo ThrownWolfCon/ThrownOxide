@@ -1,0 +1,17 @@
+created: 20260531021508118
+modified: 20260531022815906
+tags: [[3. Using Omicron]]
+title: 3.8 Attach to the serial console
+type: text/vnd.tiddlywiki
+
+[[Open This|3.8 Attach to the serial console]]
+
+---
+
+Attach to the serial console
+
+You can attach to the proxied propolis server serial console. You’ll need the id returned from the previous command, which we’ll call $INSTANCE_ID:
+
+```
+$ oxide instance serial console --instance $INSTANCE_ID
+```

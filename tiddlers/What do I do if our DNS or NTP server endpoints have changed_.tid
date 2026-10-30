@@ -1,0 +1,11 @@
+created: 20260526180238234
+modified: 20260605165452107
+tags: [[Network configuration and IP address management]] [[Please contact Oxide Support]] ntp
+title: What do I do if our DNS or NTP server endpoints have changed?
+type: text/vnd.tiddlywiki
+
+[[Open This|What do I do if our DNS or NTP server endpoints have changed?]]
+
+---
+
+No operator API is available to reconfigure DNS or NTP configurations at this time. <span style="font-family: 'Beleren', sans-serif; color: #00d892;">Please contact Oxide Support for assistance.</span>

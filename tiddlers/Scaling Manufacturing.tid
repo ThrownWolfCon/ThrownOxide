@@ -1,0 +1,32 @@
+created: 20260422153207865
+episode: S5 E27
+modified: 20260606174525531
+tags: [[Before Applying]] [[Oxide and Friends]]
+title: Scaling Manufacturing
+type: text/vnd.tiddlywiki
+
+[[Open This|Scaling Manufacturing]]
+
+---
+
+https://oxide-and-friends.transistor.fm/episodes/scaling-manufacturing
+
+September 19, 2025
+
+Bryan and Adam were joined by members of the Oxide manufacturing team to talk about all that goes into ramping up production, from people and processes to expanding the team and refining inefficiencies. It's a great problem to have!
+
+In addition to [[Bryan Cantrill]] and [[Adam Leventhal]], we were joined by Oxide colleagues, [[CJ Mendes]], [[Kirstin Neira]], [[Erik Anderson]], [[Aaron Hartwig]], and [[Doug Wibben]].
+
+<<<NPI
+
+New Product Introduction (NPI) is a systematic, phased process for taking a product from initial concept to final manufacturing and market launch.
+<<<
+
+Medusa: front plane and loopback board.
+
+<<<[[Gimlet]]
+The Oxide Computer Company "Gimlet" is the first-generation compute sled for their rack-scale, on-premise cloud hardware, featuring AMD Milan processors. These hot-swappable sleds contain 64-core CPUs, 1 TiB DRAM, and 100 GbE networking, designed for high-density, cloud-like performance. Gimlet manages rack switches via direct PCI connections.
+<<<
+
+Where a solution does not exist, what do you do where there is not a system or something telling you what to do? (I COULD SHINE HERE!!)
+

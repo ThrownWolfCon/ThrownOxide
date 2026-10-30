@@ -1,0 +1,17 @@
+created: 20260527233307926
+modified: 20260627190743917
+tags: [[Home Lab Oxide]] [[oxide ping]]
+title: oxide --debug ping
+type: text/vnd.tiddlywiki
+
+[[Open This|Home Lab Oxide]]
+
+---
+
+```json
+PS C:\Users\Michael> oxide --debug ping
+{"timestamp":"2026-06-27T18:59:20.349205Z","level":"DEBUG","message":"request succeeded","url":"http://127.0.0.1:12220/v1/ping","path":"/v1/ping","operation_id":"ping","remote_addr":"127.0.0.1:12220","http.request.method":"GET","http.response.content_length":15,"http.response.status_code":200,"start_time":"2026-06-27T18:59:20.324297Z","duration_ms":24,"oxide.request_id":"d6033cb4-aefa-4639-ac49-fd58fdd0bc3a","target":"oxide"}
+{
+  "status": "ok"
+}
+```

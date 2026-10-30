@@ -1,0 +1,23 @@
+created: 20260526182938631
+modified: 20260625020052954
+tags: [[Access management]]
+title: How do I offboard a user from a silo?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I offboard a user from a silo?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_offboard_a_user_from_a_silo
+
+Users managed in an identity provider:
+
+    In the identity provider system, revoke the user’s rack access according to your organization’s access control setup (e.g., by removing the user from the related groups or apps, or updating the user’s status).
+
+Users managed locally on the rack:
+
+    As a user with the fleet admin role, use local_idp_user_delete to completely remove the user from the system.
+
+    Fleet administrators may also use local_idp_user_set_password to revoke the user’s login.
+
+Once you have disabled login permissions of the user in question, you can revoke their existing browser sessions or access tokens with the `/v1/users/{user_id}/logout` endpoint. The user’s account in the rack is not disabled, but any further interaction with the system will require them to log in again.

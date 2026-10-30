@@ -1,0 +1,68 @@
+created: 20260531015745121
+modified: 20260531174056840
+tags: [[2. Build and deploy Omicron]]
+title: 2.1 Set up virtual hardware
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Set up virtual hardware]]
+
+---
+
+NOTE THAT I AM USING LEGIT IP!!!
+
+```yml
+cargo xtask virtual-hardware create \
+    --gateway-ip 192.168.1.1 \
+    --pxa-start 192.168.1.110 \
+    --pxa-end 192.168.1.140
+```
+
+```
+# cargo xtask virtual-hardware create \
+    --gateway-ip 192.168.1.1 \
+    --pxa-start 192.168.1.110 \
+    --pxa-end 192.168.1.140
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.36s
+     Running `target/debug/xtask virtual-hardware create --gateway-ip 192.168.1.1 --pxa-start 192.168.1.110 --pxa-end 192.168.1.140`
+creating virtual hardware
+/var/tmp/m2_0.vdev already exists
+/var/tmp/m2_1.vdev already exists
+/var/tmp/u2_0.vdev already exists
+/var/tmp/u2_1.vdev already exists
+/var/tmp/u2_2.vdev already exists
+/var/tmp/u2_3.vdev already exists
+/var/tmp/u2_4.vdev already exists
+/var/tmp/u2_5.vdev already exists
+/var/tmp/u2_6.vdev already exists
+/var/tmp/u2_7.vdev already exists
+/var/tmp/u2_8.vdev already exists
+Simnet net0/sc0_0 exists
+Simnet net1/sc1_0 exists
+Vnic sc0_1 exists
+Using 192.168.1.1 as gateway ip
+Pinging 192.168.1.1 and sleeping (0 / 3)
+Pinging 192.168.1.1 and sleeping (1 / 3)
+Pinging 192.168.1.1 and sleeping (2 / 3)
+Pinging 192.168.1.1 and sleeping (3 / 3)
+using 94:18:65:D3:06:BD as gateway mac
+configuring SoftNPU ARP entry
+configuring SoftNPU proxy ARP
+SoftNPU state:
+  local v6:
+  local v4:
+  router v6_idx:
+  router v6_routes:
+  router v4_idx:
+  router v4_routes:
+  resolver v4:
+  192.168.1.1 -> 94:18:65:d3:06:bd
+  resolver v6:
+  nat v4:
+  nat_v6:
+  attached subnet v4:
+  attached subnet v6:
+  port_mac:
+  proxy arp:
+  192.168.1.110/192.168.1.140: a8:e1:de:01:70:1d
+created virtual hardware
+```

@@ -1,0 +1,31 @@
+AWS CAF Perspectives: 6
+created: 20260504204022674
+modified: 20260507145856227
+tags: [[AWS CAF Perspectives]]
+title: Operations Perspective
+type: text/vnd.tiddlywiki
+
+[[Open This|Operations Perspective]]
+
+---
+
+The operations perspective focuses on ensuring that cloud services are delivered at a level that is agreed upon with your business stakeholders. Automating and optimizing operations will allow you to effectively scale while improving the reliability of your workloads. This perspective comprises nine capabilities shown in the following figure. 
+
+<h2 style="color: #d67568;">Common Stakeholders</h2>
+
+* infrastructure and operations leaders
+* site reliability engineers
+* information technology service managers
+
+---
+
+*  <span style="color: #db89c8;">Operations Perspective</span>
+** [[Observability]]
+** [[Event Management (AIOps)]]
+** [[Incident and Problem Management]]
+** [[Change and Release Management]]
+** [[Performance and Capacity Management]]
+** [[Configuration Management]]
+** [[Patch Management]]
+** [[Availability and Continuity Management]]
+** [[Application Management]]

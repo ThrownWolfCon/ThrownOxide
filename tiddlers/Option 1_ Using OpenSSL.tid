@@ -1,0 +1,64 @@
+created: 20260701033802888
+modified: 20260701035236470
+tags: [[1. Generate a TLS certificate]]
+title: Option 1: Using OpenSSL
+type: text/vnd.tiddlywiki
+
+[[Open This|Option 1: Using OpenSSL]]
+
+---
+
+For a quick, self-signed setup:
+
+   1. Create a directory for your certificate files:
+
+```bash
+mkdir ~/silo-certs
+cd ~/silo-certs
+```
+
+2. Create an OpenSSL configuration file (san.cnf) with the required Subject Alternative Names (SANs). Replace silo1.sys.example.com with your silo’s actual FQDN:
+
+san.cnf
+
+```ini
+[req]
+default_bits  = 2048
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+x509_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+countryName = US
+stateOrProvinceName = N/A
+localityName = N/A
+organizationName = Self-signed certificate
+commonName = silo1.sys.example.com
+[req_ext]
+subjectAltName = @alt_names
+[v3_req]
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = silo1.sys.example.com
+```
+
+3. Generate the self-signed certificate:
+
+```bash
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem -config san.cnf
+```
+
+4. Verify the generated certificate:
+
+```bash
+openssl x509 -in cert.pem -text -noout
+```
+
+```bash
+#!/bin/bash
+# Comment
+echo "Hello $USER"
+if [ -f file.txt ]; then
+  ls -la
+fi
+```

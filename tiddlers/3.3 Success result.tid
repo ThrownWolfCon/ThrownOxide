@@ -1,0 +1,37 @@
+created: 20260616171203663
+modified: 20260616171314357
+tags: [[3. Viewing the log]]
+title: 3.3 Success result
+type: text/vnd.tiddlywiki
+
+[[Open This|3.3 Success result]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log#_success_result
+
+Success result
+
+```yaml
+{
+  "id": "224ea169-1b08-42c5-8349-86517083641d",
+  "time_started": "2025-08-12T00:03:45.439Z",
+  "time_completed": "2025-08-12T00:03:45.611Z",
+  "request_id": "e5cb503e-7af6-4620-b3d4-4b683eac2b7d",
+  "request_uri": "https://corp.sys.oxide.acme.com/v1/projects/hello",
+  "operation_id": "project_delete",
+  "source_ip": "172.20.17.118",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0",
+  "actor": {
+    "kind": "silo_user",
+    "silo_user_id": "dcef2ede-a083-4826-805e-b79d05007aec",
+    "silo_id": "7bd7623a-68ed-4636-8ecb-b59e3b068787"
+  },
+  "auth_method": "session_cookie",
+  "credential_id": "dd423500-8578-47de-897c-20a287559369",
+  "result": {
+    "kind": "success",
+    "http_status_code": 204
+  }
+}
+```

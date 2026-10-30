@@ -1,0 +1,23 @@
+created: 20260526144357204
+modified: 20260614171608395
+tags: [[External connectivity]]
+title: Ephemeral and floating IP
+type: text/vnd.tiddlywiki
+
+[[Open This|Ephemeral and floating IP]]
+
+---
+
+https://docs.oxide.computer/guides/configuring-guest-networking#_ephemeral_and_floating_ip
+
+Ephemeral and floating IP addresses can be optionally attached to VM instances, which allow them to be accessible from hosts outside of their VPCs. These addresses can be attached at instance provisioning time and are detached when instances are terminated. Floating IPs may also be attached and detached from actively-running instances using the floating_ip_attach and floating_ip_detach endpoints. Ephemeral IPs are automatically assigned and released back into an IP pool when attached or detached, while floating IPs are explicitly created with a permanent identity in a project and allow greater control over which IP an instance should have.
+
+Ephemeral IPs are unique per instance so each instance may have only one IPv4 and one IPv6 ephemeral address each. Multiple floating IPs can be attached to an instance and the maximum number of external IPs is 32.
+
+Instances will receive traffic from external hosts on all of their ephemeral and floating IPs, and will transparently send reply traffic from the original external address. Outbound traffic will be mapped to an external IP by priority:
+
+balanced(floating_ips) > ephemeral_ip
+
+That is, an instance with two floating IPs 192.168.32.32 and 192.168.32.33 and an ephemeral IP 192.168.32.1 will randomly choose .32 or .33 as a source address for outbound traffic. It will never originate traffic on .1 unless the floating IPs are detached.
+
+See the IP Pools and Subnet Pools guide to understand more about external IP address assignment.

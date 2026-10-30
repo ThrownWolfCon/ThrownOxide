@@ -1,0 +1,22 @@
+created: 20260511163801727
+modified: 20260515042408054
+tags: [[Support Engineer Materials]] [[RFD 3 1.1.2 Writing sample]]
+title: SEM-04
+type: text/vnd.tiddlywiki
+
+[[Open This|SEM-04]]
+
+---
+
+<span style="font-family: 'Beleren', sans-serif; font-size: 24px; font-weight: bold;">Writing samples</span>
+
+Writing is an essential part of communication at Oxide and is something that we rely heavily on to stay connected and consistent while often working apart.  What’s an example of writing that you are proud of? This writing can take a variety of forms, e.g.:
+
+* A response to a customer incident, or a support issue summary
+** [[File Backup and Recovery - Creating Customer Accounts]]
+* A postmortem write-up from a complicated customer issue
+* A blog entry or other long-form post on a technical issue
+** [[Xafe Repair Pass]]
+
+Please submit at least one writing sample (and no more than three) that you feel represents
+you, providing links if/as necessary.

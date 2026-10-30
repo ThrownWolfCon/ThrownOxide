@@ -1,0 +1,39 @@
+created: 20260603134749671
+modified: 20260612224552381
+tags: 
+title: custom note shows
+type: text/vnd.tiddlywiki
+
+[[Open This|custom note shows]]
+
+---
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br>
+  Your note text goes here.
+</div>
+
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>Info</strong><br>
+  Your info text goes here.
+</div>
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>Tip</strong><br>
+  Your tip text goes here.
+</div>
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Important</strong><br>
+  Your important text goes here.
+</div>
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>Warning</strong><br>
+  Your warning text goes here.
+</div>

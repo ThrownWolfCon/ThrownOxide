@@ -1,0 +1,23 @@
+created: 20260605163418957
+modified: 20260605163509018
+tags: [[Control Plane Components]]
+title: management-gateway-service
+type: text/vnd.tiddlywiki
+
+[[Open This|management-gateway-service]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>management-gateway-service</strong><br><br>
+MGS is a bridge between service processors (SPs) and the rest of the control plane. It runs on each of the servers adjacent to a Sidecar switch, forwarding requests from Nexus onto the management network.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "management-gateway-service">>
+</div>
+</div>
+</$linkcatcher>

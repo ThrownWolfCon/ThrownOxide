@@ -1,0 +1,27 @@
+Governance Perspective: 6
+created: 20260504193229534
+modified: 20260506195209251
+tags: [[Governance Perspective]]
+title: Data Governance
+type: text/vnd.tiddlywiki
+
+[[Open This|Data Governance]]
+
+---
+
+Data Governance
+
+Exercise authority and control over your data to meet stakeholder expectations.
+Your business processes and analytics capabilities depend on accurate, complete,
+timely, and relevant data. Define and assign key roles, including data owners,
+stewards, and custodians. Consider adopting a federated (data mesh) approach to
+governance. Specify standards, including data dictionaries, taxonomies, and business
+glossaries. Identify what datasets need to be referenced and model the relationships
+between reference data entities.
+
+Develop data lifecycle policies, and implement continuous compliance monitoring.
+Prioritize your data quality efforts in line with your strategic and operational data
+needs. Establish data quality standards: identify key quality attributes, business
+rules, metrics, and targets. Monitor data quality at every step of the data value chain.
+Identify root causes of data quality problems and improve relevant processes at the
+source. Implement data quality dashboards for critical data products.

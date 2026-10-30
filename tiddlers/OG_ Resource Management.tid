@@ -1,0 +1,37 @@
+created: 20260526163039555
+modified: 20260626154258406
+tags: [[Operator Guides]]
+title: OG: Resource Management
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Resource Management]]
+
+---
+
+https://docs.oxide.computer/guides/operator/resource-management
+
+This guide details important information that operators and administrators should know about resources, quotas, and capacity planning when working with Oxide silos.
+
+[[1. Scoping resources]]
+
+[[2. Quota management]]
+
+[[2.1 Calculating utilization]]
+
+[[2.2 Capacity planning]]
+
+[[2.3 CLI examples]]
+
+[[2.4 Related API reference]]
+
+[[3. IP pool association]]
+
+[[4. Identity and access management]]
+
+[[4.1 Identity modes]]
+
+[[4.2 IAM policies and role bindings]]
+
+[[4.3 Roles and capabilities]]
+
+[[5. Additional resources]]

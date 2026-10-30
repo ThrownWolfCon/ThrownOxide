@@ -1,0 +1,15 @@
+created: 20260603000637541
+modified: 20260624173747528
+tags: [[4. Deleting the instance]]
+title: 4.1 Stopping the instance
+type: text/vnd.tiddlywiki
+
+[[Open This|4.1 Stopping the instance]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_stopping_the_instance
+
+On the Instances page, click the three dots (more actions button) on the right side of your instance’s row. You’ll notice that the Delete option is not available yet. Click Stop.
+
+The instance status will change to Stopping. Click the refresh button to get the current status.

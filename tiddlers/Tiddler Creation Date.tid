@@ -1,0 +1,11 @@
+created: 20190916171734182
+modified: 20200718224643712
+tags: wikidev
+title: Tiddler Creation Date
+type: text/vnd.tiddlywiki
+
+```
+Created: <$view field="created" format="date" template="DDD DDth MMM YYYY"/>
+```
+
+Created: <$view field="created" format="date" template="DDD DDth MMM YYYY"/>

@@ -1,0 +1,17 @@
+created: 20260602233822857
+modified: 20260626185207110
+tags: [[GS: Quick Start: CLI]]
+title: 2. Create a project
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Create a project]]
+
+---
+
+<<copy-to-clipboard """
+oxide project create --name prototypes --description "Experimental work"
+""">>
+
+```bash
+oxide project create --name prototypes --description "Experimental work"
+```

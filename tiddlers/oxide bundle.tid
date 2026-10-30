@@ -1,0 +1,17 @@
+created: 20260627163631104
+modified: 20261029222451536
+tags: [[oxide cli commands]] [[Support bundles]] [[Show Off]]
+title: oxide bundle
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide bundle">>
+</div>
+</div>
+</$linkcatcher>

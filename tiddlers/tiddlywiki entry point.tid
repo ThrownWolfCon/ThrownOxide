@@ -1,0 +1,13 @@
+created: 20260605144830987
+modified: 20260605144921249
+tags: [[TiddlyWiki on Node.js]]
+title: tiddlywiki entry point
+type: text/vnd.tiddlywiki
+
+```
+# === 1. OXIDE (port 19841) ===
+
+cd /media/aim/data/NODEJSWIKIS/oxide
+
+nohup tiddlywiki . --listen host=0.0.0.0 port=19841   readers="(anon)" writers="(anon)"   > tiddlywiki.log 2>&1 &
+```

@@ -1,0 +1,11 @@
+created: 20260526174529121
+modified: 20260528215924673
+tags: [[Rack maintenance]] [[Please contact Oxide Support]]
+title: The LED is off for one of the drives/sleds. Should I attempt to reseat it?
+type: text/vnd.tiddlywiki
+
+[[Open This|The LED is off for one of the drives/sleds. Should I attempt to reseat it?]]
+
+---
+
+No. It is possible that the component connection is intact but the LED itself is faulty. <span style="font-family: 'Beleren', sans-serif; color: #00d892;">Please contact Oxide Support for investigation</span> and refrain from making any hot-plug/unplug or reboot attempts.

@@ -1,0 +1,19 @@
+created: 20260602231027581
+modified: 20260612200117435
+tags: [[2. Feature highlights]]
+title: 2.3 Compute servers
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 Compute servers]]
+
+---
+
+https://docs.oxide.computer/guides/introduction#_compute_servers
+
+Each computer server, also known as “sled”, uses a single AMD Milan processor package. The processor choice is based on factors such as performance, power and thermal characteristics, price, susceptibility to known security vulnerabilities, as well as other architectural and operational considerations. The choice of NVMe storage and NIC is also based on rigorous evaluations of many of the same factors.
+
+<div class="custom-note-blue">
+  <span class="note-icon">ℹ</span>
+  <strong>Note</strong><br>
+Every Oxide system board includes a hardware root-of-trust and an embedded service processor in place of the traditional BMC design incorporated into servers.
+</div>

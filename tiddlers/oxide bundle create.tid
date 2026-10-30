@@ -1,0 +1,42 @@
+created: 20260627171640614
+modified: 20260630175454079
+tags: [[oxide bundle]]
+title: oxide bundle create
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle create]]
+
+---
+
+<<<
+<<copy-to-clipboard "oxide bundle create">>
+```bash
+oxide bundle create
+```
+<<<
+
+```json
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle create
+{
+  "id": "830af9a5-536b-4187-9b8a-3894007ad495",
+  "reason_for_creation": "Created by external API",
+  "state": "collecting",
+  "time_created": "2026-06-30T17:50:36.538437491Z"
+}
+```
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle create --help
+Create support bundle
+
+Usage: oxide bundle create [OPTIONS]
+
+Options:
+      --user-comment <user-comment>  User comment for the support bundle
+      --json-body <JSON-FILE>        Path to a file that contains the full json body.
+      --json-body-template           XXX
+  -h, --help                         Print help
+
+Global Options:
+      --profile <PROFILE>  Configuration profile to use for commands
+```

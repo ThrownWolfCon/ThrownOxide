@@ -1,0 +1,23 @@
+created: 20260629191411573
+modified: 20260629191832841
+tags: [[4.1 Delivery Requests]]
+title: 4.1.1 Request Headers
+type: text/vnd.tiddlywiki
+
+[[Open This|4.1.1 Request Headers]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0538#_request_headers
+
+Webhook delivery requests always include the following headers:
+
+Request Headers
+
+|Name|Value|h
+| content-type|application/json|
+|x-oxide-delivery-id|A UUID that uniquely identifies this delivery attempt for the event.|
+|x-oxide-webhook-id|The UUID that identifies the webhook receiver to which the event was delivered.|
+|x-oxide-event-class|The event class string of the event.|
+|x-oxide-event-id|The event UUID of the event.|
+|x-oxide-signature|A HMAC signature of the payload for each H each secret key assigned to this webhook receiver. See the next section for details on the format of this header.|

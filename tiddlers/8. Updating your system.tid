@@ -1,0 +1,30 @@
+created: 20260611202350982
+modified: 20260611210710958
+tags: [[Installing on a physical machine using the ISO]]
+title: 8. Updating your system
+type: text/vnd.tiddlywiki
+
+[[Open This|8. Updating your system]]
+
+---
+
+Neither the ISO nor the virtual machine images always include the latest packages. You can update your system via:
+
+```
+# pkg update -v
+```
+
+<span style="font-family: 'Beleren', sans-serif; color: #c90076;">Pay careful attention to the instructions printed at the end of the update. You may be told that a boot environment was created and that you need to reboot to activate it. You should do that with the reboot command before moving on.</span>
+
+You can do this again whenever you need to update your system.
+Installing packages for building software
+
+Unlike the create.sh script for producing a virtual machine, the ISO images will install a minimal base system that does not include developer tools. If you are setting up a machine for developing (or just building) Helios and other software, install at least these extra packages:
+
+```
+# pkg install -v \
+    /developer/build-essential \
+    /developer/illumos-tools
+```
+
+This will make available a variety of tools like Git, GNU Make, and GCC.

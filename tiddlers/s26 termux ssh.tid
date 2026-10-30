@@ -1,0 +1,15 @@
+created: 20260630181300031
+modified: 20261029222644021
+tags: [[Home Lab Oxide]]
+title: s26 termux ssh
+type: text/vnd.tiddlywiki
+
+[[Open This|s26 termux ssh]]
+
+---
+
+<<copy-to-clipboard "ssh u0_a410@100.xx.xx.xx -p 8022">>
+
+```bash
+ssh u0_a410@100.xx.xx.xx -p 8022
+```

@@ -1,0 +1,9 @@
+created: 20260626175249883
+modified: 20260626175304740
+tags: 
+title: New Tiddler 11
+type: text/vnd.tiddlywiki
+
+```
+oxide --insecure --profile test-suite-silo11 project list
+```

@@ -1,0 +1,24 @@
+created: 20221215003448436
+modified: 20260311191331347
+tags: SSCOSSL [[openssl x509]]
+title: 5. Generate SSL certificate With self signed CA
+type: text/vnd.tiddlywiki
+
+[[5. Generate SSL certificate With self signed CA]]
+
+<$button message="tm-modal" param="5. Generate SSL certificate With self signed CA">Modal of This</$button>
+
+---
+
+Now, execute the following command to generate the SSL certificate that is signed by the `rootCA.crt` and `rootCA.key` created as part of our own Certificate Authority.
+
+```
+openssl x509 -req \
+    -in server.csr \
+    -CA rootCA.crt -CAkey rootCA.key \
+    -CAcreateserial -out server.crt \
+    -days 365 \
+    -sha256 -extfile cert.conf
+```
+
+The above command will generate `server.crt` that will be used with our server.key to ''enable SSL in applications.''

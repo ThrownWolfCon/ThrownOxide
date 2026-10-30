@@ -1,0 +1,10 @@
+created: 20260427235037827
+modified: 20260427235116368
+title: Competitors
+type: text/vnd.tiddlywiki
+
+[[Open This|Competitors]]
+
+---
+
+<<tabs "[tag[Competitors]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

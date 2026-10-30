@@ -1,0 +1,36 @@
+created: 20180304072222459
+modified: 20180304080956756
+tags: [[Customer Success Triage]]
+title: New Case Process
+type: text/vnd.tiddlywiki
+
+New case process:
+
+* DETAILS View (three bars icon)
+
+** Verify product is correct based on description (ImageManager for replication, Shadow Protect for backups, etc.)
+*** All Restore issues for any product <mark>that do not mention testing or lab</mark> are immediately upgraded to Emergency Status:
+**** Update Category Field. Include the Prefix "Restore - " (e.g. Restore - SPX - unable boot after restore)
+**** Change the Priority to "Emergency"
+**** Change the Owner to queue Emergency
+**** Notify Team Lead that a case has been upgraded
+
+** Verify required data has been provided for the product specified
+*** ShadowProtect/SPX
+**** Verify that DTX has been provided
+**** Open them and verify the Serial Number from the Case matches the Product Key from the dtx.log located in C:\ProgramData\dtx\logs in the .7z file
+**** Verify if this is an OEM License (OEM Support Contacts)
+***** If OEM License, verify that Email Domain matches the OEM
+***** If Email Domain does not match OEM, direct Partner to OEM for support
+***** Valid Incident Packs holders are entitled to STC support.
+**** Verify that the Serial Number has active maintenance in CPP
+***** If Serial Number is expired, is there an Incident Pack referenced in the Web Form Incident field (e.g. XXXX-XXXX)
+***** Verify that the Incident Pack is valid in CPP
+
+[[Imagemanager Triage]]<br>
+[[Shadowstream Triage]]<br>
+[[Cloud Services Triage]]<br>
+[[Cloud Backup Triage]]<br>
+[[Shadowcontrol Triage]]<br>
+[[File Backup and Recovery Triage]]<br>          
+[[PSA Integration Triage]]<br>

@@ -1,0 +1,63 @@
+created: 20260527233416651
+modified: 20260608150617627
+tags: 
+title: Oxide CLI
+type: text/vnd.tiddlywiki
+
+[[Open This|Oxide CLI]]
+
+---
+
+Oxide CLI always requires:
+
+an auth profile
+a host (control plane URL)
+a token/session
+
+Without oxide auth login, it refuses to even send requests.
+
+```
+$installDir = "C:\Tools\oxide"
+$tempZip = "$env:TEMP\oxide.zip"
+
+# Get latest release
+$release = Invoke-RestMethod "https://api.github.com/repos/oxidecomputer/cli/releases/latest"
+
+# Find Windows x64 asset
+$asset = $release.assets | Where-Object {
+    $_.name -match "windows" -and $_.name -match "x86_64.*\.zip$"
+} | Select-Object -First 1
+
+if (-not $asset) {
+    Write-Error "Could not find a Windows CLI release."
+    exit 1
+}
+
+# Download
+Invoke-WebRequest $asset.browser_download_url -OutFile $tempZip
+
+# Install
+New-Item -ItemType Directory -Force -Path $installDir | Out-Null
+Expand-Archive -Path $tempZip -DestinationPath $installDir -Force
+
+# Add to PATH if needed
+$machinePath = [Environment]::GetEnvironmentVariable("Path", "Machine")
+
+if ($machinePath -notlike "*$installDir*") {
+    [Environment]::SetEnvironmentVariable(
+        "Path",
+        "$machinePath;$installDir",
+        "Machine"
+    )
+}
+
+# Update current session
+$env:Path += ";$installDir"
+
+Write-Host ""
+Write-Host "Oxide CLI installed to $installDir"
+Write-Host ""
+Write-Host "Open a NEW PowerShell window and run:"
+Write-Host "oxide --version"
+```
+

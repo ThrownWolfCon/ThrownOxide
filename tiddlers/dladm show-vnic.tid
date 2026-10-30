@@ -1,0 +1,14 @@
+created: 20260602155232938
+modified: 20260602155304339
+tags: dladm
+title: dladm show-vnic
+type: text/vnd.tiddlywiki
+
+[[Open This|dladm show-vnic]]
+
+---
+
+```
+# Show VNICs (virtual NICs) - crucial for Oxide zones
+dladm show-vnic
+```

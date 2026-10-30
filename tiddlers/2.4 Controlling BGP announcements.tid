@@ -1,0 +1,143 @@
+created: 20260624200324807
+modified: 20260624200916662
+tags: [[2. Expanding connectivity]]
+title: 2.4 Controlling BGP announcements
+type: text/vnd.tiddlywiki
+
+[[Open This|2.4 Controlling BGP announcements]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-connectivity#_controlling_bgp_announcements
+
+In some situations, it’s necessary to limit what announcements go to what peers. For the Oxide rack, this is configurable through the CLI. Consider the case where the intent is to only export 198.51.100.0/24 to transit providers and 203.0.113.0/24 to cloud providers. For the example topology in this guide, this filtering is accomplished as follows.
+
+```bash
+oxide system networking bgp filter \
+    --rack $rack \
+    --switch switch0 \
+    --port qsfp0 \
+    --peer 169.254.10.1 \
+    --direction 'export' \
+    --allowed 198.51.100.0/24
+
+oxide system networking bgp filter \
+    --rack $rack \
+    --switch switch1 \
+    --port qsfp0 \
+    --peer 169.254.20.1 \
+    --direction 'export' \
+    --allowed 198.51.100.0/24
+
+oxide system networking bgp filter \
+    --rack $rack \
+    --switch switch0 \
+    --port qsfp0 \
+    --peer 169.254.30.1 \
+    --direction 'export' \
+    --allowed 203.0.113.0/24
+
+oxide system networking bgp filter \
+    --rack $rack \
+    --switch switch1 \
+    --port qsfp0 \
+    --peer 169.254.40.1 \
+    --direction 'export' \
+    --allowed 203.0.113.0/24
+```
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+The` --allowed` flag may be specified multiple times to allow multiple prefixes per-peer. The set of prefixes defined by the `--allowed` flag describe the entire set of allowed prefixes for the peer. Any pre-existing allowed prefixes that are omitted from the list will be removed. Prefixes are exact matches and do not follow subnet inclusion rules. Thus, allowing `10.10.0.0/16` does not imply allowing `10.10.0.0/24`.
+</div>
+
+
+
+The new live configuration can be seen through the CLI.
+
+```bash
+oxide system networking switch-port-settings show
+switch0/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address          Lot            VLAN
+169.254.10.2/30  initial-infra  None
+169.254.30.2/30  cloud-peering  Some(300)
+
+BGP Peer      Config   Export             Import          Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED   Remote ASN  VLAN
+169.254.10.1  as65547  [198.51.100.0/24]  [no filtering]  []           3              3           false             6          3               2          None        None      None     None  None        None
+169.254.30.1  as65547  [203.0.113.0/24]   [no filtering]  []           0              0           false             6          0               2          None        None      None     None  None        Some(300)
+
+switch1/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address          Lot            VLAN
+169.254.20.2/30  initial-infra  None
+169.254.40.2/30  cloud-peering  Some(400)
+
+BGP Peer      Config   Export             Import          Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED   Remote ASN  VLAN
+169.254.20.1  as65547  [198.51.100.0/24]  [no filtering]  []           3              3           false             6          3               2          None        None      None     None  None        None
+169.254.40.1  as65547  [203.0.113.0/24]   [no filtering]  []           0              0           false             6          0               2          None        None      None     None  None        Some(400)
+```
+
+The prefixes that have been imported on a peer-by-beer basis can also be viewed through the CLI.
+
+```bash
+oxide system networking bgp imported ipv4 --asn 65547
+[
+  {
+    "id": 3232235963,
+    "nexthop": "169.254.20.1",
+    "prefix": "0.0.0.0/0",
+    "switch": "switch1"
+  },
+  {
+    "id": 3232235882,
+    "nexthop": "169.254.40.1",
+    "prefix": "240.0.0.0/4",
+    "switch": "switch1"
+  },
+  {
+    "id": 3232235801,
+    "nexthop": "169.254.30.1",
+    "prefix": "240.0.0.0/4",
+    "switch": "switch0"
+  },
+  {
+    "id": 3232235887,
+    "nexthop": "169.254.10.1",
+    "prefix": "0.0.0.0/0",
+    "switch": "switch0"
+  }
+]
+```
+
+Here we can see that the transit providers are announcing a default route to the rack, and the cloud providers are announcing the class-E prefix 240.0.0.0/4.
+
+To round out the guide, the prefix 203.0.113.0/24 is announced to the cloud providers.
+
+```bash
+oxide system networking bgp announce \
+    --announce-set as65547-announce \
+    --address-lot cloud-pool \
+    --prefix 203.0.113.0/24
+```
+
+Then an IP pool is created for instances to be created that draw addresses from the pool being announced to the cloud.
+
+```bash
+cloud_pool_name='cloud-pool'
+oxide system networking ip-pool create \
+    --name $cloud_pool_name \
+    --description 'ip pool for talking to the cloud'
+
+oxide system networking ip-pool range add \
+    --pool $cloud_pool_name \
+    --first 203.0.113.1 \
+    --last 203.0.113.254
+```

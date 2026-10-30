@@ -1,0 +1,10 @@
+created: 20260603162742536
+modified: 20260603162811599
+title: 3.3.2 Verify IPv6 connectivity
+type: text/vnd.tiddlywiki
+
+[[Open This|3.3.2 Verify IPv6 connectivity]]
+
+---
+
+The technician ports send out periodic [[IPv6 SLAAC]] advertisements.

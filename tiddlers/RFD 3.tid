@@ -1,0 +1,25 @@
+created: 20260424224250861
+modified: 20260601051200246
+tags: RFD SEM-02
+title: RFD 3
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0003
+
+<<<
+For Digestion, Not Plagiarism.
+<<< Michael Hart
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "RFD 3">>
+</div>
+</div>
+</$linkcatcher>
+
+<<tabs "[tag[RFD 3]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

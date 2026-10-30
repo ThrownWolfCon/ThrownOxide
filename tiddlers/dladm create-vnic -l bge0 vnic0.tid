@@ -1,0 +1,14 @@
+created: 20260602155320941
+modified: 20260602155349357
+tags: dladm
+title: dladm create-vnic -l bge0 vnic0
+type: text/vnd.tiddlywiki
+
+[[Open This|dladm create-vnic -l bge0 vnic0]]
+
+---
+
+```
+# Create a VNIC over a physical interface
+dladm create-vnic -l bge0 vnic0
+```

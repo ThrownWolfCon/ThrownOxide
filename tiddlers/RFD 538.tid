@@ -1,0 +1,51 @@
+created: 20260629043546269
+modified: 20260629165356058
+tags: RFD Backlog
+title: RFD 538
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 538]]
+
+---
+
+<h1><span style="font-family: 'Beleren', sans-serif; color: #00d892;"> Webhook API</span></h1>
+
+https://rfd.shared.oxide.computer/rfd/0538#reliable-receivers
+
+Webhooks provide a mechanism for the Oxide rack to notify external systems when events occur. In particular, notifications for fault management alerts ([rfd307]) are delivered via webhooks. This RFD describes the API used by external systems to subscribe to webhooks from the Oxide control plane, and how webhooks are delivered to receivers.
+
+In addition, Appendix A contains guidance on how to use the mechanisms provided by the Oxide webhook API to implement a fault-tolerant, reliable webhook receiver.
+
+The design of the internal implementation of the webhook system is described in RFD 364 Webhook Implementation.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "RFD 538">>
+</div>
+</div>
+</$linkcatcher>
+
+[[2. Events]]
+
+[[2.1 Event Classes]]
+
+[[2.1.1 Globbing]]
+
+[[2.2 Event UUIDs]]
+
+[[3. Webhook Receivers]]
+
+[[3.1 Secrets]]
+
+[[3.2 Identity and Access Management]]
+
+[[4. Webhook Delivery]]
+
+[[4.1 Delivery Requests]]
+
+[[4.1.1 Request Headers]]
+
+[[4.1.1.1 Signature Header Format]]
+
+[[4.1.2 Request Body]]

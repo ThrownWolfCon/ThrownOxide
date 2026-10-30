@@ -1,0 +1,52 @@
+created: 20260626162019751
+modified: 20261029222713865
+tags: [[Home Lab Oxide]] [[Show Off]]
+title: Install Oxide CLI in Termux
+type: text/vnd.tiddlywiki
+
+[[Open This|Install Oxide CLI in Termux]]
+
+---
+
+Update packages:Bash
+
+```bash
+pkg update && pkg upgrade
+```
+
+Install Rust (and dependencies):Bash
+
+```bash
+pkg install rust clang libllvm
+```
+
+Install the CLI via Cargo (this pulls the latest):Bash
+
+```bash
+cargo install oxide-cli
+```
+
+Add to PATH if needed: 
+
+```bash
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc &&
+```
+
+```
+   Installed package `oxide-cli v0.9.1` (executable `oxide`)
+warning: be sure to add `/data/data/com.termux/files/home/.cargo/bin` to your PATH to be able to run the installed binaries
+~ $ echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+~ $ echo $PATH | grep cargo
+which oxide
+oxide --version
+/data/data/com.termux/files/home/.cargo/bin:/data/data/com.termux/files/usr/bin:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/apex/com.android.virt/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin
+/data/data/com.termux/files/home/.cargo/bin/oxide
+oxide 0.9.1
+```
+
+```
+cargo install oxide-cli --force   # or --locked if you want exact
+```
+
+

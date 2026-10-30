@@ -1,0 +1,48 @@
+created: 20260616163042781
+modified: 20260711160947311
+tags: [[oxide cli]]
+title: oxide auth status
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide auth status]]
+
+---
+
+<<copy-to-clipboard """
+oxide auth status
+""">>
+
+```bash
+oxide auth status
+```
+
+<<copy-to-clipboard """
+oxide auth status | grep Authenticated
+""">>
+
+```bash
+oxide auth status | grep Authenticated
+```
+
+Powershell colors:
+
+```bash
+function Get-OxideAuthStatus {
+    $output = & oxide auth status
+
+    foreach ($line in $output) {
+        if ($line -match "(?i)error|invalid|missing|failed") {
+            # Shades of red
+            Write-Host $line -ForegroundColor Red
+        }
+        elseif ($line -match "(?i)authenticated|success") {
+            # Shades of green
+            Write-Host $line -ForegroundColor Green
+        }
+        else {
+            # Default color for "Checking..." lines etc.
+            Write-Host $line
+        }
+    }
+}
+```

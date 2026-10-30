@@ -1,0 +1,16 @@
+created: 20260501162117289
+modified: 20260501162251677
+tags: [[Aim Docker]]
+title: Reactive Resume
+type: text/vnd.tiddlywiki
+
+[[Open This|Reactive Resume]]
+
+---
+
+```yml
+9da2f3a2c8c3   amruthpillai/reactive-resume:latest          "docker-entrypoint.s…"   13 months ago   Up 5 days               0.0.0.0:3000->3000/tcp, :::3000->3000/tcp                                                                                                 reactive-resume-app
+7bb6d3401afc   minio/minio:latest                           "/usr/bin/docker-ent…"   13 months ago   Up 5 days               0.0.0.0:9000-9001->9000-9001/tcp, :::9000-9001->9000-9001/tcp                                                                             reactive-resume-minio
+33f0d8457446   browserless/chrome:1.61.0-puppeteer-21.4.1   "./start.sh"             13 months ago   Up 5 days               0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp                                                                                               reactive-resume-chrome
+8830df27f91f   postgres:16-alpine                           "docker-entrypoint.s…"   13 months ago   Up 5 days               5432/tcp                                                                                                                                  reactive-resume-postgres
+```

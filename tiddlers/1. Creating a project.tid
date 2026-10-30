@@ -1,0 +1,17 @@
+created: 20260602234843103
+modified: 20260623174716037
+tags: [[GS: Quick Start: Web]]
+title: 1. Creating a project
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Creating a project]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_creating_a_project
+
+The first thing you’ll see after logging in is the Projects page. A project is a collection of resources like instances, disks, images, VPCs, and floating IPs. Instances must be created within a project. Create one by clicking New project.
+
+Give your project a name and click Create project in the lower right corner. You’ll be taken into your project and shown the Instances page. There won’t be any instances yet.
+
+[img width="100%" [https://docs.oxide.computer/img/qs-create-project.png]]

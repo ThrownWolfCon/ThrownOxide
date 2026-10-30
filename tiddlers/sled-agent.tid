@@ -1,0 +1,23 @@
+created: 20260605162304620
+modified: 20260605162426214
+tags: [[Control Plane Components]]
+title: sled-agent
+type: text/vnd.tiddlywiki
+
+[[Open This|sled-agent]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>sled-agent</strong><br><br>
+  The agent runs on each server (including those functioning as switches) to create, update, and destroy Instances, storage resources, and networking resources. It is also responsible for inventorizing hardware, reporting faults and other events to Nexus, and managing software updates on the server.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "sled-agent">>
+</div>
+</div>
+</$linkcatcher>

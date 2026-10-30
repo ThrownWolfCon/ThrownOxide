@@ -1,0 +1,36 @@
+created: 20151101190513989
+modified: 20151115201555216
+tags: $:/tags/Macro
+title: $:/plugins/frd/calendar/datePickerMacro
+type: text/vnd.tiddlywiki
+
+\define datePickerAux1(field config)
+<$set name="datePickerDate" value={{$(targetTiddler)$!!$field$}}>
+<$macrocall $name="datePickerAux2" field=$field$ config=$config$/>
+</$set>
+\end
+
+\define datePickerAux2(field config)
+<$set name="year"  value=<<readFromDateString "year" "$(datePickerDate)$">>>
+<$set name="month" value=<<readFromDateString "month" "$(datePickerDate)$">>>
+<$set name="state" value=<<constructState $field$>>>
+<$edit-text tiddler="$(targetTiddler)$" field="$field$" tag="input" default="" focusPopup=<<state>> class="tc-popup-handle"/>
+<$reveal state=<<state>> type="popup" text="" default="" class="calendar-pop">
+<$linkcatcher to="$(targetTiddler)$!!$field$">
+<span>
+{{$:/plugins/frd/calendar/datePicker}}
+</span>
+</$linkcatcher>
+</$reveal>
+</$set></$set></$set>
+\end
+
+\define constructState(field)
+$:/state/calendar/datePickerState$(targetTiddler)$$field$
+\end
+
+\define datePicker(tiddler:<<currentTiddler>> field:date config)
+<$set name="targetTiddler" value=$tiddler$>
+<$macrocall $name="datePickerAux1" field=$field$ config=$config$/>
+</$set>
+\end

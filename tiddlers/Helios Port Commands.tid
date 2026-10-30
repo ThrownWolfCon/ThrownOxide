@@ -1,0 +1,13 @@
+created: 20260530210235423
+modified: 20260530210421406
+tags: [[Helios Commands]]
+title: Helios Port Commands
+type: text/vnd.tiddlywiki
+
+[[Open This|Helios Port Commands]]
+
+---
+
+`netstat -an | grep LISTEN`
+
+`netstat -P tcp -an | grep LISTEN`

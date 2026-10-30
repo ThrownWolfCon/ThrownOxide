@@ -1,0 +1,50 @@
+created: 20260626193430504
+modified: 20260630230335450
+tags: [[oxide certificate]]
+title: oxide certificate create
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide certificate create]]
+
+---
+
+https://docs.oxide.computer/cli/certificate/create
+
+```yml
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide certificate create --help
+------------------------------------
+This certificate is automatically used by the Oxide Control plane to serve external connections.
+
+Usage: oxide certificate create [OPTIONS]
+
+Options:
+      --cert <CERT-FILE>
+          path to a PEM-formatted file containing a public certificate chain
+
+      --description <description>
+
+
+      --key <KEY-FILE>
+          path to a PEM-formatted file containing a private key
+
+      --name <name>
+
+
+      --service <service>
+          The service using this certificate
+
+          [possible values: external_api]
+
+      --json-body <JSON-FILE>
+          Path to a file that contains the full json body.
+
+      --json-body-template
+          XXX
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+Global Options:
+      --profile <PROFILE>
+          Configuration profile to use for commands
+```

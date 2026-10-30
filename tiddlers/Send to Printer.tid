@@ -1,0 +1,19 @@
+created: 20260625151310187
+modified: 20260625151804011
+tags: 
+title: Send to Printer
+type: text/vnd.tiddlywiki
+
+[[Open This|Send to Printer]]
+
+---
+
+permalinks of story rivers to print...
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Send to Printer">>
+</div>
+</div>
+</$linkcatcher>

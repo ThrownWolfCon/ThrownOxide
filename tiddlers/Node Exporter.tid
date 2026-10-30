@@ -1,0 +1,13 @@
+created: 20260501192141616
+modified: 20260501192213145
+tags: [[Aim Docker]]
+title: Node Exporter
+type: text/vnd.tiddlywiki
+
+[[Open This|Node Exporter]]
+
+---
+
+```
+59b30a882f32   prom/node-exporter:latest                    "/bin/node_exporter"     13 months ago   Up 5 days                                                                                                                                                         node-exporter
+```

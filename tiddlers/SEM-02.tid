@@ -1,0 +1,15 @@
+created: 20260511163022243
+modified: 20260511163045452
+tags: [[Support Engineer Materials]]
+title: SEM-02
+type: text/vnd.tiddlywiki
+
+[[Open This|SEM-02]]
+
+---
+
+Before starting these materials, please familiarize yourself with the Oxide hiring process, both by reading [[RFD 3]] and by listening to our [[Oxide and Friends episode with Gergely Orosz|Hiring Processes with Gergely Orosz]]. 
+
+<span style="color: #db89c8;">Please make a copy of this document and for each section</span>, please use the space provided, expanding into additional pages as necessary. When completed, please export this document as a PDF and submit it with your application.
+
+Finally, note that we strongly discourage using an LLM (in whole or in part) to write these materials. For more details on our disposition towards LLM use with respect to writing prose, please see LLMs as Writers in [[RFD 576]].

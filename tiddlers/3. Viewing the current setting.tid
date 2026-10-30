@@ -1,0 +1,19 @@
+created: 20260616182115016
+modified: 20260616182211212
+tags: [[OG: Jumbo Frames]]
+title: 3. Viewing the current setting
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Viewing the current setting]]
+
+---
+
+```bash
+oxide system networking settings view
+```
+
+```yml
+{
+  "external_jumbo_frames_opt_in_enabled": false
+}
+```

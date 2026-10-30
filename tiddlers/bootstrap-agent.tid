@@ -1,0 +1,23 @@
+created: 20260605162533985
+modified: 20260605162629096
+tags: [[Control Plane Components]]
+title: bootstrap-agent
+type: text/vnd.tiddlywiki
+
+[[Open This|bootstrap-agent]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>bootstrap-agent</strong><br><br>
+The agent runs on each server (including those functioning as switches) during rack and server initialization to establish rack-level trust, unlock storage, launch the sled agent, and configure new devices.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "bootstrap-agent">>
+</div>
+</div>
+</$linkcatcher>

@@ -1,0 +1,29 @@
+created: 20260527233814961
+modified: 20260527235526516
+tags: [[Home Lab Oxide]]
+title: 🧪 Option 3
+type: text/vnd.tiddlywiki
+
+Step 1 — create a dummy profile
+
+aim@aim-PowerEdge-T620:~$ oxide auth status
+aim@aim-PowerEdge-T620:~$ ls ~/.config/oxide
+ls: cannot access '/home/aim/.config/oxide': No such file or directory
+
+🚀 Step 1 — install dependencies
+
+sudo apt update
+sudo apt install -y python3-pip
+pip3 install fastapi uvicorn
+
+Step 2 — create fake control plane
+
+mkdir ~/oxide-mock
+cd ~/oxide-mock
+
+Create app.py:
+
+Step 3 — run it
+
+
+

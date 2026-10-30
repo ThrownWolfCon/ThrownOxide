@@ -1,0 +1,17 @@
+created: 20260629192055024
+modified: 20260629193553640
+tags: [[oxide system hardware]]
+title: oxide system hardware disk
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide system hardware disk]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide system hardware disk">>
+</div>
+</div>
+</$linkcatcher>

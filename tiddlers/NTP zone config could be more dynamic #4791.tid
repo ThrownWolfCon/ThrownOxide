@@ -1,0 +1,12 @@
+created: 20260604223645593
+modified: 20260605165433394
+tags: Omicron [[1.2.1 Mode 1: Use an existing network]] ntp
+title: NTP zone config could be more dynamic #4791
+type: text/vnd.tiddlywiki
+
+[[Open This|NTP zone config could be more dynamic #4791]]
+
+---
+
+https://github.com/oxidecomputer/omicron/issues/4791
+

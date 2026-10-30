@@ -1,0 +1,19 @@
+created: 20221215002922602
+modified: 20221215165703290
+tags: SSCOSSL
+title: 3. Generate Certificate Signing Request (CSR) Using Server Private Key
+type: text/vnd.tiddlywiki
+
+[[3. Generate Certificate Signing Request (CSR) Using Server Private Key]]
+
+<$button message="tm-modal" param="3. Generate Certificate Signing Request (CSR) Using Server Private Key">Modal of This</$button>
+
+---
+
+Now we will generate server.csr using the following command.
+
+```
+openssl req -new -key server.key -out server.csr -config csr.conf
+```
+
+Now our folder should have three files. `csr.conf`, `server.csr` and `server.key`

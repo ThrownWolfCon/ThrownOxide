@@ -1,0 +1,28 @@
+created: 20260531020541785
+modified: 20260608162536277
+tags: [[3. Using Omicron]]
+title: 3.2 Using the CLI
+type: text/vnd.tiddlywiki
+
+[[Open This|3.2 Using the CLI]]
+
+---
+
+Using the CLI
+
+
+Follow the instructions to set up the Oxide CLI. See the previous section to find the URL for the API. Then you can start the login flow with:
+
+```
+$ oxide auth login --host http://192.168.1.22
+
+Opened this URL in your browser:
+  http://192.168.1.22/device/verify
+
+Enter the code: CXKX-KPBK
+```
+
+Assuming you haven’t already logged in, this page will bring you to the recovery silo login. The username and password are defined in config-rss.toml and default to:
+
+username: recovery
+password: oxide

@@ -1,0 +1,15 @@
+created: 20260602155015535
+modified: 20260602155124342
+tags: dladm
+title: dladm show-link
+type: text/vnd.tiddlywiki
+
+[[Open This|dladm show-link]]
+
+---
+
+Data Link Administration (Layer 2)
+
+# Show all network links (physical, virtual, etherstubs)
+
+dladm show-link

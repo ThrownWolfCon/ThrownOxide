@@ -1,0 +1,31 @@
+AWS CAF Perspectives: 4
+created: 20260504193605489
+modified: 20260507154305692
+tags: [[AWS CAF Perspectives]]
+title: Platform Perspective
+type: text/vnd.tiddlywiki
+
+[[Open This|Platform Perspective]]
+
+---
+
+The platform perspective focuses on accelerating the delivery of your cloud workloads via an enterprise-grade, scalable, hybrid cloud environment. It comprises seven capabilities shown in the following figure. 
+
+<h2 style="color: #d67568;">Common Stakeholders</h2>
+
+* Chief Technology Officer [[CTO]]
+* technology 
+** leaders
+** architects
+** engineers
+
+---
+
+* Platform Perspective
+** [[Platform Architecture]]
+** [[Data Architecture]]
+** [[Platform Engineering]]
+** [[Data Engineering]]
+** [[Provisioning and Orchestration]]
+** [[Modern Application Development]]
+** [[Continuous Integration and Continuous Delivery]]

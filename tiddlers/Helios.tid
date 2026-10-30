@@ -1,0 +1,25 @@
+created: 20260529182319939
+modified: 20260601053320164
+tags: thrive_26
+title: Helios
+type: text/vnd.tiddlywiki
+
+[[Open This|Helios]]
+
+---
+
+Helios literally translates to "sun" in ancient Greek.
+
+https://github.com/oxidecomputer/helios
+
+https://github.com/oxidecomputer/helios-engvm#installing-on-a-physical-machine-using-the-iso
+
+helios-install-vga.iso
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Helios">>
+</div>
+</div>
+</$linkcatcher>

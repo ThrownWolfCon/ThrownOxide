@@ -1,0 +1,19 @@
+created: 20260612183757815
+modified: 20260612183836259
+tags: Someday/Maybe
+title: rfd.thrownwolf.com
+type: text/vnd.tiddlywiki
+
+[[Open This|rfd.thrownwolf.com]]
+
+---
+
+```
+thrownwolf.com (or rfd.thrownwolf.com)
+        ↓
+     Caddy (reverse proxy + automatic HTTPS)
+        ↓
+   rfd-site  ←→  rfd-api  ←→  PostgreSQL
+        ↑
+   rfd-processor (watches your GitHub repo)
+```

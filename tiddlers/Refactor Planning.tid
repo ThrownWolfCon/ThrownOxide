@@ -1,0 +1,11 @@
+created: 20260501033208090
+modified: 20260501033304863
+tags: Refactor
+title: Refactor Planning
+type: text/vnd.tiddlywiki
+
+[[Open This|Refactor Planning]]
+
+---
+
+Define the new architecture (e.g., microservices, serverless).

@@ -1,0 +1,23 @@
+created: 20260530163108631
+modified: 20260711231512439
+tags: dladm
+title: dladm show-phys -m
+type: text/vnd.tiddlywiki
+
+[[Open This|dladm show-phys -m]]
+
+---
+
+wolfoxide
+
+```bash
+# dladm show-phys -m
+LINK         SLOT     ADDRESS            INUSE CLIENT
+bge0         primary  d0:94:66:1f:2e:f0  yes  bge0
+bge1         primary  d0:94:66:1f:2e:f1  no   --
+```
+
+```
+# Show physical interfaces with MAC addresses
+dladm show-phys -m
+```

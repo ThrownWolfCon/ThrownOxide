@@ -1,0 +1,17 @@
+created: 20260616183619381
+modified: 20260616183657994
+tags: [[OG: Jumbo Frames]]
+title: 6. Recommendations for end users
+type: text/vnd.tiddlywiki
+
+[[Open This|6. Recommendations for end users]]
+
+---
+
+When jumbo frames are enabled, communicating with hosts behind a smaller MTU depends on PMTUD working correctly. Recommend that users running Linux guests enable packetization-layer PMTUD as a fallback:
+
+```bash
+sysctl -w net.ipv4.tcp_mtu_probing=1
+```
+
+This lets TCP shrink its effective MTU based on retransmission signals when ICMP messages are dropped along the path.

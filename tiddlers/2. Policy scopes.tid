@@ -1,0 +1,11 @@
+created: 20260614145146553
+modified: 20260614150254644
+tags: [[UG: Access Control]]
+title: 2. Policy scopes
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Policy scopes]]
+
+---
+
+Users and groups can be assigned roles on three kinds of resource: fleet, silo, or project. Each of those has its own role policy that can be viewed and modified through the API. Viewing a policy typically requires the viewer role on the resource, while updating a policy requires the admin role.

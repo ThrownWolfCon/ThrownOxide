@@ -1,0 +1,18 @@
+created: 20260420171216068
+modified: 20260508212318749
+tags: [[Solutions Architect]]
+title: Before applying for this role, you should
+type: text/vnd.tiddlywiki
+
+[[Open This|Before applying for this role, you should]]
+
+---
+
+<$details summary="Tabs">
+<<tabs "[tag[Before Applying]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+</$details>
+
+<$details summary="Long notes">
+<$transclude tiddler="longblock01" mode="block"/>
+</$details>
+

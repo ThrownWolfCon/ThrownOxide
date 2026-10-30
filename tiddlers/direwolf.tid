@@ -1,0 +1,15 @@
+created: 20260610014738242
+modified: 20260704175403935
+tags: [[Lost Dogs]]
+title: direwolf
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="Createdbox" mode="block"/>
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>[[direwolf]]</strong><br><br>
+A dire wolf (or direwolf) refers to a prehistoric, extinct canine that roamed the Americas during the Pleistocene epoch. In popular culture, the term is frequently used in fantasy and role-playing games to describe a fictional, massively oversized, and vicious wolf.
+
+<$transclude tiddler="meh002" mode="block"/>
+</div>

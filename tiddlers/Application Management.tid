@@ -1,0 +1,19 @@
+created: 20260504213231454
+modified: 20260504213343851
+tags: [[Operations Perspective]]
+title: Application Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Application Management]]
+
+---
+
+Application Management
+
+Investigate and remediate application issues in a single pane of glass.
+
+Aggregating application data into a single management console will simplify operational oversight and accelerate remediation of application issues by reducing the need to switch context between different management tools.
+
+Integrate with other operational and management systems, such as application portfolio management and CMDB, automate the discovery of your application components and resources, and consolidate application data into a single management console. Include software components and infrastructure resources, and delineate different environments, such as development, staging, and production.
+
+To remediate operational issues more quickly and consistently, consider automating your runbooks.

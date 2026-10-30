@@ -1,0 +1,13 @@
+created: 20260501142904360
+modified: 20260502040106900
+tags: Example
+title: Aim Server
+type: text/vnd.tiddlywiki
+
+[[Open This|Aim Server]]
+
+---
+
+<<tabs "[tag[Aim Server]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+
+1

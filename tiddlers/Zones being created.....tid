@@ -1,0 +1,27 @@
+created: 20260602161201392
+modified: 20260602161227544
+tags: 
+title: Zones being created....
+type: text/vnd.tiddlywiki
+
+[[Open This|Zones being created....]]
+
+---
+
+The system will now create in order:
+
+✅ Internal DNS (3 zones) - COMPLETE
+
+🔄 External DNS (2 zones) - IN PROGRESS
+
+⏳ NTP zone - BEING CREATED
+
+⏳ CockroachDB cluster (multiple zones)
+
+⏳ ClickHouse zone
+
+⏳ Crucible zones
+
+⏳ Oximeter zone
+
+⏳ Nexus zone (the API endpoint)

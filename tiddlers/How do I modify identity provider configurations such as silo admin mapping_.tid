@@ -1,0 +1,13 @@
+created: 20260526182806890
+modified: 20260625015201402
+tags: [[Access management]]
+title: How do I modify identity provider configurations such as silo admin mapping?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I modify identity provider configurations such as silo admin mapping?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_modify_identity_provider_configurations_such_as_silo_admin_mapping
+
+Identity provider configurations are not modifiable to prevent silo membership from going out of sync with the identity provider system. The only way to modify the "silo admin" role mapping is to delete and re-create the silo.

@@ -1,0 +1,63 @@
+created: 20260603000851585
+modified: 20260624173944454
+tags: [[5. Appendix]]
+title: 5.2 How to install a test Debian package
+type: text/vnd.tiddlywiki
+
+[[Open This|5.2 How to install a test Debian package]]
+
+---
+
+Assuming that you have executed sudo apt update earlier, you can now type and execute this command
+
+```bash
+sudo apt install ncal
+```
+
+in the SSH session, which will install the ncal package.
+
+Once you’ve done that, if you enter cal or cal 2024 command, you should see a calendar presented in the terminal.
+
+```bash
+Installing for x86_64-efi platform.
+Installation finished. No error reported.
+No DKMS packages installed: not changing Secure Boot validation state.
+Processing triggers for initramfs-tools (0.140)
+update-initramfs: Generating /boot/initrd.img-5.10.0-27-cloud-amd64
+Processing triggers for libc-bin (2.31-13+deb117) ...
+Processing triggers for man-db (2.9.4-2) ...
+Processing triggers for grub-cloud-amd64 (0.0.5) ...
+Installing for i386-pc platform.
+Installation finished. No error reported.
+Installing for x86_64-efi platform.
+Installation finished. No error reported.
+
+debian@myfirstinstance:~$ sudo apt install ncal
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  ncal
+0 upgraded, 1 newly installed, o to remove and 0 not upgraded.
+Need to get 30.1 kB of archives.
+After this operation, 69.6 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bullseye/main amd64 ncal amd64 12.1.7+nmu3 |30.1 kB]
+Fetched 30.1 kB in 0s (1748 kB/s)
+Selecting previously unselected package ncal.
+(Reading database ... 22362 files and directories currently installed.)
+Preparing to unpack .../ncal_12.1.7+nmu3_amd64.deb ...
+Unpacking ncal (12.1.7+nmu3) ...
+Setting up ncal (12.1.7+nmu3) ...
+Processing triggers for man-db (2.9.4-2) ...
+
+debian@myfirstinstance:~$ cal
+January 2024
+Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 31
+
+debian@myfirstinstance:~$
+```

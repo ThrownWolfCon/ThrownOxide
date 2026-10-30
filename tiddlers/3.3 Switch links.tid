@@ -1,0 +1,22 @@
+created: 20260602232644910
+modified: 20260613005259106
+tags: [[3. Rack network management]]
+title: 3.3 Switch links
+type: text/vnd.tiddlywiki
+
+[[Open This|3.3 Switch links]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_switch_links
+
+Links provide a configuration interface for link-layer properties such as MAC addresses. The number of links per port depends on the phy geometry that has been configured for the port. Ports that support modular interfaces such as QSFP have multiple data lanes that connect the switch ASIC to the internal side of a transceiver. Some transceivers support multiple independent physical cables on the external side of the transceiver. This is called a breakout cable. The phy geometry configuration of a port defines how the internal transceiver data lanes are grouped into layer-2 link elements. In the case of QSFP, the Q stands for quad. Typical breakout configurations include 1xQSFP (no breakout), 2xQSFP (2 lanes per QSFP link, delivering half the available bandwidth to each), 4xSFP (1 lane per SFP link, delivering a quarter of the available bandwidth to each). Thus in the case of QSFP, there may be 1, 2 or 4 links per port with 4, 2 and 1 lanes per link respectively.
+
+Naming:
+
+If the phy geometry only specifies one link, the link has the same name as the port. If the phy geometry specifies multiple links, the link is named as follows `"<port-name>:<index>"` where index ranges from 0 to one less than the number of links specified in the phy geometry. For example the following enumerates all possible link configurations for the port qsfp7.
+
+|Phy Geometry |Links |
+|1xQSFP|qsfp7|
+|2xQSFP|qsfp7:1<br>qsfp7:2|
+|4xQSFP|qsfp7:1<br>qsfp7:2<br>qsfp7:3<br>qsfp7:4|

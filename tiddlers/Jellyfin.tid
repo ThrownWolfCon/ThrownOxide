@@ -1,0 +1,13 @@
+created: 20260501161040033
+modified: 20260501161137679
+tags: [[Aim Docker]]
+title: Jellyfin
+type: text/vnd.tiddlywiki
+
+[[Open This|Jellyfin]]
+
+---
+
+```
+3f4abf96fa33   jellyfin/jellyfin                            "/jellyfin/jellyfin"     11 months ago   Up 5 days (healthy)     0.0.0.0:8096->8096/tcp, :::8096->8096/tcp                                                                                                 jellyfin
+```

@@ -1,0 +1,17 @@
+created: 20260626232754060
+modified: 20260627163457630
+tags: [[oxide cli commands]]
+title: oxide external-subnet
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide external-subnet]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide external-subnet">>
+</div>
+</div>
+</$linkcatcher>

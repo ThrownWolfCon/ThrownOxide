@@ -1,0 +1,17 @@
+created: 20260606201520608
+modified: 20260606203901352
+tags: sled-agent
+title: tail -f $(svcs -L sled-agent)
+type: text/vnd.tiddlywiki
+
+[[Open This|tail -f $(svcs -L sled-agent)]]
+
+---
+
+<<copy-to-clipboard """
+tail -f $(svcs -L sled-agent)
+""">>
+
+```
+tail -f $(svcs -L sled-agent)
+```

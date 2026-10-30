@@ -1,0 +1,11 @@
+created: 20260502014107615
+modified: 20260506231837567
+tags: [[Application Migration Strategies]] Backlog [[Seven Common Migration Strategies]]
+title: Relocate
+type: text/vnd.tiddlywiki
+
+[[Open This|Relocate]]
+
+---
+
+Relocate: Moving infrastructure, such as hypervisor-level virtualization, to the cloud without purchasing new hardware or rewriting applications.

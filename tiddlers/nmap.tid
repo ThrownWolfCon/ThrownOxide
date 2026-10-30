@@ -1,0 +1,43 @@
+created: 20250404170614450
+modified: 20260516184902989
+tags: [[UKC 01: Reconnaissance]]
+title: nmap
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap]]
+
+---
+
+<<tabs "[tag[nmap]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+
+
+
+<<<use TCP SYN ping
+-PS
+<<<
+
+<<<use TCP ACK ping
+-PA
+<<<
+
+<<<use TCP UDP ping
+-PU
+<<<
+
+-O dectect OS
+
+-sV version of services running on target
+
+-v verbose
+
+-vv more verbose
+
+-vvv the most verbose!
+
+-oA   ....saves in three formats
+
+-oN Normal Format
+
+-oG greppable format
+
+-A Aggressive, not worried about being loud

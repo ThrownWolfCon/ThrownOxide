@@ -1,0 +1,106 @@
+created: 20260625014212706
+modified: 20260625014503518
+tags: [[OG: Expanding Physical Connectivity]]
+title: 2. Physical Expanding connectivity
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Physical Expanding connectivity]]
+
+---
+
+Expanding connectivity in this example involves creating a new switch port settings object and associating that settings object with a switch port. In this example we’ll be configuring port qsfp0 on switch1.
+
+Before configuring network settings, we’ll need to grab the ID of the rack we’ll be working with. In this example we assume a single rack deployment for simplicity and just grab the first rack ID.
+
+```
+export RACK_ID=`oxide system hardware rack list | jq -r .[0].id`
+echo $RACK_ID
+```
+
+The first thing to do is create a link. This will create a settings object called switch1-qsfp0 that we’ll apply in the next step.
+
+```bash
+$ oxide system networking link add \
+  --rack $RACK_ID \
+  --switch switch1 \
+  --port qsfp0 \
+  --fec rs \
+  --speed 100g
+```
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>Tip</strong><br><br>
+There are some other options that can be set here. Take a look at oxide system networking link add --help to see if any are important for your deployment.
+</div>
+
+
+Next, associate the link with a physical port.
+
+```bash
+$ oxide system hardware switch-port apply-settings \
+  --rack-id $RACK_ID \
+  --switch-location switch1 \
+  --port qsfp0 \
+  --port-settings switch1-qsfp0
+```
+
+Next, add an address to this switch port settings object.
+
+```
+$ oxide system networking addr add \
+  --rack $RACK_ID \
+  --switch switch1 \
+  --port qsfp0 \
+  --addr 198.51.101.6/30 \
+  --lot initial-infra
+```
+
+Finally, we’ll set up a static default route on the new link. This is just an example and setting more specific routes may be more applicable in other situations.
+
+```bash
+$ oxide system networking route set \
+  --rack $RACK_ID \
+  --switch switch1 \
+  --port qsfp0 \
+  --destination 0.0.0.0/0 \
+  --nexthop 198.51.101.5
+```
+
+Now we can run the switch-port-settings show command from the beginning of the guide and see the new port configuration.
+
+```bash
+$ oxide system networking switch-port-settings show
+
+switch1/qsfp0
+=============
+Autoneg  Fec  Speed
+false    Rs   Speed100G
+
+Address          Lot            VLAN
+198.51.101.6/30  initial-infra  None
+
+BGP Peer  Config  Export  Import  Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED  Remote ASN  VLAN
+
+Destination  Nexthop          Vlan  Preference
+0.0.0.0/0    198.51.101.5/32  0     0
+
+switch0/qsfp0
+=============
+Autoneg  Fec   Speed
+false    None  Speed100G
+
+Address          Lot            VLAN
+198.51.101.2/30  initial-infra  None
+
+BGP Peer  Config  Export  Import  Communities  Connect Retry  Delay Open  Enforce First AS  Hold Time  Idle Hold Time  Keepalive  Local Pref  Md5 Auth  Min TTL  MED  Remote ASN  VLAN
+
+Destination  Nexthop          Vlan  Preference
+0.0.0.0/0    198.51.101.1/32  0     0
+```
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>Tip</strong><br><br>
+To see physical link characteristics such as optical RX power use oxide system hardware switch-port show-status.
+</div>

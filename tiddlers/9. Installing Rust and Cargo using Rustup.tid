@@ -1,0 +1,15 @@
+created: 20260611205241997
+modified: 20260611210831489
+tags: [[Installing on a physical machine using the ISO]]
+title: 9. Installing Rust and Cargo using Rustup
+type: text/vnd.tiddlywiki
+
+[[Open This|9. Installing Rust and Cargo using Rustup]]
+
+---
+
+Official Rust and Cargo binaries are available from the Rust project via the same rustup tool that works on other systems. Use the official instructions, but substitute bash anywhere you see sh; e.g., at the time of writing, the (modified) official install instructions are:
+
+```bash
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash
+```

@@ -1,0 +1,27 @@
+created: 20260424193319106
+modified: 20260510000044677
+tags: 
+title: Application Migration Strategies
+type: text/vnd.tiddlywiki
+
+[[Open This|Application Migration Strategies]]
+
+---
+
+https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/
+
+https://www.leanix.net/en/wiki/tech-transformation/6rs-of-cloud-migration#form
+
+[[Rehost]]ing 
+
+[[Replatform]]ing 
+
+[[Repurchase]]
+
+[[Refactor]]ing / Re-architecting
+
+[[Retire]] 
+
+[[Retain]]
+
+[[Relocate]]

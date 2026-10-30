@@ -1,0 +1,21 @@
+created: 20260526154157017
+modified: 20260528220322297
+tags: [[Oxide API/console connection time-out]] [[Network configuration and IP address management]] [[Please contact Oxide Support]]
+title: How do I diagnose and fix Oxide API/console connectivity issues?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I diagnose and fix Oxide API/console connectivity issues?]]
+
+---
+
+Here are some possible causes for Oxide endpoint connection time-out errors:
+
+# The Oxide endpoints are blocked by the allow-list settings configured with the service allow-list API. (Note: The allow-list is set to "any" by default.)
+# The Oxide endpoints are blocked by firewall rules external to the rack.
+# Some or all of the Oxide endpoints are not serving requests.
+
+Case 1 usually happens right after a change is made to the service allow-list or when clients outside the allow-list are used to access the Oxide endpoints. If you can still make API calls from a workstation within the allow-list IP ranges, reconfigure the allow-list from there to cover the appropriate ranges; otherwise, follow the [[unlock steps]] below to update the settings via the technician port interface.
+
+If the above does not apply to your situation, check your network firewall logs to see if there are denied access attempts against the Oxide endpoints - the second possible cause mentioned above.
+
+If both cases 1 and 2 have been ruled out, the Oxide service is likely the problem. <span style="font-family: 'Beleren', sans-serif; color: #c90076;">The next step is to contact Oxide Support for assistance.</span>

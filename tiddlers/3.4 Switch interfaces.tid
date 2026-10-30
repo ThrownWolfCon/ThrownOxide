@@ -1,0 +1,19 @@
+created: 20260602232741972
+modified: 20260613005435380
+tags: [[3. Rack network management]]
+title: 3.4 Switch interfaces
+type: text/vnd.tiddlywiki
+
+[[Open This|3.4 Switch interfaces]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_switch_interfaces
+
+Interfaces carry internet layer information and typically belong to a port. They come in three flavors, loopback (lo), link and vlan. Loopback interfaces are not associated with any link and are typically created to hold router IPs. There is one loopback interface per switch that cannot be manually created or destroyed. A link interface is automatically created for every link object and there is only one per link. Link interfaces cannot be manually created or destroyed, they simply exist as a companion to a link. Vlan interfaces are associated with a link, and are configured with a VLAN id (VID) to only send and receive traffic on that VID. There can be an arbitrary number of vlan interfaces per link, but they all must have distinct VIDs. These interfaces exist primarily to support routing protocols over VLAN segmented networks. Traffic delivered to routing daemons from the vlan interface has the VLAN tag removed. Traffic sent from routing daemons through a vlan interface has the VLAN tag added. As the product evolves, more interface types such as vxlan, Geneve, gre etc. may be added.
+
+Naming:
+
+* Loopback interface is named lo as there is only one per switch currently. When there is a need to create multiple loopback interfaces in the future, users can supply a suffix to uniquely identify them.
+
+* Vlan interfaces always start with the prefix "vlan". Users may also supply a suffix for a vlan interface.

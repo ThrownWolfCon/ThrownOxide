@@ -1,0 +1,45 @@
+created: 20260607024227367
+modified: 20260608190535596
+tags: [[Machine Type: non-gimlet]] [[Omicron Git Folder]]
+title: non-gimlet: config-rss.toml
+type: text/vnd.tiddlywiki
+
+[[Open This|non-gimlet: config-rss.toml]]
+
+---
+
+Original
+
+```bash
+[[internal_services_ip_pool_ranges]]
+first = "192.168.1.20"
+last = "192.168.1.29"
+
+[rack_network_config]
+rack_subnet = "fd00:1122:3344:0100::/56"
+
+infra_ip_first = "192.168.1.30"
+infra_ip_last = "192.168.1.30"
+
+[[rack_network_config.ports]]
+routes = [{nexthop = "192.168.1.199", destination = "0.0.0.0/0"}]
+addresses = [{address = {type = "static", ip_net = "192.168.1.30/24"}}]
+port = "qsfp0"
+uplink_port_speed = "40G"
+uplink_port_fec = "none"
+autoneg = false
+switch = "switch0"
+bgp_peers = []
+```
+
+folder path: 
+
+```
+~/omicron/smf/sled-agent/non-gimlet/config-rss.toml
+```
+
+absolute path: 
+
+```
+/home/michael/omicron/smf/sled-agent/non-gimlet/config-rss.toml
+```

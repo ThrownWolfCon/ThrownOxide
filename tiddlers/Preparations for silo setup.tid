@@ -1,0 +1,17 @@
+created: 20260526160459598
+modified: 20260528211931925
+tags: [[OG: Silos]]
+title: Preparations for silo setup
+type: text/vnd.tiddlywiki
+
+[[Open This|Preparations for silo setup]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Preparations for silo setup">>
+</div>
+</div>
+</$linkcatcher>

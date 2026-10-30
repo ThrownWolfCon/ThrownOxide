@@ -1,0 +1,16 @@
+created: 20260605021939482
+modified: 20260605022015786
+tags: Helios
+title: Helios fix ssh
+type: text/vnd.tiddlywiki
+
+[[Open This|Helios fix ssh]]
+
+---
+
+```
+pfexec svcadm disable ipfilter
+pfexec routeadm -d ipv4-forwarding -u
+pfexec ipnat -F
+pfexec svcadm enable ssh
+```

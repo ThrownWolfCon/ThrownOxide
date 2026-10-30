@@ -1,0 +1,15 @@
+created: 20260620011452072
+modified: 20260620012038733
+tags: definition
+title: OPTE
+type: text/vnd.tiddlywiki
+
+[[Open This|OPTE]]
+
+---
+
+Oxide Packet Transformation Engine (OPTE)
+
+https://github.com/oxidecomputer/opte
+
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">packets go in, packets go out, you can't explain that</span>

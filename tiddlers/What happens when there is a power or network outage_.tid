@@ -1,0 +1,19 @@
+created: 20260526173813289
+modified: 20260527220929348
+tags: [[Rack maintenance]]
+title: What happens when there is a power or network outage?
+type: text/vnd.tiddlywiki
+
+[[Open This|What happens when there is a power or network outage?]]
+
+---
+
+''Power outage:''
+
+The rack hardware is designed to boot up on its own once the power supply is resumed. All user interfaces, i.e., API and Web Console, will be accessible again after the sleds and switches have come back up. No manual intervention or rack configuration data loss is expected.
+
+Applications running on the rack instances may or may not fully recover automatically, depending on their running state prior to the power outage and the design of those applications. It is the responsibility of the instance owners to ensure instances are properly shut down prior to scheduled outage to prevent data loss.
+
+''Network outage:''
+
+Network connectivity from/to the rack and the VM instances should resume upon the restoration of uplink connection. No manual intervention or data loss is expected.

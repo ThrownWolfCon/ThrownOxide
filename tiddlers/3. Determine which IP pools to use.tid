@@ -1,0 +1,13 @@
+created: 20260526160734044
+modified: 20260701152146053
+tags: [[Preparations for silo setup]]
+title: 3. Determine which IP pools to use
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Determine which IP pools to use]]
+
+---
+
+You may configure the new silo to have its own IP pools or use existing pools for external IP and multicast address assignment. If you choose to provide the silo with new IP pools, you will create the pools and allocate IP ranges to them prior to setting up the silo. If the new silo will be using existing pools, you may need to review the size of those IP pools and add capacity as needed.
+
+You can find out more about [[IP pools in the IP Pools and Subnet Pools|OG: IP Pools and Subnet Pools]] guide.

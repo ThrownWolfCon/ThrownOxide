@@ -1,0 +1,13 @@
+created: 20260509211454606
+modified: 20260510025908784
+tags: [[RFD 3 1 Traits to evaluate]]
+title: RFD 3 1.1 Aptitude
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 1.1 Aptitude]]
+
+---
+
+Aptitude
+
+As the ordering implies, there is a temptation in traditional hiring to focus on aptitude exclusively: to use an interview exclusively to assess a candidate’s pure pulling power. While this might seem to be a reasonable course, it in fact leads down the primrose path to pop quizzes about algorithms seen primarily in software engineering interview questions. These assessments of aptitude are misplaced: <span style="color: #e2ae84;">work is not, in fact, a spelling bee</span>, and one’s ability to perform during an arbitrary oral exam may or may not correlate to one’s ability to actually design, build, sell, or support production systems. We believe that aptitude is better assessed where it is forced to be exercised: based on the work that one does on one’s own. As such, candidates should be asked to provide three samples of their works: a work sample, a writing sample, and an analysis sample.

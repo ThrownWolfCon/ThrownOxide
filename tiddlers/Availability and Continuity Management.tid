@@ -1,0 +1,17 @@
+created: 20260504213113039
+modified: 20260504213224701
+tags: [[Operations Perspective]]
+title: Availability and Continuity Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Availability and Continuity Management]]
+
+---
+
+Availability and Continuity Management
+
+Ensure availability of business-critical information, applications, and services.
+
+Building cloud-enabled backup solutions requires careful consideration of existing technology investments, recovery objectives, and available resources. Timely restoration after disasters and security events will help you maintain system availability and business continuity. Back up your data and documentation according to a defined schedule. 
+
+Develop a disaster recovery plan as a subset of your business continuity plan. Identify the threat, risk, impact, and cost of different disaster scenarios for each workload and specify Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs) accordingly. Implement your chosen disaster recovery strategy leveraging multiAZ or multi-Region architecture. Consider leveraging chaos engineering to improve resiliency and performance with controlled experiments. Review and test your plans regularly and adjust your approach based on lessons learned.

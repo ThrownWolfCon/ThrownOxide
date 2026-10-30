@@ -1,0 +1,75 @@
+created: 20260513180404189
+modified: 20261029205715008
+tags: [[RFD 576]]
+title: RFD 576 1 Values in LLM usage
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 576 1 Values in LLM usage]]
+
+---
+
+Values in LLM usage
+
+https://rfd.shared.oxide.computer/rfd/0576#_values_in_llm_usage
+
+Responsibility: In terms of LLM use at Oxide, our lodestar is our sense of responsibility. However powerful they may be, LLMs are but a tool, ultimately acting at the behest of a human. Oxide employees bear responsibility for the artifacts we create, whatever automation we might employ to create them. That is, human judgement remains firmly in the loop: even if or as an LLM is generating an artifact that we will use (writing, test cases, documentation, code, etc.), their output is the responsibility of the human using them.
+As is our wont, it’s helpful to look at LLM use through the lens of our values, several of which come to mind, listed here in priority order:
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>Responsibility</strong><br><br>
+  In terms of LLM use at Oxide, our lodestar is our sense of responsibility. However powerful they may be, LLMs are but a tool, ultimately acting at the behest of a human. Oxide employees bear responsibility for the artifacts we create, whatever automation we might employ to create them. That is, human judgement remains firmly in the loop: even if or as an LLM is generating an artifact that we will use (writing, test cases, documentation, code, etc.), their output is the responsibility of the human using them.
+
+  <div class="demo-container">
+    <div class="custom-warning-response">
+      <span class="alert-icon"></span>
+      <strong>Michael Hart</strong><br><br>
+
+STUFF AND THINGS!
+    </div>
+  </div>
+</div>
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Rigor</strong><br><br>
+  LLMs are double-edged with respect to rigor. On the one hand, wielded carefully, they can help us sharpen our own thinking by pointing out holes in our own reasoning or otherwise providing thought-provoking suggestions. On the other, if used recklessly or thoughtlessly, they can have the opposite effect, replacing crisp thinking with generated flotsam. LLMs are useful in as much as they promote and reinforce our rigor.
+
+  <div class="demo-container">
+    <div class="custom-important-response">
+      <span class="alert-icon"></span>
+      <strong>Michael Hart</strong><br><br>
+
+Key information that needs attention.<br><br>
+      Lighter amber response version.
+    </div>
+  </div>
+</div>
+
+<div class="custom-tip">
+  <span class="alert-icon">📌</span>
+  <strong>Empathy</strong><br><br>
+  Empathy: Be we readers or writers, there are humans on the other end of our language use. As we use LLMs, we must keep in mind our empathy for that human, be they the one who is consuming our writing, or the one who has written what we are reading.
+</div>
+
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>Teamwork</strong><br><br>
+  We are working together on a shared endeavor, and we must be sure that our LLM use does not undermine our sense of teamwork. Specifically, we must be careful to not use LLMs in such a way as to undermine the trust that we have in one another. In some cases, LLM usage is going to be warranted (or otherwise expected), and in others it won’t be. Note this isn’t as simple as disclosure of usage: in some contexts, volunteering that an LLM has been used to generate work product may implicitly distance oneself from the responsibility for the content — and erode the trust that is essential for teamwork.
+</div>
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Urgency</strong><br><br>
+  Urgency seems natural with a tool that can seemingly do so much knowledge work so quickly, but with respect to LLM use, too many organizations have seemingly enshrined urgency over all else. These organizations treat LLMs as an opportunity to increase pace over all else, seemingly without regard for setting direction. Urgency is certainly important, and LLMs absolutely afford an opportunity to do work more quickly — but that pace must not come at the expense of our responsibility, rigor, empathy and teamwork.
+
+<div class="demo-container">
+    <div class="custom-note-response">
+      <span class="alert-icon">📝</span>
+      <strong>Michael Hart:</strong><br><br>
+
+ This is the new lighter green response box.<br>
+      Perfect for follow-up notes, replies, or sub-sections inside a main note.
+    </div>
+  </div>
+</div>

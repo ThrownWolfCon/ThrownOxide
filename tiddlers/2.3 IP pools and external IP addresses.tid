@@ -1,0 +1,17 @@
+created: 20260602232153381
+modified: 20260612233936342
+tags: [[2. Virtual resources]]
+title: 2.3 IP pools and external IP addresses
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 IP pools and external IP addresses]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_ip_pools_and_external_ip_addresses
+
+IP pools are collections of external IPs you can assign to silos. When a pool is linked to a silo, users in that silo can allocate temporary or permanent external IPs from the pool for their instances.
+
+Temporary external IPs are known as ephemeral IPs. They are allocated and deallocated during instance creation and termination respectively. Permanent external IPs are known as floating IPs. They exist independently of instances as project-scoped resources and can be attached to and detached from instances within the project as needed.
+
+See the Networking and Floating IPs guides to understand more about VM networking.

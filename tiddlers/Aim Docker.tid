@@ -1,0 +1,17 @@
+created: 20260501152939874
+modified: 20260501195028175
+tags: [[Aim Server]]
+title: Aim Docker
+type: text/vnd.tiddlywiki
+
+[[Open This|Aim Docker]]
+
+---
+
+<<tabs "[tag[Aim Docker]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+
+```bash
+root@aim-PowerEdge-T620:~# grc docker ps
+CONTAINER ID   IMAGE                                        COMMAND                  CREATED         STATUS                  PORTS                                                                                                                                     NAMES
+
+```

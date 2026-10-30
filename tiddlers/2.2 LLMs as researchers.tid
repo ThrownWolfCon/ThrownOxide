@@ -1,0 +1,17 @@
+created: 20260605211907352
+modified: 20260605221121269
+tags: [[RFD 576 2 Uses of LLMs]]
+title: 2.2 LLMs as researchers
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 LLMs as researchers]]
+
+---
+
+LLMs can be useful researchers. LLMs are well-suited for the kind of light research tasks for which one would historically use an internet search engine, especially as LLM hallucination has been attenuated and sourcing has improved (and, frankly, as the quality of Google search results has declined).
+
+For more involved research, LLMs are still useful, but with a cautionary note: the quality of results can vary widely based on model, level of reasoning, quality of prompt, etc., and one should be careful about drawing too much confidence from the lengthy, well-formatted nature of an LLM-powered report. Even if a report appears well-sourced, one shouldn’t assume that the sources themselves are correct; as LLM-authored content is increasingly found in the wild, a seemingly authoritative source found by an LLM may itself be an LLM hallucination! (In particular, it is not uncommon to find LLM-derived research that makes fantastical claims about Oxide, including products we don’t offer or capabilities we don’t have.)
+
+When engaging LLMs as researchers, one should select a model with deep research capabilities enabled, following its citation links to learn more from the original sources. One should not trust or share LLM-researched content without checking it first; it should be treated as a jumping off point to kickstart one’s own research efforts rather than a finished product.
+
+Finally, as with any other use of LLMs, the responsibility for the artifact lies with the person using the LLM to aid their research, not with the LLM itself.

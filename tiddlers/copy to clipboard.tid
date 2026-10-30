@@ -1,0 +1,32 @@
+created: 20201009171342513
+modified: 20220906160536583
+tags: wikidev
+title: copy to clipboard
+type: text/vnd.tiddlywiki
+
+`<<copy-to-clipboard "Mary had a little lamb">>`
+
+`<<copy-to-clipboard "xxxxxx">>`
+
+```
+<<copy-to-clipboard """
+xxxxxxxxmultiline
+""">>
+```
+
+For Site title <$macrocall $name="copy-to-clipboard" src={{$:/SiteTitle}}/>
+
+`<$macrocall $name="copy-to-clipboard" src={{$:/SiteTitle}}/>`
+
+BIG TEST
+
+<<copy-to-clipboard """
+!!!__''Chainback''__
+
+|{{50,000 ft||$:/core/ui/TagTemplate}}|[[Enjoyable Lifestyle]]|
+|{{40,000 ft||$:/core/ui/TagTemplate}}|[[My Perfect Day]]:[[To Be Operational]]|
+|{{30,000 ft||$:/"core"/ui/TagTemplate}}|[[Buy a House]]|
+|{{20,000 ft||$:/core/ui/TagTemplate}}|[[Self Care]]|
+|{{10,000 ft||$:/core/ui/TagTemplate}}|THIS|
+|{{Runway||$:/core/ui/TagTemplate}}|See Actions Here!|
+""">>

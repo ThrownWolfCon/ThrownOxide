@@ -1,0 +1,22 @@
+created: 20260510175953284
+modified: 20260605202612331
+next action: This is about using AI
+tags: RFD task SEM-02
+title: RFD 576
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 576]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0576#_llms_as_writers
+
+Large language models (LLMs) are an indisputable breakthrough of the last five years, potentially profoundly changing the way that we work. As with any extraordinarily powerful tool, LLM use has both promise and peril — and that they are so general-purpose leaves real questions about how and when they should be used. The landscape is shifting so rapidly that static prescription is unlikely — but that LLMs are evolving so quickly also gives urgency to the question: how should LLMs be used at Oxide?
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "RFD 576">>
+</div>
+</div>
+</$linkcatcher>

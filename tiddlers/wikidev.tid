@@ -1,0 +1,10 @@
+created: 20260510160935574
+modified: 20260510161304249
+title: wikidev
+type: text/vnd.tiddlywiki
+
+[[Open This|wikidev]]
+
+---
+
+<<tabs "[tag[wikidev]sort[]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

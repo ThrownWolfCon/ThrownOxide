@@ -1,0 +1,17 @@
+created: 20260611202114214
+modified: 20260611202146869
+tags: [[Installing on a physical machine using the ISO]]
+title: 6. Configure swap
+type: text/vnd.tiddlywiki
+
+[[Open This|6. Configure swap]]
+
+---
+
+You should probably create a swap device if you don't already have one. Determining the size is not an exact science, but somewhere between 1GB and half the size of RAM is probably a good guess.
+
+```
+# zfs create -V 8G rpool/swap
+# echo '/dev/zvol/dsk/rpool/swap - - swap - no -' >> /etc/vfstab
+# /sbin/swapadd
+```

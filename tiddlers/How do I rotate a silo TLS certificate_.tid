@@ -1,0 +1,15 @@
+created: 20260526181600299
+modified: 20260617145345947
+tags: [[Password and SSL certificate management]]
+title: How do I rotate a silo TLS certificate?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I rotate a silo TLS certificate?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_rotate_a_silo_tls_certificate
+
+The ability to replace a TLS certificate is limited to users with the silo admin role via Oxide API.
+
+Follow the steps [[here|https://docs.oxide.computer/guides/operator/silo-management#_silo_certificate_replacement]] to replace TLS certificates.

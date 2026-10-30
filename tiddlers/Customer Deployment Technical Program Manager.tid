@@ -1,0 +1,25 @@
+created: 20260427211021570
+modified: 20260620023841395
+tags: [[Oxide Roles]] [[First Rejection]]
+title: Customer Deployment Technical Program Manager
+type: text/vnd.tiddlywiki
+
+[[Open This|Customer Deployment Technical Program Manager]]
+
+---
+
+https://oxide.computer/careers/deployments-tpm
+
+* Are you a people person who likes to <span style="color: #db89c8;">bring order to chaos</span> and is determined to ensure customers succeed? 
+* We are seeking a technical program manager to help us design, track, and prioritize our large scale customer deployment efforts. 
+* This is an intensely collaborative position, and while it’s very remote-friendly, candidates must be able to work a US Pacific timezone schedule.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Customer Deployment Technical Program Manager">>
+</div>
+</div>
+</$linkcatcher>
+
+<<tabs "[tag[Customer Deployment Technical Program Manager]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

@@ -1,0 +1,13 @@
+created: 20260526175340212
+modified: 20260625023253360
+tags: [[Network configuration and IP address management]]
+title: Is there a limit on how many instances can have external IP addresses?
+type: text/vnd.tiddlywiki
+
+[[Open This|Is there a limit on how many instances can have external IP addresses?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_is_there_a_limit_on_how_many_instances_can_have_external_ip_addresses
+
+Oxide networking is designed to accommodate up to 32 external IP addresses per instance. There is, however, a rack-level limit posed by the ASIC used in the rack switches. The maximum number of NAT entries (private-to-external IP mappings) allowed for the entire rack is 1024 at this time. There is work in progress to relax this restriction in a future release.

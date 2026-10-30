@@ -1,0 +1,21 @@
+created: 20260616170553437
+modified: 20260616170627540
+tags: [[OG: Audit Log]]
+title: 3. Viewing the log
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Viewing the log]]
+
+---
+
+Use the audit_log_list endpoint or the oxide audit-log list CLI command to fetch the log. Fleet viewer permissions are required. Callers are responsible for filtering, e.g., by operation ID, as there is no filtering built in.
+
+The request requires a start_time (inclusive) and accepts an end_time (exclusive). Results are ordered by time_completed and a unique id, which you can use to deduplicate entries from overlapping time ranges. Results are paginated; use the page_token returned in the response to fetch subsequent pages.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "3. Viewing the log">>
+</div>
+</div>
+</$linkcatcher>

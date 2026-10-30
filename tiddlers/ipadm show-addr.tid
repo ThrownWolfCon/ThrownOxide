@@ -1,0 +1,22 @@
+created: 20260530181031075
+modified: 20260602155707196
+tags: ipadm
+title: ipadm show-addr
+type: text/vnd.tiddlywiki
+
+[[Open This|ipadm show-addr]]
+
+---
+
+```
+# Show all IP addresses on the system
+ipadm show-addr
+```
+
+```yml
+# ipadm show-addr
+ADDROBJ           TYPE     STATE        ADDR
+lo0/v4            static   ok           127.0.0.1/8
+bge0/dhcp         dhcp     ok           192.168.1.22/24
+lo0/v6            static   ok           ::1/128
+```

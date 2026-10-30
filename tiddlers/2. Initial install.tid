@@ -1,0 +1,65 @@
+created: 20260530161205790
+modified: 20260711222304443
+tags: [[Installing on a physical machine using the ISO]] WolfOxide
+title: 2. Initial install
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Initial install]]
+
+---
+
+Boot from your media. The install media will log in automatically as root and display an informational banner:
+
+```yml
+ -- Welcome to Oxide Helios! -------------------------------------------------
+
+    This bootable ISO allows you to install Helios on a traditional
+    install-to-disk system; e.g., a desktop PC or a BIOS/EFI-boot
+    server.
+
+    To install, use "diskinfo" to locate the disk you wish to install
+    to, and then use "install-helios" to format it and install the
+    operating system.
+
+    More information is available in the "Installing on a physical
+    machine using the ISO" section of the README at:
+
+        https://github.com/oxidecomputer/helios-engvm
+
+ -----------------------------------------------------------------------------
+```
+
+From this shell:
+
+Run diskinfo to find your disk; <span style="font-family: 'Beleren', sans-serif; color: #00d892;">you may need to run it a few times if the disk devices have not yet finished attaching and you don't see the disks you expect.</span> For example:
+
+```
+# diskinfo
+TYPE  DISK                    VID      PID              SIZE          RMV SSD
+NVME  c1t0025385C9150D623d0   Samsung  SSD 970 EVO 1TB   931.51 GiB   no  yes
+NVME  c2t0014EE83021EAE80d0   NVMe     WUS4BB019D4M9E4  1788.50 GiB   no  yes
+```
+wolfoxide
+
+```yml
+michael@wolfoxide:~$ su
+Password:
+# diskinfo
+TYPE    DISK                    VID      PID              SIZE          RMV SSD
+SCSI    c1t1d1                  ATA      ST2000NM0033-9ZM 1863.02 GiB   no  no
+SCSI    c1t0d1                  ATA      ST2000NM0033-9ZM 1863.02 GiB   no  no
+SCSI    c1t2d1                  ATA      ST2000NM0033-9ZM 1863.02 GiB   no  no
+```
+
+Choose a hostname.
+
+Run the installer, providing the hostname you've chosen and the disk onto which you wish to install; e.g.,
+
+```
+# install-helios myhostname c1t0025385C9150D623d0
+...
+ok to reboot now
+```
+
+* Once you get the "ok to reboot now" prompt, you should be able to remove the media and boot from your installed disk.
+* After reboot, log in with root and no password.

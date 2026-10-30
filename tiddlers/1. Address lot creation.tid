@@ -1,0 +1,36 @@
+created: 20260616185334342
+modified: 20260616185449088
+tags: [[OG: BGP]]
+title: 1. Address lot creation
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Address lot creation]]
+
+---
+
+The first part of establishing a peer session with an upstream router is assigning an address to the switch port over which peering will take place. On the Oxide platform, addresses cannot be arbitrarily assigned, they must be allocated from an address lot. The oxide CLI invocation and JSON specification below set up an address lot for peering.
+
+```bash
+oxide system networking address-lot create \
+    --name peering                         \
+    --description 'a lot for bgp peering'  \
+    --json-body peering-address-lot.json
+```
+
+peering-address-lot.json
+
+```json
+{
+    "name": "peering",
+    "description": "a lot for bgp peering",
+    "kind": "infra",
+    "blocks": [
+        {
+            "first_address": "192.168.22.1",
+            "last_address": "192.168.22.6"
+        }
+    ]
+}
+```
+
+This configuration creates a single address lot of type infra. This means the address lot is used for rack infrastructure. The alternative type is pool, which means the lot is used for allocating instance IP addresses. These types prevent address lots from being used for unintended purposes. The lot contains 6 addresses in the inclusive range 192.168.22.1 - 192.168.22.6.

@@ -1,0 +1,106 @@
+created: 20260530162401190
+modified: 20260530162438907
+tags: dladm
+title: dladm --help
+type: text/vnd.tiddlywiki
+
+[[Open This|dladm --help]]
+
+---
+
+```bash
+# dladm --help
+dladm: unknown subcommand '--help'
+usage:  dladm <subcommand> <args> ...
+    rename-link      <oldlink> <newlink>
+    show-link        [-pP] [-o <field>,..] [-s [-i <interval>]] [<link>]
+
+    create-aggr      [-t] [-P <policy>] [-L <mode>] [-T <time>] [-u <address>]
+                     -l <link> [-l <link>...] <link>
+    delete-aggr      [-t] <link>
+    add-aggr         [-t] -l <link> [-l <link>...] <link>
+    remove-aggr      [-t] -l <link> [-l <link>...] <link>
+    modify-aggr      [-t] [-P <policy>] [-L <mode>] [-T <time>] [-u <address>]
+                     <link>
+    show-aggr        [-pPLx] [-o <field>,..] [-s [-i <interval>]] [<link>]
+
+    scan-wifi        [-p] [-o <field>,...] [<link>]
+    connect-wifi     [-e <essid>] [-i <bssid>] [-k <key>,...] [-s wep|wpa]
+                     [-a open|shared] [-b bss|ibss] [-c] [-m a|b|g] [-T <time>]
+                     [<link>]
+    disconnect-wifi  [-a] [<link>]
+    show-wifi        [-p] [-o <field>,...] [<link>]
+
+    set-linkprop     [-t] -p <prop>=<value>[,...] <name>
+    reset-linkprop   [-t] [-p <prop>,...] <name>
+    show-linkprop    [-cP] [-o <field>,...] [-p <prop>,...] <name>
+
+    show-ether       [-px][-o <field>,...] <link>
+
+    create-secobj    [-t] [-f <file>] -c <class> <secobj>
+    delete-secobj    [-t] <secobj>[,...]
+    show-secobj      [-pP] [-o <field>,...] [<secobj>,...]
+
+    create-vlan      [-ft] -l <link> -v <vid> [link]
+    delete-vlan      [-t] <link>
+    show-vlan        [-pP] [-o <field>,..] [<link>]
+
+    create-iptun     [-t] -T <type> [-a {local|remote}=<addr>,...] <link>]
+    delete-iptun     [-t] <link>
+    modify-iptun     [-t] -a {local|remote}=<addr>,... <link>
+    show-iptun       [-pP] [-o <field>,..] [<link>]
+
+    delete-phys      <link>
+    show-phys        [-m | -H | -P] [[-p] [-o <field>[,...]] [<link>]
+
+    create-vnic      [-t] -l <link> [-m <value> | auto |
+                     {factory [-n <slot-id>]} | {random [-r <prefix>]} |
+                     {vrrp -V <vrid> -A {inet | inet6}} [-v <vid> [-f]]
+                     [-p <prop>=<value>[,...]] <vnic-link>
+    delete-vnic      [-t] <vnic-link>
+    show-vnic        [-pP] [-l <link>] [-s [-i <interval>]] [<link>]
+
+    create-part      [-t] [-f] -l <link> [-P <pkey>]
+                     [-R <root-dir>] <part-link>
+    delete-part      [-t] [-R <root-dir>] <part-link>
+    show-part        [-pP] [-o <field>,...][-l <linkover>]
+                     [<part-link>]
+    show-ib          [-p] [-o <field>,...] [<link>]
+
+    create-etherstub [-t] <link>
+    delete-etherstub [-t] <link>
+    show-etherstub   [-t] [<link>]
+
+    create-tfport -p <port-id> -l <packet_source> <link>
+    delete-tfport <link>
+    show-tfport [-p] [-o <field>,..] [<link>]
+
+    create-simnet    [-t] [-R <root-dir>] [-m <media-type>]
+                     [-u <address>] <simnet-link>
+    modify-simnet    [-t] [-R <root-dir>] [-p <peer>] <simnet-link>
+    delete-simnet    [-t] [-R <root-dir>] <simnet-link>
+    show-simnet      [-P] [[-p] -o <field>,...] [<simnet-link>]
+
+    create-bridge    [-R <root-dir>] [-P <protect>] [-p <priority>]
+                     [-m <max-age>] [-h <hello-time>] [-d <forward-delay>]
+                     [-f <force-protocol>] [-l <link>]... <bridge>
+    modify-bridge    [-R <root-dir>] [-P <protect>] [-p <priority>]
+                     [-m <max-age>] [-h <hello-time>] [-d <forward-delay>]
+                     [-f <force-protocol>] <bridge>
+    delete-bridge    [-R <root-dir>] <bridge>
+    add-bridge       [-R <root-dir>] -l <link> [-l <link>]... <bridge>
+    remove-bridge    [-R <root-dir>] -l <link> [-l <link>]... <bridge>
+    show-bridge      [-p] [-o <field>,...] [-s [-i <interval>]] [<bridge>]
+    show-bridge      -l [-p] [-o <field>,...] [-s [-i <interval>]] <bridge>
+    show-bridge      -f [-p] [-o <field>,...] [-s [-i <interval>]] <bridge>
+    show-bridge      -t [-p] [-o <field>,...] [-s [-i <interval>]] <bridge>
+
+    create-overlay   [-t] -e <encap> -s <search> -v <vnetid>
+                     [ -p <prop>=<value>[,...]] <overlay>
+    delete-overlay   [-t] <overlay>
+    modify-overlay   -d mac | -f | -s mac=ip:port <overlay>
+    show-overlay     [-f | -t] [[-p] -o <field>,...] [<overlay>]
+
+    show-usage       [-a] [-d | -F <format>] [-s <DD/MM/YYYY,HH:MM:SS>]
+                     [-e <DD/MM/YYYY,HH:MM:SS>] -f <logfile> [<link>]
+```

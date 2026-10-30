@@ -1,0 +1,25 @@
+created: 20260526143942515
+modified: 20260614173908433
+tags: [[UG: Networking]]
+title: VPCs and subnets
+type: text/vnd.tiddlywiki
+
+[[Open This|VPCs and subnets]]
+
+---
+
+[[Route semantics]]
+
+[[System routers]]
+
+[[Custom routers]]
+
+[[Example 1: Creating/assigning routers and routes]]
+
+[[Example 2: Detaching custom routers]]
+
+[[Example 3: Controlling access to upstream networks]]
+
+[[Example 4: Software routing & tunnels]]
+
+[[Related API references]]

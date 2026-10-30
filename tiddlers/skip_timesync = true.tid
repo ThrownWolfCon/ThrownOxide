@@ -1,0 +1,23 @@
+created: 20260607150820669
+modified: 20260703220039989
+tags: [[non-gimlet: config.toml]] bloodhound
+title: skip_timesync = true
+type: text/vnd.tiddlywiki
+
+[[Open This|skip_timesync = true]]
+
+---
+
+```
+michael@bloodhound:~/omicron$ 
+
+cd ~/omicron
+
+sed -i 's/skip_timesync = false/skip_timesync = true/' smf/sled-agent/non-gimlet/config.toml
+
+michael@bloodhound:~/omicron$ 
+
+grep skip_timesync smf/sled-agent/non-gimlet/config.toml
+
+skip_timesync = true
+```

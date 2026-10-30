@@ -1,0 +1,11 @@
+created: 20260612231708849
+modified: 20260612231734209
+tags: 
+title: instance-box2
+type: text/vnd.tiddlywiki
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Instance 2</strong><br>
+  <$transclude tiddler="console-box" mode="block"/>
+</div>

@@ -1,0 +1,47 @@
+created: 20260616142901689
+modified: 20260616143111704
+tags: 
+title: Omicron Simulated Scratch
+type: text/vnd.tiddlywiki
+
+[[Open This|Omicron Simulated Scratch]]
+
+---
+
+```
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.46s
+     Running `/media/aim/data/oxide-sim/target/debug/xtask omicron-dev run-all`
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 26.21s
+     Running `/media/aim/data/oxide-sim/target/debug/omicron-dev run-all`
+omicron-dev: setting up all services ...
+log file: /tmp/omicron-dev-omicron-dev.1728392.0.log
+note: configured to log to "/tmp/omicron-dev-omicron-dev.1728392.0.log"
+DB URL: postgresql://root@[::1]:46447/omicron?sslmode=disable
+DB address: [::1]:46447
+log file: /tmp/omicron-dev-omicron-dev.1728392.2.log
+note: configured to log to "/tmp/omicron-dev-omicron-dev.1728392.2.log"
+omicron-dev: Adding disks to first sled agent
+omicron-dev: services are running.
+omicron-dev: nexus external API:     127.0.0.1:12220
+omicron-dev: nexus internal API:     [::1]:12221
+omicron-dev: nexus lockstep API:     [::1]:12232
+omicron-dev: sled agent API:         http://[::1]:45889
+omicron-dev: cockroachdb pid:        1730032
+omicron-dev: cockroachdb URL:        postgresql://root@[::1]:46447/omicron?sslmode=disable
+omicron-dev: cockroachdb directory:  /tmp/.tmpUoTNsi
+omicron-dev: clickhouse native addr: [::1]:37421
+omicron-dev: clickhouse http addr:   [::1]:34087
+omicron-dev: internal DNS HTTP:      http://[::1]:39561
+omicron-dev: internal DNS:           [::1]:32837
+omicron-dev: external DNS name:      oxide-dev.test
+omicron-dev: external DNS HTTP:      http://[::1]:37615
+omicron-dev: external DNS:           [::1]:51419
+omicron-dev:   e.g. `dig @::1 -p 51419 test-suite-silo.sys.oxide-dev.test`
+omicron-dev: management gateway:     http://[::1]:43041 (switch0)
+
+omicron-dev: silo name:              test-suite-silo
+
+omicron-dev: privileged user name:   test-privileged
+
+omicron-dev: privileged password:    oxide
+```

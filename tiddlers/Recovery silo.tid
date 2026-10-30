@@ -1,0 +1,13 @@
+created: 20260526160352075
+modified: 20260528194952882
+tags: [[OG: Silos]]
+title: Recovery silo
+type: text/vnd.tiddlywiki
+
+[[Open This|Recovery silo]]
+
+---
+
+Recovery silo
+
+A special silo called recovery is created during rack setup. The silo hosts a system account which is also named recovery. This built-in account has the fleet admin role that allows the operator to create user-defined silos and grant the fleet admin privilege to other users. After the rack setup process, the recovery silo will only be used for rescue purposes such as remediating identity provider integration configuration problems.

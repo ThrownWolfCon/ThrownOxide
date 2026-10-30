@@ -1,0 +1,13 @@
+created: 20260616173610980
+modified: 20260616173638899
+tags: [[OG: BFD]]
+title: 1. Background
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Background]]
+
+---
+
+The BFD protocol is used to determine if two hosts can communicate over a specified set of addresses. Checks are performed continuously through an exchange of control packets between BFD peers at a configurable frequency. BFD is based on a state machine model. Control messages from peers and internal timers determine transitions between states.
+
+On the Oxide platform, BFD is integrated with static routing. This means that administrators can configure BFD to monitor static route nexthops for a given rack switch. If BFD determines that a nexthop for a route becomes unreachable, that route will be removed from the switch. In order to work in both directions, BFD sessions that are peered with an Oxide rack must also be integrated with static routing in a similar way.

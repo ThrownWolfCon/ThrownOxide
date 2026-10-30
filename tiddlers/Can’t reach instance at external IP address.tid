@@ -1,0 +1,29 @@
+created: 20260526152008234
+modified: 20260608164609565
+tags: [[Instance connectivity issues]]
+title: Can’t reach instance at external IP address
+type: text/vnd.tiddlywiki
+
+[[Open This|Can’t reach instance at external IP address]]
+
+---
+
+https://docs.oxide.computer/guides/troubleshooting#_cant_reach_instance_at_external_ip_address
+
+Can’t reach instance at external IP address
+
+The following situations may cause an instance to be unreachable at its external IP address:
+
+    Instance not running: The instance state may have changed or failed to stay up because of certain system issues. The first thing to check is whether the instance state is running. You can also check the serial console for errors during boot.
+
+    Access denied by VPC firewall rules: By default, VPCs are configured to allow inbound ICMP and TCP port 22 traffic from any external host. If the firewall rules have been changed to limit access, that could cause the instance to be unresponsive to ping or ssh at its external IP address. If you are accessing the instance using other ports or protocols, verify that the firewall rules allow that traffic.
+
+    Guest OS or application errors: Certain application processes may have exited and no longer serve external requests. Check the instance’s serial console for errors.
+
+If the instance in question is newly created, you can check if any of the following conditions apply:
+
+    Instance failed to boot: This can happen when a boot disk is not found or the disk image is missing some bootloader dependencies. You can check the bootloader messages through the instance’s serial console. Based on the information from the serial console, you can troubleshoot the booting issue following the troubleshooting tips below.
+
+    No network interface: Instances with external IP addresses must also have a VPC network interface regardless of the need to communicate with other instances on the private network. If an instance is created without a network interface, it will be unable to send or receive external traffic.
+
+    sshd not running or SSH key missing: If you can connect to the instance’s external IP on port 22, but cannot SSH to it, the sshd process may not be running on the instance. The other thing you may want to check is that you are using a private key matching one of the public keys in your user profile and a valid login user. Note that disk images from Linux distros usually have the sshd service enabled by default and the root user disabled.

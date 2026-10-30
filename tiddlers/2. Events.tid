@@ -1,0 +1,15 @@
+created: 20260629170048828
+modified: 20260629170115568
+tags: [[RFD 538]]
+title: 2. Events
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Events]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0538#_events
+
+Events are the central concept of the webhook system’s data model. The data payloads delivered to receivers represent events recorded by the rack’s control plane. Receivers subscribe to events by specifying the event classes they wish to be notified of. The same event may result in notifications being sent to multiple receivers.
+
+See here for a description of the format of webhook delivery requests.

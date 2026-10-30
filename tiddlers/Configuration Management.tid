@@ -1,0 +1,16 @@
+created: 20260504210800138
+modified: 20260504210901364
+tags: [[Operations Perspective]]
+title: Configuration Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Configuration Management]]
+
+---
+
+Configuration Management
+
+Maintain an accurate and complete record of all your cloud workloads, their relationships, and configuration changes over time.
+
+Unless effectively managed, the dynamic and virtual nature of cloud resource provisioning can lead to a configuration drift. Define and enforce a tagging schema that overlays your business attributes to your cloud usage, and leverage tags to
+organize your resources along technical, business, and security dimensions. Specify mandatory tags and enforce compliance through policy. Leverage infrastructure as code and configuration management tools for resource provisioning and lifecycle management. Establish configuration baselines and maintain them through version control.

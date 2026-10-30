@@ -1,0 +1,21 @@
+created: 20260603153427941
+modified: 20260603162735604
+tags: [[System Setup]]
+title: 3. Rack Installation
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Rack Installation]]
+
+---
+
+[[3.1 Prerequisites]]
+
+3.2 Connect uplink fiber
+
+3.2.1 Check transceiver LEDs
+
+3.3 Connect technician ports
+
+3.3.1 Technician port isolation
+
+[[3.3.2 Verify IPv6 connectivity]]

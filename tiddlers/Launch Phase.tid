@@ -1,0 +1,17 @@
+AWS CAF Phase: 3
+created: 20260504214310695
+modified: 20260504214339958
+tags: [[AWS CAF Phases]]
+title: Launch Phase
+type: text/vnd.tiddlywiki
+
+[[Open This|Launch Phase]]
+
+---
+
+Launch Phase focuses on delivering pilot initiatives 
+in production and on demonstrating incremental 
+business value. Pilots should be highly impactful; if 
+successful they will help influence future direction. 
+Learning from pilots will help you adjust your 
+approach before scaling to full production.

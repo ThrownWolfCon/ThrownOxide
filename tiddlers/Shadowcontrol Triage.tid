@@ -1,0 +1,14 @@
+created: 20180304074818260
+modified: 20180304075219039
+tags: [[Customer Success Triage]]
+title: Shadowcontrol Triage
+type: text/vnd.tiddlywiki
+
+* ShadowControl
+** For End-Point (e.g. inaccurate reporting, push install/upgrade, Policy Push)
+*** Verify that DTX has been Provided
+*** Open them and verify that ShadowControl EndPoint Agent is shown as an installed application from the dtx.log located in C:\ProgramData\dtx\logs in the .7z file
+** For Appliance (e.g. Install/Upgrade, incomplete/missing reports, server 500)
+*** No further data collection required
+
+[[Update the following the best you can]]

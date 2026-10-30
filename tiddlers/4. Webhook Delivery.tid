@@ -1,0 +1,20 @@
+created: 20260629183021361
+modified: 20260629183056151
+tags: [[RFD 538]]
+title: 4. Webhook Delivery
+type: text/vnd.tiddlywiki
+
+[[Open This|4. Webhook Delivery]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0538#_webhook_delivery
+
+Webhook events are delivered to receiver endpoints as a HTTP POST request with a JSON body containing the event payload. The component of the Oxide control plane responsible for delivering webhook events is referred to as the webhook dispatcher.
+
+The webhook dispatcher attempts to provide at-least-once reliable delivery to live receivers. This means that the control plane will retry unsuccessful delivery attempts in order to ensure that the notification is observed by the receiver. In some cases, this means that a receiver may be sent a notification for the same event multiple times. Therefore, webhook receiver implementations should use the event UUIDs included in the webhook payload to de-duplicate events.
+Important
+
+Receiver implementations must treat two webhook payloads with the same event UUID as representing the same event. Two payloads with different event UUIDs should always be treated as representing distinct events.
+
+See here for the API endpoints used to list the status of delivery attempts for a webhook, and to trigger re-delivery of an event.

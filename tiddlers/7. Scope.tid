@@ -1,0 +1,17 @@
+created: 20260616183706234
+modified: 20260616183749717
+tags: [[OG: Jumbo Frames]]
+title: 7. Scope
+type: text/vnd.tiddlywiki
+
+[[Open This|7. Scope]]
+
+---
+
+Scope
+
+* Only the primary OPTE interface of an instance is affected. Secondary interfaces continue to use the default MTU.
+
+* Switch port MTUs on the rack are not user-configurable. The Tofino switch ASIC natively passes frames larger than 9000 bytes, so the rack switches do not artificially constrain frame sizes on their uplinks.
+
+* The MTU on tfport data links in the switch zone (used by BGP and DDM) is unaffected and remains at 1500 bytes.

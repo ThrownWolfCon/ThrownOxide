@@ -1,0 +1,25 @@
+created: 20260531030037598
+modified: 20260531050433357
+tags: [[1.2 External networking]]
+title: 1.2.1 Mode 1: Use an existing network
+type: text/vnd.tiddlywiki
+
+[[Open This|1.2.1 Mode 1: Use an existing network]]
+
+---
+
+1. You’ll be plugging your Omicron system into an existing IPv4 network (e.g., a home network or a lab network) from which you can allocate a few IP addresses that won’t be used elsewhere on the network. The existing network will be used as the "external" network for the system, meaning that externally-facing services (like the API and console) will use IPs on this network. If you want to be able to reach the the internet from Instances, there must be a gateway on this network that provides access to the internet.
+
+* As an example, in this doc:
+
+* The network is 192.168.1.0/24.
+
+* The network’s gateway is 192.168.1.199.
+** <span style="color: #c90076;">What is my home network gateway?</span>
+*** <$button message="tm-modal" param="Find Network Gateway">Find Network Gateway</$button>
+** <span style="color: #c90076;">If demoing how to I find THEIR home gateway?</span>
+
+* You can carve off a range from 192.168.1.20 to 192.168.1.40 for use by the rack:
+** 192.168.1.20 - 192.168.1.29 for externally-facing services provided by the system,
+** 192.168.1.30 as the address used by SoftNPU on the external network, and
+** 192.168.1.31 - 192.168.1.40 as the addresses used for Instances that need some public IPs (even if just for NAT to the internet).

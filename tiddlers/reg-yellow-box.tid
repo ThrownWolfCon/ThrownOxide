@@ -1,0 +1,11 @@
+created: 20260612225502577
+modified: 20260612225516123
+tags: 
+title: reg-yellow-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>Important</strong><br>
+  Your important text goes here.
+</div>

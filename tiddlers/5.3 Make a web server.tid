@@ -1,0 +1,57 @@
+created: 20260603000913032
+modified: 20260710222817678
+tags: [[5. Appendix]]
+title: 5.3 Make a web server
+type: text/vnd.tiddlywiki
+
+[[Open This|5.3 Make a web server]]
+
+---
+
+We’ll start by creating a basic HTTP server with a simple "Hello World" homepage. You’ll do so by executing the following commands in a Linux VM:
+
+```bash
+mkdir public
+cd public
+echo Hello World > index.html
+nohup sudo python3 -m http.server 80 &
+```
+
+At this point, your server should be up and running. You can verify that with curl:
+
+```bash
+$ curl http://localhost
+Hello World
+```
+
+If you try the same command from your workstation against the external IP of your VM, i.e.,
+
+```bash
+$ curl http://{external IP of your VM}
+```
+
+you’ll notice that the command hangs and eventually times out. This is because the default firewall settings in the VM’s VPC allow inbound external connections only on certain ports.
+
+To customize the firewall rules, navigate back to the instance details page for your VM, then click on the VPC name (it should be default if you have kept the advanced settings unchanged during instance creation).
+Instance details page with the default VPC highlighted in the metadata table
+
+There, you’ll see the Firewall Rules tab and a list of existing rules. Let’s take a look at the allow-ssh rule by clicking on the rule name.
+VPC page
+
+The rule is configured to allow inbound TCP connections on port 22 from any host. To allow your HTTP server to be accessible from anywhere, you can add a new rule that mimics the allow-ssh rule, except that it’ll have port 80 as the filter criteria.
+
+First, click on New Rule and enter the following information:
+
+* Name: allow-http
+* Description: allow inbound TCP connections on port 80 from anywhere
+*Target:
+** Target Type: VPC
+** VPC Name: default (click Add Target after this)
+* Port Filter: 80 (click Add Port Filter after this)
+* Protocols: TCP
+
+You can leave other fields with the default values and click Add Rule at the bottom of the form.
+
+Now you can retry the curl command from your workstation and it should return "Hello World".
+
+If you are running a different application that uses other port numbers, you can just replace 80 with the relevant port number or range in the rule. If you want to open multiple discrete ports, you can add them one at a time with Add Port Filter in a single rule. More information about firewall rules is available in the [[Guest Networking]] guide.

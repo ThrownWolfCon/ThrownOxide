@@ -1,0 +1,13 @@
+created: 20260613013138877
+modified: 20260613014009355
+tags: 
+title: RFC 1035
+type: text/vnd.tiddlywiki
+
+[[Open This|RFC 1035]]
+
+---
+
+RFC 1035 is a foundational Internet Engineering Task Force (IETF) specification published in November 1987. It defines the exact technical implementation, packet formats, and protocols for the Domain Name System (DNS), which translates human-readable domain names into numerical IP addresses.
+
+https://datatracker.ietf.org/doc/html/rfc1035

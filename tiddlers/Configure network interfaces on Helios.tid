@@ -1,0 +1,32 @@
+created: 20260604192041404
+modified: 20260608214657205
+tags: Helios [[1.1 Bare-metal operating system]]
+title: Configure network interfaces on Helios
+type: text/vnd.tiddlywiki
+
+[[Open This|Configure network interfaces on Helios]]
+
+---
+
+```
+dladm show-phys
+dladm show-ether
+ipadm show-addr
+
+ipadm create-if ixgbe0
+ipadm create-addr -T dhcp -h $(hostname) ixgbe0/dhcp
+svcadm restart network/service
+ipadm show-addr
+
+ping 8.8.8.8
+ping google.com
+```
+
+In my case it was bge0
+
+```
+ipadm create-if bge0
+ipadm create-addr -T dhcp -h $(hostname) bge0/dhcp
+svcadm restart network/service
+ipadm show-addr
+```

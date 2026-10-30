@@ -1,0 +1,19 @@
+created: 20260616173649647
+modified: 20260616173731761
+tags: [[1. Background]]
+title: 1.1 BFD mode
+type: text/vnd.tiddlywiki
+
+[[Open This|1.1 BFD mode]]
+
+---
+
+BFD mode
+
+The Oxide platform supports two BFD modes.
+
+    Single-hop mode ([[RFC 5881]])
+
+    Multi-hop mode ([[RFC 5883]])
+
+Single-hop mode works for peers one layer-3 hop apart, and operates over the destination port 3784 with a source port in the range 49152-65535. Multi-hop mode works for peers multiple hops apart, and operates over the destination port 4784. Both the single-hop and multi-hop modes run over UDP. Peers must be operating in the same mode to establish a BFD session.

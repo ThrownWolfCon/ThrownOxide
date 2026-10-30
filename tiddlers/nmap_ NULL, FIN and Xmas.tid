@@ -1,0 +1,23 @@
+created: 20250409222020530
+modified: 20250409222352414
+tags: nmap
+title: nmap: NULL, FIN and Xmas
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap: NULL, FIN and Xmas]]
+
+---
+
+NULL
+
+As the name suggests, NULL scans (-sN) are when the TCP request is sent with no flags set at all. As per the RFC, the target host should respond with a RST if the port is closed.
+
+FIN
+
+FIN scans (-sF) work in an almost identical fashion; however, instead of sending a completely empty packet, a request is sent with the FIN flag (usually used to gracefully close an active connection). Once again, Nmap expects a RST if the port is closed.
+
+Xmas
+
+As with the other two scans in this class, Xmas scans (-sX) send a malformed TCP packet and expects a RST response for closed ports. It's referred to as an xmas scan as the flags that it sets (PSH, URG and FIN) give it the appearance of a blinking christmas tree when viewed as a packet capture in Wireshark.
+
+''firewall evasion''

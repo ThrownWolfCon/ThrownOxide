@@ -1,0 +1,29 @@
+{
+	"startingday":"1",
+	"days":["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+	"months": ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+	"monthabr": ["Jan", "Feb", "Mar", "Apr", "May","Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+	"buttons": "yes",
+	"buttonsImages": ["{{$:/core/images/chevron-left}}", "{{$:/core/images/left-arrow}}", "{{$:/core/images/right-arrow}}", "{{$:/core/images/chevron-right}}"],
+	"cellContentPreDef": ["basic", "link", "linkFormat", "linkJournal"],
+	"cellContent": "linkFormat",
+	"dateFormat":"YYYY-0MM-0DD",
+	"cellCss": "standard",
+	"cellCssConfig":[
+		[
+		"restdays", "calendar-restdays", "0", "6"
+		],
+		[
+		"holidays", "calendar-holidays1", "2015-10-05", "2015-09-26"
+		],
+		[
+		"holidays", "calendar-holidays2", "2015-12-25", "2015-10-29"
+		],
+		[
+		"today", "calendar-today"
+		],
+		[
+		"datepicker", "calendar-datepicker-cell"
+		]
+	]
+}

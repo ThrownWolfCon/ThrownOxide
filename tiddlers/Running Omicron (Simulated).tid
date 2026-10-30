@@ -1,0 +1,33 @@
+created: 20260528000309433
+modified: 20260615221608531
+tags: Omicron thrive_26
+title: Running Omicron (Simulated)
+type: text/vnd.tiddlywiki
+
+[[Open This|Running Omicron (Simulated)]]
+
+---
+
+https://github.com/oxidecomputer/omicron/blob/main/docs/how-to-run-simulated.adoc
+
+
+
+```
+aim@aim-PowerEdge-T620:~$ cd /media/aim/data/oxide-sim/omicron
+
+aim@aim-PowerEdge-T620:/media/aim/data/oxide-sim/omicron$ source env.sh
+
+aim@aim-PowerEdge-T620:/media/aim/data/oxide-sim/omicron$ !1684
+cargo xtask omicron-dev run-all
+
+```
+
+Don't forget your tunnel! [[Omicron Home Tunnel]]
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Running Omicron (Simulated)">>
+</div>
+</div>
+</$linkcatcher>

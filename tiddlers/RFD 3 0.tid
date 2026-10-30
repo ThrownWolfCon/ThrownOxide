@@ -1,0 +1,35 @@
+created: 20260509211230174
+modified: 20260510025614563
+tags: [[RFD 3]] task done
+title: RFD 3 0
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 0]]
+
+---
+
+At Oxide, we are taking a big swing: rethinking the definition of the server-side computer, combining the wisdom of hyperscaler systems with the energy of the open data center — and delivering it as a broadly consumable product. Our most deeply held technical belief is in the integration of hardware and software: we believe that the best and most reliable infrastructure comes when hardware and software are designed to work with one another. When we seek those to join us — regardless of role — we are looking for those who share this worldview: that our systems are best when we design them together.
+
+But how does one assess candidates for such positions? This is an age-old question without a formulaic answer: designing, building, selling, and supporting computing systems is itself too varied to admit a single archetype.
+
+Most obviously, this kind of endeavor is intellectually challenging; 
+
+* <span style="color: #9fc08f;">it demands minds that not only enjoy the thrill of solving puzzles</span>
+** <span style="color: #60bc5b;">but can also stay afloat in a sea of numbing abstraction. </span>
+
+This raw capacity, however, is insufficient; there are many more nuanced skills that successful Oxide employees must possess. For example, 
+
+* engineering is an almost paradoxical juxtaposition of collaboration and isolation: 
+** successful engineers are able to work well with (and understand the needs of!) others, 
+** but are also able to focus intensely on their own. 
+
+This contrast extends to the conveyance of ideas, 
+
+* where they must be able to express their own ideas well enough to persuade others, 
+* but also be able to understand and be persuaded by the ideas of others — and be able to implement all of these on their own. 
+
+They must be able to build castles of imagination, and yet still understand the constraints of a grimy reality: they must be arrogant enough to see the world as it isn’t, but humble enough to accept the world as it is. Each of these is a balance, and for each, long-practicing engineers will cite colleagues who have been ineffective because they have erred too greatly on one side or another.
+
+This balance — which can be thought of as the balance between work on one’s own and work with others — exists in every role we might add to the company. Determining this in a candidate defies assessment that is pat or rote; we must assess prospective employees without the luxury of firm criteria. This document is an attempt to pull together accumulated best practices over our collective careers; while it shouldn’t be inferred to be overly prescriptive, where it is rigid, there is often a painful lesson behind it.
+
+In terms of evaluation mechanism: using in-person interviewing alone can be highly unreliable and can select predominantly for surface aspects of a candidate’s personality. While we advocate (and indeed, insist upon) interviews, they should come relatively late in the process; as much assessment as possible should be done by <span style="color: #db89c8;">allowing the candidate to show themselves as they truly work: on their own, via their creations.</span>

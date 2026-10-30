@@ -1,0 +1,39 @@
+created: 20180304075921629
+modified: 20180304081346128
+tags: [[Customer Success Triage]]
+title: Update the following the best you can
+type: text/vnd.tiddlywiki
+
+* Update the following as best as you can:
+
+** Category (Product - Issue) (Use Proper Product names as listed above, avoid abbreviations)
+                *** SPX - Service will not start
+                *** ImageManager - Cannot remove files older than the last replicated file
+                *** CloudBackup - No Access to Provider
+
+** FEED View (chat bubble icon):
+
+        *** If information is missing, request via email using the following formula.
+
+            **** Such as Request logs, error messages that they are seeing, screenshots if applicable, etcetera.
+
+        *** Change FROM: to "Customer Success"
+        *** Change the signature to read "Customer Success Team" instead of your name.
+
+        Example signature:
+
+<<<
+Customer Success Team | Technical Support Specialist | StorageCraft Technology Corporation
+        380 Data Drive Suite 300 | Draper | Utah | 84020 |
+        Office: 801.545.4710
+<<<
+
+** DETAILS View:
+*** Update action plan using this formula: "[# request] – [note for next person]"
+
+            **** [# request] e.g. 1st request, 2nd Request, 3rd Request
+
+            **** [note for next person] The note should be detailed but short. e.g. "requested logs", "requested clarification", etcetera
+    *** If pending required data (see above) from Partner, use [[Back to Queue]], elsewise use [[Ready for T2]]
+
+DONE!

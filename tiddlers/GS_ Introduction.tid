@@ -1,0 +1,11 @@
+created: 20260602225808019
+modified: 20260602225845157
+tags: [[Getting Started]]
+title: GS: Introduction
+type: text/vnd.tiddlywiki
+
+[[Open This|GS: Introduction]]
+
+---
+
+Oxide Computer is an efficient, rack-scale computing system complete with hardware and software. It has many of the same benefits of cloud hyperscale infrastructure in terms of developer productivity but at a much lower long-term infrastructure cost. The product is intended for use in on-premises deployments and the unit of purchase is a fully integrated rack.

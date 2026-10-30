@@ -1,0 +1,38 @@
+created: 20260530204003331
+modified: 20260530204057803
+tags: Helios
+title: Helios Webmin
+type: text/vnd.tiddlywiki
+
+[[Open This|Helios Webmin]]
+
+---
+
+```
+wget https://github.com/webmin/webmin/archive/refs/tags/2.641.tar.gz
+  102  tar -xzf 2.641.tar.gz
+  103  cd webmin-2.641
+  104  cd webmin-2.641
+  105  pwd
+  106  ./setup.sh
+
+****************************************************************************
+Webmin has been installed and started successfully.
+
+Since Webmin was installed outside the package manager, ensure the
+following recommended Perl modules and packages are present:
+ Perl modules:
+  - DateTime, DateTime::Locale, DateTime::TimeZone, Data::Dumper,
+  - Digest::MD5, Digest::SHA, Encode::Detect, File::Basename,
+  - File::Path, Net::SSLeay, Time::HiRes, Time::Local, Time::Piece,
+  - Socket6, Sys::Syslog, JSON::XS, lib, open
+ Packages:
+  - openssl - Cryptography library with TLS implementation
+  - shared-mime-info - Shared MIME information database
+  - tar gzip unzip - File compression and packaging utilities
+
+Use your web browser to go to the following URL and login
+with the name and password you entered previously:
+
+  http://wolfoxide:10000
+```

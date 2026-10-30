@@ -1,0 +1,15 @@
+created: 20260501160731400
+modified: 20260501160816934
+tags: [[Aim Docker]]
+title: Scanopy
+type: text/vnd.tiddlywiki
+
+[[Open This|Scanopy]]
+
+---
+
+```yml
+cbbcdf9fb0f5   ghcr.io/scanopy/scanopy/server:latest        "server"                 2 months ago    Up 5 days (healthy)     0.0.0.0:60072->60072/tcp, :::60072->60072/tcp                                                                                             scanopy-server-1
+64c6a02c6489   postgres:17-alpine                           "docker-entrypoint.s…"   2 months ago    Up 5 days (healthy)     5432/tcp                                                                                                                                  scanopy-postgres-1
+454daedbd41e   ghcr.io/scanopy/scanopy/daemon:latest        "scanopy-daemon"         2 months ago    Up 5 days (healthy)                                                                                                                                               scanopy-daemon
+```

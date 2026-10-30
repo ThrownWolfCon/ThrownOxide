@@ -1,0 +1,21 @@
+created: 20260531025623605
+modified: 20260531050812542
+tags: [[1.2.1 Mode 1: Use an existing network]]
+title: Find Network Gateway
+type: text/vnd.tiddlywiki
+
+[[Open This|Find Network Gateway]]
+
+---
+
+<<<Windows - Powershell
+```
+ipconfig
+```
+<<<
+
+<<<Linux terminal
+```
+ip route
+```
+<<<

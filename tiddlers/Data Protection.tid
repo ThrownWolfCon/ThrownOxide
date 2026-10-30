@@ -1,0 +1,15 @@
+created: 20260504203511114
+modified: 20260504203550055
+tags: [[Security Perspective]]
+title: Data Protection
+type: text/vnd.tiddlywiki
+
+[[Open This|Data Protection]]
+
+---
+
+Data Protection
+Maintain visibility and control over data, and how it is accessed and used in your organization.
+
+Protecting your data from unintended and unauthorized access, and potential vulnerabilities, is one of the key objectives of your security program. To help you determine appropriate protection and retention controls, classify your data based on
+criticality and sensitivity (for example, personally identifiable information). Define data protection controls and lifecycle management policies. Encrypt all data at rest and in transit, and store sensitive data in separate accounts. Leverage machine learning to automatically discover, classify, and protect sensitive data.

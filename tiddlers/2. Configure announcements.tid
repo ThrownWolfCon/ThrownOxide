@@ -1,0 +1,35 @@
+created: 20260616185727001
+modified: 20260616185828533
+tags: [[OG: BGP]]
+title: 2. Configure announcements
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Configure announcements]]
+
+---
+
+The next thing to do is configure what network prefixes the rack will announce to upstream BGP peers.
+
+Announce set prefixes are also tied to address lots. Here, we reference an existing address lot named instances. If you do not already have an address lot defined for instance prefixes, create one now using the same process as the previous section before proceeding.
+
+```bash
+oxide system networking bgp announce-set update \
+    --name instances                            \
+    --description 'the instance block'          \
+    --json-body announce-set.json
+```
+
+announce-set.json
+
+```json
+{
+    "name": "instances",
+    "description": "the instance block",
+    "announcement": [{
+        "address_lot_block": "instances",
+        "network": "192.168.20.0/24"
+    }]
+}
+```
+
+This creates an object called an announce set, which is a collection of announcements. The example above shows a single announcement for the prefix 192.168.20.0/24.

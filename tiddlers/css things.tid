@@ -1,0 +1,24 @@
+created: 20260515144908892
+modified: 20260609172109730
+tags: $:/tags/Stylesheet
+title: css things
+type: text/vnd.tiddlywiki
+
+/* Beleren Font Definition */
+@font-face {
+  font-family: "Beleren";
+  src: url("./files/Beleren2016-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Apply Beleren to Tiddler Titles */
+.tc-tiddler-title,
+.tc-tiddler-title .tc-title,
+.tc-tiddler-title .tc-title-text {
+  font-family: "Beleren", sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px;
+  color: #9fc08f
+}

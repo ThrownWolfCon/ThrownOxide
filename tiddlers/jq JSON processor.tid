@@ -1,0 +1,15 @@
+created: 20260628002217414
+modified: 20260628002926529
+tags: 
+title: jq JSON processor
+type: text/vnd.tiddlywiki
+
+[[Open This|jq JSON processor]]
+
+---
+
+https://jqlang.org/
+
+Install on Windows:
+
+`winget install -e --id jqlang.jq`

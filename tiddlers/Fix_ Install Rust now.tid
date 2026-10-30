@@ -1,0 +1,16 @@
+created: 20260608221844250
+modified: 20260608221919664
+tags: 
+title: Fix: Install Rust now
+type: text/vnd.tiddlywiki
+
+[[Open This|Fix: Install Rust now]]
+
+---
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+source ~/.cargo/env
+rustc --version
+cargo --version
+```

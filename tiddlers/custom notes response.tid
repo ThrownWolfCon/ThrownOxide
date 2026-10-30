@@ -1,0 +1,115 @@
+created: 20260609151023474
+modified: 20260609205238180
+tags: $:/tags/Stylesheet
+title: custom notes response
+type: text/vnd.tiddlywiki
+
+/* ==================== NOTE RESPONSE - LIGHTER GREEN ==================== */
+.custom-note-response {
+  background-color: #1a5c45;
+  color: #b3f0d0;
+  border: 1px solid #25a070;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.custom-note-response strong {
+  color: #00ff9d;
+  text-shadow: 0 0 0px #00ff9d;
+}
+
+/* ==================== INFO RESPONSE - LIGHTER BLUE ==================== */
+.custom-info-response {
+  background-color: #1a4a5c;
+  color: #b3e0f0;
+  border: 1px solid #2580a0;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.custom-info-response strong {
+  color: #00d4ff;
+  text-shadow: 0 0 6px #00d4ff;
+}
+
+/* ==================== TIP RESPONSE - LIGHTER PURPLE ==================== */
+.custom-tip-response {
+  background-color: #4a1e5c;
+  color: #e0b3f0;
+  border: 1px solid #8a2e9e;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.custom-tip-response strong {
+  color: #c724ff;
+  text-shadow: 0 0 6px #c724ff;
+}
+
+/* ==================== IMPORTANT RESPONSE - LIGHTER AMBER ==================== */
+.custom-important-response {
+  background-color: #5c4a1e;
+  color: #f0d8b3;
+  border: 1px solid #a07c2e;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.custom-important-response strong {
+  color: #ffaa00;
+  text-shadow: 0 0 6px #ffaa00;
+}
+
+/* ==================== WARNING RESPONSE - LIGHTER RED ==================== */
+.custom-warning-response {
+  background-color: #5c1e1e;
+  color: #f0b3b3;
+  border: 1px solid #a02e2e;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 1em 0;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.custom-warning-response strong {
+  color: #ff4444;
+  text-shadow: 0 0 6px #ff4444;
+}
+
+/* ==================== SHARED ICON STYLING ==================== */
+.custom-note .alert-icon,
+.custom-info .alert-icon,
+.custom-tip .alert-icon,
+.custom-important .alert-icon,
+.custom-warning .alert-icon,
+.custom-note-response .alert-icon,
+.custom-info-response .alert-icon,
+.custom-tip-response .alert-icon,
+.custom-important-response .alert-icon,
+.custom-warning-response .alert-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  font-size: 13px;
+  line-height: 1;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  flex-shrink: 0;
+}

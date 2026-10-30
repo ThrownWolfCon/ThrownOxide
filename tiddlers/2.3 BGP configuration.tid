@@ -1,0 +1,50 @@
+created: 20260624200125860
+modified: 20260624200243203
+tags: [[2. Expanding connectivity]]
+title: 2.3 BGP configuration
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 BGP configuration]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-connectivity#_bgp_configuration
+
+Next, BGP sessions are created to peer with routers in the new upstream network. Note that VLANs are also configured for the BGP sessions. This ensures that when the Oxide rack BGP daemons receive announcements from peers on these sessions, the routes that are added will have the corresponding VLAN association. This means that traffic egressing the rack for prefixes learned from these peers will have the specified VLAN tag.
+
+```bash
+oxide system networking bgp peer set \
+    --rack $rack \
+    --switch switch0 \
+    --port qsfp0 \
+    --addr 169.254.30.1 \
+    --bgp-config as65547 \
+    --vlan-id 300
+```
+
+```bash
+oxide system networking bgp peer set \
+    --rack $rack \
+    --switch switch1 \
+    --port qsfp0 \
+    --addr 169.254.40.1 \
+    --bgp-config as65547 \
+    --vlan-id 400
+```
+
+The new sessions should eventually reach the Established state as observed through the CLI.
+
+```bash
+oxide system networking bgp show-status
+switch0
+=======
+Peer Address  Local ASN  Remote ASN  Session State  State Duration
+169.254.10.1  65547      64500       Established    20s 83ms
+169.254.30.1  65547      64502       Established    10s 811ms
+```
+
+switch1
+=======
+Peer Address  Local ASN  Remote ASN  Session State  State Duration
+169.254.20.1  65547      64500       Established    12s 831ms
+169.254.40.1  65547      64502       Established    3s 939ms

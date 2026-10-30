@@ -1,0 +1,15 @@
+created: 20260501223953426
+modified: 20260501230644469
+tags: 
+title: on-premises infrastructure
+type: text/vnd.tiddlywiki
+
+[[Open This|on-premises infrastructure]]
+
+---
+
+''Compute''
+
+On-premises: Physical servers, bare-metal provisioning, CPU/memory overcommitment strategies, hardware refresh cycles, BIOS/firmware management.
+
+Key areas to define: vCPU vs. physical cores, NUMA awareness, hyper-threading, cost models (on-demand, reserved, spot), performance benchmarking.

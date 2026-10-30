@@ -1,0 +1,17 @@
+created: 20260627185436662
+modified: 20260627185752591
+tags: [[oxide cli commands]]
+title: oxide current-user
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide current-user]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide current-user">>
+</div>
+</div>
+</$linkcatcher>

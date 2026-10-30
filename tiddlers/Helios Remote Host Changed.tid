@@ -1,0 +1,44 @@
+created: 20260604194325209
+modified: 20260607144712102
+tags: Helios
+title: Helios Remote Host Changed
+type: text/vnd.tiddlywiki
+
+[[Open This|Helios Remote Host Changed]]
+
+---
+
+```yml
+michael@DESKTOP-J7AHM1I:~/helios-engvm$ ssh michael@192.168.1.23
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:f+OwUBYq7tP9pvcRBc1JclUYRb7uGE5NpLZXZrgGZ3I.
+Please contact your system administrator.
+Add correct host key in /home/michael/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /home/michael/.ssh/known_hosts:9
+  remove with:
+  ssh-keygen -f '/home/michael/.ssh/known_hosts' -R '192.168.1.23'
+Host key for 192.168.1.23 has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+In the same terminal where you’re trying to SSH, run:
+
+```
+ssh-keygen -f '/home/michael/.ssh/known_hosts' -R '192.168.1.23'
+```
+
+```
+ssh-keygen -f "$env:USERPROFILE\.ssh\known_hosts" -R "192.168.1.23"
+```
+
+Then try SSH again:
+
+```
+ssh michael@192.168.1.23
+```

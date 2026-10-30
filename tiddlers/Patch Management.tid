@@ -1,0 +1,15 @@
+created: 20260504211030993
+modified: 20260504211144501
+tags: [[Operations Perspective]]
+title: Patch Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Patch Management]]
+
+---
+
+Patch Management
+
+Systematically distribute and apply software updates.
+
+Software updates address emerging security vulnerabilities, fix bugs, and introduce new features. A systematic approach to patch management will ensure that you benefit from the latest updates while minimizing risks to production environments. Apply important updates during your specified maintenance window and critical security updates as soon as possible. Notify users in advance with the details of the upcoming updates and allow them to defer patches when other mitigating controls are available. Update your machine images and test patches before rolling out to production. To ensure continued availability during patching, consider separate maintenance windows for each Availability Zone (AZ) and environment. Regularly review patching compliance and alert non-compliant teams to apply required updates.

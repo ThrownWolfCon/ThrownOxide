@@ -1,0 +1,15 @@
+created: 20260504195122762
+modified: 20260504195215956
+tags: [[Platform Perspective]]
+title: Provisioning and Orchestration
+type: text/vnd.tiddlywiki
+
+[[Open This|Provisioning and Orchestration]]
+
+---
+
+Provisioning and Orchestration
+
+Create, manage, and distribute catalogs of approved cloud products to end users.
+
+Maintaining consistent infrastructure provisioning in a scalable and repeatable manner becomes more complex as your organization grows. Streamlined provisioning and orchestration help you achieve consistent governance and meet your compliance requirements, while enabling users to quickly deploy only the approved cloud products. Design and implement a centrally managed, self-service portal for publishing, distributing, browsing, and consuming approved cloud products. Make your cloud products accessible via APIs as well as via personalized portals. Integrate with your IT service management tools and automate any updates to your configuration management database.

@@ -1,0 +1,17 @@
+created: 20260602231714401
+modified: 20260602232443857
+tags: [[GS: Key Concepts]]
+title: 3. Rack network management
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Rack network management]]
+
+---
+
+Integrating an Oxide rack into the on-premises network involves the allocation of IP addresses and configuration of rack switches. There are five basic elements on a rack switch that may be configured:
+
+# Ports carry physical layer (L1).
+# Links carry link layer (L2) information.
+# Interfaces carry internet layer (L3) information and typically belong to a port.
+# Addresses are assigned to interfaces.
+# Routes determine forwarding behavior across the switch.

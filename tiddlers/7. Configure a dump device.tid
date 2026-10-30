@@ -1,0 +1,14 @@
+created: 20260611202244169
+modified: 20260611202309815
+tags: [[Installing on a physical machine using the ISO]]
+title: 7. Configure a dump device
+type: text/vnd.tiddlywiki
+
+Also useful is to configure a dump device for capturing system crash dumps:
+
+```
+# zfs create -V 8G rpool/dump
+# dumpadm -d /dev/zvol/dsk/rpool/dump
+```
+
+The dump device needs to be large enough to hold a compressed copy of all of the allocated kernel memory in a system. The most correct answer for sizing is "the same size as physical RAM", but you can often get away with less. You can estimate how large a dump would be if the system panicked right now with `dumpadm -e`, but note that this estimate does not reflect how large a dump might be after you begin seriously using the system.

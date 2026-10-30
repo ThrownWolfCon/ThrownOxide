@@ -1,0 +1,77 @@
+created: 20260612215137694
+modified: 20260612215212522
+tags: 
+title: New Tiddler 6
+type: text/vnd.tiddlywiki
+
+```toml
+# === Basic server settings ===
+log_format = "pretty"
+public_url = "http://localhost:8080"
+server_port = 8080
+database_url = "postgres://aim:berlin@localhost/rfd"
+
+# === GitHub (minimal for now — replace with your real values later) ===
+[services.github]
+owner = "yourusername"
+repo = "rfd"
+path = "rfd"
+default_branch = "main"
+
+[services.github.auth]
+token = ""
+
+# === JWT signing keys (clean ones we generated) ===
+[jwt]
+default_key = "rfd-key-1"
+default_expiration = 900
+
+[[keys]]
+kind = "local_signer"
+kid = "rfd-key-1"
+private = """
+-----BEGIN PRIVATE KEY-----
+PASTE_CONTENT_OF_jwt-private.pem_HERE
+-----END PRIVATE KEY-----
+"""
+
+[[keys]]
+kind = "local_verifier"
+kid = "rfd-key-1"
+public = """
+-----BEGIN PUBLIC KEY-----
+PASTE_CONTENT_OF_jwt-public.pem_HERE
+-----END PUBLIC KEY-----
+"""
+
+# === Authentication (minimal stubs) ===
+[authn.oauth.google.device]
+client_id = ""
+client_secret = ""
+
+[authn.oauth.google.web]
+client_id = ""
+client_secret = ""
+redirect_uri = "http://localhost:8080/login/oauth/google/code/callback"
+
+[authn.oauth.github.device]
+client_id = ""
+client_secret = ""
+
+[authn.oauth.github.web]
+client_id = ""
+client_secret = ""
+redirect_uri = "http://localhost:8080/login/oauth/github/code/callback"
+
+[magic_link]
+templates = []
+
+# === Search (minimal) ===
+[search]
+host = "http://localhost:7700"
+key = ""
+index = "rfds"
+
+# === Mappers (optional for now) ===
+initial_mappers = "mappers.example.toml"
+```

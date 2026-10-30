@@ -1,0 +1,13 @@
+created: 20260526174453728
+modified: 20260625023846471
+tags: [[Rack maintenance]]
+title: How do I prepare the rack for scheduled power maintenance?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I prepare the rack for scheduled power maintenance?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_prepare_the_rack_for_scheduled_power_maintenance
+
+We recommend shutting down instances on the rack preemptively and bringing them back up after the maintenance. Consider automating some of these operations with the instance_stop and instance_start API.

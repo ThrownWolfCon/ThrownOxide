@@ -1,0 +1,32 @@
+created: 20260530182119143
+modified: 20260530182157875
+tags: [[Helios Commands]]
+title: pkg
+type: text/vnd.tiddlywiki
+
+[[Open This|pkg]]
+
+---
+
+```
+# pkg
+pkg: no subcommand specified
+Usage:    pkg [options] command [cmd_options] [operands]
+The following commands are supported:
+
+Package Information  : list           search         info      contents
+Package Transitions  : update         install        uninstall
+                       history        exact-install  apply-hot-fix
+                       autoremove
+Package Maintenance  : verify         fix            revert    flag
+Publishers           : publisher      set-publisher  unset-publisher
+Package Configuration: mediator       set-mediator   unset-mediator
+                       facet          change-facet
+                       variant        change-variant
+Image Constraints    : avoid          unavoid        freeze    unfreeze
+Image Configuration  : refresh        rebuild-index  purge-history
+                       property       set-property   add-property-value
+                       unset-property remove-property-value
+Miscellaneous        : image-create   dehydrate      rehydrate     clean
+For more info, run: pkg help <command>
+```

@@ -1,0 +1,25 @@
+created: 20260701033838641
+modified: 20260701151611782
+tags: [[1. Generate a TLS certificate]]
+title: Preparing client-provided signing certificates
+type: text/vnd.tiddlywiki
+
+[[Open This|Preparing client-provided signing certificates]]
+
+---
+
+For some IdP integrations, operators may need to provide a client signing certificate for Oxide’s API or console authentication flows. This process involves different formatting requirements depending on the integration method:
+
+For API or CLI IdP setup:
+
+```bash
+openssl x509 -in idp-cert.pem -outform der | base64 > idp-cert.base64
+openssl rsa -in idp-key.pem -outform der -traditional | base64 > idp-key.base64
+```
+
+For Console IdP setup:
+
+```bash
+openssl x509 -in idp-cert.pem -outform der -out idp-cert.der
+openssl rsa -in idp-key.pem -outform der -traditional -out idp-key.der
+```

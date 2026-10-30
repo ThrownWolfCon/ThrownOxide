@@ -1,0 +1,13 @@
+created: 20260602234942799
+modified: 20260624172235848
+tags: [[GS: Quick Start: Web]]
+title: 3. Using your instance
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Using your instance]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_using_your_instance
+
+After you create your new instance, you’re taken directly to the instance detail page, where you’ll see a few tabs: storage, metrics, network interfaces, connect.

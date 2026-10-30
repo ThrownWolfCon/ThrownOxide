@@ -1,0 +1,30 @@
+created: 20260627171658262
+modified: 20260711170645222
+tags: [[oxide bundle]]
+title: oxide bundle view
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle view]]
+
+---
+
+So....I am not sure what the point of this would be since we have list....but I guess it can just hone in after list....?
+
+<<copy-to-clipboard """
+oxide bundle view --bundle-id HERE
+""">>
+
+```bash
+oxide bundle view --bundle-id HERE
+```
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle view --bundle-id 830af9a5-536b-4187-9b8a-3894007ad495
+{
+  "id": "830af9a5-536b-4187-9b8a-3894007ad495",
+  "reason_for_creation": "Created by external API",
+  "state": "active",
+  "time_created": "2026-06-30T17:50:36.538437Z",
+  "user_comment": "No! Not my face!"
+}
+```

@@ -1,0 +1,19 @@
+created: 20260526160032401
+modified: 20260701033402004
+tags: [[Operator Guides]]
+title: OG: Silos
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Silos]]
+
+---
+
+https://docs.oxide.computer/guides/operator/silo-management
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "OG: Silos">>
+</div>
+</div>
+</$linkcatcher>

@@ -1,0 +1,32 @@
+created: 20201209173928911
+modified: 20210601142509519
+tags: CentOS spx linux
+title: firewalld
+type: text/vnd.tiddlywiki
+
+https://www.liquidweb.com/kb/how-to-stop-and-disable-firewalld-on-centos-7/
+
+<<copy-to-clipboard "systemctl disable firewalld">>:
+
+`systemctl disable firewalld`
+
+---
+
+<<copy-to-clipboard "systemctl stop firewalld">>:
+
+`systemctl stop firewalld`
+
+---
+
+<<copy-to-clipboard "systemctl status firewalld">>:
+
+`systemctl status firewalld`
+
+---
+
+//Backlinks//
+
+<$list filter="[all[current]backlinks[]]">
+
+
+</$list>

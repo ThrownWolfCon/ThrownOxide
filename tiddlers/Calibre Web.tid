@@ -1,0 +1,13 @@
+created: 20260501171138998
+modified: 20260501171218584
+tags: [[Aim Docker]]
+title: Calibre Web
+type: text/vnd.tiddlywiki
+
+[[Open This|Calibre Web]]
+
+---
+
+```
+d2183406b49e   lscr.io/linuxserver/calibre-web:latest       "/init"                  2 years ago     Up 5 days               0.0.0.0:8083->8083/tcp, :::8083->8083/tcp                                                                                                 calibre-web
+```

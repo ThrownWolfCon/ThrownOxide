@@ -1,0 +1,17 @@
+created: 20261029222205927
+modified: 20261029222239949
+tags: 
+title: Show Off
+type: text/vnd.tiddlywiki
+
+[[Open This|Show Off]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Show Off">>
+</div>
+</div>
+</$linkcatcher>

@@ -1,0 +1,19 @@
+created: 20260526165701367
+modified: 20260624201432493
+tags: [[Operator Guides]]
+title: OG: Expanding Physical Connectivity
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Expanding Physical Connectivity]]
+
+---
+
+https://docs.oxide.computer/guides/operator/expanding-physical-connectivity
+
+This describes how to connect an Oxide rack to additional upstream physical networks through the API. It assumes that the rack is already accessible through a primary network, and the goal is to connect the rack to additional physical networks.
+
+The example in this guide will walk through taking a rack that is only connected via a single switch port on a single switch, to a rack that is connected via a switch port on each switch. The diagram below shows two oxide switches connected to an upstream router. The new configuration added in this example is highlighted in yellow.
+
+[[1. Physical Initial configuration]]
+
+[[2. Physical Expanding connectivity]]

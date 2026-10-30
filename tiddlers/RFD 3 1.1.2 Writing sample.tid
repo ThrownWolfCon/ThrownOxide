@@ -1,0 +1,19 @@
+created: 20260509211843912
+modified: 20260510193616133
+tags: beleren-font [[RFD 3 1.1 Aptitude]]
+title: RFD 3 1.1.2 Writing sample
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 1.1.2 Writing sample]]
+
+---
+
+!Writing sample
+
+As a company, we believe that good writing is found in the best practitioners, regardless of role: the act of writing — like so much else that we do — requires not only the ability to create wholly new material, but also the ability to reflect, correct, revise, and polish.
+
+To assess a candidate’s writing ability, they should be asked to provide a writing sample. As with the work sample, the specifics in the prompt will vary based on domain: for an engineer, it might be a block comment or design document; for someone in sales, it might be a detailed product description or a customer use case; 
+
+<span style="color: #c90076;">for operations, it might be a meeting summary or an internal request to an engineering team.</span>
+
+As with the work sample, if there is a question about what constitutes a writing sample for a new domain, practitioners outside of Oxide should be consulted. And as with the work sample, multiple samples should be requested.

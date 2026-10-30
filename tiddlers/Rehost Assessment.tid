@@ -1,0 +1,18 @@
+created: 20260501022224215
+modified: 20260504014507138
+rehosting steps: 1
+tags: Rehost
+title: Rehost Assessment
+type: text/vnd.tiddlywiki
+
+[[Open This|Rehost Assessment]]
+
+---
+
+Identify workloads for migration and ensure they are compatible with the cloud provider's environment.
+
+* ''Document the current setup'': OS version, CPU/RAM/disk usage (use tools like Windows Performance Monitor or cloud assessment tools).
+* ''Identify dependencies'': SQL Server instance, any file shares, network ports, hardcoded hostnames/IPs, licenses, and external integrations.
+* Check for issues like hostname dependencies (common in Windows apps) or reliance on specific hardware.
+
+See: [[Aim Server]]

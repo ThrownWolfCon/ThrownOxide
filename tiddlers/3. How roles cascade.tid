@@ -1,0 +1,29 @@
+created: 20260614154454585
+modified: 20260614154925029
+tags: [[UG: Access Control]]
+title: 3. How roles cascade
+type: text/vnd.tiddlywiki
+
+[[Open This|3. How roles cascade]]
+
+---
+
+To determine a user’s effective role on a resource, the system considers all roles assigned at that level and all ancestor levels, whether assigned directly to the user or to groups they belong to. The effective role is the strongest (most privileged) role from this combined set. Role strength is in the order given in the tables above: `admin` > `collaborator` > `limited_collaborator` > `viewer`.
+
+For example, if a user has:
+
+    Silo viewer role
+
+    Project collaborator role on project my-proj
+
+The effective role on project `my-proj` is `collaborator`. The effective role on all other projects (assuming there are no other direct role assignments) is `viewer`.
+
+Role assignments can only add permissions, not reduce them. A `collaborator` on the silo cannot be downgraded to `viewer` on a given project by assigning the latter role directly on the project.
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+In order to maintain tenancy separation between silos, fleet roles do not cascade into silos. A fleet’s `viewer` role does not grant `viewer` access to all silos—fleet roles apply only to fleet-level resources.
+<br><br>
+Fleet `admin` is the only fleet role that provides cross-silo access, allowing administrators to view and modify any silo’s policy. And even fleet admins cannot access silo-level resources like projects in silos outside their own.
+</div>

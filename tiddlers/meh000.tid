@@ -1,0 +1,10 @@
+created: 20260609204147846
+modified: 20260609204205163
+tags: 
+title: meh000
+type: text/vnd.tiddlywiki
+
+```
+PS C:\Users\Michael> ssh 192.168.1.28
+ssh: connect to host 192.168.1.28 port 22: Connection timed out
+```

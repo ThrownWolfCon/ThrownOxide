@@ -1,0 +1,60 @@
+created: 20260531020755054
+modified: 20260608162812579
+tags: [[3. Using Omicron]]
+title: 3.4 Create an IP pool
+type: text/vnd.tiddlywiki
+
+[[Open This|3.4 Create an IP pool]]
+
+---
+
+An IP pool is needed to provide external connectivity to Instances. The addresses you use here should be addresses you’ve reserved from the external network (see [_external_networking]).
+
+Here we will first create an ip pool for the recovery silo:
+
+```
+$ oxide system networking ip-pool create --name "default" --description "default ip-pool"
+
+# example response
+{
+  "description": "default ip-pool",
+  "id": "1c3dfa5c-7b00-46ff-987a-4e59e512b250",
+  "ip_version": "v4",
+  "name": "default",
+  "pool_type": "unicast",
+  "time_created": "2024-01-16T22:51:54.679751Z",
+  "time_modified": "2024-01-16T22:51:54.679751Z"
+}
+```
+
+Now we will associate (link) the pool with the recovery silo.
+
+```
+$ oxide system networking ip-pool silo link --pool default --is-default true --silo recovery
+
+# example response
+{
+  "ip_pool_id": "1c3dfa5c-7b00-46ff-987a-4e59e512b250",
+  "is_default": true,
+  "silo_id": "fa12b74d-30f8-4d5a-bc0e-4d229f13c6e5",
+}
+```
+
+
+
+Now we will add an address range to the recovery silo:
+
+```
+oxide system networking ip-pool range add --pool default --first $IP_POOL_START --last $IP_POOL_END
+
+# example response
+{
+  "id": "6209516e-2b38-4cbd-bff4-688ffa39d50b",
+  "ip_pool_id": "1c3dfa5c-7b00-46ff-987a-4e59e512b250",
+  "range": {
+    "first": "192.168.1.35",
+    "last": "192.168.1.40"
+  },
+  "time_created": "2024-01-16T22:53:43.179726Z"
+}
+```

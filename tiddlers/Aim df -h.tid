@@ -1,0 +1,26 @@
+created: 20260501145226528
+modified: 20260501205103976
+tags: [[Aim Server]]
+title: Aim df -h
+type: text/vnd.tiddlywiki
+
+[[Open This|Aim df -h]]
+
+---
+
+[img[./files/Screenshot 2026-05-01 085126.png]]
+
+```yml
+aim@aim-PowerEdge-T620:/$ grc df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           6.3G   20M  6.3G   1% /run
+/dev/sda2       273G  182G   78G  71% /
+tmpfs            32G     0   32G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs         64K   51K  8.8K  86% /sys/firmware/efi/efivars
+tmpfs            32G     0   32G   0% /run/qemu
+/dev/sda1       511M  6.2M  505M   2% /boot/efi
+/dev/sdb1        29T  7.7T   20T  28% /media/aim/data
+tmpfs           6.3G  100K  6.3G   1% /run/user/127
+tmpfs           6.3G  128K  6.3G   1% /run/user/1000
+```

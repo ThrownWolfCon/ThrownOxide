@@ -1,0 +1,31 @@
+created: 20260526161227156
+modified: 20260701163728749
+tags: [[Setting up a silo]]
+title: 1. Create silo and upload TLS certificate
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Create silo and upload TLS certificate]]
+
+---
+
+The first step of silo setup is creating the silo record and importing a matching TLS certificate. Virtual resource quotas are required during silo creation, and can be modified afterwards.
+
+See the Resource Management guide for additional information regarding capacity planning and managing quotas.
+
+The following information is required when creating a silo:
+
+|attribute|value|h
+|`name`|Must start with a letter and contain only lower-case letters, numbers, and dashes.|
+|`description`|A brief description of the silo context and purpose.|
+|`discoverable`|Whether the silo should be included in silo listing queries (non-discoverable silos are accessible only by direct name or id reference).|
+|`identity_mode`|There are three identity modes, saml_jit, saml_scim, and local_only. See Authentication Configuration below for details on each.|
+|`admin_group_name`|Required if using saml_jit or saml_scim identity modes; specifies which IdP group will be granted the Silo Admin role. The group is created in Oxide upon the first successful SAML login that includes this group attribute value.|
+|`mapped_fleet_roles`|Optional mappings of fleet-level roles conferred by silo roles, applicable to the saml_jit and saml_scim modes only.|
+|`quotas`|<$transclude tiddler="meh006" mode="block"/>|
+|`tls_certificates`|<$transclude tiddler="meh007" mode="block"/>|
+	
+[[TLS - Using the Oxide console]]
+
+
+[[TLS - Using the CLI or API]]
+

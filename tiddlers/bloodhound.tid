@@ -1,0 +1,21 @@
+created: 20260607152738173
+modified: 20260704175321657
+tags: [[Lost Dogs]]
+title: bloodhound
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="Createdbox" mode="block"/>
+
+<div class="custom-info">
+  <span class="alert-icon">ℹ</span>
+  <strong>[[bloodhound]]</strong><br><br>
+  A bloodhound is a large, powerful breed of scent hound famous for its droopy skin, long ears, and extraordinary sense of smell. Figuratively, the term refers to a relentless, determined investigator or pursuer who ruthlessly tracks down information or a target.
+
+  <div class="demo-container">
+    <div class="custom-info-response">
+      <span class="alert-icon"></span>
+      <strong>My Lab:</strong><br><br>
+<$transclude tiddler="skip_timesync = true" mode="block"/>
+    </div>
+  </div>
+</div>

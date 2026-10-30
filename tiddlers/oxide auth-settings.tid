@@ -1,0 +1,17 @@
+created: 20260626192835189
+modified: 20260626193614303
+tags: [[oxide cli commands]]
+title: oxide auth-settings
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide auth-settings]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "oxide auth-settings">>
+</div>
+</div>
+</$linkcatcher>

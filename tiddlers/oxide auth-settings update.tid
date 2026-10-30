@@ -1,0 +1,53 @@
+created: 20260626193010435
+modified: 20260628171507885
+tags: [[oxide auth-settings]]
+title: oxide auth-settings update
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide auth-settings update]]
+
+---
+
+<<copy-to-clipboard "oxide auth-settings update --device-token-max-ttl-seconds 604800   # e.g., 7 days">>
+
+```bash
+oxide auth-settings update --device-token-max-ttl-seconds 604800   # e.g., 7 days
+```
+
+---
+
+```bash
+PS C:\Users\Michael> oxide auth-settings update --device-token-max-ttl-seconds 604800   # e.g., 7 days
+{
+  "device_token_max_ttl_seconds": 604800,
+  "silo_id": "ed9c40ee-6700-4cb4-b3c4-34459426fa78"
+}
+```
+
+```bash
+PS C:\Users\Michael> oxide auth-settings update
+error: the following required arguments were not provided:
+  --device-token-max-ttl-seconds <device-token-max-ttl-seconds>
+
+Usage: oxide.exe auth-settings update --device-token-max-ttl-seconds <device-token-max-ttl-seconds>
+
+For more information, try '--help'.
+
+PS C:\Users\Michael> oxide auth-settings update --help
+Update current silo's auth settings
+
+Usage: oxide.exe auth-settings update [OPTIONS]
+
+Options:
+      --device-token-max-ttl-seconds <device-token-max-ttl-seconds>
+          Maximum lifetime of a device token in seconds. If set to null, users will be able to create tokens that do not expire.
+      --json-body <JSON-FILE>
+          Path to a file that contains the full json body.
+      --json-body-template
+          XXX
+  -h, --help
+          Print help
+
+Global Options:
+      --profile <PROFILE>  Configuration profile to use for commands
+```

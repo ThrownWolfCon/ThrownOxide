@@ -1,0 +1,27 @@
+created: 20260630025915747
+modified: 20260630030801328
+tags: [[oxide silo utilization]]
+title: oxide silo utilization view
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide silo utilization view]]
+
+---
+
+```json
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide silo utilization view --silo test-suite-silo
+{
+  "allocated": {
+    "cpus": 0,
+    "memory": 0,
+    "storage": 0
+  },
+  "provisioned": {
+    "cpus": 0,
+    "memory": 0,
+    "storage": 0
+  },
+  "silo_id": "50329b9a-2e6e-4458-9c03-5c5865d590c5",
+  "silo_name": "test-suite-silo"
+}
+```

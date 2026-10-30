@@ -1,0 +1,37 @@
+created: 20260501023634107
+modified: 20260506231415890
+tags: [[Application Migration Strategies]] [[Seven Common Migration Strategies]]
+title: Replatform
+type: text/vnd.tiddlywiki
+
+[[Open This|Replatform]]
+
+---
+
+Replatforming is a cloud migration strategy within the 6Rs framework that involves making limited optimizations to applications during migration, without changing their core architecture.
+
+Often referred to as ''“[[Lift, Tinker, and Shift]],”'' Replatform enables organizations to move applications to the cloud while taking advantage of some cloud-native features—such as managed databases or containerization—without a full redesign.
+
+When to use replatforming: Replatforming is ideal for organizations that want to gain immediate cloud benefits (like improved performance or scalability) but do not have the time or resources for a complete application refactor. It is also suitable for businesses aiming to reduce operational overhead by adopting managed services.
+
+Advantages of replatforming:
+
+Speed: Faster than full refactoring while still enabling some improvements.
+Cost optimization: Can reduce operational costs by leveraging managed cloud services.
+Improved performance: Takes advantage of select cloud-native capabilities.
+
+Limitations of replatforming:
+
+Partial optimization: Does not fully leverage the cloud’s potential compared to refactoring.
+Compatibility constraints: Some legacy components may limit how much optimization is possible.
+Incremental complexity: Introduces some changes that require testing and adjustment.
+
+Step-by-step guide for replatforming:
+
+* [[Replatform Assessment]]: Identify applications that would benefit from minor optimizations, such as switching to managed databases or container platforms.
+* [[Replatform Planning]]: Define which components will be modified and choose appropriate cloud services (e.g., managed databases, app services).
+* [[Replatform Preparation]]: Prepare the cloud environment, including setting up platform services like databases, containers, or middleware.
+* [[Replatform Modification]]: Make targeted changes to the application, such as updating configurations or replacing certain components with managed services.
+* [[Replatform Migration]]: Move the application and data to the cloud, incorporating the planned optimizations.
+* [[Replatform Testing]]: Validate application functionality, integration, and performance after migration.
+* [[Replatform Optimization]]: Fine-tune configurations and services to further improve cost efficiency and performance.

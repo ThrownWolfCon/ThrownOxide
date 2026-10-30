@@ -1,0 +1,21 @@
+created: 20260528002821037
+modified: 20260615221651592
+tags: [[Running Omicron (Simulated)]]
+title: 2. Installing Prerequisites
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Installing Prerequisites]]
+
+---
+
+Installing Prerequisites
+
+First, set up your environment to include executables that will be installed shortly:
+
+$ source env.sh
+
+Then install prerequisite software with the following script:
+
+$ ./tools/install_builder_prerequisites.sh
+
+You need to do this once per workspace and potentially again each time you fetch new changes. If the script reports any PATH problems, you’ll need to correct those before proceeding.

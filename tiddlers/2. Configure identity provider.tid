@@ -1,0 +1,15 @@
+created: 20260526160656956
+modified: 20260701152049637
+tags: [[Preparations for silo setup]]
+title: 2. Configure identity provider
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Configure identity provider]]
+
+---
+
+https://docs.oxide.computer/guides/operator/silo-management#_configure_identity_provider
+
+Oxide supports the use of SAML SSO authentication with third-party identity provider systems. User and group provisioning can be configured to be just-in-time (JIT) or synchronized real-time using SCIM 2.0 API. More information about the different types of authentication and authorization setup can be found in the [[Identity Providers|OG: Identity Providers]] guide.
+
+Before setting up the IdP integration for a silo, you will need to identify the IdP group, role, or attribute to be used for governing memberships of the new silo and users who are designated as administrators.

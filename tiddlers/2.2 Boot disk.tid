@@ -1,0 +1,28 @@
+created: 20260602235421836
+modified: 20260624165758942
+tags: [[2. Creating an instance]]
+title: 2.2 Boot disk
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Boot disk]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_boot_disk
+
+When you get to Boot disk you’ll see two options.
+
+    1. Silo Images: images available for use in all projects in the silo
+
+    2. Project Images: images that you upload for use with your project
+
+[img width="100%" [https://docs.oxide.computer/img/qs-create-instance-3.png]]
+
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>Note</strong><br><br>
+The Oxide rack does not come with any preloaded images, but many Linux distributions provide native cloud images that can be deployed in the Oxide rack. If no image has been made available yet in the silo, you can follow the steps in How to make test images to import a project image for yourself.
+</div>
+
+For the instance creation steps below, we’re going to use Debian-12-generic, one of the examples in [[How to make test images|5.1 How to make test images]]. If you have a different image, the steps are the same.

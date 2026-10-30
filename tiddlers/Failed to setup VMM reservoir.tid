@@ -1,0 +1,22 @@
+created: 20260610172221382
+modified: 20260612023925298
+tags: /opt/oxide/
+title: Failed to setup VMM reservoir
+type: text/vnd.tiddlywiki
+
+[[Open This|Failed to setup VMM reservoir]]
+
+---
+
+```
+"Failed to create reservoir: Failed to resize reservoir: Not enough space (os error 12)"
+```
+
+```
+cd ~/omicron
+vi smf/sled-agent/non-gimlet/config.toml
+```
+
+```
+pfexec vi /opt/oxide/sled-agent/pkg/config.toml
+```

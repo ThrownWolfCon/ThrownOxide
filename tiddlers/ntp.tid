@@ -1,0 +1,23 @@
+created: 20260605165259454
+modified: 20260605165409009
+tags: [[Control Plane Components]]
+title: ntp
+type: text/vnd.tiddlywiki
+
+[[Open This|ntp]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>ntp</strong><br><br>
+The NTP service supports time synchronization of all servers in the rack with the external NTP server.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "ntp">>
+</div>
+</div>
+</$linkcatcher>

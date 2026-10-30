@@ -1,0 +1,20 @@
+created: 20260614145055353
+modified: 20260614145134406
+tags: [[UG: Access Control]]
+title: 1. Key terms
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Key terms]]
+
+---
+https://docs.oxide.computer/guides/configuring-access#_key_terms
+
+''Role'' — A named set of permissions (admin, collaborator, limited_collaborator, viewer)
+
+''Actor'' — A user or group. Roles can be assigned to either.
+
+''Resource'' — An entity with a role policy (fleet, silo, or project)
+
+''Role assignment'' — An entry in a policy giving an actor a role on a resource
+
+''Policy'' — The list of all role assignments for a given resource (aka "IAM Policy" in the API)

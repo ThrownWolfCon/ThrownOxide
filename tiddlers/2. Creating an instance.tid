@@ -1,0 +1,18 @@
+created: 20260602234907007
+modified: 20260623174746831
+tags: [[GS: Quick Start: Web]]
+title: 2. Creating an instance
+type: text/vnd.tiddlywiki
+
+[[Open This|2. Creating an instance]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_creating_an_instance
+
+Click New instance to go to the instance create form.
+
+[img width="100%" [https://docs.oxide.computer/img/qs-create-instance-1.png]]
+
+There are a lot of options on this page, but we’re going to keep it simple. Give the instance whatever name you’d like and scroll down.
+

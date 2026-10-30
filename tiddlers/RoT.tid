@@ -1,0 +1,15 @@
+created: 20260502023223779
+modified: 20260502023424839
+title: RoT
+type: text/vnd.tiddlywiki
+
+[[Open This|RoT]]
+
+---
+
+Root of Trust
+
+A Root of Trust (RoT) is a foundational, inherently trusted hardware or software component that ensures system security by providing a secure starting point for cryptographic operations, secure boot, and verification. It acts as a trusted anchor, often a chip, that safeguards cryptographic keys and measurements, preventing unauthorized access and detecting tampering.
+
+https://trustedcomputinggroup.org/about/what-is-a-root-of-trust-rot/
+

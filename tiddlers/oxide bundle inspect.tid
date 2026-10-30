@@ -1,0 +1,23 @@
+created: 20260627171745753
+modified: 20261029223403227
+tags: [[oxide bundle]] [[Show Off]]
+title: oxide bundle inspect
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide bundle inspect]]
+
+<<copy-to-clipboard "oxide bundle inspect --id">>
+
+`oxide bundle inspect --id`
+
+<span style="font-family: 'Beleren', sans-serif; color: #c90076;">Cannot get back to keyboard in termux if you get into this inspection tool!</span>
+
+---
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide bundle inspect --id 830af9a5-536b-4187-9b8a-3894007ad495
+```
+
+<span style="font-family: 'Beleren', sans-serif; color: #00d892;">Use <$button message="tm-modal" param="oxide bundle list">oxide bundle list</$button> to find id.</span>
+
+[img width="100%" [./files/images/Screenshot 2026-06-30 163255.png]]

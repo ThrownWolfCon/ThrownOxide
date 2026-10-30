@@ -1,0 +1,23 @@
+created: 20260605170402661
+modified: 20260605170509808
+tags: [[Control Plane Components]]
+title: crucible-pantry
+type: text/vnd.tiddlywiki
+
+[[Open This|crucible-pantry]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>crucible-pantry</strong><br><br>
+The pantry service operates on volumes that are not attached to instances and performs background tasks such as taking snapshots, scrubbing, and importing data from external sources.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "crucible-pantry">>
+</div>
+</div>
+</$linkcatcher>

@@ -1,0 +1,33 @@
+created: 20250409222529002
+modified: 20250409222754536
+tags: nmap
+title: nmap: ICMP Network Scanning
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap: ICMP Network Scanning]]
+
+---
+
+To perform a ping sweep, we use the -sn switch in conjunction with IP ranges which can be specified with either a hypen (-) or CIDR notation. i.e. we could scan the 192.168.0.x network using:
+
+nmap -sn 192.168.0.1-254
+
+or
+
+nmap -sn 192.168.0.0/24
+
+<<<Using ARP
+`nmap -PR -sn TARGETS`
+<<<
+
+<<<Using ICMP Timestamp to discover live hosts
+-PP
+<<<
+
+<<<Using ICMP Address Mask to discover live hosts
+-PM
+<<<
+
+<<<Using ICMP Echo to discover live hosts
+-PE
+<<<

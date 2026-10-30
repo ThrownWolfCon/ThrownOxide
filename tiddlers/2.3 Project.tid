@@ -1,0 +1,24 @@
+created: 20260614152710940
+modified: 20260614153549160
+tags: [[2. Policy scopes]]
+title: 2.3 Project
+type: text/vnd.tiddlywiki
+
+[[Open This|2.3 Project]]
+
+---
+
+Projects segment silo resources for finer-grained access control. Different teams might work in different projects within the same silo. Both silo admins and project admins can assign project roles.
+Table 3. Project roles
+
+|Role|Description|h
+|`admin`|Complete control over the project and all its resources|
+|`collaborator`|Can create and manage all project resources, including networking infrastructure (VPCs, subnets, routers, internet gateways, firewall rules)|
+|`limited_collaborator`|Can manage instances, disks, snapshots, and images and instance-level networking like floating IPs. Cannot change project networking configuration within VPCs (subnets, routers, internet gateways, firewall rules).|
+|`viewer`|Read-only access to project resources|
+
+The `limited_collaborator` role lets operators retain control over network topology and security boundaries while delegating day-to-day instance and storage management to developers.
+
+* [[project_policy_view]] — View project-level role assignments (requires project `viewer`)
+
+* [[project_policy_update]] — Modify project-level role assignments (requires project `admin`)

@@ -1,0 +1,14 @@
+created: 20260610182206175
+modified: 20260703220125169
+tags: direwolf
+title: meh002
+type: text/vnd.tiddlywiki
+
+```
+michael@direwolf:~/omicron$ pfexec ./target/release/omicron-package install
+Logging to: /home/michael/omicron/out/LOG
+michael@direwolf:~/omicron$
+
+died from not coming back from...
+```
+<$transclude tiddler="Failed to setup VMM reservoir" mode="block"/>

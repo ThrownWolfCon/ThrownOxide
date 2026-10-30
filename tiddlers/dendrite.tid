@@ -1,0 +1,23 @@
+created: 20260605163523111
+modified: 20260605163606139
+tags: [[Control Plane Components]]
+title: dendrite
+type: text/vnd.tiddlywiki
+
+[[Open This|dendrite]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>dendrite</strong><br><br>
+Dendrite runs on each of the two servers adjacent to a Sidecar switch. It is the driver for managing data plane code, including programs developed in P4, on a Tofino ASIC.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "dendrite">>
+</div>
+</div>
+</$linkcatcher>

@@ -1,0 +1,9 @@
+created: 20260530180928592
+modified: 20260530180947211
+tags: ipadm
+title: ipadm create-addr -T dhcp -h $(hostname) bge0/dhcp
+type: text/vnd.tiddlywiki
+
+[[Open This|ipadm create-addr -T dhcp -h $(hostname) bge0/dhcp]]
+
+---

@@ -1,0 +1,13 @@
+created: 20221215002319743
+modified: 20260511145336978
+tags: [[From - BT_TSE]]
+title: Create Self-Signed Certificates using OpenSSL
+type: text/vnd.tiddlywiki
+
+[[Open This|Create Self-Signed Certificates using OpenSSL]]
+
+---
+
+Follow the steps given below to create the self-signed certificates. We will sign out certificates using our own root CA created in the previous step.
+
+<<tabs "[tag[SSCOSSL]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

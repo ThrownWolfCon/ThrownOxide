@@ -1,0 +1,31 @@
+created: 20260531165902224
+modified: 20260531170140734
+tags: 
+title: Modify DHCP Scope
+type: text/vnd.tiddlywiki
+
+[[Open This|Modify DHCP Scope]]
+
+---
+
+But if DHCP uses:
+
+192.168.1.2 - 192.168.1.254
+
+you should first modify the DHCP scope, for example:
+
+DHCP: 192.168.1.100 - 192.168.1.254
+Reserved for Omicron: 192.168.1.20 - 192.168.1.40
+
+---
+
+FOR ME:
+
+But if DHCP uses:
+
+192.168.1.2 - 192.168.1.254
+
+you should first modify the DHCP scope, for example:
+
+DHCP: 192.168.1.2 - 192.168.1.100
+Reserved for Omicron: 192.168.1.101 - 192.168.1.200

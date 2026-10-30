@@ -1,0 +1,43 @@
+created: 20260701033822087
+modified: 20260701150622850
+tags: [[1. Generate a TLS certificate]]
+title: Option 2: Using Let’s Encrypt and Certbot
+type: text/vnd.tiddlywiki
+
+[[Open This|Option 2: Using Let’s Encrypt and Certbot]]
+
+---
+
+For deployments with a public domain and IP, Let’s Encrypt provides free TLS certificates. This requires that the domain is publicly accessible and that you can use either HTTP or DNS challenges, so this will not work for internal-only deployments.
+
+<div class="custom-warning">
+  <span class="alert-icon"></span>
+  <strong>Note</strong><br><br>
+Certificates issued by Let’s Encrypt in this manner are intentionally short-lived, with a maximum lifetime of 90 days as of 2025, and an [[intended lifetime|https://letsencrypt.org/2025/12/02/from-90-to-45]] of 45 days by 2028. Plan for an automated renewal mechanism.
+</div>
+
+Certbot is a tool published by the EFF for obtaining and renewing TLS certificates using the ACME protocol. It is available for most major operating systems and can be installed via package manager, with detailed instructions available at [[Certbot Instructions|https://certbot.eff.org/instructions]].
+
+It is possible to generate a certificate on a local machine using Certbot and then transfer it to the Oxide silo. This includes wildcard certificates, which can be useful for multiple silos under the same domain.
+
+   1. Install certbot:
+
+```bash
+    sudo apt install certbot #Linux
+    brew install certbot # macOS
+```
+
+   2. Obtain the certificate using the HTTP-01 challenge:
+
+    sudo certbot certonly --standalone -d silo1.sys.example.com
+
+Note
+Port 80 must be open and accessible in order for the HTTP challenge to succeed. If you have a web server running, you may need to stop it temporarily in order to obtain the certificate.
+
+    Alternatively, use the DNS-01 challenge if you control DNS:
+
+```bash
+    sudo certbot certonly --manual --preferred-challenges dns -d silo1.sys.example.com
+```
+
+    The certificates will be stored in `/etc/letsencrypt/live/silo1.sys.example.com/`. When using the certificate, reference the `fullchain.pem` and `privkey.pem` files in your Oxide silo configuration.

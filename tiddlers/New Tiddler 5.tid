@@ -1,0 +1,17 @@
+created: 20260609184943705
+modified: 20260703220343639
+tags: warhound
+title: New Tiddler 5
+type: text/vnd.tiddlywiki
+
+```
+michael@warhound:~$ pfexec ipadm delete-addr bge1/dhcp
+michael@warhound:~$ pfexec ipadm create-addr -T static -a 172.31.99.1/24 bge1/lab
+ipadm: Could not create address: Address object already exists
+michael@warhound:~$ ipadm show-addr
+ADDROBJ           TYPE     STATE        ADDR
+lo0/v4            static   ok           127.0.0.1/8
+bge0/dhcp         dhcp     ok           192.168.1.28/24
+bge1/lab          static   ok           172.31.99.1/24
+lo0/v6            static   ok           ::1/128
+```

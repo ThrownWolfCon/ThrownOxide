@@ -1,0 +1,19 @@
+created: 20260603000703970
+modified: 20260624173823309
+tags: [[4. Deleting the instance]]
+title: 4.2 Deleting the instance
+type: text/vnd.tiddlywiki
+
+[[Open This|4.2 Deleting the instance]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_deleting_the_instance_2
+
+Once the instance is stopped, click the three dots (more actions button) to the right of the instance again. The option to delete is now available. Click Delete.
+
+A box will appear asking for confirmation. Click Confirm to delete the instance.
+
+The disks attached to the deleted instance are put into the detached state. They can be attached to another instance or re-used to create a new instance. If the disks are no longer needed, you may also delete them.
+
+The external IP addresses allocated to the deleted instance are now freed up and can be assigned to other new instances.

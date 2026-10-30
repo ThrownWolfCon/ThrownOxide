@@ -1,0 +1,17 @@
+created: 20260504195623308
+modified: 20260504195946951
+tags: [[Platform Perspective]]
+title: Modern Application Development
+type: text/vnd.tiddlywiki
+
+[[Open This|Modern Application Development]]
+
+---
+
+Modern Application Development
+
+Build well-architected cloud-native applications.
+
+Modern application development practices can help you realize the speed and agility that go with innovation. Using containers and serverless technologies can help you optimize your resource utilization and automatically scale from zero to peak demands. Consider decoupling your applications by building them as independent microservices leveraging event-driven architectures. Implement security in all layers and at each stage of the application development lifecycle.
+
+Automate the process of scaling out and scaling in or use serverless technologies. Modernize your existing applications to reduce costs, gain efficiencies, and make the most of your investments. Consider replatforming (moving your own containers, databases, or message brokers to managed cloud services) and refactoring (rewriting your legacy applications to a cloud-native architecture). Ensure that your architecture takes into account service quotas and physical resources so that they do not negatively impact your workload performance or reliability.

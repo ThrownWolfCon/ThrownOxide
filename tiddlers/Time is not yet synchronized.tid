@@ -1,0 +1,17 @@
+created: 20260604235514446
+modified: 20260711222552310
+tags: [[1.2.1 Mode 1: Use an existing network]] sled-agent ntp WolfOxide
+title: Time is not yet synchronized
+type: text/vnd.tiddlywiki
+
+[[Open This|Time is not yet synchronized]]
+
+---
+
+```bash
+:"wolfoxide","pid":15255,"component":"ConfigReconcilerTask","file":"sled-agent/config-reconciler/src/reconciler_task/zones.rs:541","stratum":0,"correction_s":0.0}
+{"msg":"reconcilation result has retryable error; will retry","v":0,"name":"SledAgent","level":30,"time":"2026-06-04T21:58:29.062061415Z","hostname":"wolfoxide","pid":15255,"component":"ConfigReconcilerTask","file":"sled-agent/config-reconciler/src/reconciler_task.rs:355","retry_after":"5s"}
+{"msg":"Checking time synchronization","v":0,"name":"SledAgent","level":30,"time":"2026-06-04T21:58:30.242783984Z","hostname":"wolfoxide","pid":15255,"NtpAdminClient":"[fd00:1122:3344:101::1b]:10123","component":"RSS","file":"sled-agent/rack-setup/src/service.rs:752"}
+{"msg":"Timesync accessed","v":0,"name":"SledAgent","level":30,"time":"2026-06-04T21:58:30.252633198Z","hostname":"wolfoxide","pid":15255,"NtpAdminClient":"[fd00:1122:3344:101::1b]:10123","component":"RSS","file":"sled-agent/rack-setup/src/service.rs:769","timesync":"TimeSync { correction: 0.0, ip_addr: ::, last_offset: 0.0, max_error: 1.5, ref_id: 0, ref_time: 0.0, rms_offset: 0.0, root_delay: 1.0, root_dispersion: 1.0, stratum: 0, sync: false }"}
+{"msg":"Time is not yet synchronized","v":0,"name":"SledAgent","level":40,"time":"2026-06-04T21:58:30.252718343Z","hostname":"wolfoxide","pid":15255,"component":"RSS","file":"sled-agent/rack-setup/src/service.rs:794","error":"\"Time is synchronized on 0/1 sleds\""}
+```

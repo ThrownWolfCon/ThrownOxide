@@ -1,0 +1,17 @@
+created: 20260531051418544
+modified: 20260531051449842
+tags: 
+title: Windows
+type: text/vnd.tiddlywiki
+
+[[Open This|Windows]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Windows">>
+</div>
+</div>
+</$linkcatcher>

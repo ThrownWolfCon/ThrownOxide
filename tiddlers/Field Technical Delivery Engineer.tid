@@ -1,0 +1,31 @@
+created: 20260713042204843
+modified: 20260713155143807
+tags: [[Oxide Roles]]
+title: Field Technical Delivery Engineer
+type: text/vnd.tiddlywiki
+
+[[Open This|Field Technical Delivery Engineer]]
+
+---
+
+https://oxide.computer/careers/field-technical-delivery
+
+Technical Skills & Experience
+
+* Strong proficiency with [[Unix/Linux system administration]] ([[Solaris/illumos]] experience a plus).
+
+* Solid understanding of server architecture, including compute, storage, and networking fundamentals.
+
+* Hands-on experience working safely and confidently on racks in production environments.
+
+* Hands-on experience with scripting languages ([[Python]], [[Bash]], or similar) for automation and troubleshooting.
+
+* Familiarity with infrastructure-as-code tools (e.g., [[Terraform]], [[Ansible]], or similar).
+
+* Exposure to cloud orchestration platforms and API-driven operations.
+
+* Experience debugging distributed systems and working across hardware/software boundaries.
+
+* Knowledge of networking protocols ([[TCP/IP]], [[DNS]], [[DHCP]], [[routing]]) and [[system performance tuning]].
+
+* Ability to interpret logs across the stack to diagnose and resolve issues.

@@ -1,0 +1,26 @@
+created: 20260602231404904
+modified: 20260613015655117
+tags: [[1. User resource management]]
+title: 1.1 Silos
+type: text/vnd.tiddlywiki
+
+[[Open This|1.1 Silos]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_silos
+
+Silos are the top-level containers for grouping users, projects, and resources. As the name suggests, silos are isolated from each other, providing strict tenancy separation between groups of users. Each silo has its own resource limits and access policies as well as its own subdomain for the web console and API. Resources in a silo cannot be shared with any other silos.
+
+Every Oxide rack includes a Recovery silo which is reserved for built-in users and resources. Rack administrators can create one or more silos based on their usage model. Silos can be backed by an external or local identity provider, as defined by the identity mode of the silo. See the Identity & Access Management section below for more information.
+Silo DNS endpoints
+
+  <div class="demo-container">
+    <div class="custom-info-response">
+      <span class="alert-icon">i</span>
+      <strong>Info:</strong><br><br>
+As part of the on-premises network integration, a DNS domain is delegated to the Oxide rack at the time of initialization. This allows the rack external endpoints to be accessible using DNS names and secured with TLS certificates.
+    </div>
+  </div>
+
+Each silo has a unique console and API endpoint with the naming convention $SILO_DNS_NAME.sys.$DELEGATED_DOMAIN. By default, the substring SILO_DNS_NAME is set to the silo’s name, but this can be changed. For this reason, silo names must comply with the domain name standard [[RFC 1035]], meaning that they may contain only the English-language letters a-z, the digits 0-9, and hyphens; hyphens cannot be at the beginning or end of the name. Note that top level domain lookup (*.$DELEGATED_DOMAIN) will return null as the delegated domain will not have an A/AAAA record.

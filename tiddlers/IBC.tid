@@ -1,0 +1,12 @@
+created: 20260502024209556
+modified: 20260502024315165
+title: IBC
+type: text/vnd.tiddlywiki
+
+[[Open This|IBC]]
+
+---
+
+Intermediate Bus Converters (IBCs) are highly efficient, isolated DC-DC modules designed to convert high-voltage (often 48V/54V) power down to an intermediate voltage (typically 8V–14V) in distributed power systems. Used in data centers and telecom, they act as the first stage to supply point-of-load (POL) converters, reducing input current to improve efficiency.
+
+https://www.reedsemi.com/product-category/categories/intermediate-bus-converters-ibc/

@@ -1,0 +1,15 @@
+created: 20260526183013216
+modified: 20260625015330469
+tags: [[Access management]]
+title: How do I offboard a user from a project?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I offboard a user from a project?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_offboard_a_user_from_a_project
+
+If the user is given access to the project via the identity provider group membership, you can simply disassociate the user from the groups being granted the project roles.
+
+If the user is granted a project role directly in the access policy, the silo or project administrator can remove their access from the policy itself.

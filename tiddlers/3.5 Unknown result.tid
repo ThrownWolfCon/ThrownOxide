@@ -1,0 +1,24 @@
+created: 20260616171622148
+modified: 20260616171706693
+tags: [[3. Viewing the log]]
+title: 3.5 Unknown result
+type: text/vnd.tiddlywiki
+
+[[Open This|3.5 Unknown result]]
+
+---
+
+https://docs.oxide.computer/guides/operator/audit-log#_unknown_result
+
+An unknown result kind means an API call took place, but the control plane failed to record the outcome and then a background task marked it complete later, after a timeout (currently four hours). This is expected to be very rare. An unknown result does not mean the operation failed, only that the outcome was not recorded in the audit log.
+
+Because the audit log is designed so that entries in the past never change once fetched, entries cannot appear in the log until they are marked complete — up to four hours after the original request.
+
+```yaml
+{
+  // ...
+  "result": {
+    "kind": "unknown"
+  }
+}
+```

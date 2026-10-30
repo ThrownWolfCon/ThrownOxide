@@ -1,0 +1,21 @@
+created: 20260616182303978
+modified: 20260616182606595
+tags: [[OG: Jumbo Frames]]
+title: 4. Enabling the fleet-wide opt-in
+type: text/vnd.tiddlywiki
+
+[[Open This|4. Enabling the fleet-wide opt-in]]
+
+---
+
+```bash
+oxide system networking settings view
+```
+
+```json
+{
+  "external_jumbo_frames_opt_in_enabled": false
+}
+```
+
+Once this is enabled, users in any silo on the rack can set enable_jumbo_frames on their instances. See the Jumbo frames section of the Networking guide for the end-user workflow.

@@ -1,0 +1,13 @@
+created: 20260528213821297
+modified: 20260528213901241
+tags: [[OG: Identity Providers]]
+title: Known limitations and behavior
+type: text/vnd.tiddlywiki
+
+[[Open This|Known limitations and behavior]]
+
+---
+
+* Fleet or silo administrators can only assign Oxide roles to groups or users that are already in the system and may not be able to pre-configure access for all the relevant IdP groups. For this reason, JIT provisioning is more suitable for deployments that have simpler tenancy setup where there is a small set of pre-defined user groups and the fleet admin has memberships in all the groups.
+
+* JIT provisioning only creates or modifies users and groups but does not delete them when they are removed from the IdP application. To terminate any existing access an offboarded user may still have, silo administrators will need to invoke the logout command to expire the user’s active access tokens. Any further interaction with the system will require them to log in again. The combination of disabling a user in the IdP and calling the logout endpoint for that user effectively eliminates their ability to interact with the Oxide system.

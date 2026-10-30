@@ -1,0 +1,126 @@
+created: 20260526175718456
+modified: 20260702163639010
+tags: [[Network configuration and IP address management]]
+title: How do I restore Oxide access when there is an accidental lockout?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I restore Oxide access when there is an accidental lockout?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#techport-api-access
+
+How do I restore Oxide access when there is an accidental lockout?
+
+If the service allow-list is misconfigured and the Oxide endpoints are inaccessible from anywhere on your internal network, you can make corrections through the technician port ("techport").
+
+# Enable techport access by connecting a Linux host to one of the two RJ-45 ports on the front panel of the Oxide rack. The host may be a laptop or a secure jumpbox for out-of-band support. It must be configured for IPv6 autoconfiguration. You can download the oxide CLI Linux binaries from here or install the curl package to use the raw API.
+
+# As someone with fleet administrator privileges who has previously authenticated using the CLI, locate your API credentials. By default, the credentials are stored in $HOME/.config/oxide/credentials.toml.
+
+# This and the subsequent steps are done on the host connecting to the techport. First, set the following environment variables using the credentials obtained from Step 2:
+
+```bash
+    export OXIDE_HOST=${host URL}:12229
+    export OXIDE_FQDN=${host name only}
+    export OXIDE_TOKEN=${device token}
+```
+
+    For example
+
+```bash
+    export OXIDE_HOST=https://recovery.sys.oxide.acme.com:12229
+    export OXIDE_FQDN=recovery.sys.oxide.acme.com
+    export OXIDE_TOKEN=oxide-token-asdfasdff4482b4cba338e350477cedf33552244
+```
+
+    Locate the techport bootstrap addresses by running:
+
+```bash
+    ip neighbor show | grep fdb1
+```
+
+    The output will look like this
+
+```bash
+    fdb1:a840:2504:195::1 dev eno2 lladdr 02:08:20:36:5c:8d REACHABLE
+    fdb1:a840:2504:352::1 dev eno1 lladdr 02:08:20:bb:26:4d REACHABLE
+```
+
+    Confirm that you can access the API endpoint by proxying through the tech port address.
+
+* Set the techport address environment variable to any of the available techport addresses in your environment, e.g.,
+
+```bash
+        export TP_ADDR="fdb1:a840:2504:195::1"
+```
+
+        Now let’s ping the Oxide endpoint through the techport:
+
+```bash
+        oxide --resolve ${OXIDE_FQDN}:12229:[${TP_ADDR}] ping
+
+        # using curl
+        curl -sSq --resolve ${OXIDE_FQDN}:12229:[${TP_ADDR}] ${OXIDE_HOST}/v1/ping
+```
+
+        The ping request should return an "ok" if the API endpoint is reachable:
+
+```bash
+        {
+            "status":"ok"
+        }
+```
+
+    Confirm that your fleet admin credentials are working as expected by viewing the allow-list settings:
+
+```
+    oxide --resolve ${OXIDE_FQDN}:12229:[${TP_ADDR}] system networking allow-list view
+
+    # using curl
+    curl -sSq -H "Authorization: Bearer ${OXIDE_TOKEN}" \
+        --resolve ${OXIDE_FQDN}:12229:[${TP_ADDR}] \
+        ${OXIDE_HOST}/v1/system/networking/allow-list
+```
+
+    Sample output:
+
+```json
+    {
+      "time_created": "2024-05-06T06:25:37.128096Z",
+      "time_modified": "2024-07-04T21:36:22.580198Z",
+      "allowed_ips": {
+        "allow": "list",
+        "ips": [
+          "172.20.3.69/28",
+          "172.20.16.0/23",
+          "172.20.2.15/27",
+          "172.20.26.0/24"
+        ]
+      }
+    }
+```
+
+    Reconfigure the allow-list to include the appropriate IP ranges.
+
+```bash
+    oxide --resolve ${OXIDE_FQDN}:12229:[${TP_ADDR}] \
+        system networking allow-list update \
+        --ip "${subnet1}" \
+        --ip "${subnet2}" \
+        ...
+
+    # using curl
+    curl -sSq -H "Authorization: Bearer ${OXIDE_TOKEN}" \
+        --header "Content-Type: application/json" \
+        --resolve ${OXIDE_FQDN}:12229:[${TP_ADDR}] \
+        ${OXIDE_HOST}/v1/system/networking/allow-list -X PUT \
+        --data @- <<EOF
+    {
+        "allowed_ips": {
+            "allow": "list",
+            "ips": [ "${subnet1}", "${subnet2}", ... ]
+        }
+    }
+    EOF
+```

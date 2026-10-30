@@ -1,0 +1,19 @@
+created: 20260629212950383
+modified: 20260629213327646
+tags: 
+title: WORK ON THIS!
+type: text/vnd.tiddlywiki
+
+[[Open This|WORK ON THIS!]]
+
+---
+
+Clear the plate and go deep on this, copy to clipboard etc.
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "WORK ON THIS!">>
+</div>
+</div>
+</$linkcatcher>

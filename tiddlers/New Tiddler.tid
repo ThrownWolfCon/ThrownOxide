@@ -1,0 +1,11 @@
+created: 20260507030349161
+modified: 20260507030705827
+tags: 
+title: New Tiddler
+type: text/vnd.tiddlywiki
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+
+Your Content Here (e.g., [[TiddlerOne]], [[Retire]])
+
+</$linkcatcher>

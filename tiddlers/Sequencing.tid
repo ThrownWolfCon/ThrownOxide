@@ -1,0 +1,12 @@
+created: 20260428212048509
+modified: 20260428212118850
+title: Sequencing
+type: text/vnd.tiddlywiki
+
+[[Open This|Sequencing]]
+
+---
+
+Oxide Computer uses a dedicated Lattice iCE40 8000LE FPGA to manage the power-on sequencing of its rack-scale, turnkey cloud hardware.
+
+the precise control of when power rails are energized throughout a PCB

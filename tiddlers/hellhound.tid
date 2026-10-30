@@ -1,0 +1,28 @@
+created: 20260606164315400
+modified: 20260704175456849
+tags: [[Lost Dogs]]
+title: hellhound
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler="Createdbox" mode="block"/>
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>[[hellhound]]</strong><br><br>
+A hellhound is a supernatural canine from mythology and folklore that acts as a guardian, servant, or torturer of the underworld. 
+<br><br>
+Typically depicted as massive, aggressive, and often possessing fiery elements, these mythic creatures are tied to death, boundaries, and the afterlife.
+<br><br>
+https://en.wikipedia.org/wiki/Hellhound
+<br><br>
+"The behaviors of a Hellhound are very calculated and purposeful and they are said to be highly intelligent."
+
+  <div class="demo-container">
+    <div class="custom-tip-response">
+      <span class="alert-icon"></span>
+      <strong>My Lab:</strong><br><br>
+
+<$transclude tiddler="Some Unknowable Thing" mode="block"/>
+    </div>
+  </div>
+</div>

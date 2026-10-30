@@ -1,0 +1,17 @@
+created: 20260504203811535
+modified: 20260504203854770
+tags: [[Security Perspective]]
+title: Incident Response
+type: text/vnd.tiddlywiki
+
+[[Open This|Incident Response]]
+
+---
+
+Incident Response
+
+Reduce potential harm by consistently responding to security incidents quickly and effectively.
+
+Educate your security operations and incident response teams about cloud technologies and how your organization intends to use them. Develop runbooks and create a library of incident response mechanisms. Include key stakeholders to better understand the impact of your choices on the broader organization.
+
+Simulate security events and practice your incident response through table-top exercises and game days. Iterate on the outcome of your simulation to improve the scale of your response posture, reduce time to value, and further reduce risk. Conduct post-incident analyses to learn from security incidents by leveraging a standardized mechanism to identify and resolve root causes.

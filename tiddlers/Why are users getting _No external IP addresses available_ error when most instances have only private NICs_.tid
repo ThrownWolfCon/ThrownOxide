@@ -1,0 +1,15 @@
+created: 20260526175247980
+modified: 20260625023351740
+tags: [[Network configuration and IP address management]]
+title: Why are users getting "No external IP addresses available" error when most instances have only private NICs?
+type: text/vnd.tiddlywiki
+
+[[Open This|Why are users getting "No external IP addresses available" error when most instances have only private NICs?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_why_are_users_getting_no_external_ip_addresses_available_error_when_most_instances_have_only_private_nics
+
+Instances with network interfaces will always have a Source NAT (SNAT) address that allows them to communicate with external hosts. Each SNAT IP takes up a quarter of the port range on a particular address. Because of the NAT usage, if there are 125 addresses in the silo’s default IP pool and each instance is assigned an external IP from that pool, you’ll run out of addresses after creating 100 instances.
+
+To rectify the "No external IP addresses available" error, the fleet administrator can add one or more IP address ranges to the default IP pool of the silo in question via the IP Pools UI (under System) or using the system_ip_pool_range_add API.

@@ -1,0 +1,42 @@
+created: 20260527233558212
+modified: 20260527233641081
+tags: [[Home Lab Oxide]]
+title: oxide auth login --help
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide auth login --help]]
+
+---
+
+```bash
+aim@aim-PowerEdge-T620:~$ oxide auth login --help
+Authenticate with an Oxide Silo
+
+    # authenticate with a specific Oxide silo
+    $ oxide auth login --host oxide.internal
+
+    # authenticate with an insecure Oxide silo (not recommended)
+    $ oxide --insecure auth login --host oxide.internal
+
+Usage: oxide auth login [OPTIONS] --host <HOST>
+
+Options:
+  -H, --host <HOST>
+          The host of the Oxide instance to authenticate with. This assumes https; specify an `http://` prefix if needed
+
+      --browser <BROWSER>
+          Override the default browser when opening the authentication URL
+
+      --no-browser
+          Print the authentication URL rather than opening a browser window
+
+      --time-to-live <DURATION>
+          Lifetime of login. If not specified, the silo's policy is used. Specify units e.g. 7d, 2w, 6M, 1y
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+Global Options:
+      --profile <PROFILE>
+          Configuration profile to use for commands
+```

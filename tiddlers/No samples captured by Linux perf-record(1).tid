@@ -1,0 +1,26 @@
+created: 20260526153442473
+modified: 20260611165425592
+tags: [[Instance performance or filesystem issues]]
+title: No samples captured by Linux perf-record(1)
+type: text/vnd.tiddlywiki
+
+[[Open This|No samples captured by Linux perf-record(1)]]
+
+---
+
+https://docs.oxide.computer/guides/troubleshooting#_no_samples_captured_by_linux_perf_record1
+
+The Oxide hypervisor exposes the CPU performance monitoring unit (PMU) to guest VMs, but does not currently support the interrupts used by Linux’s perf-`record(1)` tool to collect samples.
+
+On VMs where the PMU is not available, perf(1) will fall back to software events to record events. On Oxide, it recognizes that the PMU is available, but does not realize that driving event sampling via the performance counter interrupt is not currently possible, and so does not fall back to software.
+
+
+To force `perf-record(1)` to use software events, execute it as:
+
+```bash
+sudo perf record -e task-clock <YOUR_COMMAND>
+```
+
+This issue is being tracked as propolis#894.
+
+Note that perf-stat(1) is able to capture events from the PMU.

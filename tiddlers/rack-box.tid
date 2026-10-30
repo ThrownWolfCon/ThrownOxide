@@ -1,0 +1,10 @@
+created: 20260612230818852
+modified: 20260612232624733
+tags: 
+title: rack-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-note">
+  <strong>Rack</strong><br>
+<$transclude tiddler="silo-box" mode="block"/>
+</div>

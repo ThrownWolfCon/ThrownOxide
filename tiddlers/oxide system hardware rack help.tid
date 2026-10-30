@@ -1,0 +1,26 @@
+created: 20260629200402187
+modified: 20260629205927216
+tags: [[oxide system hardware rack]]
+title: oxide system hardware rack help
+type: text/vnd.tiddlywiki
+
+[[Open This|oxide system hardware rack help]]
+
+---
+
+```bash
+aim@aim-PowerEdge-T620:~/.config/oxide$ oxide system hardware rack help
+Usage: oxide system hardware rack [OPTIONS] <COMMAND>
+
+Commands:
+  list        List racks
+  membership
+  view        Fetch rack
+  help        Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help  Print help
+
+Global Options:
+      --profile <PROFILE>  Configuration profile to use for commands
+```

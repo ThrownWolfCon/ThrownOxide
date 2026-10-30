@@ -1,0 +1,63 @@
+created: 20260615223455152
+modified: 20260615223642891
+tags: [[3.2 Running the pieces by hand]]
+title: 1. Start CockroachDB using db-dev run
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Start CockroachDB using db-dev run]]
+
+---
+
+   1. Start CockroachDB using db-dev run:
+
+```
+    $ cargo xtask db-dev -- run
+        Finished dev [unoptimized + debuginfo] target(s) in 0.15s
+         Running `target/debug/db-dev run`
+    omicron-dev: using temporary directory for database store (cleaned up on clean exit)
+    omicron-dev: will run this to start CockroachDB:
+    cockroach start-single-node --insecure --http-addr=:0 --store /var/tmp/omicron_tmp/.tmpM8KpTf/data --listen-addr 127.0.0.1:32221 --listening-url-file /var/tmp/omicron_tmp/.tmpM8KpTf/listen-url
+    omicron-dev: temporary directory: /var/tmp/omicron_tmp/.tmpM8KpTf
+    *
+    * WARNING: ALL SECURITY CONTROLS HAVE BEEN DISABLED!
+    *
+    * This mode is intended for non-production testing only.
+    *
+    * In this mode:
+    * - Your cluster is open to any client that can access 127.0.0.1.
+    * - Intruders with access to your machine or network can observe client-server traffic.
+    * - Intruders can log in without password and read or write any data in the cluster.
+    * - Intruders can consume all your server's resources and cause unavailability.
+    *
+    *
+    * INFO: To start a secure server without mandating TLS for clients,
+    * consider --accept-sql-without-tls instead. For other options, see:
+    *
+    * - https://go.crdb.dev/issue-v/53404/v20.2
+    * - https://www.cockroachlabs.com/docs/v20.2/secure-a-cluster.html
+    *
+
+    omicron-dev: child process: pid 3815
+    omicron-dev: CockroachDB listening at: postgresql://root@127.0.0.1:32221/omicron?sslmode=disable
+    omicron-dev: populating database
+    *
+    * INFO: Replication was disabled for this cluster.
+    * When/if adding nodes in the future, update zone configurations to increase the replication factor.
+    *
+    CockroachDB node starting at 2021-04-13 15:58:59.680359279 +0000 UTC (took 0.4s)
+    build:               OSS v20.2.5 @ 2021/03/17 21:00:51 (go1.16.2)
+    webui:               http://127.0.0.1:41618
+    sql:                 postgresql://root@127.0.0.1:32221?sslmode=disable
+    RPC client flags:    cockroach <client cmd> --host=127.0.0.1:32221 --insecure
+    logs:                /var/tmp/omicron_tmp/.tmpM8KpTf/data/logs
+    temp dir:            /var/tmp/omicron_tmp/.tmpM8KpTf/data/cockroach-temp022560209
+    external I/O path:   /var/tmp/omicron_tmp/.tmpM8KpTf/data/extern
+    store[0]:            path=/var/tmp/omicron_tmp/.tmpM8KpTf/data
+    storage engine:      pebble
+    status:              initialized new cluster
+    clusterID:           8ab646f0-67f0-484d-8010-e4444fb86336
+    nodeID:              1
+    omicron-dev: populated database
+```
+
+    Note that as the output indicates, this cluster will be available to anybody that can reach 127.0.0.1.

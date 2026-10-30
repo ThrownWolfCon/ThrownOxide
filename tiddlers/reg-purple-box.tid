@@ -1,0 +1,11 @@
+created: 20260612225405118
+modified: 20260612225427006
+tags: 
+title: reg-purple-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>Tip</strong><br>
+  Your tip text goes here.
+</div>

@@ -1,0 +1,32 @@
+created: 20260603000827326
+modified: 20260624172056093
+tags: [[5. Appendix]]
+title: 5.1 How to make test images
+type: text/vnd.tiddlywiki
+
+[[Open This|5.1 How to make test images]]
+
+---
+
+Linux OS
+
+For testing purposes, you can download one of the published generic cloud image from Debian, for example,
+
+https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.raw
+Windows OS
+
+The creation of Windows images is a bit more involved but we provide a tool and a set of comprehensive instructions to make it easier. Please see the Windows Instances guide.
+How to import an image file
+
+In the web console, navigate to your project. Click on Images on the left sidebar.
+
+Now click on Upload image on the right side of the page.
+
+This will open the Upload image box. Give your image a name and fill in the rest of the required information. For this example, we’ll use the Debian image mentioned above. Once you have downloaded the image to your workstation, click on Upload image in the lower right of the box.
+Modal form with inputs to upload and create an image
+
+When the image has uploaded successfully click Done in the lower right of the box.
+
+You should now see the newly uploaded image listed on the Images page. The image will be available for creating the boot disk of a new instance.
+
+More information about how to manage images can be found in the Images guide.

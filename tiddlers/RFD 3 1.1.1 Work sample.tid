@@ -1,0 +1,25 @@
+created: 20260509211619448
+modified: 20260520170358167
+tags: [[RFD 3 1.1 Aptitude]]
+title: RFD 3 1.1.1 Work sample
+type: text/vnd.tiddlywiki
+
+[[Open This|RFD 3 1.1.1 Work sample]]
+
+---
+
+Work sample
+
+The ultimate measure of us all is in the work we do, and as such a work sample can be the truest way to assess a candidate’s ability. While the exact nature of the work sample will vary based on domain, all candidates should be encouraged to be as detailed as possible. 
+
+For engineers, this should be source code, schematics, or designs; 
+
+for operations, it might be a detailed discussion of their work on a program or product; 
+
+<span style="color: #61cf5a;">for customer-facing roles like sales, solutions or support, it might be the concrete details of a customer engagement.</span>
+
+* Regardless of the kind of work sample being asked for, multiple samples should be requested (e.g., 2-3), and concrete details should be requested. 
+
+* The prompt asking for work samples should generally be customized for the domain, but not made so specific that it only has applicability within a single role. (That is, we would generally have a single work sample prompt for each of engineering, operations, sales, solutions, etc.)
+
+* If, when adding a new role, there is a question about what would constitute a reasonable work sample, trusted practitioners outside of Oxide should be consulted as to what they seek in prospective peers.

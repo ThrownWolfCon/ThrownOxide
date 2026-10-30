@@ -1,0 +1,17 @@
+created: 20260508212331862
+modified: 20260508213037236
+tags: [[Customer Deployment Technical Program Manager]]
+title: Before Applying TPM
+type: text/vnd.tiddlywiki
+
+[[Open This|Before Applying TPM]]
+
+---
+
+<$details summary="Tabs">
+<<tabs "[tag[Before Applying TPM]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>
+</$details>
+
+<$details summary="Long notes">
+<$transclude tiddler="longblock02" mode="block"/>
+</$details>

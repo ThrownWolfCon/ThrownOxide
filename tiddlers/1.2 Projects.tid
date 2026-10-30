@@ -1,0 +1,18 @@
+created: 20260602231424172
+modified: 20260620012131159
+tags: [[1. User resource management]]
+title: 1.2 Projects
+type: text/vnd.tiddlywiki
+
+[[Open This|1.2 Projects]]
+
+---
+
+https://docs.oxide.computer/guides/key-entities-and-concepts#_projects
+
+Projects provide another level of resource and access isolation within each silo. They serve as containers for managing compute, storage, and network resources. Resources such as VM instances and disks are always scoped under specific projects and cannot be shared with other projects. Internal network traffic among VM instances in the same project is bound within the virtual private network ([[VPC]]) for that project.
+
+Silo users can be members of one or more projects. Their access permissions are governed by both the silo-level and project-level access policies.
+
+Like silos, project names are also governed by [[RFC 1035]] to enable the use of DNS names for VM instances in the future versions of Oxide Rack.
+

@@ -1,0 +1,31 @@
+created: 20260526170510345
+modified: 20260625024402643
+tags: [[Operator Guides]]
+title: OG: Hardware Maintenance
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: Hardware Maintenance]]
+
+---
+
+https://docs.oxide.computer/guides/operator/hardware-maintenance
+
+[[1. Power fault detection and management]]
+
+[[2. Understanding status and fault LEDs]]
+
+[[3. Hardware replacement]]
+
+[[3.1 Sleds]]
+
+[[3.1.1 Sled removal]]
+
+[[3.1.2 Sled addition]]
+
+[[3.2 Sled storage devices]]
+
+[[3.2.1 SSD removal]]
+
+[[3.2.2 SSD addition]]
+
+[[3.3 Other components]]

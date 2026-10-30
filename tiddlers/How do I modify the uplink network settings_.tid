@@ -1,0 +1,11 @@
+created: 20260526180110029
+modified: 20260528220437293
+tags: [[Network configuration and IP address management]] [[Please contact Oxide Support]]
+title: How do I modify the uplink network settings?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I modify the uplink network settings?]]
+
+---
+
+Certain changes to existing links, e.g., BGP configurations and VLAN ID, can be done through the operator API. The reconfiguration steps will likely involve some careful orchestration such that the rack’s upstream connectivity is maintained throughout the process. <span style="font-family: 'Beleren', sans-serif; color: #00d892;">Please contact Oxide Support if you would like assistance with planning any rack networking changes.</span>

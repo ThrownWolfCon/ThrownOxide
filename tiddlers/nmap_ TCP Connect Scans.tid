@@ -1,0 +1,13 @@
+created: 20250409220311799
+modified: 20250409220935507
+tags: nmap
+title: nmap: TCP Connect Scans
+type: text/vnd.tiddlywiki
+
+[[Open This|nmap: TCP Connect Scans]]
+
+---
+
+TCP Connect Scans (-sT)
+
+See: [[RFC 9293]]

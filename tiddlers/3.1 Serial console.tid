@@ -1,0 +1,13 @@
+created: 20260603000103800
+modified: 20260624172250235
+tags: [[3. Using your instance]]
+title: 3.1 Serial console
+type: text/vnd.tiddlywiki
+
+[[Open This|3.1 Serial console]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_serial_console
+
+Clicking on Connect will let you access the instance’s serial console directly from the web UI. You’ll be doing this via SSH next.

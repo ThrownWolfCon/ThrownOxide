@@ -1,0 +1,15 @@
+created: 20260501224122626
+modified: 20260501230642217
+tags: 
+title: cloud infrastructure
+type: text/vnd.tiddlywiki
+
+[[Open This|cloud infrastructure]]
+
+---
+
+''Compute''
+
+Cloud: Instance types/families (e.g., general-purpose, compute-optimized, memory-optimized), burstable vs. dedicated, right-sizing, auto-scaling groups, serverless compute (Fargate, Lambda, Cloud Run).
+
+Key areas to define: vCPU vs. physical cores, NUMA awareness, hyper-threading, cost models (on-demand, reserved, spot), performance benchmarking.

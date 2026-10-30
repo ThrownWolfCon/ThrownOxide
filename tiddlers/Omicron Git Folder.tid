@@ -1,0 +1,17 @@
+created: 20260608185912086
+modified: 20260609000321450
+tags: [[1.1 Bare-metal operating system]]
+title: Omicron Git Folder
+type: text/vnd.tiddlywiki
+
+[[Open This|Omicron Git Folder]]
+
+---
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Omicron Git Folder">>
+</div>
+</div>
+</$linkcatcher>

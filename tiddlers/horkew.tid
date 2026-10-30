@@ -1,0 +1,28 @@
+created: 20260703211618908
+modified: 20260704175539721
+tags: [[Lost Dogs]]
+title: horkew
+type: text/vnd.tiddlywiki
+
+[[Open This|horkew]]
+
+<$transclude tiddler="Createdbox" mode="block"/>
+---
+
+"Horkew" (ホロケウ) is the Ainu word for wolf, most prominently recognized in the name of the sacred deity Horkew Kamuy, which translates to the "Howling God". The Ainu are the indigenous people of Hokkaido, Japan, where they lived alongside the now-extinct Hokkaido wolf (also known as the Ezo wolf).
+
+```bash
+sudo oxide find ホロケウ
+
+Работа не волк—в лес не убежит
+
+Вот где собака зарыта
+```
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "horkew">>
+</div>
+</div>
+</$linkcatcher>

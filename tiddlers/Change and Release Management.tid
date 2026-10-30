@@ -1,0 +1,15 @@
+created: 20260504210341978
+modified: 20260504210513716
+tags: [[Operations Perspective]]
+title: Change and Release Management
+type: text/vnd.tiddlywiki
+
+[[Open This|Change and Release Management]]
+
+---
+
+Change and Release Management
+
+Introduce and modify workloads while minimizing the risk to production environments.
+
+Traditional release management is a complex process that is slow to deploy and difficult to roll back. Cloud adoption provides the opportunity to leverage CI/CD techniques to rapidly manage releases and rollbacks. Establish change processes that allow for automated approval workflows that align with the agility of the cloud. Use deployment management systems to track and implement changes. Use frequent, small, and reversible changes to reduce the scope of a change. Test changes and validate the results at all lifecycle stages to minimize the risk and impact of failed deployments. Automate rollback to a previous known good state when outcomes are not achieved to minimize recovery time and reduce errors caused by manual processes.

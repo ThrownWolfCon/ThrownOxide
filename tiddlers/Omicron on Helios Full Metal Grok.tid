@@ -1,0 +1,12 @@
+created: 20260610230952172
+modified: 20260611045608041
+tags: 
+title: Omicron on Helios Full Metal Grok
+type: text/vnd.tiddlywiki
+
+[[Open This|Omicron on Helios Full Metal Grok]]
+
+---
+
+| [[1. Prerequisites]] |Bare-metal operating system | Helios Running |<$checkbox></$checkbox>|
+| | Configure network interfaces on Helios | | |

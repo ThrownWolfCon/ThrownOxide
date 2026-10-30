@@ -1,0 +1,49 @@
+created: 20260422221154171
+episode: S3 E19
+modified: 20260427144141621
+tags: [[Before Applying]] [[Oxide and Friends]]
+title: Shipping the first Oxide rack: Your questions answered!
+type: text/vnd.tiddlywiki
+
+[[Open This|Shipping the first Oxide rack: Your questions answered!]]
+
+---
+
+https://oxide-and-friends.transistor.fm/episodes/shipping-the-first-oxide-rack-your-questions-answered
+
+On this week's show, [[Adam Leventhal]] posed questions from Hacker News (mostly) to Oxide founders [[Bryan Cantrill]] and [[Steve Tuck]]. Stick around until the end to hear about the hardest parts of building Oxide--great, surprising answers from both Bryan and Steve.
+
+They were also joined by [[Steve Klabnik]].
+
+<<<What do we build?
+
+Allows on prem to run cloud computing.
+<<<
+
+<<<Do you sell support contracts?
+Steve: Yes, comes with a support subscription (typically three years, flexible)
+<<<
+
+<<<Is the rack dependent on any Oxide cloud services?
+Bryan: "Emphatically not" The customer has total agency over data I/O Adam: Updates will be fetches from a web server
+<<<
+
+<<<What part of this journey was hardest?
+Bryan: "when we got funding" When you have a blank sheet of paper, where do you start?
+
+Steve: SVB collapse and associated banking crisis
+<<<
+
+<<<Punching above my weight.
+
+sdfsadf
+<<<
+
+<<<ggggggggg
+
+<<<
+
+<<<ggggggggg
+
+<<<
+

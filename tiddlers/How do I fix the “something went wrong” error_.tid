@@ -1,0 +1,23 @@
+created: 20260526182156782
+modified: 20260625015112017
+tags: [[Access management]]
+title: How do I fix the “something went wrong” error?
+type: text/vnd.tiddlywiki
+
+[[Open This|How do I fix the “something went wrong” error?]]
+
+---
+
+https://docs.oxide.computer/guides/operator/faq#_how_do_i_fix_the_something_went_wrong_error
+
+Users are allowed to access resources in a silo if they have been assigned a role for that silo ("viewer" or higher permissions), either directly or through membership in a group that has the role. The “something went wrong” error on login usually means the user has not been assigned a role due to an identity provider (IdP) configuration problem. This situation is especially likely for a newly configured IdP.
+
+1. Incorrect group attribute name
+
+During authentication, the SAML provider’s response typically includes group attribute statements that contain the user’s group membership information. The group attribute name specified in the IdP configuration on the Oxide side must match the group attribute in the XML listing the user’s group names; otherwise, the user will be authenticated but is not a member of any groups, and therefore is not authorized to access anything in the silo. This problem is usually noticeable immediately after setting up a silo because the silo administrator will encounter the error when logging in for the first time.
+
+To fix this, the fleet administrator must delete and recreate the silo, following one of the IdP setup examples in the [[Rack Configuration]] guide.
+
+2. Missing group/role assignments in the identity provider
+
+Even if the group attribute name is configured correctly, users can fail to be associated with a group or role in the Oxide system if that association is missing on the identity provider side. In this case, contact the IdP administrator to fix the user’s access and group memberships. The user’s access will be updated on the Oxide side the next time they log in.

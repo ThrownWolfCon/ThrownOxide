@@ -1,0 +1,11 @@
+created: 20260526144202440
+modified: 20260614171534947
+tags: [[External connectivity]]
+title: Source NAT IP
+type: text/vnd.tiddlywiki
+
+[[Open This|Source NAT IP]]
+
+---
+
+Instances with network interfaces will always have an IPv4 Source NAT (SNAT) address. These allow them to communicate with external hosts, but do not allow external hosts to initiate a session with an instance. SNAT assignment will be enhanced in a future release to provide the option between IPv4 and IPv6, or no SNAT address.

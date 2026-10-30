@@ -1,0 +1,40 @@
+created: 20260611195542925
+modified: 20260611195856198
+tags: [[Installing on a physical machine using the ISO]]
+title: 3. Configure networking
+type: text/vnd.tiddlywiki
+
+[[Open This|3. Configure networking]]
+
+---
+
+https://github.com/oxidecomputer/helios-engvm#configure-networking
+
+Configure networking
+
+Find your NIC:
+
+```bash
+# dladm show-ether
+LINK            PTYPE    STATE    AUTO  SPEED-DUPLEX                    PAUSE
+bge0            current  up       yes   1G-f                            none
+bge1            current  unknown  no    0G                              none
+
+# dladm show-phys -m
+LINK         SLOT     ADDRESS            INUSE CLIENT
+bge0         primary  a0:42:3f:42:91:50  yes  bge0
+bge1         primary  a0:42:3f:42:91:51  no   --
+```
+
+Let's say we pick bge0. Set up IP:
+
+```bash
+# ipadm create-if bge0
+# ipadm create-addr -T dhcp -h $(hostname) bge0/dhcp
+# svcadm restart network/service
+# ipadm show-addr
+ADDROBJ           TYPE     STATE        ADDR
+lo0/v4            static   ok           127.0.0.1/8
+bge0/dhcp         dhcp     ok           172.20.3.63/24
+lo0/v6            static   ok           ::1/128
+```

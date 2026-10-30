@@ -1,0 +1,15 @@
+created: 20260602230924426
+modified: 20260612200050269
+tags: [[2. Feature highlights]]
+title: 2.2 Power surface and distribution
+type: text/vnd.tiddlywiki
+
+[[Open This|2.2 Power surface and distribution]]
+
+---
+
+https://docs.oxide.computer/guides/introduction#_power_surface_and_distribution
+
+For optimal efficiency, power is distributed throughout a single power shelf via a low-voltage DC bus bar pair, with the maximum power consumption below 18 kW.
+
+The out-of-band management interface for the power shelf is a RJ-45 Ethernet port on each of the two switches that allows access from the network. The ports, located on the front panel, are connected over 1000BASE-T (or equivalent) Cat 6 cables to the uplinks.

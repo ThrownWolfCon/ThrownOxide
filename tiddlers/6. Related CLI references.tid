@@ -1,0 +1,45 @@
+created: 20260617022950529
+modified: 20260617023135059
+tags: [[OG: BGP]]
+title: 6. Related CLI references
+type: text/vnd.tiddlywiki
+
+[[Open This|6. Related CLI references]]
+
+---
+
+Besides the commands covered in this guide, there are additional ones for managing BGP config, announcements, and related network settings. Here is a quick summary of the relevant CLI commands:
+
+Modify/query BGP announce set and originated routes
+
+    [[oxide system networking bgp announce-set]]
+
+    [[oxide system networking bgp announcement list]]
+
+Modify/query BGP configuration or peers
+
+    [[oxide system networking bgp config]]
+
+    [[oxide system networking bgp peer]]
+
+Modify/query BGP session filtering criteria
+
+    [[oxide system networking bgp exported]]
+
+    [[oxide system networking bgp imported]]
+
+    [[oxide system networking bgp filter]]
+
+Modify route local preference
+
+    [[oxide system networking bgp peer set --local-pref]]
+
+    [[oxide system networking bgp pref --local-pref]]
+
+Modify switch port addresses
+
+    [[oxide system networking addr]]
+
+Modify/query address lots
+
+    [[oxide system networking address-lot]]

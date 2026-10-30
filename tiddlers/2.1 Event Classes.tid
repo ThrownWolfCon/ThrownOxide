@@ -1,0 +1,13 @@
+created: 20260629170205508
+modified: 20260629170230023
+tags: [[2. Events]]
+title: 2.1 Event Classes
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1 Event Classes]]
+
+---
+
+Events are categorized into event classes. These classes indicate the resource scope that an event relates to, and what event occurred. An event class is a string consisting of one or more segments, with multiple separated by . characters. Each segment describes the category of the event with increasing specificity, with the first segment being the most general. These classes form a hierarchy of event types. Webhook receivers subscribe to one or more event classes to determine what events they will be notified for.
+
+Top-level categories in the event class hierarchy will represent broad categories of entities, followed by increasingly specific subcategories.

@@ -1,0 +1,31 @@
+created: 20260603000151018
+modified: 20260624172703370
+tags: [[3. Using your instance]]
+title: 3.3 Access through SSH
+type: text/vnd.tiddlywiki
+
+[[Open This|3.3 Access through SSH]]
+
+---
+
+https://docs.oxide.computer/guides/quickstart#_access_through_ssh
+
+First you’ll need a command line interface that interacts with the instance. How you do this will depend on your operating system.
+
+If you have a Windows 10 or 11 workstation:
+
+    Click on the Start button on your Windows screen.
+
+    Search for Command Prompt, and click on it. That will open the default Terminal window.
+
+On macOS, open a Terminal window by going to Applications > Utilities > Terminal.
+
+At the Command Prompt enter (without any curly brackets):
+
+```bash
+ssh -i {private key location} debian@{external IP}
+```
+
+If your SSH key has the default name and location (i.e., `$HOME/.ssh/id_rsa`), you can exclude the `-i` argument. You might get an SSH [[known hosts]] warning; go ahead and connect to the server.
+
+You’ll then see a prompt, from which you can do any of the normal things you’d do when SSH-ing into a server.

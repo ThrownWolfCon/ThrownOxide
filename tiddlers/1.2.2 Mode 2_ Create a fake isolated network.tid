@@ -1,0 +1,33 @@
+created: 20260531030216773
+modified: 20260610224538303
+tags: [[1.2 External networking]] ntp
+title: 1.2.2 Mode 2: Create a fake isolated network
+type: text/vnd.tiddlywiki
+
+[[Open This|1.2.2 Mode 2: Create a fake isolated network]]
+
+---
+
+2. Alternatively, you’ll set up an "external" network that only exists on your test machine. If you go this route, we’ll choose 192.168.1.0/24 and all the same other details as in the case above, just for convenience, and it happens to match what is in the non-gimlet.toml file. In this mode, you’ll need to create your made-up network, give the global zone an IP address on it, and set up IPv4 forwarding and address translation (NAT) so that the NTP zone and any instances can get out to the outside world. We’ll use 192.168.1.199 for the GZ interface.
+
+```
+$ pfexec dladm create-etherstub -t fake_external_stub0
+$ pfexec dladm create-vnic -t -l fake_external_stub0 fake_external0
+$ pfexec ipadm create-if -t fake_external0
+$ pfexec ipadm create-addr -t -T static --address 192.168.1.199 fake_external0/external
+$ echo "map igb0 192.168.1.0/24 -> 0/32 portmap tcp/udp auto" > /tmp/ipnat.conf
+$ echo "map igb0 192.168.1.0/24 -> 0/32" >> /tmp/ipnat.conf
+$ pfexec cp /tmp/ipnat.conf /etc/ipf/ipnat.conf
+$ pfexec routeadm -e ipv4-forwarding -u
+$ svcadm enable ipfilter
+```
+
+!<span style="font-family: 'Beleren', sans-serif; color: #c90076;">NOT igb0 FOR YOU!!!!!!!</span>
+
+<div class="custom-note">
+  <span class="alert-icon">ℹ</span>
+  <strong>bge0</strong><br>
+
+<$transclude tiddler="meh003" mode="block"/>
+
+</div>

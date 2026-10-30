@@ -1,0 +1,24 @@
+created: 20260526165538843
+modified: 20260616175034523
+tags: [[Operator Guides]]
+title: OG: BFD
+type: text/vnd.tiddlywiki
+
+[[Open This|OG: BFD]]
+
+---
+
+https://docs.oxide.computer/guides/operator/configuring-bfd
+
+This guide shows how to set up bidirectional forwarding detection (BFD) between an Oxide rack and an upstream network appliance. The BFD setup this guide will go over is depicted below. The firewall represents a logical entity in your network and may actually be several individual entities in an HA configuration.
+
+[img[./files/images/bfd-example.svg]]
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "OG: BFD">>
+</div>
+</div>
+</$linkcatcher>
+

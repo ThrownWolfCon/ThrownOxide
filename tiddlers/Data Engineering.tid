@@ -1,0 +1,15 @@
+created: 20260504195000706
+modified: 20260504195100430
+tags: [[Platform Perspective]]
+title: Data Engineering
+type: text/vnd.tiddlywiki
+
+[[Open This|Data Engineering]]
+
+---
+
+Data Engineering
+
+Automate and orchestrate data flows across your organization.
+
+Automated data and analytics platforms and pipelines may help you improve productivity and accelerate time to market. Form cross-functional data engineering teams comprising infrastructure and operations, software engineering, and data management. Leverage metadata to automate pipelines that consume raw and produce optimized data. Implement relevant architectural guardrails and security controls, as well as monitoring, logging, and alerting to help with pipeline failures. Identify common data integration patterns and build reusable blueprints that abstract away the complexity of pipeline development. Share blueprints with business analysts and data scientists and enable them to operate using self-service methods.

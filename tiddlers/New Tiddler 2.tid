@@ -1,0 +1,49 @@
+created: 20260604002859388
+modified: 20260604003107151
+tags: 
+title: New Tiddler 2
+type: text/vnd.tiddlywiki
+
+```
+aim@aim-PowerEdge-T620:/media/aim/data/ISOs$ oxide --profile test-suite-silo7 disk import \
+  --project oxide \
+  --path "/media/aim/data/ISOs/cirros-0.6.2-x86_64-disk.img" \
+  --disk cirros \
+  --disk-block-size 512 \
+  --description "CirrOS 0.6.2 test image" \
+  --snapshot cirros-snapshot \
+  --image cirros \
+  --image-description "CirrOS 0.6.2" \
+  --image-os "Linux" \
+  --image-version "0.6.2"
+Creating disk "cirros"
+[00:00:00] [░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0 B/20.44 MiB (0 B/s, 0screating the disk failed: Error Response: status: 404 Not Found; headers: {"content-type": "application/json", "x-request-id": "b0a54675-62f0-4998-8302-be525481077b", "content-length": "147", "date": "Thu, 04 Jun 2026 00:25:57 GMT"}; value: Error { error_code: Some("ObjectNotFound"), message: "not found: project with name \"oxide\"", request_id: "b0a54675-62f0-4998-8302-be525481077b" }
+```
+
+THEN
+
+```
+aim@aim-PowerEdge-T620:/media/aim/data/ISOs$ oxide --profile test-suite-silo7 project create \
+  --name oxide \
+  --description "My first project"
+{
+  "description": "My first project",
+  "id": "c5583ac2-e08c-478f-8083-97f770154cd4",
+  "name": "oxide",
+  "time_created": "2026-06-04T00:28:29.211103Z",
+  "time_modified": "2026-06-04T00:28:29.211103Z"
+}
+aim@aim-PowerEdge-T620:/media/aim/data/ISOs$ oxide --profile test-suite-silo7 disk import \
+  --project oxide \
+  --path "/media/aim/data/ISOs/cirros-0.6.2-x86_64-disk.img" \
+  --disk cirros \
+  --disk-block-size 512 \
+  --description "CirrOS 0.6.2 test image" \
+  --snapshot cirros-snapshot \
+  --image cirros \
+  --image-description "CirrOS 0.6.2" \
+  --image-os "Linux" \
+  --image-version "0.6.2"
+Creating disk "cirros"
+[00:00:03] [████████████████] 20.44 MiB/20.44 MiB (5.27 MiB/s, 0sDone!
+```

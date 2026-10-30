@@ -1,0 +1,15 @@
+created: 20260616170400634
+modified: 20260616170437399
+tags: [[OG: Audit Log]]
+title: 1. Overview
+type: text/vnd.tiddlywiki
+
+[[Open This|1. Overview]]
+
+---
+
+Audit log entries correspond one-to-one with API calls that can mutate data. An entry is initialized before the operation begins, and if the initialization fails, the request fails: no mutating operation can proceed without an audit log entry. Each entry includes time_started for when the request came in and time_completed for when the result was recorded. Entries only appear in the audit_log_list response once they are completed.
+
+Audit log entries are immutable: once you can see an entry in the list, fetching it again will never get you a different result. If you fetch the log for a time_completed range that is fully in the past, the resulting list is guaranteed to be complete, i.e., fetching the same timespan again later will always produce the same set of entries. Entries will never be inserted after the fact.
+
+In the rare event that a log entry is initialized but the control plane fails to complete the log entry (see Unknown result), a background task will mark it complete after a timeout (currently four hours). The entry does not appear in the log until it is marked complete. This is required to guarantee the immutability discussed above.

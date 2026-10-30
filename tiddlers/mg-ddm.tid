@@ -1,0 +1,50 @@
+created: 20260612022946454
+modified: 20260620211149642
+tags: blocker
+title: mg-ddm
+type: text/vnd.tiddlywiki
+
+[[Open This|mg-ddm]]
+
+---
+See this: https://github.com/oxidecomputer/omicron/pull/10634/changes
+
+[img[./files/images/Screenshot 2026-06-12 133027.png]]
+
+AND (pic above): https://github.com/oxidecomputer/omicron/commit/44dc467aad3ad088288c585e3661b1b9d07d3c2b
+
+<div class="demo-container">
+    <div class="custom-note-response">
+      <span class="alert-icon"></span>
+      <strong>Note:</strong> <br><br>
+      Oh? Just clear it?
+    </div>
+  </div>
+
+```
+pfexec svcadm clear mg-ddm
+```
+
+```
+pfexec svcadm restart mg-ddm
+```
+
+```
+tail -f /var/svc/log/oxide-mg-ddm:default.log
+```
+
+```
+# pfexec svcadm clear mg-ddm
+# pfexec svcadm restart mg-ddm
+# tail -f /var/svc/log/oxide-mg-ddm:default.log
+{"msg":"[bge1] starting discovery handler","v":0,"name":"slog-rs","level":20,"time":"2026-06-12T02:41:21.055898245Z","hostname":"timberwolf","pid":22429}
+{"msg":"[bge1] starting discovery handler","v":0,"name":"slog-rs","level":20,"time":"2026-06-12T02:41:21.055923784Z","hostname":"timberwolf","pid":22429}
+
+thread '<unnamed>' (24) panicked at ddm/src/sm/state.rs:126:14:
+called `Result::unwrap()` on an `Err` value: Io(Os { code: 125, kind: AddrInUse, message: "Address already in use" })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+{"msg":"admin: server started","v":0,"name":"slog-rs","level":30,"time":"2026-06-12T02:41:21.056888682Z","hostname":"timberwolf","pid":22429}
+[ Jun 12 02:41:21 Stopping because all processes in service exited. ]
+[ Jun 12 02:41:21 Executing stop method (:kill). ]
+[ Jun 12 02:41:21 Restarting too quickly, changing state to maintenance. ]
+```

@@ -1,0 +1,23 @@
+created: 20260605164422071
+modified: 20260605164510507
+tags: [[Control Plane Components]]
+title: cockroachdb
+type: text/vnd.tiddlywiki
+
+[[Open This|cockroachdb]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>cockroachdb</strong><br><br>
+The control plane data storage system is a distributed CockroachDB database using consensus to provide strong consistency and high availability.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "cockroachdb">>
+</div>
+</div>
+</$linkcatcher>

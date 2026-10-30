@@ -1,0 +1,14 @@
+created: 20260604002623263
+modified: 20260604002810920
+tags: 
+title: This image might not be bootable
+type: text/vnd.tiddlywiki
+
+<div class="custom-tip">
+  <span class="alert-icon"></span>
+  <strong>This image might not be bootable</strong><br><br>
+  Bootable markers not found at any block size.
+Expected either “EFI PART” marker at offsets 512 / 2048 / 4096 or “CD001” at offset 0x8001 (for a bootable CD).
+Learn more about preparing images for import
+</div>
+

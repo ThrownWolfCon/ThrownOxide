@@ -1,0 +1,17 @@
+created: 20260629170501855
+modified: 20260629170541808
+tags: [[2.1 Event Classes]]
+title: 2.1.1 Globbing
+type: text/vnd.tiddlywiki
+
+[[Open This|2.1.1 Globbing]]
+
+---
+
+https://rfd.shared.oxide.computer/rfd/0538#_globbing
+
+A receiver’s event subscriptions may include simple globs to subscribe to multiple categories of events. Globbing is performed on a per-segment basis. The "*" character in an event class will match any single segment at that position in the event class string, while "**" will match any number of segments.
+
+For example, a webhook that subscribes to "instance.*" will receive notifications for "instance.create", "instance.delete", "instance.start", and any other event class that begins with instance. Similarly, a webhook that subscribes to "**.delete" will receive notifications for "project.delete", "instance.delete", and any other event class that ends with delete.
+
+To list all event classes currently known to the system, use the GET /webhook-events/classes API endpoint. To view metadata about a particular event class, use the GET /webhook-events/classes/{class_name} API endpoint.

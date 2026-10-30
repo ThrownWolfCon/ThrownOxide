@@ -1,0 +1,9 @@
+created: 20151030111230684
+modified: 20200227184011687
+tags: 
+title: $:/plugins/frd/calendar/datePicker
+type: text/vnd.tiddlywiki
+
+<span class="calendar-datepicker">
+<$macrocall $name="calendar" year=<<year>> month=<<month>> state=<<state>> startingDay=1/>
+</span>

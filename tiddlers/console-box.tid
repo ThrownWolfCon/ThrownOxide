@@ -1,0 +1,10 @@
+created: 20260612231341092
+modified: 20260612232420512
+tags: 
+title: console-box
+type: text/vnd.tiddlywiki
+
+<div class="custom-warning">
+  <strong>Console</strong><br>
+  Your warning text goes here.
+</div>

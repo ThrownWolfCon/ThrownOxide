@@ -1,0 +1,27 @@
+created: 20260529175619234
+modified: 20260612200603217
+tags: [[Oxide and Friends]]
+title: OxF: Helios
+type: text/vnd.tiddlywiki
+
+[[Open This|OxF: Helios]]
+
+---
+
+https://oxide-and-friends.transistor.fm/episodes/helios
+
+Bryan and Adam are joined by Oxide colleagues Josh Clulow, Patrick Mooney, and Steve Klabnik to discuss Helios, the operating system that runs on the Oxide Rack. Helios is a distro of illumos (derived from OpenSolaris, derived from Solaris, etc.). What's a distro? Why did Oxide choose illumos? Plenty of cross-generational appeal in this episode!
+
+Some of the topics we hit on, in the order that we hit them:
+
+* The Helios github repo
+* Hacker News thread its release
+* [[OmniOS]]
+* Rust Tier 2 support
+* Bryan's talk on holistic boot
+* Oxide and Friends: Holistic Boot
+* Oxide and Friends: Shipping Rack 1
+* [[The Quality Death Spiral]]
+* Oxide's "St. Louis" branch of illumos
+* Bryan's sleeper bug from 1991
+* illumos books (How's this for some SEO?!)

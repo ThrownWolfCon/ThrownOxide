@@ -1,0 +1,34 @@
+created: 20260501150832130
+modified: 20260501204848356
+tags: [[Aim Server]]
+title: Aim Specs
+type: text/vnd.tiddlywiki
+
+[[Open This|Aim Specs]]
+
+---
+
+```yml
+aim@aim-PowerEdge-T620:/$ neofetch
+            .-/+oossssoo+/-.               aim@aim-PowerEdge-T620
+        `:+ssssssssssssssssss+:`           ----------------------
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.4 LTS x86_64
+    .ossssssssssssssssssdMMMNysssso.       Host: PowerEdge T620
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 6.8.0-110-generic
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 5 days, 13 hours, 47 mins
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2230 (dpkg), 29 (snap)
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.2.21
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1024x768
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Terminal: /dev/pts/2
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: Intel Xeon E5-2640 v2 (32) @ 2.500GHz
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   GPU: 0a:00.0 Matrox Electronics Systems Ltd. G200eR2
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Memory: 6022MiB / 64320MiB
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   /ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.
+
+```

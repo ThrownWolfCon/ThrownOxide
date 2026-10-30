@@ -1,0 +1,13 @@
+created: 20260526153800763
+modified: 20260608165109357
+tags: [[Disk/image import exceptions]]
+title: Image import on web console stalls
+type: text/vnd.tiddlywiki
+
+[[Open This|Image import on web console stalls]]
+
+---
+
+https://docs.oxide.computer/guides/troubleshooting#_image_import_on_web_console_stalls
+
+If the issue happens in Firefox on MacOS, it may be a known sporadic HTTP/2 problem in the web UI. You can work around it by using a different browser to import the image.

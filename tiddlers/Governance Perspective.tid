@@ -1,0 +1,35 @@
+AWS CAF Perspectives: 3
+created: 20260504173349689
+modified: 20260507143814526
+tags: [[AWS CAF Perspectives]]
+title: Governance Perspective
+type: text/vnd.tiddlywiki
+
+[[Open This|Governance Perspective]]
+
+---
+
+The governance perspective focuses on orchestrating your cloud initiatives while
+maximizing organizational benefits and minimizing transformation-related risks. It
+comprises seven capabilities shown in the following figure. 
+
+<h2 style="color: #d67568;">Common Stakeholders</h2>
+
+* Chief Transformation Officer
+* Chief Information Officer [[CIO]]
+* Chief Technology Officer [[CTO]]
+* Chief Financial Officer [[CFO]]
+* Chief Data Officer [[CDO]]
+* Chief Revenue Officer [[CRO]]
+
+---
+
+*  Governance Perspective
+** [[Program and Project Management]]
+** [[Benefits Management]]
+** [[Risk Management]]
+** [[Cloud Financial Management]]
+** [[Application Portfolio Management]]
+** [[Data Governance]]
+
+<<tabs "[tag[Governance Perspective]sort[Governance Perspective]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>

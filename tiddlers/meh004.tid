@@ -1,0 +1,13 @@
+created: 20260626185646820
+modified: 20261029222822377
+tags: [[Show Off]]
+title: meh004
+type: text/vnd.tiddlywiki
+
+<<copy-to-clipboard """
+oxide --insecure auth login --host http://127.0.0.1:12220
+""">>
+
+```bash
+oxide --insecure auth login --host http://127.0.0.1:12220
+```

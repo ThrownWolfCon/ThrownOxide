@@ -1,0 +1,13 @@
+created: 20260501193555494
+modified: 20260501193656462
+tags: [[Aim Docker]]
+title: Homarr
+type: text/vnd.tiddlywiki
+
+[[Open This|Homarr]]
+
+---
+
+```yml
+9b4fc21a549c   ghcr.io/homarr-labs/homarr:latest            "/app/entrypoint.sh …"   14 months ago   Up 5 days               0.0.0.0:7575->7575/tcp, :::7575->7575/tcp                                                                                                 homarr
+```

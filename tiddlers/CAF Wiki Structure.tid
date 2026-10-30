@@ -1,0 +1,33 @@
+created: 20260425002947855
+modified: 20260510000102880
+tags: 
+title: CAF Wiki Structure
+type: text/vnd.tiddlywiki
+
+[[Open This|CAF Wiki Structure]]
+
+---
+
+Cloud Adoption Foundation
+
+```
+/CAF
+  /Business
+    - Cloud strategy
+    - KPIs / value tracking
+  /People
+    - Roles & RACI
+    - Training plans
+  /Governance
+    - Policies
+    - Cost management (FinOps)
+  /Platform
+    - Landing zone design
+    - Architecture standards
+  /Security
+    - IAM model
+    - Threat model
+  /Operations
+    - Runbooks
+    - Incident response
+```

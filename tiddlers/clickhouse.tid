@@ -1,0 +1,23 @@
+created: 20260605164531924
+modified: 20260605164643269
+tags: [[Control Plane Components]]
+title: clickhouse
+type: text/vnd.tiddlywiki
+
+[[Open This|clickhouse]]
+
+---
+
+<div class="custom-important">
+  <span class="alert-icon"></span>
+  <strong>clickhouse</strong><br><br>
+The metric data store based on ClickHouse captures telemetry data from components in the rack.
+</div>
+
+<$linkcatcher actions="<$action-sendmessage $message='tm-modal' $param=<<navigateTo>>/>">
+<div class="modal-links">
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "clickhouse">>
+</div>
+</div>
+</$linkcatcher>

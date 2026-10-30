@@ -1,0 +1,24 @@
+created: 20260513182910236
+modified: 20260601050357220
+tags: [[Oxide and Friends]] [[Before Applying Support]]
+title: Hell is other networks
+type: text/vnd.tiddlywiki
+
+[[Open This|Hell is other networks]]
+
+---
+
+https://oxide-and-friends.transistor.fm/episodes/hell-is-other-networks
+
+An Oxide customer encountered a peculiar issue at the intersection of their Oxide network and their broader network. Bryan and Adam were joined by several members of the Oxide team who collaborated to investigate and--ultimately--solve the problem using a combination of tooling, intuition, and <span style="color: #60bc5b;">dark knowledge.</span>
+
+In addition to [[Bryan Cantrill]] and [[Adam Leventhal]], we were joined by Oxide colleagues, [[Levon Tarver]], [[Alan Hanson]], [[Will Chandler]], and [[Trey Aspelund]].
+
+---
+
+No Egress....Hell is other people
+
+Process of elimination.
+
+
+
