@@ -17,11 +17,36 @@ This wiki collects practical how-tos, notes, and walkthroughs for Oxide infrastr
 
 ## How to use this wiki
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/ThrownWolfCon/ThrownOxide.git
-   cd ThrownOxide
-   ```
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (includes npm)
+- TiddlyWiki:
+
+```bash
+npm install -g tiddlywiki
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ThrownWolfCon/ThrownOxide.git
+```
+
+Move into the project directory:
+
+```bash
+cd oxide
+```
+
+Serve it with TiddlyWiki:
+
+```bash
+tiddlywiki . --listen
+```
+
+Then open [http://127.0.0.1:8080](http://127.0.0.1:8080) in your browser.
 
 ## Official resources
 
