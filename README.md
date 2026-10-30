@@ -3,7 +3,7 @@ My Wiki to do all things if I worked at Oxide Computer
 
 | | |
 |:---:|:---:|
-| <img src="images/Screenshot_20261008_143420_Chrome.jpg" alt="Home view" width="100%"> | <img src="images/Screenshot_20261007_133546_Chrome.jpg" alt="Second view" width="100%"> |
+| <img src="images/Screenshot_20261008_143420_Chrome.jpg" alt="Home view" width="100%"> | <img src="images/Screenshot_20260701_094812_Chrome.jpg" alt="Second view" width="100%"> |
 
 # ThrownOxide
 
