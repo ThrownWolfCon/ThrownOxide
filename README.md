@@ -1,5 +1,10 @@
 # ThrownOxide
 My Wiki to do all things if I worked at Oxide Computer
+
+| | |
+|:---:|:---:|
+| <img src="images/Screenshot_20261008_143420_Chrome.jpg" alt="Home view" width="100%"> | <img src="images/Screenshot_20261007_133546_Chrome.jpg" alt="Second view" width="100%"> |
+
 # ThrownOxide
 
 An unofficial, community-written wiki on working with [Oxide Computer Company](https://oxide.computer) systems: the Oxide rack, its control plane, and the tooling around it.
