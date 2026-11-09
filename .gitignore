@@ -1,0 +1,25 @@
+# Logs
+*.log
+tiddlywiki.log
+
+# TiddlyWiki UI state (changes every time you open/close tiddlers)
+tiddlers/$__StoryList*.tid
+tiddlers/$__HistoryList*.tid
+tiddlers/$__Import*.tid
+tiddlers/$__temp*.tid
+
+# Unsaved drafts
+tiddlers/Draft of*.tid
+
+# Build output
+output/
+
+# Dependencies
+node_modules/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
