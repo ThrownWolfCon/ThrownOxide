@@ -1,0 +1,12 @@
+services:
+  tiddlywiki:
+    image: node:22-alpine
+    container_name: ThrownBeyondTrust
+    user: node
+    working_dir: /wiki
+    ports:
+      - "19841:8080"
+    volumes:
+      - .:/wiki
+    command: ["npx", "-y", "tiddlywiki@5.4.1", ".", "--listen", "host=0.0.0.0", "port=8080"]
+    restart: unless-stopped
